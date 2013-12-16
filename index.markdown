@@ -1,5 +1,4 @@
 ---
-title: TZUNGTZU
 layout: homepage
 ---
 
