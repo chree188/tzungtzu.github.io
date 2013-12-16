@@ -1,0 +1,26 @@
+---
+title: About
+layout: post
+---
+
+网名：tzungtzu
+
+年龄：since 1990
+
+EMAIL: tzungtzu.weiATgmail.com
+
+复杂网络博士在读，于河南[代村技术学院](http://www.tudelft.nl/en)。
+
+伪GEEK，真理工男，伪小清新，真。。。
+
+偶尔缺乏常识。常读专业的砖头，<del>偶尔也读些有意思的书，不过效率不高，几乎不读治愈性的书。</del>也爱读闲书，效率逐渐提高，把[douban](http://book.douban.com/mine)当作我的图书馆。我读书很少的，你们可别骗我。
+
+明信片控，喜欢认识有趣的人，喜欢EMAIL联系。
+
+美剧控，深度[CM](http://www.cbs.com/shows/criminal_minds/)迷，最近在看Castle。
+
+google粉，喜欢DIY喜欢[旅行](http://tzungtzu.github.com/travel)喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语。
+
+不喜欢熬夜，不喜欢离别伤感的时候。
+
+不喜欢改变，但喜欢创造惊喜。
