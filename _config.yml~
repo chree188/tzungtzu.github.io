@@ -1,10 +1,10 @@
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
-name: "粽子的流浪日记"
+name: "rusty shutter"
 markdown: rdiscount
 
-author: "tzungtzu"
+author: "wayne"
 atom-baseurl: "http://lhzhang.com"
 disqus: "gopherwood"
 
