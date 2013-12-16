@@ -1,0 +1,7 @@
+---
+title: Gallery
+layout: post
+---
+
+<table style="width:194px;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/109915721717462682982/TianjinBeijing20125?authuser=0&feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-1gNCsd9qoNA/T6UYvWXfhuE/AAAAAAAAAUw/WnrVOmSL8Tg/s160-c/TianjinBeijing20125.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="https://picasaweb.google.com/109915721717462682982/TianjinBeijing20125?authuser=0&feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">Tianjin&amp;Beijing-2012.5</a></td></tr></table>
+<table style="width:194px;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/109915721717462682982/HongKong20121?authuser=0&feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-EtMXN0YidUE/T22xD8oue4E/AAAAAAAAAJg/d6LPTHhsupI/s160-c/HongKong20121.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="https://picasaweb.google.com/109915721717462682982/HongKong20121?authuser=0&feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">HongKong-2012.1</a></td></tr></table>
