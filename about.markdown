@@ -11,9 +11,9 @@ EMAIL: tzungtzu.weiATgmail.com
 
 复杂网络博士在读，于河南[代村技术学院](http://www.tudelft.nl/en)。
 
-偶尔缺乏常识。常读专业的砖头，<del>偶尔也读些有意思的书，不过效率不高，几乎不读治愈性的书。</del>也爱读闲书，效率逐渐提高，把[douban](http://book.douban.com/mine)当作我的图书馆。我读书很少的，你们可别骗我。
+UKULELE爱好者(finglestyle), 羽毛球爱好者。
 
-UKULELE爱好者，finglestyle. 羽毛球爱好者。
+偶尔缺乏常识。常读专业的砖头，<del>偶尔也读些有意思的书，不过效率不高，几乎不读治愈性的书。</del>也爱读闲书，效率逐渐提高，把[douban](http://book.douban.com/mine)当作我的图书馆。我读书很少的，你们可别骗我。
 
 明信片控，喜欢认识有趣的人，喜欢EMAIL联系。
 
