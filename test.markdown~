@@ -1,29 +1,8 @@
 ---
-title: Test
+title: Resea
 layout: home
 ---
 
-
-<ul class="listing">
-{% for cat in site.categories %}
-  <li class="listing-seperator" id="{{ 好好写代码 }}">{{ cat[0] }}</li>
-{% for post in cat[1] %}
-  <li class="listing-item">
-  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-  <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-{% endfor %}
-</ul>
-
-<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
-<script language="javascript">
-$.fn.tagcloud.defaults = {
-    size: {start: 1, end: 1, unit: 'em'},
-      color: {start: '#f8e0e6', end: '#ff3333'}
-};
-
-$(function () {
-    $('#tag_cloud a').tagcloud();
-});
-</script>
+2012-12-15 [github部署博客小记](http://tzungtzu.cshozzy.com/2012/12/15/github-blogging.html)
+2012-04-02 [MFC中内存DC绘图的画法](http://tzungtzu.cshozzy.com/2012/04/02/MFC.html)
+2012-03-23 [svn管理数据丢失问题的解决办法](http://tzungtzu.cshozzy.com/2012/03/23/svn.html)
