@@ -9,6 +9,6 @@ layout: home
 **Zongwei Li** 目前居住于荷兰的Delft，在 Delft University of Technology 学习复杂网络。
 
 
-**Contact:**tzungtzuDOTweiATgmailDOTcom
+**Contact:**  tzungtzuDOTweiATgmailDOTcom
 
 
