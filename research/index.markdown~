@@ -1,5 +1,5 @@
 ---
-title: AdHoc
-layout: page
+title: Research
+layout: home
 ---
 
