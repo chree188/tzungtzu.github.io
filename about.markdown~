@@ -24,3 +24,6 @@ google粉，喜欢DIY喜欢[旅行](http://tzungtzu.github.com/travel)喜欢植�
 不喜欢熬夜，不喜欢离别伤感的时候。
 
 不喜欢改变，但喜欢创造惊喜。
+
+<a target="_blank" href="http://www.weibo.com/tzungtzu"><img src="/media/img/weibo.png" height="45" width="45"></a>
+
