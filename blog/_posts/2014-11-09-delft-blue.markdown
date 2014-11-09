@@ -1,12 +1,12 @@
 ---
 layout: post
-title: music throey
+title: Open Day Royal Delft
 categories:
-- 旅行
+- 这就是生活
 tags:
-- trekking
-- sewden
-- kungsleden
+- delftblue
+- delft
+-ukulele
 ---
 
 今天是我村一年一度的画盘子Day. Royal Delft生产非常有名的Delft蓝瓷，价格不菲。
