@@ -6,7 +6,6 @@ categories:
 tags:
 -OS X
 -github
-
 ---
 The purpose of this article is to show that the blog can be deployed on OS X.
 

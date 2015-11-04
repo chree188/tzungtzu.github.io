@@ -7,7 +7,6 @@ tags:
 - delftblue
 - delft
 -ukulele
-
 ---
 
 今天是我村一年一度的画盘子Day. Royal Delft生产非常有名的Delft蓝瓷，价格不菲。
