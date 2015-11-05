@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="pandachow" />
+    
+    <title>MFC中内存DC绘图的画法</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/css/github.css">
+    <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="zongwei" class="" href="/">TZUNGTZU</a></h1>
+            <nav>
+              <span><a title="文章归档" class="" href="/archive.html">Archive</a></span>
+              <span><a title="文章分类" class="" href="/category.html">Category</a></span>
+              <span><a title="标签" class="" href="/tags.html">Tags</a></span>
+              <span><a title="链接" class="" href="/links.html">Links</a></span>              
+              <span><a title="相册" class="" href="/gallery.html">Gallery</a></span>
+              <span><a title="关于" class="" href="/about.html">About</a></span>
+              <span><a title="subscribe me" class="" href="/atom.xml">Feed</a></span>
+            </nav>
+          </div>
+        </header>
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>MFC中内存DC绘图的画法 </h2>
+  </section>
+  <section class="meta">
+	<span class="time">
+    <time datetime="2012-04-02">2012-04-02</time>
+  </span>
+
+<span class="categories">
+	Published in categories
+  
+  <a href="/categories/#blog" title="blog">blog</a>&nbsp;
+  
+  <a href="/categories/#好好写代码" title="好好写代码">好好写代码</a>&nbsp;
+  
+</span>
+
+  
+  <span class="tags">
+tagged with 
+    
+    <a href="/tags.html#毕业设计" title="毕业设计">#毕业设计</a>&nbsp;
+    
+    <a href="/tags.html#MFC" title="MFC">#MFC</a>&nbsp;
+    
+    <a href="/tags.html#C++" title="C++">#C++</a>&nbsp;
+    
+    <a href="/tags.html#内存DC绘图" title="内存DC绘图">#内存DC绘图</a>&nbsp;
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <p>昨晚终于把实验平台我的部分初步完成了，主要内容是USRP感知环境频谱数据(linux环境)通过afxsocket传给windows下服务器。本以为解决从python的string到VC的Cstring转换和数据包解析问题就行了。但实际完成时在实时更新绘图数据卡了一下。废话少说，现在说下问题需求和解决办法。</p>
+
+<p>需求：server接收到数据包，将需要的频谱信息转到整形数组array[16]，由于实时性需求array[16]五秒更新一次，要保证画的频谱折线图能够显示更新。</p>
+
+<p>问题：最初采用OnPaint函数绘图，基本上是体力活，从坐标轴到网格每一笔都要写下来。在刷新数据的时候出现问题，使用重绘函数刷新无法用计时器控制。需要跟客户端发送的频谱一样。</p>
+
+<p>采用内存DC绘图相当于创建一个内存DC,将图形先绘制到这个DC上面,之后通过BitBlt这个函数通过位拷贝的方式将内存DC的数据拷贝到图形设备上去,由于内存拷贝的速度很快,所以我们很大程度改进了绘图效率(这种技术叫做双缓冲)。</p>
+
+<p>具体方法如下：
+1. 在对话框添加一个picture control控件，设置ID为IDC_COORD，移动到合适位置。</p>
+
+<p>在项目的类中添加如下变量：</p>
+
+<p>CRect rect;                  // 存储绘图控件的绘图区域
+CDC <em>pDC;                  // 控件的屏幕绘图设备指针
+CDC memDC;              // 内存绘图设备
+CBitmap memBitmap;  // 用于内存绘图的位图
+CBitmap</em> pOldBmp;    // 备份旧的位图指针
+CWnd* pWnd;             // 绘图控件的指针</p>
+
+<ol>
+<li>用ClassWizard在项目中添加OnInitDialog()消息响应函数，实现绘图需要变量的初始化工作，具体代码如下：</li>
+</ol>
+
+
+<p>pWnd = GetDlgItem(IDC_COORD); // 获得对话框上的picture的窗口句柄
+pWnd->GetClientRect(&amp;rect);         // 获取绘制坐标的文本框</p>
+
+<p>pDC = pWnd->GetDC();                 // 获得对话框上的picture的设备指针
+pOldBmp = NULL;                           // 将旧的位图指针置空</p>
+
+<p>Drawwave（&amp;mem）                 // 创建内存绘图设备，使内存位图的DC与控件的DC关联
+memDC.CreateCompatibleDC(pDC);
+memBitmap.CreateCompatibleBitmap(pDC,rect.right,rect.bottom);
+pOldBmp = memDC.SelectObject(&amp;memBitmap);</p>
+
+<p>第三步：在Dlg类中添加绘图函数。</p>
+
+<p>void CXv001Dlg::DrawWave(CDC *pDC)
+{</p>
+
+<p>memDC.Rectangle(rect.left,rect.top,rect.right,rect.bottom);
+/*</p>
+
+<p>此处可以写你要画的图，可以配上坐标。</p>
+
+<p>*/</p>
+
+<p>}</p>
+
+<ol>
+<li>在Dlg类中添加OnTimer(),OnPaint()和OnClose的消息响应函数。</li>
+</ol>
+
+
+<p>在OnInitDialog()函数总添加如下代码</p>
+
+<p>SetTimer(1,10,NULL);          // 启动定时器</p>
+
+<p>在OnTimer()函数中添加</p>
+
+<p>DrawWave(&amp;memDC);         // 在位图中画图片
+OnPaint();                                 // 使屏幕刷新</p>
+
+<p>在OnPaint()函数中添加如下代码，实现将生成的图片拷贝到屏幕上，完成整个绘图的工作。</p>
+
+<p>pDC->BitBlt(rect.left,rect.top,rect.right,rect.bottom,&amp;memDC,0,0,SRCCOPY);</p>
+
+<p>最后：在OnClose()函数中，别忘了销毁绘图及位图设备的指针。</p>
+
+<p>memDC.SelectObject(pOldBmp);
+memDC.DeleteDC();
+memBitmap.DeleteObject();</p>
+
+<p>我的效果图如下：
+[图]</p>
+
+<h6>#我是无聊的分界线</h6>
+
+<p>虽然感觉界面寒碜了点，但是就准备拿它做我毕设的界面了。剩下的就是算法问题了~ 快点写完旅游去= =</p>
+
+  </section>
+  <section class="comment">
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'tzungtzu'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+       
+         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'tzungtzu'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script>
+  </section> 
+</article>
+
+        </div>
+        <footer>&copy; 2011 ~ 2014 Tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | fork <a href="https://github.com/waynezhang/blog" title="fork me">me</a></footer>
+      </div> <!-- main -->
+  </body>
+</html>

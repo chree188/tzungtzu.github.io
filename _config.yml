@@ -1,9 +1,9 @@
-markdown: rdiscount
-pygments: true
+markdown: kramdown
+highlighter: true
 permalink: /:year/:month/:day/:title.html
 name: "粽子的流浪日记"
 markdown: rdiscount
-auto: true
+
 
 author: "tzungtzu"
 atom-baseurl: "http://tzungtzu.com"

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="pandachow" />
+    
+    <title>有面值为6，9，20的分币，问最大的不可能组成的数是多少？</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/css/github.css">
+    <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="zongwei" class="" href="/">TZUNGTZU</a></h1>
+            <nav>
+              <span><a title="文章归档" class="" href="/archive.html">Archive</a></span>
+              <span><a title="文章分类" class="" href="/category.html">Category</a></span>
+              <span><a title="标签" class="" href="/tags.html">Tags</a></span>
+              <span><a title="链接" class="" href="/links.html">Links</a></span>              
+              <span><a title="相册" class="" href="/gallery.html">Gallery</a></span>
+              <span><a title="关于" class="" href="/about.html">About</a></span>
+              <span><a title="subscribe me" class="" href="/atom.xml">Feed</a></span>
+            </nav>
+          </div>
+        </header>
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>有面值为6，9，20的分币，问最大的不可能组成的数是多少？ </h2>
+  </section>
+  <section class="meta">
+	<span class="time">
+    <time datetime="2011-11-20">2011-11-20</time>
+  </span>
+
+<span class="categories">
+	Published in categories
+  
+  <a href="/categories/#blog" title="blog">blog</a>&nbsp;
+  
+  <a href="/categories/#思考的乐趣" title="思考的乐趣">思考的乐趣</a>&nbsp;
+  
+</span>
+
+  
+  <span class="tags">
+tagged with 
+    
+    <a href="/tags.html#博客" title="博客">#博客</a>&nbsp;
+    
+    <a href="/tags.html#math" title="math">#math</a>&nbsp;
+    
+    <a href="/tags.html#coding" title="coding">#coding</a>&nbsp;
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <p>昨天LL同学（特别提醒不是ZL）发的问题，今天发现健健博客写到这道题</p>
+
+<p>一看就是数论题，结果健健第一种方法是写程序。。OMG。。是的看来程序还木有渗入我的生活</p>
+
+<p>看别的方法发现赫然写着数论爆初级结论。。毛线都记不得了。。</p>
+
+<p>还好自己用一般弱的方法做出来了>&lt;  不是很弱。。</p>
+
+<p>—————————————————————–洒水的分割线——————————————————</p>
+
+<p>方法一：我的普通方法：</p>
+
+<p>最初觉得想用数学归纳法做，但是要考虑其完备性，</p>
+
+<p>若       k=6l       +9m          +20n</p>
+
+<p>则     k+1=6(l+2)   +9(m+1)      +20(n-1)</p>
+
+<pre><code>   k+2=6(l-3)   +9m         +20(n+1)   (l,m,n足够大)
+</code></pre>
+
+<p>随着k->k+2不断递推，l会越来越小，但是通过 20<em>3转化成6</em>10 可以转化l值，从而可以得到完备的归纳，可以知道归纳的k的初值是（l,m,n）=(0,0,3)</p>
+
+<p>做到这里的时候，我在想是否要将剩下的数一个一个计算是否能被这样构成。在计算的时候，发现了新的方法。</p>
+
+<p>如果一个数k符合要求，那它一定满足k=6l+9m+20n 现在我们假设n>=2(这是这种方法的关键，3和（6,9）=3密切相关)</p>
+
+<p>现在要求l,m,n的解，记 x=k-20n</p>
+
+<p>在这里，若x足够大</p>
+
+<p>6l+9m=3(2l+3m)=x</p>
+
+<p>6l+9m=3(2l+3m)=x+20</p>
+
+<p>6l+9m=3(2l+3m)=x+40  三个方程必定有一个有自然数解。（因为x, x+20, x+40三个数必有一个能被3整除，而2l+3m=a对除1外的数都有解）</p>
+
+<p>若三个方程都无自然数解，则说明x能被3整除，但第一个方程得到的简化方程是2l+3m=1，并且n=2</p>
+
+<p>反推可得，x=3, n=2, k=43</p>
+
+<p>一个初等数学的题目方法写这么复杂我觉得自己弱爆了>&lt;</p>
+
+<p>方法二：代码法：</p>
+
+<p>先排除100以上的数（具体可见健健的方法），在通过两个循环计算不能组成的数。计算机比人脑快多了，我们要好好利用呀~</p>
+
+<p>方法三：大神的数论法：</p>
+
+<p>感谢蒋炎岩 的方法：</p>
+
+<p>假设整数x,y>=0，6和9可以表示所有3(x+2)的，20可以表示所有20y的。于是原来的问题就是3x+20y+6无法表示的最大数。ax+by不能表示的最大数是ab-a-b（数论爆初级结论，请自行证明），于是得到43</p>
+
+<p>学过数论的少年表示记不得有这个结论了，桑心，遁地看书去。</p>
+
+<p>健健说的不错，不论什么方法，积极思考就是好的~~</p>
+
+<p>PS.感觉自己的思维还定在原来的小格子里，应该走出来学会用新的东西改造自己。</p>
+
+  </section>
+  <section class="comment">
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'tzungtzu'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+       
+         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'tzungtzu'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script>
+  </section> 
+</article>
+
+        </div>
+        <footer>&copy; 2011 ~ 2014 Tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | fork <a href="https://github.com/waynezhang/blog" title="fork me">me</a></footer>
+      </div> <!-- main -->
+  </body>
+</html>
