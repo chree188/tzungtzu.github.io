@@ -1,11 +1,12 @@
 ---
-layout:post
+layout: post
 title: OS X test
 categories:
 -没事瞎折腾
 tags:
 -OS X
 -github
+
 ---
 The purpose of this article is to show that the blog can be deployed on OS X.
 
