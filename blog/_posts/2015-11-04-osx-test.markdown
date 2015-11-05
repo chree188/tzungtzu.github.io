@@ -9,6 +9,8 @@ tags:
 ---
 The purpose of this article is to show that the blog can be deployed on OS X.
 
+ <!--more-->
+
 And this is a
 ###photo.
 

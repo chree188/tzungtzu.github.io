@@ -1,5 +1,6 @@
 ---
 layout: default
+
 ---
 
 <div>
@@ -21,8 +22,17 @@ layout: default
     </span>
     {% endif %}
     </section>
+    
+    
     <section class="post">
-    {{ post.content }}
+		        <div class="content">
+					 {{ post.content | split:'<!--more-->' | first }}
+		        </div>
+		    	<!-- 标签 -->
+		    			        <p class="preadmore"><a href="{{ BASE_PATH }}{{ post.url }}" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
+ <!-- readmore按钮 -->
+
+        	
     </section>
     </article>
   {% endfor %}
@@ -35,3 +45,4 @@ layout: default
   </a>
   </div>
 </div>
+

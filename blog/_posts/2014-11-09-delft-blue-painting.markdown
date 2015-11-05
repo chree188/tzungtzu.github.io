@@ -13,6 +13,8 @@ tags:
 
 ![](/media/files/2014/11/delft-blue.jpg)
 
+ <!--more-->
+
 每年大家都会一起去画盘子，今年也不例外。
 
 ![](/media/files/2014/11/instrument.jpg)
