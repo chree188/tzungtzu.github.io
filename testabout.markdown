@@ -3,6 +3,13 @@ title:
 layout: post
 
 ---
+#About#
+Too bad... I can't think of anything to write about myself.
+
+Reach me via tzungtzu.wei@gmail.com or find me on:
+
+![](http://ww4.sinaimg.cn/mw690/88d7095ejw8esz7mhh58hj20hs0hs401.jpg  =45*45)
+
 <div class="content">
 	<div class="post">
 <h2> About </h2>
@@ -14,7 +21,7 @@ layout: post
 <a target="_blank" href="http://instagram.com/tzungtzu"><img src="/media/img/instagram.png" height="45" width="45"></a>
 
 
-<a target="_blank" href="https://www.youtube.com/channel/UCNlq1agDkgS5hbOTFk_CeYA"><img src="/media/img/youtube.png" height="25" width="25"></a>
+<a target="_blank" href="https://www.youtube.com/channel/UCNlq1agDkgS5hbOTFk_CeYA"><img src="/media/img/youtube.png" height="45" width="45"></a>
 
 
 </div>
