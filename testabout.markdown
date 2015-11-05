@@ -15,8 +15,9 @@ Reach me via tzungtzu.wei@gmail.com or find me on:
 
 
 | 列1 | <img src="http://ww4.sinaimg.cn/mw690/88d7095ejw8esz7mhh58hj20hs0hs401.jpg" width="20%" height="10%"> | ![logo{45*45}](./favicon.ico ) |
-|:--- |:---:|---:|
-| 居左 | 居中 | 居右|
+
+|:---:|:---:|:---:|:---:|:---:|
+| 1 | 2 | 3 | 4 | 5 |
 
 <div class="content">
 	<div class="post">
