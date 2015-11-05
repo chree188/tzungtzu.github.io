@@ -1,6 +1,7 @@
 ---
-title: About
+title: 
 layout: post
+
 ---
 <div class="content">
 	<div class="post">
