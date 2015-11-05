@@ -1,5 +1,6 @@
 ---
 layout: home
+
 ---
 
 ![](/media/files/home/bike.jpg)
