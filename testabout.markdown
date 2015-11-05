@@ -8,7 +8,13 @@ Too bad... I can't think of anything to write about myself.
 
 Reach me via tzungtzu.wei@gmail.com or find me on:
 
-![](http://ww4.sinaimg.cn/mw690/88d7095ejw8esz7mhh58hj20hs0hs401.jpg  =45*45)
+<img src="http://ww4.sinaimg.cn/mw690/88d7095ejw8esz7mhh58hj20hs0hs401.jpg" width="10%" height="10%">
+
+![logo{45*45}](./favicon.ico )
+
+|<img src="http://ww4.sinaimg.cn/mw690/88d7095ejw8esz7mhh58hj20hs0hs401.jpg" width="10%" height="10%">|![logo{45*45}](./favicon.ico )|
+
+
 
 <div class="content">
 	<div class="post">
