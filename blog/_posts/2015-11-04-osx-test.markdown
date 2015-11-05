@@ -1,0 +1,16 @@
+---
+layout: post
+title: OS X Test
+categories:
+- 没事瞎折腾
+tags:
+- OSX
+
+---
+The purpose of this article is to show that the blog can be deployed on OS X.
+
+And this is a
+###photo.
+
+![test](http://ww2.sinaimg.cn/mw690/88d7095ejw1er4fuyiv77j20fu0c0q5l.jpg)
+
