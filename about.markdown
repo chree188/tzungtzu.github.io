@@ -1,6 +1,7 @@
 ---
 title: About
 layout: post
+
 ---
 
 网名：tzungtzu
@@ -25,14 +26,13 @@ google粉，喜欢DIY喜欢[旅行](http://tzungtzu.github.com/travel)喜欢植�
 
 不喜欢改变，但喜欢创造惊喜。
 
+****
+
+**find me on**
+
 | <a target="_blank" href="http://www.weibo.com/tzungtzuli"><img src="/media/img/weibo.png" height="45" width="45"></a> | <a target="_blank" href="https://www.facebook.com/tzungtzuli"><img src="/media/img/facebook.png" height="45" width="45"></a> | <a target="_blank" href="https://plus.google.com/109915721717462682982/posts"><img src="/media/img/google+.png" height="45" width="45"></a> | <a target="_blank" href="http://instagram.com/tzungtzu"><img src="/media/img/instagram.png" height="45" width="45"></a> | <a target="_blank" href="https://www.youtube.com/channel/UCNlq1agDkgS5hbOTFk_CeYA"><img src="/media/img/youtube.png" height="45" width="45"></a> |
 |:---: |:---:|:---:|:---:|:---:|
 |  |  |  |  |  |
 
 
-<a target="_blank" href="http://www.weibo.com/tzungtzuli"><img src="/media/img/weibo.png" height="45" width="45"></a>
-<a target="_blank" href="https://www.facebook.com/tzungtzuli"><img src="/media/img/facebook.png" height="45" width="45"></a>
-<a target="_blank" href="https://plus.google.com/109915721717462682982/posts"><img src="/media/img/google+.png" height="45" width="45"></a>
-<a target="_blank" href="http://instagram.com/tzungtzu"><img src="/media/img/instagram.png" height="45" width="45"></a>
-<a target="_blank" href="https://www.youtube.com/channel/UCNlq1agDkgS5hbOTFk_CeYA"><img src="/media/img/youtube.png" height="45" width="45"></a>
 
