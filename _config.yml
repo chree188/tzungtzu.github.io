@@ -3,9 +3,10 @@ pygments: true
 permalink: /:year/:month/:day/:title.html
 name: "粽子的流浪日记"
 markdown: rdiscount
+auto: true
 
 author: "tzungtzu"
-atom-baseurl: "http://lhzhang.com"
+atom-baseurl: "http://tzungtzu.com"
 disqus: "gopherwood"
 
 navigations:

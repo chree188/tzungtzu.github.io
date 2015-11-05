@@ -16,3 +16,12 @@ layout: page
 卡包，柠檬，蓝牙音箱
 
 要给爹妈买的东西：电动牙刷
+
+
+http://lhzhang.com/2013/11/05/bad-moods-gets-bad-luck-so-just-smile.html
+
+折叠评论
+
+research就把 blog里面 #相关的 给提取出来
+
+home的这些东西其实一页就能搞定
