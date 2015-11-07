@@ -15,3 +15,4 @@ jQuery(document).ready(function(){
         jQuery(window).bind("scroll", backToTopFun);
     jQuery('div.main a,div.pic a').attr('target', '_blank');
 });
+

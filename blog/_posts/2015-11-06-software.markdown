@@ -1,0 +1,28 @@
+---
+layout: post
+title: 软件相关
+categories:
+- 烂笔头
+tags:
+-软件
+
+---
+
+
+##Alfred 基本功能
+
+Alfred 和 Spotlight 功能有重合部分
+
+于我而言，Alfred有点重量级 但是却没有Spotlight的搜索分类功能和比如货币转换功能。还是喜欢Spotlight来开启应用
+
+
+Alfred主要用在处理文件和快速启动网页
+
+> * 打开文件及其所在文件夹（Command+Enter）
+
+> * find 定位文件 in 文件中进行全文检索
+> * <font color="red">搜索mail instapaper evernote 存储的信息 （instapaper 无法全局搜索）</font>
+>  * 快速搜索豆瓣，taobao，google,zhihu
+
+
+其他的想到再写
