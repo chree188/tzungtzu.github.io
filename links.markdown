@@ -10,6 +10,9 @@ layout: page
 
 [csho's Blog](http://cshozzy.sinaapp.com)
 
+[Jian Xu](http://www.jianxu.net/)
+
 [土木坛子](https://tumutanzi.com/)
 
 [战隼的学习探索](http://www.read.org.cn/)
+
