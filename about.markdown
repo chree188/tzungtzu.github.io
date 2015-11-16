@@ -6,7 +6,7 @@ layout: post
 
 NAME：tzungtzu
 
-AGE：Since 1990
+AGE：2013第9个质数岁生日
 
 EMAIL: tzungtzu.weiATgmail.com
 
