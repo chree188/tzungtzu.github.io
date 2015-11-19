@@ -19,8 +19,10 @@ OS X El Caption提供了很多面向Force Click的新功能。包括Force Click�
 
 * 全平台（Handoff）
 
+
+
   <!--more-->
-  Apple的生态优势是其他系统无法达到的。Handoff功能能很好的将浏览器信息在终端间切换。前提是你的设备支持Handoff功能。具体请点[这里](https://support.apple.com/zh-cn/HT204689)，很不幸我的iPad3 就不在这范围内。
+  Apple的生态优势是其他系统无法达到的。Safari可以直接发送iMessage,邮件给联系人。另外Handoff功能能很好的将浏览器信息在终端间切换。前提是你的设备支持Handoff功能。具体请点[*这里*](https://support.apple.com/zh-cn/HT204689)，很不幸我的iPad3 就不在这范围内。
   
   Chrome的Mac端和iOS端也可以相互使用Handoff功能。其中Mac端会自动同步到Mac的默认浏览器。
 
