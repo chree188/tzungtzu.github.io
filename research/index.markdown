@@ -1,6 +1,0 @@
----
-title: Research
-layout: home
-
----
-##
