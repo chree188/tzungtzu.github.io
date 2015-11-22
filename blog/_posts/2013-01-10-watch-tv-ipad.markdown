@@ -8,6 +8,7 @@ tags:
 - 代理
 - 美剧
 - Castle
+
 ---
 
 买了Pad以后，就不想在笔记本上看美剧了，但是身在墙外，youku，sohu视频的美剧都会告诉你此视频只限中国大陆播放。chrome浏览器可以通过Unblock Youku插件来翻回墙内，觉得一定有pad也有办法，果不其然搜寻找到了lovelucy的一篇[博文](http://www.lovelucy.info/unblock-youku-on-ipad.html/comment-page-1#comment-1118)。里面提到ios设备也可以通过设置proxy代理达到Unblock Youku插件一样的效果。
@@ -17,6 +18,12 @@ tags:
 其实只要在iPad的网络设置中设置一个http代理即可，而Unblock Youku提供了一个代理自动配置PAC文件。地址如下：
 
 		http://yo.uku.im/proxy.pac
+
+<font color="red">**2015更新两个地址：**</font>
+
+		http://pac.uku.im/pac.pac
+		http://pac.unblockcn.com
+
 
 只需要将地址打开当前使用wifi的http代理，设为自动即可。
 ![](/media/files/2013/01/11/set.png)
