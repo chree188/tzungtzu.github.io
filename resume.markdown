@@ -1,4 +1,5 @@
 ---
+title: Résumé
 layout: home
 
 ---
