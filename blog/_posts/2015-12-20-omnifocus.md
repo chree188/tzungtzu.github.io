@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 软件相关：OmniFocus测评（一）
+title: OmniFocus测评（一）
 categories: 
-- 烂笔头
+- 软件测评
 tags:
 - OmniFocus
 - GTD
-- 软件测评
+
 
 ---
 如果你在使用苹果的生态系统，你一定听过OMNI这家公司的软件，他们只做苹果系统的软件，而OmniFocus就是最出彩的软件之一。号称最好用的任务提醒软件。

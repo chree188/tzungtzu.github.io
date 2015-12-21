@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 软件相关
+title: Alfred 测评
 categories:
-- 烂笔头
+- 软件测评
 tags:
-- 软件
+- OS X
 - Alfred
-- OmniFocus
+- Spotlight
+
 
 
 ---
