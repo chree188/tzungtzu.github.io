@@ -3,7 +3,9 @@ layout: home
 
 ---
 
-![](/media/files/home/bike.jpg)
+<font face="helvetica"  size=2.5 >
+
+![][image-1]
 
 **Zongwei Li** currently lives in Delft,The Netherlands, and majors in complex networks as a graduate student at Delft University of Technology.
 
@@ -14,3 +16,4 @@ layout: home
 **Contact:**  tzungtzuDOTweiATgmailDOTcom
 
 
+[image-1]:	/media/files/home/bike.jpg
