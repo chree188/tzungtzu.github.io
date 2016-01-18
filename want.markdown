@@ -19,4 +19,4 @@ layout: page
 
 
 
-[image-1]:	http://7xo4c2.com1.z0.glb.clouddn.com/IMG_6631.JPG
+[image-1]:	http://7xo4c2.com1.z0.glb.clouddn.com/dontstarve.JPG

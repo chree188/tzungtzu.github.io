@@ -33,11 +33,6 @@ The project plans to use some robots to build a rescue system platform in the la
 It aims to develop simulators that form the infrastruscture of the simulation system and emulate realistic phenomena predominant in disasters. And it aims to develop intelligent agents that are given the capabilities of the main actors in the disaster response scenario.
 
 
-
-
-
-
- <img src="7xo4c2.com1.z0.glb.clouddn.comrescue.png" width=40% hspace="20">
-  <img src="http://a.fsdn.com/con/app/proj/roborescue/screenshots/Screenshot%20from%202013-04-13%2019:38:04.png" width=40%>
+ <img src="http://7xo4c2.com1.z0.glb.clouddn.com/rescue.png" width=40% hspace="20">
  
  
