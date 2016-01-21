@@ -12,6 +12,7 @@ layout: page
 卡包，蓝牙音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 周边
 
 ![20160112添加][image-1] 
+<!-- 20060112 -->
 
 
 要给爹妈买的东西：<del>电动牙刷</del>，手持吸尘器
