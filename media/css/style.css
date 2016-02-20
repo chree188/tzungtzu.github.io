@@ -240,5 +240,10 @@ li[id*='dsq-like-'] {
       filter: Alpha(opacity=60);
   } 
   
+  .zongwei{
+  	  font-family: Verdana;
+  	  color:green;
+  }
+  
 
   
