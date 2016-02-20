@@ -103,14 +103,13 @@ CBitmap</em> pOldBmp;    // 备份旧的位图指针
 CWnd* pWnd;             // 绘图控件的指针</p>
 
 <ol>
-<li>用ClassWizard在项目中添加OnInitDialog()消息响应函数，实现绘图需要变量的初始化工作，具体代码如下：</li>
+  <li>用ClassWizard在项目中添加OnInitDialog()消息响应函数，实现绘图需要变量的初始化工作，具体代码如下：</li>
 </ol>
 
-
 <p>pWnd = GetDlgItem(IDC_COORD); // 获得对话框上的picture的窗口句柄
-pWnd->GetClientRect(&amp;rect);         // 获取绘制坐标的文本框</p>
+pWnd-&gt;GetClientRect(&amp;rect);         // 获取绘制坐标的文本框</p>
 
-<p>pDC = pWnd->GetDC();                 // 获得对话框上的picture的设备指针
+<p>pDC = pWnd-&gt;GetDC();                 // 获得对话框上的picture的设备指针
 pOldBmp = NULL;                           // 将旧的位图指针置空</p>
 
 <p>Drawwave（&amp;mem）                 // 创建内存绘图设备，使内存位图的DC与控件的DC关联
@@ -133,9 +132,8 @@ pOldBmp = memDC.SelectObject(&amp;memBitmap);</p>
 <p>}</p>
 
 <ol>
-<li>在Dlg类中添加OnTimer(),OnPaint()和OnClose的消息响应函数。</li>
+  <li>在Dlg类中添加OnTimer(),OnPaint()和OnClose的消息响应函数。</li>
 </ol>
-
 
 <p>在OnInitDialog()函数总添加如下代码</p>
 
@@ -148,7 +146,7 @@ OnPaint();                                 // 使屏幕刷新</p>
 
 <p>在OnPaint()函数中添加如下代码，实现将生成的图片拷贝到屏幕上，完成整个绘图的工作。</p>
 
-<p>pDC->BitBlt(rect.left,rect.top,rect.right,rect.bottom,&amp;memDC,0,0,SRCCOPY);</p>
+<p>pDC-&gt;BitBlt(rect.left,rect.top,rect.right,rect.bottom,&amp;memDC,0,0,SRCCOPY);</p>
 
 <p>最后：在OnClose()函数中，别忘了销毁绘图及位图设备的指针。</p>
 
@@ -159,9 +157,10 @@ memBitmap.DeleteObject();</p>
 <p>我的效果图如下：
 [图]</p>
 
-<h6>#我是无聊的分界线</h6>
+<h6 id="section">#我是无聊的分界线</h6>
 
 <p>虽然感觉界面寒碜了点，但是就准备拿它做我毕设的界面了。剩下的就是算法问题了~ 快点写完旅游去= =</p>
+
 
   </section>
   <section class="comment">

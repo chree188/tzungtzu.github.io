@@ -2,7 +2,7 @@ markdown: kramdown
 pygments: true
 permalink: /:year/:month/:day/:title.html
 name: "粽子的流浪日记"
-markdown: rdiscount
+markdown: kramdown
 
 #每页显示的文章数
 paginate: 5

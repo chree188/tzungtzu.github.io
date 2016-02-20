@@ -85,20 +85,14 @@
 <p>这个问题在网上搜索一下发现很常见，但是解决方法都不是非常明确。</p>
 
 <p>其实可以很简单地解决这个问题：
-在管理员权限下</p>
-
-<h1>sudo rm -r picasa/</h1>
-
-<h1>svn remove picasa</h1>
-
-<p>D picasa
-svn: “picasa” 不存在</p>
-
-<h1>sudo cp -r /path/to/fold/ picasa/</h1>
-
-<h1>svn add picasa/</h1>
-
-<h1>svn commit -m”add picasa/”</h1>
+在管理员权限下
+# sudo rm -r picasa/
+# svn remove picasa
+D picasa
+svn: “picasa” 不存在
+# sudo cp -r /path/to/fold/ picasa/
+# svn add picasa/
+# svn commit -m”add picasa/”</p>
 
 <p>也就是先在SVN中删除这个目录，然后重新添加这个目录。这个时候再commit就不会出错了。</p>
 

@@ -78,41 +78,36 @@
   
   </section>
   <section class="post">
-  <h2>标题，列表和段落快</h2>
+  <h2 id="section">标题，列表和段落快</h2>
 
-<h3>三级标题</h3>
+<h3 id="section-1">三级标题</h3>
 
-<blockquote><p>块引用</p></blockquote>
+<blockquote>
+  <p>块引用</p>
+</blockquote>
 
 <ol>
-<li>有序列表
-
-<ul>
-<li> 无序列表</li>
-</ul>
-</li>
+  <li>有序列表
+    <ul>
+      <li>无序列表</li>
+    </ul>
+  </li>
 </ol>
 
-
 <hr />
-
 <p>分隔符</p>
 
-<p> 源代码块</p>
+<p>源代码块</p>
 
 <pre><code>代码块  
 </code></pre>
 
 <!--more-->
-
-
-<p>%% 评论块  （not available）<a href="%EF%BC%88not">^1</a></p>
+<p>%% 评论块  （not available）<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <hr />
-
-<h2>粗体和强调等行内格式</h2>
-
-<p>::标记::   （not available）</p>
+<p>## 粗体和强调等行内格式
+::标记::   （not available）</p>
 
 <p><em>重点</em>  （<em>斜体</em>）</p>
 
@@ -120,15 +115,22 @@
 
 <p>++评论++   （not available）</p>
 
-<p>||删除||部分 （not available）</p>
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>删除</td>
+      <td> </td>
+      <td>部分 （not available）</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr />
+<p>## 链接和脚注
+<a href="http://tzungtzu.github.com">链接</a> []</p>
 
-<h2>链接和脚注</h2>
-
-<p><a href="http://tzungtzu.github.com">链接</a> []</p>
-
-<p>脚注<a href="fn">^2</a></p>
+<p>脚注<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>(fn)</p>
 
 <p>注释{}   （not available）</p>
 
@@ -137,11 +139,20 @@
 <p>(vid)   （not available）</p>
 
 <hr />
-
 <ol>
-<li>（not available） means the symbols is not available to use in Github Pages.</li>
+  <li>（not available） means the symbols is not available to use in Github Pages.</li>
 </ol>
 
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>（not available） <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>脚注 <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </section>
   <section class="comment">
