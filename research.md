@@ -4,7 +4,8 @@ layout: home
 
 ---
 
-<font face="helvetica" size=2>
+<link type="text/css" rel="stylesheet" href="media/css/style_home.css">
+<br />
 
 ### ***Weighted Betweenness and Algebraic Connectivity***
 
@@ -22,6 +23,6 @@ Paper: [View][1]
 
 <!--再多写几个 -->
 
-</font>
+
 
 [1]:	https://www.nas.ewi.tudelft.nl/people/Piet/papers/JCN2014_AlgConn_vs_Betweenness.pdf

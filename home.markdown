@@ -3,6 +3,8 @@ layout: home
 
 ---
 
+<link type="text/css" rel="stylesheet" href="media/css/style_home.css">
+
 ![][image-1]
 
 **Zongwei Li** currently lives in Delft,The Netherlands, and majors in complex networks as a graduate student at Delft University of Technology.
