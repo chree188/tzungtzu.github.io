@@ -5,8 +5,9 @@ layout: default
 
 <div>
   <ul class="listing">
-  {% for post in site.posts limit: 2 %}
+
   <article class="content">
+    {% for post in site.posts limit: 2 %}
     <section class="title">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     </section>
@@ -24,16 +25,15 @@ layout: default
     </span>
     {% endif %}
     </section>
-    
-    
     <section class="post">
 		        <div class="content">
 					 {{ post.content | split:'<!--more-->' | first }}
 		        </div>
 		    	<!-- 标签 -->
-		    			        <p class="preadmore"><a href="{{ BASE_PATH }}{{ post.url }}" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
+       <p class="preadmore"><a href="{{ BASE_PATH }}{{ post.url }}" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
  <!-- readmore按钮 -->
 
+<br />
         	
     </section>
     </article>
