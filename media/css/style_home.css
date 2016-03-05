@@ -1,9 +1,12 @@
 
 
 h1,h2{
-	color: #FF6862;
+	
+font-family:  Garamond,Palatino, Georgia, Serif;
+color: #41B883;
+font-weight: 600;
 }
 body{
 
 
-			font-family: "Times New Roman", Georgia, Serif;}
+			font-family: Palatino, Garamond,Georgia, Serif;}
