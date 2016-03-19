@@ -1,5 +1,5 @@
 ---
-title: My Ukulele Selection
+title: My Ukulele Selections
 layout: post
 ---
 
