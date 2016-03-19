@@ -30,6 +30,9 @@ tags:
 1. Mail Drop 的方法比较简单，利用IFTTT里的Gmail的Action，可以通过Gmail将指定元素发送到指定的邮箱。而指定邮箱我们使用OmniFocus的**Mail Drop 地址**。这个方法的好处是Note的标题作为Inbox item标题，同时将Note的内容一起发送到item的note中。
 2. 利用iOS自带功能的方法比较复杂。利用Siri语音第三方建立新项目其实是通过先用Siri建立Reminder的新项目，再将新项目发送到OmniFocus来实现的。所以利用IFTTT实际上是将note发送到iOS的Reminder，再开启OmniFocus的同步Reminder功能来同步item。特别需要注意的是，IFTTT设置的Reminder List必须和OmniFocus同步的List一致。这个方法有两个缺点：一是必须下载IFTTT手机客户端；二是麻烦，实际上是走了两条分支来实现功能。所以，一般情况下推荐使用第一种方法。
 
+## Set Time
+关于第三方导入OmniFocus Inbox的项目都无法设置时间。不过通过Apple Reminder设置的待办事项同步到Inbox是自动同步时间的。所以可以通过Alfred快速写入到Fantastical来写入待办事项到Reminder再同步到Inbox。不过只能精确到日期。这也进一步说明，GTD步骤里，对Inbox内容整理是一个单独的动作。不可以省略。
+
  <a target="_blank" href="https://ifttt.com/recipes/393556-send-evernote-note-to-omnifocus"> IFTTT Recipe: Send Evernote Note to OmniFocus </a>
 
 [2]:	https://support.omnigroup.com/doc-assets//OmniFocus-iOS/OmniFocus-iOS-v2.6.0.0/zh/EPUB/xhtml/16_extended.xhtml

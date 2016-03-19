@@ -9,7 +9,7 @@ layout: page
 
 想要的（都是短期内不会买的吧）：
 
-卡包，蓝牙音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 周边，sony W273， Garmin Forerunner 225
+卡包，蓝牙音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 周边，sony W273， Garmin Forerunner 225，
 
 ![20160112添加][image-1] 
 <!-- 20060112 -->
