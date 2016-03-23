@@ -2,29 +2,40 @@
 layout: post
 title: 爱尔兰
 categories:
-- 到处多走走
+- Photo
 tags:
 - Ireland
 - Scotland
 
 ---
 
-![](/media/files/2014/03/16/tree.JPG)
+![][image-1]
 
-![](/media/files/2014/03/16/bar.JPG)
+![][image-2]
 
-![](/media/files/2014/03/16/band.JPG)
+![][image-3]
 
-![](/media/files/2014/03/16/music.JPG)
+![][image-4]
 
-![](/media/files/2014/03/16/ireland.JPG)
+![][image-5]
 
-![](/media/files/2014/03/16/lake.JPG)
+![][image-6]
 
-![](/media/files/2014/03/16/me.JPG)
+![][image-7]
 
-![](/media/files/2014/03/16/castle.JPG)
+![][image-8]
 
-![](/media/files/2014/03/16/pink.JPG)
+![][image-9]
 
-![](/media/files/2014/03/16/sunset.JPG)
+![][image-10]
+
+[image-1]:	/media/files/2014/03/16/tree.JPG
+[image-2]:	/media/files/2014/03/16/bar.JPG
+[image-3]:	/media/files/2014/03/16/band.JPG
+[image-4]:	/media/files/2014/03/16/music.JPG
+[image-5]:	/media/files/2014/03/16/ireland.JPG
+[image-6]:	/media/files/2014/03/16/lake.JPG
+[image-7]:	/media/files/2014/03/16/me.JPG
+[image-8]:	/media/files/2014/03/16/castle.JPG
+[image-9]:	/media/files/2014/03/16/pink.JPG
+[image-10]:	/media/files/2014/03/16/sunset.JPG

@@ -2,7 +2,7 @@
 layout: post
 title: 在墙外用iPad看youku的美剧+新进美剧Castle
 categories:
-- 没事瞎折腾
+- Technology
 tags:
 - ipad
 - 代理

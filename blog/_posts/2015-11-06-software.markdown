@@ -2,7 +2,7 @@
 layout: post
 title: Alfred 测评
 categories:
-- 软件测评
+- Technology
 tags:
 - OS X
 - Alfred

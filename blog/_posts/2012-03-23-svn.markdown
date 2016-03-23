@@ -2,7 +2,7 @@
 layout: post
 title: svn管理数据丢失问题的解决办法
 categories:
-- 好好写代码
+- Technology
 tags:
 - SAE
 - blogging
@@ -16,6 +16,7 @@ svn: 包含工作副本管理数据的目录“/home/tzungtzu/tzungtzuli/1/wp-co
 
 其实可以很简单地解决这个问题：
 在管理员权限下
+
 # sudo rm -r picasa/
 # svn remove picasa
 D picasa

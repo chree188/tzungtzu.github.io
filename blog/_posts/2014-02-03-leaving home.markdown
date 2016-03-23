@@ -2,7 +2,7 @@
 layout: post
 title: 离家，又一次出发！
 categories:
-- 这就是生活
+- Diary
 tags:
 - netherlands
 - 我是如此的热爱生活

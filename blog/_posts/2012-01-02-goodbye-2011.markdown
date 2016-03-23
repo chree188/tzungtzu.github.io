@@ -2,7 +2,7 @@
 layout: post
 title: 生活才刚刚开始
 categories:
-- 这就是生活
+- Diary
 tags:
 - 2011
 - 总结

@@ -2,7 +2,7 @@
 layout: post
 title: 西班牙是一本书
 categories:
-- 旅行随手记
+- Travel
 tags:
 - 西班牙
 - 葡萄牙
@@ -33,7 +33,6 @@ tags:
 <img src="http://ww1.sinaimg.cn/mw690/88d7095egw1exrcz9m8xbj21kw11xwzc.jpg" width="100%">
 
 <img src="http://ww4.sinaimg.cn/mw690/88d7095egw1exrcyv7w8ej21kw1kwb29.jpg" width="100%">
-
 
 
 

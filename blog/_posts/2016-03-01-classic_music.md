@@ -2,7 +2,7 @@
 layout: post
 title: 古典音乐的时候你在想什么
 categories: 
--  blog
+-  Diary
 tags:
 -  classic music
 - Yundi

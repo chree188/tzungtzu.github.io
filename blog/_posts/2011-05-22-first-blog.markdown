@@ -3,7 +3,7 @@ layout: post
 title: 第一篇博
 
 categories:
-- 这就是生活
+- Diary
 tags:
 - 毕业季
 - 机器人大赛

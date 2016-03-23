@@ -3,7 +3,7 @@ layout: post
 title: 写点什么
 
 categories:
-- 这就是生活
+- Diary
 tags:
 - 无题
 

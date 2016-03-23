@@ -3,7 +3,7 @@ layout: post
 title: Congratulations to USTC Robocup 2D
 
 categories:
-- 这就是生活
+- Technology
 tags:
 - 科大
 - 机器人大赛robocup

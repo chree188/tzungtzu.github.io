@@ -2,7 +2,7 @@
 layout: post
 title: 和你在一起
 categories:
-- 这就是生活
+- Diary
 tags:
 - friends
 

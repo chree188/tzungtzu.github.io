@@ -2,7 +2,7 @@
 layout: post
 title: 看书
 categories:
-- 这就是生活
+- Diary
 tags:
 - 博客
 - 英语

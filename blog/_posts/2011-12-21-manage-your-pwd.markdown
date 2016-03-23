@@ -2,7 +2,7 @@
 layout: post
 title: 如何设计和管理密码–密码分类[转]
 categories:
-- 前人的建议
+- Technology
 tags:
 - CSDN
 - 密码管理

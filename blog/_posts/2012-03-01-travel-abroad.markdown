@@ -2,7 +2,7 @@
 layout: post
 title: 出国旅游10个提醒[转]
 categories:
-- 前人的建议
+- Travel
 tags:
 - 泰国
 - 自助旅行

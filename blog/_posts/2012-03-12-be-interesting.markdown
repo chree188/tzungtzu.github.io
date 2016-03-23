@@ -2,7 +2,7 @@
 layout: post
 title: 无趣会死
 categories:
-- 没事洒洒水
+- Diary
 tags:
 - 读书
 - 博客

@@ -2,7 +2,7 @@
 layout: post
 title: 生活惊喜
 categories:
-- 没事瞎折腾
+- Diary
 tags:
 - 烤箱
 - 柠檬

@@ -2,7 +2,7 @@
 layout: post
 title: 利用IFTTT将Evernote note同步到OmniFocus
 categories: 
--  没事瞎折腾
+-  Technology
 tags:
 -  Evernote
 - OmniFocus

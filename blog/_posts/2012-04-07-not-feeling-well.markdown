@@ -2,7 +2,7 @@
 layout: post
 title: 状态不佳
 categories:
-- 这就是生活
+- Diary
 tags:
 - 玩
 - 毕业设计

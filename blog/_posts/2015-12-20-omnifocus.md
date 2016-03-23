@@ -2,7 +2,8 @@
 layout: post
 title: OmniFocus测评（一）
 categories: 
-- 软件测评
+- Technology
+- 
 tags:
 - OmniFocus
 - GTD
@@ -70,4 +71,3 @@ GTD的十个习惯。
 （待续）
 
 （没想到会写这么长）
-

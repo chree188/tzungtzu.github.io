@@ -2,7 +2,7 @@
 layout: post
 title: 最佳位置
 categories:
-- 这就是生活
+- Diary
 tags:
 - 回忆
 ---
