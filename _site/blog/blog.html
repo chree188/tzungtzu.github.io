@@ -51,6 +51,42 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2016/03/28/handoff.html">记第N次调试Handoff和Airdrop</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2016-03-28">2016-03-28</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#handoff" title="handoff">#handoff</a>
+      
+      <a href="/tags.html#airdrop" title="airdrop">#airdrop</a>
+      
+      <a href="/tags.html#Apple" title="Apple">#Apple</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p>升级到OS X10.11.4后，iPhone到Mac的Handoff一直不好用，趁着复活节假期重新配置了一遍。终于又看到熟悉的图标。自己经常设备转换，还是能提高很多效率的。流程如下：</p>
+
+<ol>
+  <li>注销Mac和iPhone的Apple ID</li>
+  <li>重新开启各设备的Handoff功能和蓝牙。</li>
+  <li>删除Mac Bluetooth配置文件（library/preference/com.apple.bluetooth.plist）,重启。</li>
+  <li>对iPhone 进行Reset Network Settings。</li>
+</ol>
+
+<p>如果前两项不能正常使用Handoff 和Airdrop，尝试后两项。
+<!--more--></p>
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2016/03/23/kazoku.html">关于《家族的形式》的几句话和一些台词，cut</a></h2>
     </section>
     <section class="meta">
@@ -165,62 +201,6 @@
 <p>关于第三方导入OmniFocus Inbox的项目都无法设置时间。不过通过Apple Reminder设置的待办事项同步到Inbox是自动同步时间的。所以可以通过Alfred快速写入到Fantastical来写入待办事项到Reminder再同步到Inbox。不过只能精确到日期。这也进一步说明，GTD步骤里，对Inbox内容整理是一个单独的动作。不可以省略。</p>
 
 <p><a target="_blank" href="https://ifttt.com/recipes/393556-send-evernote-note-to-omnifocus"> IFTTT Recipe: Send Evernote Note to OmniFocus </a></p>
-
-
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2016/03/05/font.html">小谈字体</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2016-03-05">2016-03-05</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#Font" title="Font">#Font</a>
-      
-      <a href="/tags.html#字体" title="字体">#字体</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>昨天在改博客字体的时候查阅了一些资料。简单总结一下，以便自己整理。</p>
-
-<p>对字体最初的概念是从《给大家看的设计书》。自己的涉及面很窄，以前总认为设计和自己不是一个世界的。自从用Mac后改变了这个观点。设计和内容都精致的产品才能称做一个好的产品。而字体是设计的基本。从大小，粗细到类型。今天要讲的是类型。</p>
-
-<p><!--more-->
-## 衬线体和无衬线体
-常见的字体有Oldstyle, Modern, slab serif, sans serif,  Script等。最常见的区别就在于字体比划末端是否存在装饰性的细节部分，也就是<strong>衬线</strong>。也就是常说的衬线体和无衬线体。</p>
-
-<p>衬线体最有名的恐怕是Times Roman。在Word码论文默认是这个字体，很正式也很枯燥（误）。而无衬线体我看到最多的是Helvetica。苹果默认和<a href="http://www.tudelft.nl/">TUdelft</a>的Logo都是这个字体。</p>
-
-<p>这两种字体也是比较适合作为正文的字体，因为它们容易阅读（不像Script一样着重个性化），且不易疲劳（不像Modern显得醒目，震撼）。</p>
-
-<h2 id="section">适用范围</h2>
-<p>然而你也许会问，那么这两种字体哪种更好呢。其实，衬线体更常出现在<em>传统印刷</em>，因为它比无衬线体更易阅读，比较正统。<strong>衬线体之所以被设计出来，就是用来作正文内容的</strong>。而无衬线字体用于<em>短篇</em>和<em>标题</em>等，能够吸引注意（设计的要点），活着提供一种轻松的气氛。很有趣的是，同样大小的衬线字体比无衬线字体容易阅读：
-<img src="http://ww4.sinaimg.cn/large/66fa60dfgw1f1memjh371j21ao0i0gom.jpg" alt="" /></p>
-
-<p>而在计算机领域，则恰巧相反。实际上，我们在显示屏上看到的字都会比报纸的字体大，而衬线字体的可读性优势其实仅仅体现在小字体上。</p>
-
-<p>这个就是 print media 和 screen media 的最大区别。印刷业为了节约成本，因此会尽可能的在保证可读的情况下，把文字印小。显示器不存在这样的成本，因此可以显示比较大的文字。在文字足够大的情况下，无衬线字体也是同样可读的。而且因为无衬线字体通常有艺术性，因此在显示器上显示通常比较赏心悦目；而且无衬线字体种类比衬线字体多得多，因此选择余地也很大。所以可以放心去使用。但是必须保证以下原则：凡是使用无衬线字体的，必须保证其在正文内容中的可读性。否则，使用衬线字体。换而言之，如果你要使用无衬线字体显示网页的正文内容，那么，你必须把它的font-size设的足够大，以保证用户能轻易阅读。</p>
-
-<h2 id="section-1">几种好看的字体</h2>
-
-<p>Futura Medium</p>
-
-<p>Frutiger</p>
-
-<p>Garamond</p>
-
-<p>Palatino</p>
-
-<h4 id="ps-">PS: 意大利体不是斜体</h4>
-<p>斜体是oblique。Italic 顾名思义，是意大利体。Italic 是一种<strong>书写方式</strong>（calligraphy script），而oblique 是一种<strong>印刷样式</strong>，两者是不同的东西。不过现在基本混用了。</p>
 
 
     </section>
