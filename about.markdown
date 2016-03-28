@@ -16,11 +16,11 @@ UKULELE爱好者(finglestyle), 羽毛球爱好者。
 
 偶尔缺乏常识。常读专业的砖头，<del>偶尔也读些有意思的书，不过效率不高，几乎不读治愈性的书。</del>也爱读闲书，效率逐渐提高，把<!--[douban][2]--><a target="_blank" href="http://www.douban.com/people/tzungtzu/" id="douban">douban</a>当作我的图书馆。我读书很少的，你们可别骗我。
 
-（用Apple的）Google粉，工具控。喜欢DIY喜欢[旅行][5]喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语喜欢折腾。
-
 （曾经的）明信片控，喜欢EMAIL联系，喜欢有趣的人，有趣的事情，有趣的东西（最近想买的东西在[这里][3]）。
 
 美剧控，深度[CM][4]迷，也看Castle，TBBT，HF0，Broke Girls。
+
+（用Apple的）Google粉，喜欢DIY喜欢[旅行][5]喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语喜欢折腾。
 
 不喜欢熬夜，不喜欢离别伤感的时候。
 
