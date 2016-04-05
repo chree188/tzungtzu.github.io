@@ -20,7 +20,7 @@ UKULELE爱好者(finglestyle), 羽毛球爱好者。
 
 美剧控，深度[CM][4]迷，也看Castle，TBBT，HF0，Broke Girls。
 
-（用Apple的）Google粉，喜欢DIY喜欢[旅行][5]喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语喜欢折腾。
+（用Apple的）Google粉，数码控，工具控，喜欢DIY喜欢[旅行][5]喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语喜欢折腾。
 
 不喜欢熬夜，不喜欢离别伤感的时候。
 
