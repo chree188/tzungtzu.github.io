@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>tzungtzu</title>
+ <link href="http://tzungtzu.com/atom.xml" rel="self"/>
+ <link href="http://tzungtzu.com"/>
+ <updated>2016-04-06T21:31:43+02:00</updated>
+ <id>http://tzungtzu.com/</id>
+ <author>
+   <name>tzungtzu</name>
+ </author>
+
+ 
+ <entry>
+   <title>记第N次调试Handoff和Airdrop</title>
+   <link href="http://tzungtzu.com/2016/03/28/handoff.html"/>
+   <updated>2016-03-28T00:00:00+02:00</updated>
+   <id>http://tzungtzu.com/2016/03/28/handoff</id>
+   <content type="html">&lt;p&gt;升级到OS X10.11.4后，iPhone到Mac的Handoff一直不好用，趁着复活节假期重新配置了一遍。终于又看到熟悉的图标。自己经常设备转换，还是能提高很多效率的。流程如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;注销Mac和iPhone的Apple ID&lt;/li&gt;
+  &lt;li&gt;重新开启各设备的Handoff功能和蓝牙。&lt;/li&gt;
+  &lt;li&gt;删除Mac Bluetooth配置文件（library/preference/com.apple.bluetooth.plist）,重启。&lt;/li&gt;
+  &lt;li&gt;对iPhone 进行Reset Network Settings。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果前两项不能正常使用Handoff 和Airdrop，尝试后两项。
+&lt;!--more--&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>关于《家族的形式》的几句话和一些台词，cut</title>
+   <link href="http://tzungtzu.com/2016/03/23/kazoku.html"/>
+   <updated>2016-03-23T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2016/03/23/kazoku</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/WeChat_1458771229.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;audio src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/1-11%20Let%20Go.mp3&quot; controls=&quot;&quot;&gt;&lt;/audio&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;从演员到台词，连同BGM都很赞的一个剧。&lt;/li&gt;
+  &lt;li&gt;舒心的恋爱家庭剧，没有超展开的激烈情节，但是普通和日常到你我都可以产生共鸣和思考。
+&lt;!--more--&gt;&lt;/li&gt;
+  &lt;li&gt;人一辈子都在调试，修正和自己以外的人的关系，就算是再亲的亲人。&lt;/li&gt;
+  &lt;li&gt;又多认识了几个日本演员。敏敏，良良（是亲儿子），风吹淳真适合演妈妈，&lt;/li&gt;
+  &lt;li&gt;好喜欢前夫哥的设定，被甩二人组也是很欢乐。&lt;/li&gt;
+  &lt;li&gt;如果敏敏不受伤，就会有预告的四人同框了吧。也不会有葬礼告白这种事了。。&lt;/li&gt;
+  &lt;li&gt;朋友就是自己选择的家人。结局大家一起互帮互助太温暖了，老爸是核心人物。&lt;/li&gt;
+  &lt;li&gt;最后十五分钟我能重复看好多遍。&lt;/li&gt;
+  &lt;li&gt;比起家族的形式，更难得的，是体会世间情感之美妙。&lt;/li&gt;
+  &lt;li&gt;从没有喜欢一个剧到收集截图，连以前看约会都没有过。收集的cut太多我要想想怎么样挂出来。做个网页么。。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;台词&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;不能事事如愿，这就是家庭。&lt;/li&gt;
+  &lt;li&gt;一个人不如两个人，两个人不如三个人（EP3）&lt;/li&gt;
+  &lt;li&gt;和优秀的人在一起不见得会开心，有缺点的人，相处起来才会比较轻松。（EP4）&lt;/li&gt;
+  &lt;li&gt;未来的事之无法预料，就像降水概率再低也有可能下雨。（EP4）&lt;/li&gt;
+  &lt;li&gt;把握人际距离很难，近之则嫌，远之则疏，到底该如何是好。（EP6）&lt;/li&gt;
+  &lt;li&gt;人生没有什么事情是无意义的。（EP7）&lt;/li&gt;
+  &lt;li&gt;没有下不停的雨，没有无尽的黑夜，也没有永不结束的寒冬，凡事总有完结的一天。这混乱的同居生活也是。。。如果尽头就在眼前，无论冬天多么严寒我都能忍受，春天就快来了！（EP8）&lt;/li&gt;
+  &lt;li&gt;对于认真对待自己的人，自己也必须诚心对待。（EP8）&lt;/li&gt;
+  &lt;li&gt;一个人觉得难过的时候，就来找我吧。坐上电梯，上一层楼，来找我就好了。在那里，有和你一样的人。&lt;/li&gt;
+  &lt;li&gt;不如意的事，讨厌的事，痛苦的事，数不胜数。不过，在同一屋檐下，吃着同一份食物，然后，有人觉得这食物很好吃的话，世上也就没什么解决不了的难题了。&lt;/li&gt;
+  &lt;li&gt;什么时候都可以过来，你要是想看看和这里不一样的风景，或是想找人说话的时候，随时都可以来找我，一个人也好，和别人两人一起来也好，我都非常欢迎。&lt;/li&gt;
+  &lt;li&gt;能够一起欢笑的日常生活，才是奇迹。要维系日常生活，需要很多东西－－忍耐，爱情，相互让步，以及，微小的独处时光。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;—&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/66fa60dfjw1f27j32otqkj21kw0w013f.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/kanpai.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>利用IFTTT将Evernote note同步到OmniFocus</title>
+   <link href="http://tzungtzu.com/2016/03/06/evernote-note-to-omnifocus.html"/>
+   <updated>2016-03-06T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2016/03/06/evernote-note-to-omnifocus</id>
+   <content type="html">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;我是个爱折腾的人，看我的博客就知道。经常使用一些效率软件，写作软件。有时候想让笔记互相流通或是利用软件做一些自己想做的事情。比如想提醒自己以后查看某个Evernote，利用Alfred快速记录到Day One, 用Alfred快速查看OmniFocus Inbox等等。这些想法我都在脑洞大开的时候纪录在Evernote&lt;a href=&quot;&quot;&gt;文件&lt;/a&gt;，偶尔看看自己是否能实现。今天例行整理Evernote时看到标题这条，正好趁着看综艺的时候把它做出来分享。&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;
+用过IFTTT的朋友都知道，自动化任务都是将需求分解，分别实现。而我们的任务就可以分解成：
+1. 读取（抓取）指定的Evernote note。
+2.  将note 发送给OmniFocus。&lt;/p&gt;
+
+&lt;h2 id=&quot;trigger&quot;&gt;Trigger&lt;/h2&gt;
+
+&lt;p&gt;第一步很简单，你可以自己手动选择，复制链接。也可以通过tag选取（这是IFTTT里我们选择的方式）&lt;/p&gt;
+
+&lt;h2 id=&quot;action&quot;&gt;Action&lt;/h2&gt;
+
+&lt;p&gt;对于第二步。通过&lt;a href=&quot;https://support.omnigroup.com/doc-assets//OmniFocus-iOS/OmniFocus-iOS-v2.6.0.0/zh/EPUB/xhtml/16_extended.xhtml&quot;&gt;OmniFocus拓展&lt;/a&gt;我们知道，可以通过Mail Drop发送邮件或者Siri语音从第三方建立Inbox新项目。所以可以通过两个途径，发送项目到OmniFocus。两种方法都可以实现，我们来分别讲讲。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mail Drop 的方法比较简单，利用IFTTT里的Gmail的Action，可以通过Gmail将指定元素发送到指定的邮箱。而指定邮箱我们使用OmniFocus的&lt;strong&gt;Mail Drop 地址&lt;/strong&gt;。这个方法的好处是Note的标题作为Inbox item标题，同时将Note的内容一起发送到item的note中。&lt;/li&gt;
+  &lt;li&gt;利用iOS自带功能的方法比较复杂。利用Siri语音第三方建立新项目其实是通过先用Siri建立Reminder的新项目，再将新项目发送到OmniFocus来实现的。所以利用IFTTT实际上是将note发送到iOS的Reminder，再开启OmniFocus的同步Reminder功能来同步item。特别需要注意的是，IFTTT设置的Reminder List必须和OmniFocus同步的List一致。这个方法有两个缺点：一是必须下载IFTTT手机客户端；二是麻烦，实际上是走了两条分支来实现功能。所以，一般情况下推荐使用第一种方法。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;set-time&quot;&gt;Set Time&lt;/h2&gt;
+&lt;p&gt;关于第三方导入OmniFocus Inbox的项目都无法设置时间。不过通过Apple Reminder设置的待办事项同步到Inbox是自动同步时间的。所以可以通过Alfred快速写入到Fantastical来写入待办事项到Reminder再同步到Inbox。不过只能精确到日期。这也进一步说明，GTD步骤里，对Inbox内容整理是一个单独的动作。不可以省略。&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://ifttt.com/recipes/393556-send-evernote-note-to-omnifocus&quot;&gt; IFTTT Recipe: Send Evernote Note to OmniFocus &lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>小谈字体</title>
+   <link href="http://tzungtzu.com/2016/03/05/font.html"/>
+   <updated>2016-03-05T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2016/03/05/font</id>
+   <content type="html">&lt;p&gt;昨天在改博客字体的时候查阅了一些资料。简单总结一下，以便自己整理。&lt;/p&gt;
+
+&lt;p&gt;对字体最初的概念是从《给大家看的设计书》。自己的涉及面很窄，以前总认为设计和自己不是一个世界的。自从用Mac后改变了这个观点。设计和内容都精致的产品才能称做一个好的产品。而字体是设计的基本。从大小，粗细到类型。今天要讲的是类型。&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;
+## 衬线体和无衬线体
+常见的字体有Oldstyle, Modern, slab serif, sans serif,  Script等。最常见的区别就在于字体比划末端是否存在装饰性的细节部分，也就是&lt;strong&gt;衬线&lt;/strong&gt;。也就是常说的衬线体和无衬线体。&lt;/p&gt;
+
+&lt;p&gt;衬线体最有名的恐怕是Times Roman。在Word码论文默认是这个字体，很正式也很枯燥（误）。而无衬线体我看到最多的是Helvetica。苹果默认和&lt;a href=&quot;http://www.tudelft.nl/&quot;&gt;TUdelft&lt;/a&gt;的Logo都是这个字体。&lt;/p&gt;
+
+&lt;p&gt;这两种字体也是比较适合作为正文的字体，因为它们容易阅读（不像Script一样着重个性化），且不易疲劳（不像Modern显得醒目，震撼）。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;适用范围&lt;/h2&gt;
+&lt;p&gt;然而你也许会问，那么这两种字体哪种更好呢。其实，衬线体更常出现在&lt;em&gt;传统印刷&lt;/em&gt;，因为它比无衬线体更易阅读，比较正统。&lt;strong&gt;衬线体之所以被设计出来，就是用来作正文内容的&lt;/strong&gt;。而无衬线字体用于&lt;em&gt;短篇&lt;/em&gt;和&lt;em&gt;标题&lt;/em&gt;等，能够吸引注意（设计的要点），活着提供一种轻松的气氛。很有趣的是，同样大小的衬线字体比无衬线字体容易阅读：
+&lt;img src=&quot;http://ww4.sinaimg.cn/large/66fa60dfgw1f1memjh371j21ao0i0gom.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;而在计算机领域，则恰巧相反。实际上，我们在显示屏上看到的字都会比报纸的字体大，而衬线字体的可读性优势其实仅仅体现在小字体上。&lt;/p&gt;
+
+&lt;p&gt;这个就是 print media 和 screen media 的最大区别。印刷业为了节约成本，因此会尽可能的在保证可读的情况下，把文字印小。显示器不存在这样的成本，因此可以显示比较大的文字。在文字足够大的情况下，无衬线字体也是同样可读的。而且因为无衬线字体通常有艺术性，因此在显示器上显示通常比较赏心悦目；而且无衬线字体种类比衬线字体多得多，因此选择余地也很大。所以可以放心去使用。但是必须保证以下原则：凡是使用无衬线字体的，必须保证其在正文内容中的可读性。否则，使用衬线字体。换而言之，如果你要使用无衬线字体显示网页的正文内容，那么，你必须把它的font-size设的足够大，以保证用户能轻易阅读。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;几种好看的字体&lt;/h2&gt;
+
+&lt;p&gt;Futura Medium&lt;/p&gt;
+
+&lt;p&gt;Frutiger&lt;/p&gt;
+
+&lt;p&gt;Garamond&lt;/p&gt;
+
+&lt;p&gt;Palatino&lt;/p&gt;
+
+&lt;h4 id=&quot;ps-&quot;&gt;PS: 意大利体不是斜体&lt;/h4&gt;
+&lt;p&gt;斜体是oblique。Italic 顾名思义，是意大利体。Italic 是一种&lt;strong&gt;书写方式&lt;/strong&gt;（calligraphy script），而oblique 是一种&lt;strong&gt;印刷样式&lt;/strong&gt;，两者是不同的东西。不过现在基本混用了。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>古典音乐的时候你在想什么</title>
+   <link href="http://tzungtzu.com/2016/03/01/classic-music.html"/>
+   <updated>2016-03-01T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2016/03/01/classic_music</id>
+   <content type="html">&lt;p&gt;古典音乐的时候你在想什么。反正我在浮想联翩，各种走神，所幸是没有瞌睡。直到返场听出是彩云追月才觉得精彩。果然熟悉才会有共鸣。&lt;/p&gt;
+
+&lt;p&gt;也许明天再听到今天听过的曲子，也不会想起，也不会当时想到的是什么。这也是一期一会吧。（いちごいちえ）｛试试刚装的输入法｝&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;跟朋友聊到他的天赋。从那些非常优秀的人身上才能看得到天赋。我们更需要的是努力。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/yundi1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/yundi2.jpg&quot; alt=&quot;像素级，脸都看不清&quot; /&gt;
+&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/yundi3.jpg&quot; alt=&quot;朋友在前排拍的背影&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2015总结</title>
+   <link href="http://tzungtzu.com/2016/01/29/2015summary.html"/>
+   <updated>2016-01-29T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2016/01/29/2015summary</id>
+   <content type="html">&lt;p&gt;不知不觉到了以前认为的不再年轻的年纪。也越发觉得经历的重要性。知道什么是基本需求，也慢慢知道自己想要的挑战。下了很多决心，做了一些改变，却还是没有下苦功磨砺自己，仿佛生怕知道自己不是璞玉。很多小事不值一提，但也是这独一无二的经历，才不一样。&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;年度书籍：&lt;/h4&gt;
+&lt;p&gt;小说类：金色梦乡&lt;/p&gt;
+
+&lt;p&gt;科普类：万万没想到&lt;/p&gt;
+
+&lt;p&gt;每年都会期许多看书，却一直看的有限，因为身边朋友的原因，看了不少日系悬疑小说和电影。也算是打开了一个新的窗口，感受了东野圭吾通过渲染人性让推理小说多出一丝温暖，阿加莎缜密的描写和全面的知识来控制推理节奏，以及伊坂幸太郎天马行空却又合理收尾的想象力。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度城市：&lt;/p&gt;
+
+&lt;p&gt;广州&lt;/p&gt;
+
+&lt;p&gt;完成了一个小心愿。五月带爸妈游欧洲。罗马，弗洛伦萨，威尼斯，米兰，日内瓦，因特拉肯，巴塞罗那，巴黎，科隆。希望下一站是美国啦；）跟爸妈在一起的地方都是好的。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度照片：
+&amp;lt;img src=”http://7xo4c2.com1.z0.glb.clouddn.com/paris.jpg” width=40%&amp;gt;
+&lt;br /&gt;
+年度运动：&lt;/p&gt;
+
+&lt;p&gt;坚持了将近一年的慢跑，也坚持每到一个地方都跑。没有参加徒步，希望今年能够补回来。
+ &amp;lt;img src=”http://7xo4c2.com1.z0.glb.clouddn.com/running2015.jpg” width=40%&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度歌曲：&lt;/p&gt;
+
+&lt;p&gt;依然听吉他，ukulele为主。Jake，Depapepe是常备，15年比较喜欢的是名渡山遼的beachline。&lt;a href=&quot;http://music.163.com/#/user/home?id=19988667&quot;&gt;网易累计听的歌&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- 要不要用douban记录歌曲？ --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度纪录片：&lt;/p&gt;
+
+&lt;p&gt;舌尖上的新年。&lt;/p&gt;
+
+&lt;p&gt;还没看，准备除夕被虐。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度电影：&lt;/p&gt;
+
+&lt;p&gt;模仿游戏。&lt;/p&gt;
+
+&lt;p&gt;虽然是年初看的，虽然今年看了不少好电影，但还是最喜欢这部。（毕竟半个祖师爷）&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度剧集：&lt;/p&gt;
+
+&lt;p&gt;《约会，恋爱究竟是什么呢？》&lt;/p&gt;
+
+&lt;p&gt;15年冬天的月九剧，虽然是年初但却2015最佳，不被取代。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度综艺：&lt;/p&gt;
+
+&lt;p&gt;奇葩说。&lt;/p&gt;
+
+&lt;p&gt;了不起的挑战也很良心&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度败家：&lt;/p&gt;
+
+&lt;p&gt;rMBP 13 Early 2015。&lt;/p&gt;
+
+&lt;p&gt;难得换一次大件。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度保持：&lt;/p&gt;
+
+&lt;p&gt;书，羽毛球，ukulele&lt;/p&gt;
+
+&lt;p&gt;食欲和求知欲&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度app：&lt;/p&gt;
+
+&lt;p&gt;Ulysses。&lt;/p&gt;
+
+&lt;p&gt;改变习惯的APP有很多，喜欢这个让我喜欢写字（打字）的app。期待iPhone版本。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度游戏：&lt;/p&gt;
+
+&lt;p&gt;Don’t Starve Together。&lt;/p&gt;
+
+&lt;p&gt;竟然在年底的时候入了坑，不过跟朋友一起捡屎打怪吐槽比一个人爽很多呀。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度折腾：&lt;/p&gt;
+
+&lt;p&gt;学习各种工作需要的软件&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度漫画：&lt;/p&gt;
+
+&lt;p&gt;一个人去跑步系列。&lt;/p&gt;
+
+&lt;p&gt;以为一个人的马拉松是很久以前的事情了，原来就是今年，高木直子是个有趣且正能量的作者。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+年度偶像：&lt;/p&gt;
+
+&lt;p&gt;杏，杏，杏！&lt;/p&gt;
+
+&lt;p&gt;看东方快车谋杀案才第一次看到她，并不算出彩。但是约会里面真是超喜欢啊。而且发现是个优质偶像，弹吉他，兴趣广泛，当然也嫁了个好人家。。&lt;/p&gt;
+
+&lt;p&gt;还有年度犯二，年度共鸣。。想到慢慢加&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+新年愿望： 多看专业书
+—-&lt;/p&gt;
+
+&lt;p&gt;写完发现2015年是被日系改变(刷新三观)的一年，从音乐品味，漫画，电影，喜欢的任务，作品特点都被扳到了一边。2016希望能感受更多可能会喜欢的东西。&lt;/p&gt;
+
+&lt;p&gt;套用一句&lt;a href=&quot;http://www.douban.com/note/533212036/?start=0&amp;amp;post=ok&quot;&gt;Xinhui&lt;/a&gt;的话：
+&amp;gt; 人生中如果真的有什么东西，心甘情愿地属于你，实在是温柔美好而又值得珍惜的事。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2015年度总结 + 2016新年愿望</title>
+   <link href="http://tzungtzu.com/2015/12/27/2016.html"/>
+   <updated>2015-12-27T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2015/12/27/2016</id>
+   <content type="html">&lt;p&gt;前几天看到Vanessa在豆瓣总结2015，觉得自己也应该这样。&lt;/p&gt;
+
+&lt;p&gt;15年没有写新年愿望，先写点自己完成的吧：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;接爸妈来欧洲吃海鲜晒日光浴。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;论文基本搞定。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;回国见了老盆友们。
+ &lt;!--more--&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;减脂加锻炼，虽然没有什么特别的感觉。&lt;/p&gt;
+
+    &lt;p&gt;&amp;lt;img src=”http://ww3.sinaimg.cn/bmiddle/88d7095ejw1ezgzvzxjbwj20go0goaau.jpg” height=“100” width=“100”&amp;gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ukulele也算小有成就了吧（自我感觉）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;16年新年愿望：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;坚持用Grid Diary记录日常&lt;/li&gt;
+  &lt;li&gt;找到满意的工作，不论欧洲还是回国。&lt;/li&gt;
+  &lt;li&gt;学习其他的好玩的技能。&lt;/li&gt;
+  &lt;li&gt;去一趟日本或者完成横穿欧亚。（感觉26岁前完不成了T.T）&lt;/li&gt;
+  &lt;li&gt;带爸妈出去玩一趟,地点未定。&lt;/li&gt;
+  &lt;li&gt;每日阅读，用evernote+instapaper整理信息。&lt;/li&gt;
+  &lt;li&gt;坚持用Ulysses写东西，为以后工作攒干货。&lt;/li&gt;
+  &lt;li&gt;坚持运动；）饮食健康&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>《万万没想到：用理工科思维理解世界》读书笔记</title>
+   <link href="http://tzungtzu.com/2015/12/22/suprise.html"/>
+   <updated>2015-12-22T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2015/12/22/suprise</id>
+   <content type="html">&lt;p&gt;看过不少科普书，但是这本让我刮目相看。这本书很多观点，其实仔细想想我们会理解。但是却在生活中很难想起来，利用好了可以用来优化我们的生活。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;关于读书&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最主要的是，看东西多了就会发现，真正有价值，值得花功夫和精力认真去看的作品，少之又少。当然，对于年轻人而言，这种态度显然不对，年轻人看什么都新鲜，都未知，都长见识，不吃前两个烧饼，只吃第三个烧饼也吃不饱。不阅读很多糟粕，也没有能力发现精华。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;&lt;br /&gt;
+## 如何利用人类的心理&lt;/p&gt;
+
+&lt;p&gt;我们知道许多常识并非正确。&lt;/p&gt;
+
+&lt;p&gt;我们获取的信息很多都是别人希望我们看到的。是『失真』的信息。因为_没有人爱看客观中立的东西_。要避免这种立场说服式文章，就得看第一手数据。&lt;/p&gt;
+
+&lt;p&gt;我们所有接收的信息，有两个部分，一部分是我们觉得应该成为『常识』的东西，另外一个部分就是_印证我们认为的常识是对的证据_。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;蒙洛迪诺说，人做判断的时候有两种机制：一种是“科学家机制”，先有证据再下结论；一种是“律师机制”，先有了结论再去找证据。世界上科学家很少，你猜绝大多数人使用什么机制思考？每个人都爱看能印证自己已有观念的东西。我们不但不爱看，而且还会直接忽略，那些不符合我们已有观念的证据。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我们对信息也是挑食的，只选择自己愿意相信的。一旦有了偏见，需要更多反面证据才能改变观点。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;科学家也会拉帮结派，也会有各种偏见，也会以证明别人错了为乐，但是所有科学家有一个共同优点：他允许你改变他的想法。这种允许别人改变思想的氛围可以刺激人在审稿的时候采取更为大胆的态度。 为什么？因为科学家是真理追求者。实际上，搞科研的一大乐趣就是被别人改变想法！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;同样，我们对选择也是规避损失的。人们总喜欢获得而害怕失去。这就是损失厌恶&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;恐惧来自人的自我保护本能，而冒险来自人的求偶本能。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+## 走出思维舒适区&lt;/p&gt;
+
+&lt;p&gt;常识并非都有错，而我们听了太多道理，却依然过不好这一生。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;统计表明，想要预测一个学生的大学成绩，自控能力甚至是比智商和入学成绩更好的指标。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+意志力是一种有限的资源，你用在这里就没法用在那里。为什么统计表明总能按时交作业的学生反而经常穿脏袜子？为什么每当期末考试之前学生们更容易吸烟，不注意饮食和个人卫生？因为他们的意志力用在学习上了。&lt;strong&gt;而做选择也会消耗意志力&lt;/strong&gt;。所以我们意志薄弱的时候也不愿意做选择。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;学习，提升，并没有那么简单。真正的学习要做到保证以下几点：&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;1. 花足够的时间_独立练习_。&lt;/h3&gt;
+
+&lt;p&gt;要通过长时间的阅读和逻辑的思考，改变碎片化的阅读思维模式，让思考更加深入。不断地_重复_，从_基本功_中感知技能的内部结构，注意到自己的错误。同时，
+从基础训练中学到_套路_，建立长期工作记忆。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;事实是，随机应变才是笨办法。定式和成语典故、数学定理一样，是人脑思维中的快捷方式。在这种情况下如果他这么走，我应该怎么应对，如果他再那么走，我又应该怎么应对，这些计算如果每次遇到都现场算是算不完也算不好的。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+对于脑力工作者来说，水平的高低关键要看掌握的套路的多少。所以，艺术家要采风，棋手要打谱，律师要学案例，政客要读历史，科学家要看论文。这些&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+一定程度的“自动化”非常有用，我们不可能每做一个动作都有意识地给每个关节、每块肌肉安排任务，但是“自动化”到不管不顾地执行则是错误的。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+学生只能跟着她练分块的小段。她规定如果别人听出来你拉的是什么曲子，那就说明你没有正确地在练习！&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+。每当有新的知识进来，他们都知道该把这个知识放到体系的什么位置上去。有人管这套体系叫做心智模式（mental model），有人管它叫矩阵（matrix）。有了这套体系，你才可能对相关事务作出出神入化的“眨眼判断”，而 不是靠什么“灵感”或者“直觉”。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+### 2. 训练方法的重要性。&lt;/p&gt;
+
+&lt;p&gt;比训练时间更重要的是训练方法。要进行有效地练习，就必须_走出舒适区_，去学习新的东西，练习自己不熟悉的。而这样的学习，必然是不快乐的，是累的。（羽毛球也一样）在刻意练习中没有“寓教于乐”这个概念。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;刻意练习不好玩。伟大的成就需要放弃很多很多东西，而这种放弃并不是没有争议的。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+真正的练习不是为了完成运动量，练习的精髓是要持续地做自己做不好的事。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+你的舒适区已经给你带来了多大的荣誉，留在这个舒适区就有多大的诱惑。害怕留在舒适区。扎克伯格的做法是每年给自己设定一个新目标来测试自己的自制力。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在舒适区做事，叫生活；在学习区做事，才叫练习。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1．只在“学习区”练习； 2．把要训练的内容分成有针对性的小块，对每一个小块进行重复练习； 3．在整个练习过程中，随时能获得有效的反馈； 4．练习时注意力必须高度集中。 
+强力阅读和刻意练习有三个共同点：不好玩；用时少；不追求快。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+### 3. 进行有效的&lt;strong&gt;反馈&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;要得到进步，必须在错误和总结中学会成长。这也是非常重要的一步。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;有人统计各大学经济系研究生毕业后的论文发表情况，发现在顶尖大学排在班级最前列的学生毕业6年内平均发表6篇论文；排在四五名的学生平均发表一篇论文，而排在中等及以下的学生则一篇都没有。对比之下，普通大学排在班级最前列的学生却也能确保至少一篇论文。鸡首，胜于牛后。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+这些启蒙老师并非都是钢琴高手。但这些老师有一个共同的本领：他们非常善于调动孩子对钢琴的兴趣。他们能让孩子一上手就爱上这个乐器。 
+越是社会经济地位高的家庭，基因对孩子的影响越大；越是社会经济地位低的家庭，环境对孩子的影响越大。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;4. 牢记目标，坚持走下去&lt;/h3&gt;
+
+&lt;p&gt;有足够的决心不容易。高水平的运动员有一个共同特点：他们非常，非常，非常想赢得比赛。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;所以，世界上有一帮人，他们一天不进步就难受。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+真正有效的办法是“常立志”。意志力是一种通用资源，这意味着你可以通过做一些日常小事来提高意志力，然后把它用在其他事情上。本书提出的一个有效的练习办法是做自己不习惯做的事。比如你习惯用右手，你可以有意识地用左手。你还可以强迫自己说的每一句话都必须是书面语的完整句子，而不得出现俚语、省略语和脏话。
+&amp;gt; 
+&lt;br /&gt;
+每个人的时间都一样多，因此时间不是金钱。时间是围棋：你走一手，牛人也走一手，牛人获胜并不是因为他走得比你多，而是他每一手都走在最有价值的地方。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+从对策论角度来说，竞争其实有两种。一种是有限博弈（finite game），这种竞争就好像体育比赛一样终会有结束的时候，你在比赛中必须全力以赴，比较强调爆发力，更适合男性或者战士参加。另一种是无限博弈（infinite game），竞争永远都在进行，讲究持续力，需要你 能够在其中偷偷地自我调整和恢复，更适合女性或者颤士参加。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;关于阅读&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;上网的关键态度是要成为网络的主人，而不做各种超链接的奴隶。高效率的上网应该像自闭症患者一样具有很强的目的性，以我为主，不被无关信息左右。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+我们必须明白一点：我们没有任何义务去看任何一篇文章，哪怕是我们付费订阅来的文章。&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+如果你的全部知识都可以在网上搜索到，你凭什么拿比农民工高好几倍的工资？&lt;/p&gt;
+
+  &lt;p&gt;&lt;br /&gt;
+记笔记的最直接目的是为了形成自己的知识体系，改变自己看事物的眼光。 
+&lt;strong&gt;世界上有很多比读书重要的事。在做事和读书之间，做事优先。但读书是除实践外迅速积累见识的最好办法。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;好的读书笔记&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;第一遍是正常通读。不追求读得快。在读第二遍的同时写下读书笔记。笔记最好写到可以取代原书的程度。&lt;/li&gt;
+  &lt;li&gt;按照原书章节给笔记分节，可以保留章节名。每章开头写下作者想说明什么。清晰的表现章节的逻辑脉络.&lt;/li&gt;
+  &lt;li&gt;带走书中所有亮点。把关键字记好，方便以后搜索。&lt;/li&gt;
+  &lt;li&gt;有大量的自己想法和心情&lt;/li&gt;
+  &lt;li&gt;发现这本书和以前读过其他书的联系&lt;/li&gt;
+  &lt;li&gt;kindle的话，第一遍做好划线和批注。第二遍直接看“我的剪贴”。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;BTW:想解决下，笔记和书摘如何共存的问题。（把读书highlights隐藏在代码里?）&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OmniFocus测评（二）</title>
+   <link href="http://tzungtzu.com/2015/12/21/omnifocus-2.html"/>
+   <updated>2015-12-21T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2015/12/21/omnifocus-2</id>
+   <content type="html">&lt;p&gt;（上文：要做好GTD，就要学会使用各项Perspective。接下来，我们来分析各Perspective不同的含义。）&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;inbox-&quot;&gt;Inbox （收集箱和待办事项）&lt;/h3&gt;
+
+&lt;p&gt;Inbox是一个事项收集器。（在这里说一句题外话，对于任何Inbox，都应该趋向于一个清空的状态，即Email阅读完归档或删除，这样可以知道自己完成事情的进度，避免拖延症。否则越积越多，会引发负面情绪）大多数临时，零碎首先被记录在这里。它的用处很简单：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;记录无关Projects, Context的临时性事物，单一而没有其他步骤。完成以后直接勾选即可。&lt;/li&gt;
+  &lt;li&gt;临时记录没有来得及分类的事物。等完成以后可以直接搜索标记到项目，时间，flag等。&lt;/li&gt;
+  &lt;li&gt;通过command+return 直接简历新项目。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;projects-&quot;&gt;Projects （计划或多个步骤的事物）&lt;/h3&gt;
+
+&lt;p&gt;多个Action协调，配合完成的事项，用来整理到Projects。这些事项有如下特点。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;周期一般比较长，所以会有进行中这种状态。&lt;/li&gt;
+  &lt;li&gt;原则上「项目」中&lt;strong&gt;不允许出现空的项目&lt;/strong&gt;，不要和文件夹的使用混淆，文件夹只用来分类，项目描述的是要去完成的事情。&lt;/li&gt;
+  &lt;li&gt;View（查看）中，「顺序」和「平行」类型的项目按「下一个动作」筛选时，「顺序」和「平行」类型的项目只显示子项中的第一个；按「可用」筛选时「顺序」类只显示子项第一个，而「平行」类项目都显示。&lt;/li&gt;
+  &lt;li&gt;项目和其包含的事项之间是「父子」关系，即便子项没有完成，改变项目的状态为「已完成」后子项也会随之关闭。时间点的设置上，起始和截止时间_一般在子项上_，父项上设置Review（回顾）的时间点。子项能转成独立的项目，子项下还可以包含其他子项，这些灵活的层级操作可以全部通过拖拽完成。&lt;/li&gt;
+  &lt;li&gt;在分类里通过option+return 生成同级文件夹&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;context&quot;&gt;Context（按人员、场所和输出对象来管理事务）&lt;/h3&gt;
+
+&lt;p&gt;「Projects」以清晰描述事务来组织和管理的模式不同，「Contexts」侧重的是_最终的对象，由谁来完成、通过什么手段来完成、在什么场所里完成_。 如果说Project是以事为主，Contexts就是以环境为主 ，两者结合从而能更全面让我们来检索和添加事项。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;有对人的、也有对部门的、还有面向解决途径的。落实对人，对各种的事情。&lt;/li&gt;
+  &lt;li&gt;在「Projects」中记录和罗列事项的时候，很多时候并不是很清楚事项最后对环境和人的依赖性和权重有多高，添加「Contexts」上下文以后，基于人、地点、对象这种方式的归集，很清晰就能看到分担到每个对象上事务的多少，反过来反而可以平衡事务的安排是否合理，并在日程和时间点上进行协调和统筹。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;forecast&quot;&gt;Forecast（显示日历和未来事项）&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Forecast（预测）则是基于时间点来创建和查看事项，在用法上和日历很像。&lt;/li&gt;
+  &lt;li&gt;为了避免形成拖延的习惯，时间点的设置上建议以Defer Until为主，少用Due，要养成习惯在时间截至之前完成工作，而不是将Due变成提醒，在Due 截止时间点到了以后才开始。&lt;/li&gt;
+  &lt;li&gt;_添加_事务我倾向于以「Inbox」和「Projects」为主，_日程事务_以「Forecast」为入口，在_清扫事务和回顾_上更喜欢在「Contexts」里浏览，按分配到的人和对象来清理当前事务。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;flag-&quot;&gt;Flag （标记，优先考虑的事物)&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;OmniFocus 的透视逻辑中，如果新建的事项动作（Action）不选任何的项目、上下文分类，那么你需要在「Inbox」里才能看到，添加了项目分类的 Action和项目自身 你会在「Projects」里看到，「Contexts」视图中主要显示的是Action，看不到项目（平行、顺序类型项目的Action为空时才会显示在no contexts中），通过给项目或事项（Action）添加「旗标」，它们将都可以显示在「Flagged」视图中。&lt;/li&gt;
+  &lt;li&gt;显示优先级，标记的既可以是一个独立Action也可以是一个Project的Action&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;review&quot;&gt;Review（回顾）&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;回顾处于整个GTD时间管理模型（收集 – 处理 – 组织 – 执行 – 回顾）的末端，也是承先启后，反思改进的重要节点。&lt;/li&gt;
+  &lt;li&gt;不针对Action 只针对Projects。可以结合实际情况进行调整或关闭已经没有推动意义的项目。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tips-omnifocus&quot;&gt;Tips &lt;strong&gt;OmniFocus&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;可以设置新建Action的快捷键。我设为『control+command+o』&lt;/li&gt;
+  &lt;li&gt;点击事项左下角的附件图标添加Note时，直接拖拽桌面的文件到这里可以创建快捷方式，按住option再拖拽会将内容嵌入到事项（通常拖拽个图片什么的做补充说明不错）&lt;/li&gt;
+  &lt;li&gt;由其他应用（如邮件、Safari） 选中文本右键可以快速创建新的事项。&lt;/li&gt;
+  &lt;li&gt;可以定制自己的Perspective。&lt;/li&gt;
+  &lt;li&gt;针对每个项目（Project）或事项（Action）除了常设的开始时间和结束时间以外，还可以添加预计花费的时间（Estimated Time），对于短期任务这种设置能进一步量化你的时间安排。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;真正了解并使用GTD的人，会喜欢他并且会自我升级并且延伸到生活和工作的方方面面，但是这个概念从了解到融入到自己的生活中，确实一个漫长的过程。而我很享受这种融入的感觉。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;天才之所以为天才,是因为他们不需要别人去干就会大步向前，他们永远知道自己要做什么。对他们来说，勤奋学习工作，客服一个个苦难是本能。而他们的素质其实都是来自他们的生理。 他们不需要这些所谓的工具和鸡汤。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;说起来，使用工具并不能提升我们的上限，却能榨干我们的”机能”。努力并不能让我们实现理想，起码会让我们不后悔。在改变中，我们最好还是绷紧全身的肌肉，等待命运会交给我们什么。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;很喜欢kikou的这段话。故分享在最后。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://irising.me/2014/10/17836/&quot;&gt; OmniFocus 2 for Mac 的使用指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sspai.com/29233&quot;&gt;给 OmniFocus 新手进阶的十条建议&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://chuansong.me/n/565635&quot;&gt;从效能软件Omnifocus开始&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kikou.lofter.com/post/268c8a_85c7599&quot;&gt;无法达到的彼岸&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>OmniFocus测评（一）</title>
+   <link href="http://tzungtzu.com/2015/12/20/omnifocus.html"/>
+   <updated>2015-12-20T00:00:00+01:00</updated>
+   <id>http://tzungtzu.com/2015/12/20/omnifocus</id>
+   <content type="html">&lt;p&gt;如果你在使用苹果的生态系统，你一定听过OMNI这家公司的软件，他们只做苹果系统的软件，而OmniFocus就是最出彩的软件之一。号称最好用的任务提醒软件。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-omnifocus&quot;&gt;What is &lt;strong&gt;OmniFocus&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;先说一个问题，刚开始用OmniFocus这个提醒事项软件的时候，我一直在想一个问题，有了OF，为什么还会有人还要用Fantastical呢，他们有什么不同么，不都是提醒我的么。先不说它比原生日历要好用在哪里。我安装了Fantastical后，由于Apple自带日历也订阅了OmniFocus的提醒信息。所以有日历提醒的时候。Mac上会提醒两次，邮件会提醒两次，加上iPhone和Pad简直。。。
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;直到我开始深入研究GTD，有一天在zhihu看到有人的一个答案:
+&amp;gt; &lt;font color=&quot;red&quot;&gt;有明确期限的单个任务放入神圣的日历（Calendar）&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;经过调研，了解到更详细的说法是这样的。
+- 某个时间需要&lt;font color=&quot;red&quot;&gt;**专门**&lt;/font&gt;花时间做的某件事（Sometime to do something）安排到日程中
+- 等着自己去推进的各种事（Need to do something）记录到提醒事项中。而omniFocus 就是用来处理事物之间复杂度高的情况。&lt;/p&gt;
+
+&lt;p&gt;所以，如果提醒事项是告诉你需要做什么的话，日程就是告诉你什么时候去做什么。他们管理的其实是两个不同的事情。当然应该有所区分。&lt;/p&gt;
+
+&lt;p&gt;GTD的十个习惯。
+1. 在忘记之前记住任务，想法或者你任何闪入你大脑的信息。（收集）
+2. 少每天处理一次收件箱（避免堆积）
+3.  设定每天，每周的最重要的事(MIT)，排进日程表，加上Flag
+4. 执行，避免干扰。
+5. 回顾45分钟&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-omnifocus&quot;&gt;Why &lt;strong&gt;OmniFocus&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;你可能觉得OmniFocus这个软件很复杂，设置的时候会浪费很多时间。市场上其实有很多事项提醒软件。但是慢慢的，当你提出一些高级的需求的时候，他们不一定能够完成。而对于OmniFocus,最初你可能只是想出去跑个步记录事项提醒。后来又发现每件事都能设定开始结束的时间。用了几天，可能发现还能给每件事情设置分类。。。就这样一步步。OmniFocus强大足以让你设定任何一件事情的逻辑。而它也允许你一步步上手。&lt;/p&gt;
+
+&lt;p&gt;不止一个人说过，如果你不断细化市场，你就会发现一个类型的产品，想把几个需求做好做精简直是不可能。现在的软件，大而全越来越难，更需要的是小而专。&lt;/p&gt;
+
+&lt;p&gt;易于上手，功能强大，这就是好的软件。不但要能够满足基本上手，不会让人被复杂界面吓跑，即易用性。也要能够满足复杂的需求，即全面性。Ulysses, OmniFocus都是这样的软件。&lt;strong&gt;它们好在，你想用简单方式，没问题。想慢慢加深使用方法，也能很好的工作。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-deal-with-omnifocus&quot;&gt;How to deal with &lt;strong&gt;OmniFocus&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;解决了日程和提醒事项的区别，你也选择了这个软件，接下来就是使用它了。&lt;/p&gt;
+
+&lt;p&gt;想要好好利用这个软件，首先你要理解什么是GTD。GTD分为几个步骤：
+&amp;gt; &lt;font color=&quot;red&quot;&gt; **收集，整理，执行，回顾** &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;而OmniFocus针对每个步骤都提供了功能完备的工具。&lt;/p&gt;
+
+&lt;p&gt;针对一个项目有&lt;em&gt;分类、时间线、完成度、截至日期、执行对象&lt;/em&gt;这些条件来推进完成。在Mac端OmniFocus的透视列中的Inbox，Projects，Contexts，Forecast，Flagged，Review对应着不同的场景需求。&lt;/p&gt;
+
+&lt;p&gt;容易理解Inbox用来收集事项，Review用来做事项回顾。剩余的Perspectives用以整理，执行项目。其中Projects 和Contexts 是两个重要的整理任务，跟踪任务执行的部分。&lt;/p&gt;
+
+&lt;p&gt;事务添加的过程很像是由「文件柜（Inbox）→文件夹（Folds）→文件（Projects）→标注（Actions）」的过程。采集和想到的事务首先是丢到文件柜（Inbox）里，然后按自己的分类原则或日程归集到某分类（Projects folds）或某背景（Context），接下来是补充具体的文件（Projects），最后再进一步细化和设置，经过这样一个过程，完成一个事务（Actions）的记录。&lt;/p&gt;
+
+&lt;p&gt;要做好GTD，就要学会使用各项Perspective。接下来，我们来分析各Perspective不同的含义。&lt;/p&gt;
+
+&lt;p&gt;（待续）&lt;/p&gt;
+
+&lt;p&gt;（没想到会写这么长）&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
