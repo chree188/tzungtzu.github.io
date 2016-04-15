@@ -241,10 +241,12 @@ li[id*='dsq-like-'] {
       filter: Alpha(opacity=60);
   } 
   
+  /*-自定义css*/
+  
   .zongwei{
   	  font-family: Verdana;
   	  color:green;
   }
   
-
   
+
