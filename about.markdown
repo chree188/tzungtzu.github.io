@@ -18,9 +18,9 @@ UKULELE爱好者(finglestyle), 羽毛球爱好者。
 
 （曾经的）明信片控，喜欢EMAIL联系，喜欢有趣的人，有趣的事情，有趣的东西（最近想买的东西在[这里][3]）。
 
-美剧控，深度[CM][4]迷，也看Castle，TBBT，HF0，Broke Girls。
+深度[CM][4]迷，喜欢美剧Castle，HIMYM，HF0，喜欢日剧[デート〜恋とはどんなものかしら〜][6]，[家族ノカタチ][7]。
 
-（用Apple的）Google粉，数码控，工具控，喜欢DIY喜欢[旅行][5]喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语喜欢折腾。
+（用Apple的）Google粉，数码控，工具控，收集癖，整理癖，喜欢折腾喜欢DIY喜欢[旅行][5]喜欢植物喜欢拼图喜欢冷笑话喜欢自言自语。
 
 不喜欢熬夜，不喜欢离别伤感的时候。
 
@@ -40,3 +40,5 @@ UKULELE爱好者(finglestyle), 羽毛球爱好者。
 [3]:	http://tzungtzu.github.com/want
 [4]:	http://www.cbs.com/shows/criminal_minds/
 [5]:	http://tzungtzu.github.com/travel
+[6]:	http://www.fujitv.co.jp/date/index.html
+[7]:	http://www.tbs.co.jp/kazokuno_katachi/

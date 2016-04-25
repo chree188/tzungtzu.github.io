@@ -15,7 +15,7 @@ layout: page
 <!-- 20060112 -->
 
 
-要给爹妈买的东西：<del>电动牙刷</del>，手持吸尘器Black & Decker
+要给爹妈买的东西：<del>电动牙刷</del>，手持吸尘器Black & Decker，夹蒜器
 
 
 
