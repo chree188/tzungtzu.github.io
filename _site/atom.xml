@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2016-06-15T21:27:15+02:00</updated>
+ <updated>2016-06-15T21:33:27+02:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section&quot;&gt;行李准备：&lt;/h3&gt;
+&lt;h2 id=&quot;section&quot;&gt;行李准备：&lt;/h2&gt;
 
 &lt;p&gt;说说打包，根据我的个人习惯，行李基本分为以下几类：&lt;/p&gt;
 
@@ -32,50 +32,72 @@
   &lt;li&gt;个人财产类&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;section-1&quot;&gt;1. 衣服装备类&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;冲锋衣
-抓绒 
-速干裤
-防晒外套（没有买到
-棉袜多带
-内衣裤多带
-徒步鞋，便鞋，拖鞋
-登山杖
-手套
-太阳帽
-围巾
-水壶
-墨镜
-睡袋&lt;/p&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;1. 衣服装备类&lt;/h3&gt;
 
-&lt;h4 id=&quot;section-2&quot;&gt;2. 生活用品类&lt;/h4&gt;
-&lt;p&gt;香皂
-牙膏牙刷
-防晒霜
-凡士林
-面巾纸
-湿纸巾
-急救箱
-云南白药
-大小不同的密封袋&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;冲锋衣&lt;/li&gt;
+  &lt;li&gt;抓绒&lt;/li&gt;
+  &lt;li&gt;速干裤&lt;/li&gt;
+  &lt;li&gt;防晒外套（没有买到&lt;/li&gt;
+  &lt;li&gt;棉袜多带&lt;/li&gt;
+  &lt;li&gt;内衣裤多带&lt;/li&gt;
+  &lt;li&gt;徒步鞋，便鞋，拖鞋&lt;/li&gt;
+  &lt;li&gt;登山杖&lt;/li&gt;
+  &lt;li&gt;手套&lt;/li&gt;
+  &lt;li&gt;太阳帽&lt;/li&gt;
+  &lt;li&gt;围巾&lt;/li&gt;
+  &lt;li&gt;水壶&lt;/li&gt;
+  &lt;li&gt;墨镜&lt;/li&gt;
+  &lt;li&gt;睡袋&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;section-3&quot;&gt;3. 电子产品类&lt;/h4&gt;
-&lt;p&gt;充电线
-相机
-手机
-U盘&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;section-4&quot;&gt;4. 食品类&lt;/h4&gt;
-&lt;p&gt;泡腾片（尽量多吃蔬菜水果
-能量棒，巧克力
-口香糖&lt;/p&gt;
+&lt;h3 id=&quot;section-2&quot;&gt;2. 生活用品类&lt;/h3&gt;
 
-&lt;h4 id=&quot;section-5&quot;&gt;5. 个人财产类&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;香皂&lt;/li&gt;
+  &lt;li&gt;牙膏牙刷&lt;/li&gt;
+  &lt;li&gt;防晒霜&lt;/li&gt;
+  &lt;li&gt;凡士林&lt;/li&gt;
+  &lt;li&gt;面巾纸&lt;/li&gt;
+  &lt;li&gt;湿纸巾&lt;/li&gt;
+  &lt;li&gt;急救箱&lt;/li&gt;
+  &lt;li&gt;云南白药&lt;/li&gt;
+  &lt;li&gt;大小不同的密封袋&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;现金
-护照／ID
-机票，车票&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;3. 电子产品类&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;充电线&lt;/li&gt;
+  &lt;li&gt;相机&lt;/li&gt;
+  &lt;li&gt;手机&lt;/li&gt;
+  &lt;li&gt;U盘&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;4. 食品类&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;泡腾片（尽量多吃蔬菜水果&lt;/li&gt;
+  &lt;li&gt;能量棒，巧克力&lt;/li&gt;
+  &lt;li&gt;口香糖&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;5. 个人财产类&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;现金&lt;/li&gt;
+  &lt;li&gt;护照／ID&lt;/li&gt;
+  &lt;li&gt;机票，车票&lt;/li&gt;
+&lt;/ul&gt;
 
 </content>
  </entry>
