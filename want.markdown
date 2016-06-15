@@ -8,7 +8,7 @@ layout: page
 
 想要的（都是短期内不会买的吧）：
 
-卡包，蓝牙音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 冬帽，sony W273，Garmin Forerunner 225，运动半指手套 ，[空气炸锅][1]，手帕
+卡包，蓝牙音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 冬帽，sony W273，Garmin Forerunner 225，运动半指手套 ，[空气炸锅][1]，手帕，AKG Q350，GoPro
 
 ![20160112添加][image-1] 
 <!-- 20060112 -->

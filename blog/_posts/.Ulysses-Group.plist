@@ -3,30 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>childOrder</key>
-	<array>
-		<string>New Group</string>
-	</array>
+	<array/>
 	<key>createMarkedFile</key>
 	<integer>0</integer>
 	<key>resolutionData</key>
 	<dict>
 		<key>childOrder</key>
-		<dict>
-			<key>New Group</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>485013809.48106998</real>
-				<key>lastModification</key>
-				<real>485013809.48106998</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>3</integer>
-				</dict>
-			</dict>
-		</dict>
+		<dict/>
 		<key>createMarkedFile</key>
 		<real>480849650</real>
 		<key>sheetClusters</key>
@@ -463,12 +446,16 @@
 			</dict>
 			<key>2013-08-02-trekking.markdown</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>487708812.12344497</real>
 				<key>lastModification</key>
-				<real>480849650</real>
+				<real>487708812.12344497</real>
 				<key>version</key>
 				<dict>
-					<key>legacy-480849650.000000</key>
-					<integer>1</integer>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>19</integer>
 				</dict>
 			</dict>
 			<key>2014-02-03-leaving home.markdown</key>
@@ -504,11 +491,11 @@
 			<key>2014-08-02-trekking.markdown</key>
 			<dict>
 				<key>lastModification</key>
-				<real>480849650</real>
+				<real>487708797.36799401</real>
 				<key>version</key>
 				<dict>
-					<key>legacy-480849650.000000</key>
-					<integer>1</integer>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>18</integer>
 				</dict>
 			</dict>
 			<key>2014-11-09-delft-blue-painting.markdown</key>
@@ -701,12 +688,27 @@
 					<integer>15</integer>
 				</dict>
 			</dict>
+			<key>2016-06-15-tmb-packing.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>487711593.17895502</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>32</integer>
+				</dict>
+			</dict>
 		</dict>
+		<key>sheetOrder</key>
+		<real>487709055.90886199</real>
 		<key>userIconName</key>
 		<real>480849650</real>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-06-15-tmb-packing.md</string>
+		</array>
 		<array>
 			<string>2016-05-15-goodbye.md</string>
 		</array>
@@ -879,6 +881,9 @@
 			<string>2013-08-02-trekking.markdown</string>
 		</array>
 		<array>
+			<string>2014-08-02-trekking.markdown</string>
+		</array>
+		<array>
 			<string>2014-02-03-leaving home.markdown</string>
 		</array>
 		<array>
@@ -886,9 +891,6 @@
 		</array>
 		<array>
 			<string>2014-07-24-eastofeurope.markdown</string>
-		</array>
-		<array>
-			<string>2014-08-02-trekking.markdown</string>
 		</array>
 		<array>
 			<string>2014-11-09-delft-blue-painting.markdown</string>
@@ -909,6 +911,8 @@
 			<string>2015-12-09-christmas-market.md</string>
 		</array>
 	</array>
+	<key>sheetOrder</key>
+	<string>modificationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>userIconName</key>
@@ -928,7 +932,12 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>16</integer>
+			<integer>33</integer>
+		</dict>
+		<key>sheetOrder</key>
+		<dict>
+			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+			<integer>1</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>
