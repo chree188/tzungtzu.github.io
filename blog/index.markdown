@@ -37,7 +37,7 @@ layout: default
 <!--     </section> -->
 <!--     </article> -->
   {% endfor %}
-  </ul>
+<!--   </ul> -->
   <div class="center">
   <a href="/archive.html" class="circle-wrapper">
   <div class="circle">&nbsp;</div>
@@ -45,5 +45,5 @@ layout: default
   <div class="circle">&nbsp;</div>
   </a>
   </div>
-</div>
+<!-- </div> -->
 
