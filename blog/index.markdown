@@ -30,7 +30,7 @@ layout: default
 					 {{ post.content | split:'<!--more-->' | first }}
 		        </div>
 		    	<!-- 标签 -->
-
+       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="{{ BASE_PATH }}{{ post.url }}" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
  <!-- readmore按钮 -->
 <br />
         	
