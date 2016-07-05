@@ -45,5 +45,5 @@ layout: default
   <div class="circle">&nbsp;</div>
   </a>
   </div>
-</div>
+
 
