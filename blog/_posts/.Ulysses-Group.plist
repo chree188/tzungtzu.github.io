@@ -444,20 +444,6 @@
 					<integer>1</integer>
 				</dict>
 			</dict>
-			<key>2013-08-02-trekking.markdown</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>487708812.12344497</real>
-				<key>lastModification</key>
-				<real>487708812.12344497</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>19</integer>
-				</dict>
-			</dict>
 			<key>2014-02-03-leaving home.markdown</key>
 			<dict>
 				<key>lastModification</key>
@@ -698,6 +684,16 @@
 					<integer>32</integer>
 				</dict>
 			</dict>
+			<key>2016-07-30-tmb-packing - 2.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>491969579.08507001</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>46</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>487709055.90886199</real>
@@ -706,6 +702,9 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-07-30-tmb-packing - 2.md</string>
+		</array>
 		<array>
 			<string>2016-06-15-tmb-packing.md</string>
 		</array>
@@ -878,9 +877,6 @@
 			<string>2013-04-02-learning-tex.markdown</string>
 		</array>
 		<array>
-			<string>2013-08-02-trekking.markdown</string>
-		</array>
-		<array>
 			<string>2014-08-02-trekking.markdown</string>
 		</array>
 		<array>
@@ -932,7 +928,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>33</integer>
+			<integer>47</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

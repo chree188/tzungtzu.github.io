@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2016-07-05T14:47:18+02:00</updated>
+ <updated>2016-08-04T10:24:46+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -12,9 +12,25 @@
 
  
  <entry>
+   <title>Tour de Mont Blanc 2016</title>
+   <link href="http://tzungtzu.com/2016/07/30/tmb-packing-2.html"/>
+   <updated>2016-07-30T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2016/07/30/tmb-packing - 2</id>
+   <content type="html">&lt;embed src=&quot;http://player.youku.com/player.php/sid/XMTYyOTA3MjIxNg==/v.swf&quot; allowfullscreen=&quot;true&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowscriptaccess=&quot;always&quot; type=&quot;application/x-shockwave-flash&quot; /&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;这次的行程远没有之前计划的那么简单，穿越垭口需要上下几百米。我们五人同行只有三人走完了全程。拖延症的我在一个月以后终于整理了一下照片，具体tips再慢慢补上。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/tmb-iPhone.png&quot; alter=&quot;tmb&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>给几天后的TMB徒步</title>
    <link href="http://tzungtzu.com/2016/06/15/tmb-packing.html"/>
-   <updated>2016-06-15T00:00:00+02:00</updated>
+   <updated>2016-06-15T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/06/15/tmb-packing</id>
    <content type="html">&lt;p&gt;这次徒步和上次&lt;a href=&quot;http://tzungtzu.cshozzy.com/2014/08/02/trekking.html&quot;&gt;瑞典徒步&lt;/a&gt;不同，不算重装（不需要准备炉头，帐篷）。一路上都有refuge住。所以特意用了新买的Osprey 38，基本能装好所有需要的东西。&lt;/p&gt;
 
@@ -142,7 +158,7 @@
  <entry>
    <title>It’s time to say goodbye</title>
    <link href="http://tzungtzu.com/2016/05/15/goodbye.html"/>
-   <updated>2016-05-15T00:00:00+02:00</updated>
+   <updated>2016-05-15T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/05/15/goodbye</id>
    <content type="html">&lt;p&gt;来荷兰被推荐的这个剧，当时一个周末看完了第一季就决定追下去。现在回想，孩子气，博学多才，偶尔闯点小祸的C叔谁不喜欢呢。除了脱线的C叔，高颜的K姐，搞笑基友的R和E，以及爱吐槽的妈妈和&lt;strong&gt;越来越&lt;/strong&gt;漂亮的女儿A。都是舍不得这部剧的理由。&lt;/p&gt;
 
@@ -163,7 +179,7 @@
  <entry>
    <title>初玩划船机</title>
    <link href="http://tzungtzu.com/2016/04/27/rowing.html"/>
-   <updated>2016-04-27T00:00:00+02:00</updated>
+   <updated>2016-04-27T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/04/27/rowing</id>
    <content type="html">&lt;p&gt;最近看到一篇&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI1NzEzMTgyMQ==&amp;amp;ascene=0&amp;amp;devicetype=iMac+MacBookPro12,1+OSX+OSX+10.11.4+build(15E65)&amp;amp;idx=1&amp;amp;key=b28b03434249256be6c52d503c53d8002eec9c0ae4f5c04d8822bf69b72c73685f395ba86c20bc23418abf9717422694&amp;amp;mid=2652720763&amp;amp;pass_ticket=xd/Lyb3nAjb6ZXyoNJEck1Umm2wnHXzwsy6gKFEq++I=&amp;amp;scene=1&amp;amp;sn=a4b2b234ec318d5b013bd2a81eb00e36&amp;amp;srcid=0426L3MrbQKIkFYOv8b0JTXA&amp;amp;uin=MjIwMzk4NTYw&amp;amp;version=11020201&quot;&gt;文章&lt;/a&gt;想练背部肌肉。无氧的坐姿划船当然好，不过磨手（准备入个运动半指手套），每次做不了太多。就准备试试豆瓣友邻推荐的划船机。一搜才发现已经是很热门的健身器械。&lt;/p&gt;
 
@@ -265,7 +281,7 @@
  <entry>
    <title>记第N次调试Handoff和Airdrop</title>
    <link href="http://tzungtzu.com/2016/03/28/handoff.html"/>
-   <updated>2016-03-28T00:00:00+02:00</updated>
+   <updated>2016-03-28T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/03/28/handoff</id>
    <content type="html">&lt;p&gt;升级到OS X10.11.4后，iPhone到Mac的Handoff一直不好用，趁着复活节假期重新配置了一遍。终于又看到熟悉的图标。自己经常设备转换，还是能提高很多效率的。流程如下：&lt;/p&gt;
 
@@ -284,7 +300,7 @@
  <entry>
    <title>关于《家族的形式》的几句话和一些台词，cut</title>
    <link href="http://tzungtzu.com/2016/03/23/kazoku.html"/>
-   <updated>2016-03-23T00:00:00+01:00</updated>
+   <updated>2016-03-23T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/03/23/kazoku</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/WeChat_1458771229.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -336,7 +352,7 @@
  <entry>
    <title>利用IFTTT将Evernote note同步到OmniFocus</title>
    <link href="http://tzungtzu.com/2016/03/06/evernote-note-to-omnifocus.html"/>
-   <updated>2016-03-06T00:00:00+01:00</updated>
+   <updated>2016-03-06T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/03/06/evernote-note-to-omnifocus</id>
    <content type="html">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
@@ -371,7 +387,7 @@
  <entry>
    <title>小谈字体</title>
    <link href="http://tzungtzu.com/2016/03/05/font.html"/>
-   <updated>2016-03-05T00:00:00+01:00</updated>
+   <updated>2016-03-05T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/03/05/font</id>
    <content type="html">&lt;p&gt;昨天在改博客字体的时候查阅了一些资料。简单总结一下，以便自己整理。&lt;/p&gt;
 
@@ -412,7 +428,7 @@
  <entry>
    <title>古典音乐的时候你在想什么</title>
    <link href="http://tzungtzu.com/2016/03/01/classic-music.html"/>
-   <updated>2016-03-01T00:00:00+01:00</updated>
+   <updated>2016-03-01T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/03/01/classic_music</id>
    <content type="html">&lt;p&gt;古典音乐的时候你在想什么。反正我在浮想联翩，各种走神，所幸是没有瞌睡。直到返场听出是彩云追月才觉得精彩。果然熟悉才会有共鸣。&lt;/p&gt;
 
@@ -432,7 +448,7 @@
  <entry>
    <title>2015总结</title>
    <link href="http://tzungtzu.com/2016/01/29/2015summary.html"/>
-   <updated>2016-01-29T00:00:00+01:00</updated>
+   <updated>2016-01-29T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/01/29/2015summary</id>
    <content type="html">&lt;p&gt;不知不觉到了以前认为的不再年轻的年纪。也越发觉得经历的重要性。知道什么是基本需求，也慢慢知道自己想要的挑战。下了很多决心，做了一些改变，却还是没有下苦功磨砺自己，仿佛生怕知道自己不是璞玉。很多小事不值一提，但也是这独一无二的经历，才不一样。&lt;/p&gt;
 
@@ -554,49 +570,6 @@
 &lt;p&gt;套用一句&lt;a href=&quot;http://www.douban.com/note/533212036/?start=0&amp;amp;post=ok&quot;&gt;Xinhui&lt;/a&gt;的话：
 &amp;gt; 人生中如果真的有什么东西，心甘情愿地属于你，实在是温柔美好而又值得珍惜的事。&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>2015年度总结 + 2016新年愿望</title>
-   <link href="http://tzungtzu.com/2015/12/27/2016.html"/>
-   <updated>2015-12-27T00:00:00+01:00</updated>
-   <id>http://tzungtzu.com/2015/12/27/2016</id>
-   <content type="html">&lt;p&gt;前几天看到Vanessa在豆瓣总结2015，觉得自己也应该这样。&lt;/p&gt;
-
-&lt;p&gt;15年没有写新年愿望，先写点自己完成的吧：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;接爸妈来欧洲吃海鲜晒日光浴。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;论文基本搞定。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;回国见了老盆友们。
- &lt;!--more--&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;减脂加锻炼，虽然没有什么特别的感觉。&lt;/p&gt;
-
-    &lt;p&gt;&amp;lt;img src=”http://ww3.sinaimg.cn/bmiddle/88d7095ejw1ezgzvzxjbwj20go0goaau.jpg” height=“100” width=“100”&amp;gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ukulele也算小有成就了吧（自我感觉）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;16年新年愿望：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;坚持用Grid Diary记录日常&lt;/li&gt;
-  &lt;li&gt;找到满意的工作，不论欧洲还是回国。&lt;/li&gt;
-  &lt;li&gt;学习其他的好玩的技能。&lt;/li&gt;
-  &lt;li&gt;去一趟日本或者完成横穿欧亚。（感觉26岁前完不成了T.T）&lt;/li&gt;
-  &lt;li&gt;带爸妈出去玩一趟,地点未定。&lt;/li&gt;
-  &lt;li&gt;每日阅读，用evernote+instapaper整理信息。&lt;/li&gt;
-  &lt;li&gt;坚持用Ulysses写东西，为以后工作攒干货。&lt;/li&gt;
-  &lt;li&gt;坚持运动；）饮食健康&lt;/li&gt;
-&lt;/ol&gt;
 </content>
  </entry>
  
