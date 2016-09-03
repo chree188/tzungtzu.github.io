@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="tzungtzu" />
+    
+    <title>电子书格式转换，mobi转为ePub格式</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/css/github.css">
+    <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+    </script>
+ <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+	  
+
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="zongwei" class="" href="/">TZUNGTZU</a></h1>
+            <nav>
+			  <span><a title="BLOG" class="" href="/blog/">BLOG</a></span>
+              <span><a title="文章归档" class="" href="/archive.html">Archive</a></span>
+			  <!-- 
+              <span><a title="文章分类" class="" href="/category.html">Category</a></span>
+			   -->
+              <span><a title="标签" class="" href="/tags.html">Tags</a></span>
+              <span><a title="链接" class="" href="/links.html">Links</a></span>              
+              <span><a title="相册" class="" href="https://www.instagram.com/tzungtzu/">Gallery</a></span>
+              <span><a title="关于" class="" href="/about.html">About</a></span>
+              <span><a title="subscribe me" class="" href="/atom.xml">Feed</a></span>
+              
+            </nav>
+          </div>
+        </header>
+		
+		
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>电子书格式转换，mobi转为ePub格式 </h2>
+  </section>
+  <section class="meta">
+	<span class="time">
+    <time datetime="2016-09-03">2016-09-03</time>
+  </span>
+  
+
+<span class="categories">
+	Published in categories
+  
+  <a href="/category.html#blog" title="blog">blog</a>&nbsp;
+  
+  <a href="/category.html#Technology " title="Technology ">Technology </a>&nbsp;
+  
+</span>
+
+
+  
+  <span class="tags">
+   tagged with 
+    
+    <a href="/tags.html#ePub" title="ePub">#ePub</a>&nbsp;
+    
+    <a href="/tags.html#mobi" title="mobi">#mobi</a>&nbsp;
+    
+    <a href="/tags.html#ebook" title="ebook">#ebook</a>&nbsp;
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <h3 id="section">需求：</h3>
+
+<p>由于现在基本用apple三件套看电子书，在家一般用Pad，出门带上iPhone，有时候就用iBooks杀时间看看书。只有在用电非常有限的时候（徒步）才会带上Kindle。</p>
+
+<p>但是网上下载电子书资源，基本上还是mobi格式居多，需要自己转换成ePub格式。一般都会通过网站在线转换。去的次数多了，觉得很不方便。需要打开网页，选定文件，才能转换。自己做事一般能省一步就省一步，所以想通过找到一些提供支持的服务来简化步骤。</p>
+
+<p><!--more--></p>
+
+<p>目前常用的支持CLI(Command Line Interface)的文件格式转换软件（服务）以及优缺点如下：
+1. Calibre ：主打电子书管理，功能非常全面，从一键发送kindle，添加图书信息，添加tag，文件转换。一应俱全。 ；文件太。。大。</p>
+
+<ol>
+  <li>
+    <p><a href="http://pandoc.org/">pandoc </a>： 支持很多格式之间的文档转换。（HTML,XML,ePub,PDF, Tex）；不支持mobi格式作为输入或者输出</p>
+  </li>
+  <li>
+    <p>convertio ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug</p>
+  </li>
+</ol>
+
+<h2 id="calibre">Calibre</h2>
+<p>安装好Calibre后，还不能直接使用CLI，
+需要建立<a href="https://github.com/GitbookIO/gitbook/issues/333">软链接</a></p>
+
+<pre><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+</code></pre>
+
+<p>或者设置全局变量</p>
+
+<pre><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+</code></pre>
+
+<p>之后即可转换文件</p>
+
+<pre><code>ebook-convert input_file output_file
+</code></pre>
+
+<p>具体可选配置可以点<a href="https://manual.calibre-ebook.com/generated/en/cli-index.html#">这里</a>。</p>
+
+<h2 id="convertio">Convertio</h2>
+
+<ol>
+  <li>
+    <p>注册获取API Key</p>
+  </li>
+  <li>
+    <p>Installation</p>
+
+    <pre><code> $ wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
+ $ chmod +x /usr/local/bin/convertio
+</code></pre>
+  </li>
+  <li>
+    <p>Convert</p>
+
+    <pre><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
+ convertio -f jpg input.pdf
+</code></pre>
+  </li>
+</ol>
+
+<p>在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。</p>
+
+
+  </section>
+  <section class="comment">
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'tzungtzu'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+       
+         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'tzungtzu'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script>
+  </section> 
+</article>
+
+        </div>
+
+		
+        <footer>&copy; 2011 ~ 2016 tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | fork <a href="https://github.com/waynezhang/blog" title="fork me">me</a>
+        | <span data-hk-page="current"> - </span>hits<span class="pause"> | </span>
+        </footer>
+      </div> <!-- main -->
+  </body>
+</html>

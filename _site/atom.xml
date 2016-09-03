@@ -4,12 +4,83 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2016-08-04T10:24:46+08:00</updated>
+ <updated>2016-09-03T21:27:59+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
  </author>
 
+ 
+ <entry>
+   <title>电子书格式转换，mobi转为ePub格式</title>
+   <link href="http://tzungtzu.com/2016/09/03/convert-to-epub.html"/>
+   <updated>2016-09-03T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2016/09/03/convert_to_epub</id>
+   <content type="html">&lt;h3 id=&quot;section&quot;&gt;需求：&lt;/h3&gt;
+
+&lt;p&gt;由于现在基本用apple三件套看电子书，在家一般用Pad，出门带上iPhone，有时候就用iBooks杀时间看看书。只有在用电非常有限的时候（徒步）才会带上Kindle。&lt;/p&gt;
+
+&lt;p&gt;但是网上下载电子书资源，基本上还是mobi格式居多，需要自己转换成ePub格式。一般都会通过网站在线转换。去的次数多了，觉得很不方便。需要打开网页，选定文件，才能转换。自己做事一般能省一步就省一步，所以想通过找到一些提供支持的服务来简化步骤。&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;目前常用的支持CLI(Command Line Interface)的文件格式转换软件（服务）以及优缺点如下：
+1. Calibre ：主打电子书管理，功能非常全面，从一键发送kindle，添加图书信息，添加tag，文件转换。一应俱全。 ；文件太。。大。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://pandoc.org/&quot;&gt;pandoc &lt;/a&gt;： 支持很多格式之间的文档转换。（HTML,XML,ePub,PDF, Tex）；不支持mobi格式作为输入或者输出&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;convertio ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;calibre&quot;&gt;Calibre&lt;/h2&gt;
+&lt;p&gt;安装好Calibre后，还不能直接使用CLI，
+需要建立&lt;a href=&quot;https://github.com/GitbookIO/gitbook/issues/333&quot;&gt;软链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者设置全局变量&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;之后即可转换文件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ebook-convert input_file output_file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;具体可选配置可以点&lt;a href=&quot;https://manual.calibre-ebook.com/generated/en/cli-index.html#&quot;&gt;这里&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;convertio&quot;&gt;Convertio&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;注册获取API Key&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Installation&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; $ wget --no-check-certificate -O &#39;/usr/local/bin/convertio&#39; https://api.convertio.co/convertio
+ $ chmod +x /usr/local/bin/convertio
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Convert&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
+ convertio -f jpg input.pdf
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Tour de Mont Blanc 2016</title>
@@ -441,134 +512,6 @@
 &lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/yundi1.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/yundi2.jpg&quot; alt=&quot;像素级，脸都看不清&quot; /&gt;
 &lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/yundi3.jpg&quot; alt=&quot;朋友在前排拍的背影&quot; /&gt;&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>2015总结</title>
-   <link href="http://tzungtzu.com/2016/01/29/2015summary.html"/>
-   <updated>2016-01-29T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/01/29/2015summary</id>
-   <content type="html">&lt;p&gt;不知不觉到了以前认为的不再年轻的年纪。也越发觉得经历的重要性。知道什么是基本需求，也慢慢知道自己想要的挑战。下了很多决心，做了一些改变，却还是没有下苦功磨砺自己，仿佛生怕知道自己不是璞玉。很多小事不值一提，但也是这独一无二的经历，才不一样。&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;section&quot;&gt;年度书籍：&lt;/h4&gt;
-&lt;p&gt;小说类：金色梦乡&lt;/p&gt;
-
-&lt;p&gt;科普类：万万没想到&lt;/p&gt;
-
-&lt;p&gt;每年都会期许多看书，却一直看的有限，因为身边朋友的原因，看了不少日系悬疑小说和电影。也算是打开了一个新的窗口，感受了东野圭吾通过渲染人性让推理小说多出一丝温暖，阿加莎缜密的描写和全面的知识来控制推理节奏，以及伊坂幸太郎天马行空却又合理收尾的想象力。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度城市：&lt;/p&gt;
-
-&lt;p&gt;广州&lt;/p&gt;
-
-&lt;p&gt;完成了一个小心愿。五月带爸妈游欧洲。罗马，弗洛伦萨，威尼斯，米兰，日内瓦，因特拉肯，巴塞罗那，巴黎，科隆。希望下一站是美国啦；）跟爸妈在一起的地方都是好的。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度照片：
-&amp;lt;img src=”http://7xo4c2.com1.z0.glb.clouddn.com/paris.jpg” width=40%&amp;gt;
-&lt;br /&gt;
-年度运动：&lt;/p&gt;
-
-&lt;p&gt;坚持了将近一年的慢跑，也坚持每到一个地方都跑。没有参加徒步，希望今年能够补回来。
- &amp;lt;img src=”http://7xo4c2.com1.z0.glb.clouddn.com/running2015.jpg” width=40%&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度歌曲：&lt;/p&gt;
-
-&lt;p&gt;依然听吉他，ukulele为主。Jake，Depapepe是常备，15年比较喜欢的是名渡山遼的beachline。&lt;a href=&quot;http://music.163.com/#/user/home?id=19988667&quot;&gt;网易累计听的歌&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;!-- 要不要用douban记录歌曲？ --&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度纪录片：&lt;/p&gt;
-
-&lt;p&gt;舌尖上的新年。&lt;/p&gt;
-
-&lt;p&gt;还没看，准备除夕被虐。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度电影：&lt;/p&gt;
-
-&lt;p&gt;模仿游戏。&lt;/p&gt;
-
-&lt;p&gt;虽然是年初看的，虽然今年看了不少好电影，但还是最喜欢这部。（毕竟半个祖师爷）&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度剧集：&lt;/p&gt;
-
-&lt;p&gt;《约会，恋爱究竟是什么呢？》&lt;/p&gt;
-
-&lt;p&gt;15年冬天的月九剧，虽然是年初但却2015最佳，不被取代。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度综艺：&lt;/p&gt;
-
-&lt;p&gt;奇葩说。&lt;/p&gt;
-
-&lt;p&gt;了不起的挑战也很良心&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度败家：&lt;/p&gt;
-
-&lt;p&gt;rMBP 13 Early 2015。&lt;/p&gt;
-
-&lt;p&gt;难得换一次大件。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度保持：&lt;/p&gt;
-
-&lt;p&gt;书，羽毛球，ukulele&lt;/p&gt;
-
-&lt;p&gt;食欲和求知欲&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度app：&lt;/p&gt;
-
-&lt;p&gt;Ulysses。&lt;/p&gt;
-
-&lt;p&gt;改变习惯的APP有很多，喜欢这个让我喜欢写字（打字）的app。期待iPhone版本。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度游戏：&lt;/p&gt;
-
-&lt;p&gt;Don’t Starve Together。&lt;/p&gt;
-
-&lt;p&gt;竟然在年底的时候入了坑，不过跟朋友一起捡屎打怪吐槽比一个人爽很多呀。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度折腾：&lt;/p&gt;
-
-&lt;p&gt;学习各种工作需要的软件&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度漫画：&lt;/p&gt;
-
-&lt;p&gt;一个人去跑步系列。&lt;/p&gt;
-
-&lt;p&gt;以为一个人的马拉松是很久以前的事情了，原来就是今年，高木直子是个有趣且正能量的作者。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-年度偶像：&lt;/p&gt;
-
-&lt;p&gt;杏，杏，杏！&lt;/p&gt;
-
-&lt;p&gt;看东方快车谋杀案才第一次看到她，并不算出彩。但是约会里面真是超喜欢啊。而且发现是个优质偶像，弹吉他，兴趣广泛，当然也嫁了个好人家。。&lt;/p&gt;
-
-&lt;p&gt;还有年度犯二，年度共鸣。。想到慢慢加&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-新年愿望： 多看专业书
-—-&lt;/p&gt;
-
-&lt;p&gt;写完发现2015年是被日系改变(刷新三观)的一年，从音乐品味，漫画，电影，喜欢的任务，作品特点都被扳到了一边。2016希望能感受更多可能会喜欢的东西。&lt;/p&gt;
-
-&lt;p&gt;套用一句&lt;a href=&quot;http://www.douban.com/note/533212036/?start=0&amp;amp;post=ok&quot;&gt;Xinhui&lt;/a&gt;的话：
-&amp;gt; 人生中如果真的有什么东西，心甘情愿地属于你，实在是温柔美好而又值得珍惜的事。&lt;/p&gt;
 
 </content>
  </entry>

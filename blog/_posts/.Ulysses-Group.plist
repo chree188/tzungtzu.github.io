@@ -694,6 +694,16 @@
 					<integer>46</integer>
 				</dict>
 			</dict>
+			<key>2016-09-03-convert_to_epub.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>494601191.80231202</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>50</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>487709055.90886199</real>
@@ -702,6 +712,9 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-09-03-convert_to_epub.md</string>
+		</array>
 		<array>
 			<string>2016-07-30-tmb-packing - 2.md</string>
 		</array>
@@ -928,7 +941,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>47</integer>
+			<integer>51</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

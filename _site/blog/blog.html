@@ -47,6 +47,94 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2016/09/03/convert-to-epub.html">电子书格式转换，mobi转为ePub格式</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2016-09-03">2016-09-03</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#ePub" title="ePub">#ePub</a>
+      
+      <a href="/tags.html#mobi" title="mobi">#mobi</a>
+      
+      <a href="/tags.html#ebook" title="ebook">#ebook</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <h3 id="section">需求：</h3>
+
+<p>由于现在基本用apple三件套看电子书，在家一般用Pad，出门带上iPhone，有时候就用iBooks杀时间看看书。只有在用电非常有限的时候（徒步）才会带上Kindle。</p>
+
+<p>但是网上下载电子书资源，基本上还是mobi格式居多，需要自己转换成ePub格式。一般都会通过网站在线转换。去的次数多了，觉得很不方便。需要打开网页，选定文件，才能转换。自己做事一般能省一步就省一步，所以想通过找到一些提供支持的服务来简化步骤。</p>
+
+<p><!--more--></p>
+
+<p>目前常用的支持CLI(Command Line Interface)的文件格式转换软件（服务）以及优缺点如下：
+1. Calibre ：主打电子书管理，功能非常全面，从一键发送kindle，添加图书信息，添加tag，文件转换。一应俱全。 ；文件太。。大。</p>
+
+<ol>
+  <li>
+    <p><a href="http://pandoc.org/">pandoc </a>： 支持很多格式之间的文档转换。（HTML,XML,ePub,PDF, Tex）；不支持mobi格式作为输入或者输出</p>
+  </li>
+  <li>
+    <p>convertio ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug</p>
+  </li>
+</ol>
+
+<h2 id="calibre">Calibre</h2>
+<p>安装好Calibre后，还不能直接使用CLI，
+需要建立<a href="https://github.com/GitbookIO/gitbook/issues/333">软链接</a></p>
+
+<pre><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+</code></pre>
+
+<p>或者设置全局变量</p>
+
+<pre><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+</code></pre>
+
+<p>之后即可转换文件</p>
+
+<pre><code>ebook-convert input_file output_file
+</code></pre>
+
+<p>具体可选配置可以点<a href="https://manual.calibre-ebook.com/generated/en/cli-index.html#">这里</a>。</p>
+
+<h2 id="convertio">Convertio</h2>
+
+<ol>
+  <li>
+    <p>注册获取API Key</p>
+  </li>
+  <li>
+    <p>Installation</p>
+
+    <pre><code> $ wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
+ $ chmod +x /usr/local/bin/convertio
+</code></pre>
+  </li>
+  <li>
+    <p>Convert</p>
+
+    <pre><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
+ convertio -f jpg input.pdf
+</code></pre>
+  </li>
+</ol>
+
+<p>在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。</p>
+
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2016/07/30/tmb-packing-2.html">Tour de Mont Blanc 2016</a></h2>
     </section>
     <section class="meta">
@@ -219,42 +307,6 @@
   <li>2000以上就都是雪了，所以有一大部分都是在雪地里徒步。</li>
 </ol>
 
-
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2016/05/15/goodbye.html">It’s time to say goodbye</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2016-05-15">2016-05-15</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#Castle" title="Castle">#Castle</a>
-      
-      <a href="/tags.html#Kate" title="Kate">#Kate</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>来荷兰被推荐的这个剧，当时一个周末看完了第一季就决定追下去。现在回想，孩子气，博学多才，偶尔闯点小祸的C叔谁不喜欢呢。除了脱线的C叔，高颜的K姐，搞笑基友的R和E，以及爱吐槽的妈妈和<strong>越来越</strong>漂亮的女儿A。都是舍不得这部剧的理由。</p>
-
-<p><!--more--></p>
-
-<p>人老了就特别舍不得身边一直陪伴的事物，说的就是我。这几年它经常代替cm成为我的下饭剧。没想到最后因为失去主演而结束了。希望下周的Finale能有个圆满的结局。一直有看到戏外的一些八卦，心疼K姐是肯定的，不过能看到剧中两个人的感情一路开花结果，影迷们也满足了。</p>
-
-<p>摊开来讲，一个轻松的探案喜剧，总因为新的形式或主题还有创意，变得好精致。回想起来还有很多隐藏梗可以用，C叔的老爸自始自终是个神奇的人物，巴黎那集闪亮登场之后，我一直很期待再看到。</p>
-
-<p>有惊喜，也有期待。有满足，也有遗憾。就像我们的生活一样，好聚好散。电视还是生活，都有完结的时候。<strong>结束的方式，是人品的体现</strong>。</p>
-
-<p>希望大家记得的都是美好的时候。看到Ryan小天使的twitter封面时，我想。</p>
-
-<p><img src="http://ww3.sinaimg.cn/large/66fa60dfgw1f425dqats0j20r80f9diu.jpg" alter="castle" width="75%" /></p>
 
     </section>
     </article>
