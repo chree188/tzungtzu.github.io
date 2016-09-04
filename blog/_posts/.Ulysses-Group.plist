@@ -704,6 +704,16 @@
 					<integer>50</integer>
 				</dict>
 			</dict>
+			<key>2016-09-04-hazel-rule.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>494696094.66115201</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>56</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>487709055.90886199</real>
@@ -712,6 +722,9 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-09-04-hazel-rule.md</string>
+		</array>
 		<array>
 			<string>2016-09-03-convert_to_epub.md</string>
 		</array>
@@ -941,7 +954,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>51</integer>
+			<integer>57</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

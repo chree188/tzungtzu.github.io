@@ -23,13 +23,13 @@ tags:
 
 2. [pandoc ][1]： 支持很多格式之间的文档转换。（HTML,XML,ePub,PDF, Tex）；不支持mobi格式作为输入或者输出
 
-3. convertio ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug
+3. [convertio][2] ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug
 
 
 
 ## Calibre
 安装好Calibre后，还不能直接使用CLI，
-需要建立[软链接][2]
+需要建立[软链接][3]
 
 	ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
 
@@ -41,7 +41,7 @@ tags:
 
 	ebook-convert input_file output_file
 
-具体可选配置可以点[这里][3]。
+具体可选配置可以点[这里][4]。
 
 
 
@@ -64,5 +64,6 @@ tags:
 在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。
 
 [1]:	http://pandoc.org/
-[2]:	https://github.com/GitbookIO/gitbook/issues/333
-[3]:	https://manual.calibre-ebook.com/generated/en/cli-index.html#
+[2]:	https://convertio.co/zh/cli/
+[3]:	https://github.com/GitbookIO/gitbook/issues/333
+[4]:	https://manual.calibre-ebook.com/generated/en/cli-index.html#

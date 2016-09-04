@@ -47,6 +47,52 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2016/09/04/hazel-rule.html">利用Hazel和脚本文件自动转电子书格式</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2016-09-04">2016-09-04</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#ePub" title="ePub">#ePub</a>
+      
+      <a href="/tags.html#mobi" title="mobi">#mobi</a>
+      
+      <a href="/tags.html#ebook" title="ebook">#ebook</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p><a href="http://tzungtzu.cshozzy.com/2016/09/03/convert_to_epub.html">上篇文章</a>说到利用Calibre的Command Line Interface可以将mobi格式转为ePub格式。更进一步（更加偷懒），每当下载一个mobi文件，系统自动将mobi文件进行格式转换，并把它放进eBook文件夹。这整个workflow可以通过Hazel这个软件实现。</p>
+
+<p><!--more--></p>
+
+<h2 id="hazel">Hazel</h2>
+<p>Hazel是一个自动整理文件辅助软件，可以根据你设定的规则自动将文件移动（复制）到指定位置。同时也支持Shell，AppleScript这样的脚本文件。</p>
+
+<p>我觉得Hazel是个很强大的软件，不过目前只会用它做一些简单的整理类的动作。希望有机会做一些更有趣的事情。</p>
+
+<p>在这里不做过多介绍，通过这个实例来介绍如何Hazel运行规则。</p>
+
+<h2 id="section">建立格式转换规则</h2>
+
+<p><img src="http://7xo4c2.com1.z0.glb.clouddn.com/hazel.jpeg" alter="hazel" width="75%" /></p>
+
+<p>如图整个流程是个if…then…语句。在Download文件夹一旦出现mobi格式的文件，自动在文件夹内运行内嵌的脚本文件，脚本文件第一行获取文件的文件名（不包括后缀），第二行对mobi文件进行转换，生成相同文件名的ePub文件。下一步再将文件移动到eBook文件夹。</p>
+
+<blockquote>
+  <p>任何一个需要部署或者配置三遍以上的动作，就值得花时间写脚本出来。重复劳动是笨的体现。</p>
+</blockquote>
+
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2016/09/03/convert-to-epub.html">电子书格式转换，mobi转为ePub格式</a></h2>
     </section>
     <section class="meta">
@@ -82,7 +128,7 @@
     <p><a href="http://pandoc.org/">pandoc </a>： 支持很多格式之间的文档转换。（HTML,XML,ePub,PDF, Tex）；不支持mobi格式作为输入或者输出</p>
   </li>
   <li>
-    <p>convertio ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug</p>
+    <p><a href="https://convertio.co/zh/cli/">convertio</a> ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug</p>
   </li>
 </ol>
 
@@ -161,151 +207,6 @@
 <p>这次的行程远没有之前计划的那么简单，穿越垭口需要上下几百米。我们五人同行只有三人走完了全程。拖延症的我在一个月以后终于整理了一下照片，具体tips再慢慢补上。</p>
 
 <p><img src="http://7xo4c2.com1.z0.glb.clouddn.com/tmb-iPhone.png" alter="tmb" width="75%" /></p>
-
-
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2016/06/15/tmb-packing.html">给几天后的TMB徒步</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2016-06-15">2016-06-15</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#trekking" title="trekking">#trekking</a>
-      
-      <a href="/tags.html#TMB" title="TMB">#TMB</a>
-      
-      <a href="/tags.html#packing" title="packing">#packing</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>这次徒步和上次<a href="http://tzungtzu.cshozzy.com/2014/08/02/trekking.html">瑞典徒步</a>不同，不算重装（不需要准备炉头，帐篷）。一路上都有refuge住。所以特意用了新买的Osprey 38，基本能装好所有需要的东西。</p>
-
-<p><!--more--></p>
-
-<h2 id="section">打包方法</h2>
-
-<p>说说打包，常用的物品应在近开口处，宿营时才用的物品放在里面。轻、软的物品在下　重、硬的物品在上。不能压的物品应在上方。尽量不外挂。</p>
-
-<blockquote>
-  <p>重物在上有利于使背包重心尽可能的靠近人体的重心　不易使人腰腹部肌肉疲劳。</p>
-</blockquote>
-
-<ul>
-  <li>盖包：用于装带雨具、地图、小食品等。这类物品在一旦需要时　可以很方便的请同行者帮助取出。</li>
-  <li>两侧包：用于装带一些常用物品。如水壶、电筒、洗漱用具、卫生纸、急用药品、应急食品、太阳镜、手套、小相机、胶卷等物品（可能淋湿，注意包装）</li>
-  <li>主包：则装带其他重要物品。如睡袋、换洗衣服、餐具等</li>
-</ul>
-
-<p><!--more-->
-<br /></p>
-
-<h2 id="section-1">行李准备</h2>
-
-<p>根据我的个人习惯，行李基本分为以下几类：</p>
-
-<ol>
-  <li>衣服装备类</li>
-  <li>生活用品类</li>
-  <li>数码类</li>
-  <li>药品类</li>
-  <li>食品类</li>
-  <li>个人财产类</li>
-</ol>
-
-<p><br /></p>
-
-<h3 id="section-2">1. 衣服装备类</h3>
-
-<ul>
-  <li>冲锋衣（重要）</li>
-  <li>徒步鞋（重要）</li>
-  <li>登山杖（非常有用，节省30%腿部的力量，上山省力，下山保护膝盖，不确认路况还是额外的一个支点和探路器）</li>
-  <li>睡袋，防潮垫，帐篷（后两样此次不需要）</li>
-  <li>手电，地图</li>
-  <li>贴身速干衣裤（注意不要是棉的，在汗湿之后不透气，寒冷时导致失温）抓绒外套，冲锋衣，贴身舒适衣裤（不在外睡的话也可以少带）</li>
-  <li>袜子（可以考虑一天一双，在出汗时候一定要换，不然容易起水泡），帽子，手套，拖鞋，便鞋</li>
-  <li>防晒外套（没有买到），太阳镜，防晒霜</li>
-  <li>雨衣</li>
-  <li>内衣裤多带</li>
-  <li>围巾／头巾</li>
-  <li>叉勺，水壶，瑞士军刀</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="section-3">2. 数码类</h3>
-
-<ul>
-  <li>相机（可多备电池）</li>
-  <li>手机（记录GPS数据）</li>
-  <li>转换插头（重要），移动电源，各类充电线</li>
-  <li>U盘</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="section-4">3. 生活用品类</h3>
-
-<ul>
-  <li>速干毛巾</li>
-  <li>香皂，洗发水(小锡袋试用装）</li>
-  <li>牙膏牙刷</li>
-  <li>面巾纸，湿纸巾</li>
-  <li>凡士林</li>
-  <li>大小不同的密封袋</li>
-  <li>折叠便携盆，暖宝宝（重装必备）</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="section-5">4. 药品类</h3>
-
-<ul>
-  <li>感冒药，肠胃药</li>
-  <li>云南白药</li>
-  <li>驱蚊喷雾</li>
-  <li>急救箱</li>
-  <li>护踝护膝</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="section-6">5. 食品类</h3>
-<ul>
-  <li>泡腾片（尽量多吃蔬菜水果）</li>
-  <li>能量棒，巧克力</li>
-  <li>口香糖</li>
-  <li>坚果</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="section-7">6. 个人财产类</h3>
-
-<ul>
-  <li>现金</li>
-  <li>护照／ID，文件复印件，重要文件扫描备份存在网上</li>
-  <li>机票，车票订单</li>
-</ul>
-
-<p><br /></p>
-
-<h2 id="tips">一些Tips</h2>
-<ol>
-  <li>提前清空手机相机的照片。</li>
-  <li>在当地可以购买明信片，徒步纪念T恤。</li>
-  <li>保证每天饮水</li>
-  <li>2000以上就都是雪了，所以有一大部分都是在雪地里徒步。</li>
-</ol>
 
 
     </section>
