@@ -60,6 +60,7 @@ tags:
 		convertio -f jpg input.pdf
 
 
+<img src="http://7xo4c2.com1.z0.glb.clouddn.com/convertio.jpeg" alter="convertio" width="75%">
 
 在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。
 
