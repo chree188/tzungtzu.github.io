@@ -1,8 +1,6 @@
 —
 layout: post
-title: <img src="http://7xo4c2.com1.z0.glb.clouddn.com/self-control.png" alter="self-control" width="100%">
-
-让我更有收获的是这本书的书评，也就是思维导图中的源泉部分。阅读实用型的书籍的时候，我们不但要认识实际的问题，还需要从中找到可执行的方法。而最重要的是用行动来解决问题。
+title: 读书笔记：《自控力》
 categories:
 - Reading
 - tags:
