@@ -1,4 +1,4 @@
-—
+---
 layout: post
 title: 读书笔记：《自控力》
 categories:
@@ -6,7 +6,7 @@ categories:
 - tags:
 - 实用型书籍
 - 自控力
--意志力
+- 意志力
 - mindmap
 ---
 
