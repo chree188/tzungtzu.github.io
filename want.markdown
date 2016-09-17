@@ -11,6 +11,8 @@ layout: page
 钢琴；吉他；架子鼓
 滑板
 
+。。。用时间块来记录做的时间
+
 
 刷新人生经验
 种薄荷，葱；
@@ -25,7 +27,7 @@ layout: page
 
 想要的（都是短期内不会买的吧）：
 
-卡包，wifi音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 冬帽，sony W273，Garmin Forerunner 225，运动半指手套 ，[空气炸锅][2]，手帕，AKG Q350，GoPro，蔡赟款Kason C7
+卡包，wifi音箱，<del>邮差包，料理机</del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 冬帽，sony W273，Garmin Forerunner 225，运动半指手套 ，[空气炸锅][2]，手帕，AKG Q350，GoPro，蔡赟款Kason C7，[Withings Thermo][3]
 
 ![20160112添加][image-1] 
 <!-- 20060112 -->
@@ -38,5 +40,6 @@ layout: page
 
 [1]:	https://book.douban.com/mine?status=wish
 [2]:	http://www.amazon.com/Avalon-Bay-AB-Airfryer100B-Airfryer-Black/dp/B00NU68QWA "https://www.douban.com/people/piepiecharlene/status/1734066153/"
+[3]:	http://www.smartlifein.com/medical/201607/13813.html#0-tsina-1-99215-397232819ff9a47a7b7e80a40613cfe1
 
 [image-1]:	http://7xo4c2.com1.z0.glb.clouddn.com/dontstarve.JPG

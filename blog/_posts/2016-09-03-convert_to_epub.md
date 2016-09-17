@@ -51,8 +51,8 @@ tags:
 
 2. Installation
 
-		$ wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
-		$ chmod +x /usr/local/bin/convertio
+		wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
+		chmod +x /usr/local/bin/convertio
 
 3. Convert
 
@@ -63,6 +63,7 @@ tags:
 <img src="http://7xo4c2.com1.z0.glb.clouddn.com/convertio.jpeg" alter="convertio" width="75%">
 
 在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。
+
 
 [1]:	http://pandoc.org/
 [2]:	https://convertio.co/zh/cli/

@@ -714,14 +714,44 @@
 					<integer>56</integer>
 				</dict>
 			</dict>
+			<key>2016-09-17-self-control.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>495808638.64849597</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>63</integer>
+				</dict>
+			</dict>
+			<key>Untitled.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>495808524.72104901</real>
+				<key>lastModification</key>
+				<real>495808524.72104901</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>62</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
-		<real>487709055.90886199</real>
+		<real>495101194.34689999</real>
 		<key>userIconName</key>
 		<real>480849650</real>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-09-17-self-control.md</string>
+		</array>
+		<array>
+			<string>Untitled.md</string>
+		</array>
 		<array>
 			<string>2016-09-04-hazel-rule.md</string>
 		</array>
@@ -934,7 +964,7 @@
 		</array>
 	</array>
 	<key>sheetOrder</key>
-	<string>modificationDate</string>
+	<string>creationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>userIconName</key>
@@ -954,12 +984,12 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>57</integer>
+			<integer>64</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>
