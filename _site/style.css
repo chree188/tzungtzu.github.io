@@ -1,14 +1,0 @@
-
-
-h1,h2{
-	color: #007e7e;
-}
-body{
-
-			background-color:#d2b48c;			margin-left: 20%;
-			margin-right: 20%; /*边框*/
-			border: 1px dotted grey; /*边界*/
-			padding: 10px 10px 10px 10px; /*补白*/
-			font-family: Verdana, Helvetica, Arials, sans-serif;			font-size: small;			//line-height: 1.8em;
-}#sidebar{	background-color: #675c47;	padding: 15px;	margin: 0px 10px 10px 10px;	width: 100px;	float: right;}#pic{	position: fixed;	top: 30px;	left: 700px;}#main {	background-color: #efe0f5;	padding: 15px ;	margin: 10px;	margin: 0px 150px 10px 10px;	}#footer{	color: red;	background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;	clear: right;}h1{	font-size: 150%;}
-h2{	font-size: 120%;}#content {	border-color: black;	border-width: 1px;	border-style: solid;	background-color: #a7cece;	padding: 25px;	margin: 30px;	background-image: url(bg.png);}#content p{	color: red;}a:link {	color: #007e7e;}a:visited {	color: #333333;}a:hover {	background: #f88396;	color: #0d5353;}

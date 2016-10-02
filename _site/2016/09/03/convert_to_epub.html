@@ -4,12 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>Tour de Mont Blanc 2016</title>
+    <title>电子书格式转换，mobi转为ePub格式</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
     <link rel="stylesheet" href="/media/css/style.css">
     <link rel="stylesheet" href="/media/css/github.css">
+<!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
@@ -20,6 +21,7 @@
 
   </head>
   <body>
+<!--   <script src="/media/js/folder/jquery.popup.min.js"></script> -->
       <div id="main" role="main">
         <header>
           <div id="header">
@@ -44,11 +46,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>Tour de Mont Blanc 2016 </h2>
+    <h2>电子书格式转换，mobi转为ePub格式 </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2016-06-15">2016-06-15</time>
+    <time datetime="2016-09-03">2016-09-03</time>
   </span>
   
 
@@ -57,7 +59,7 @@
   
   <a href="/category.html#blog" title="blog">blog</a>&nbsp;
   
-  <a href="/category.html#Travel" title="Travel">Travel</a>&nbsp;
+  <a href="/category.html#Technology " title="Technology ">Technology </a>&nbsp;
   
 </span>
 
@@ -66,17 +68,80 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#trekking" title="trekking">#trekking</a>&nbsp;
+    <a href="/tags.html#ePub" title="ePub">#ePub</a>&nbsp;
     
-    <a href="/tags.html#TMB" title="TMB">#TMB</a>&nbsp;
+    <a href="/tags.html#mobi" title="mobi">#mobi</a>&nbsp;
     
-    <a href="/tags.html#travel2016" title="travel2016">#travel2016</a>&nbsp;
+    <a href="/tags.html#ebook" title="ebook">#ebook</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p><img src="7xo4c2.com1.z0.glb.clouddn.comtmb-iPhone.png" alter="7xo4c2.com1.z0.glb.clouddn.com/tmb-iPhone.png" width="75%" /></p>
+  <h3 id="section">需求：</h3>
+
+<p>由于现在基本用apple三件套看电子书，在家一般用Pad，出门带上iPhone，有时候就用iBooks杀时间看看书。只有在用电非常有限的时候（徒步）才会带上Kindle。</p>
+
+<p>但是网上下载电子书资源，基本上还是mobi格式居多，需要自己转换成ePub格式。一般都会通过网站在线转换。去的次数多了，觉得很不方便。需要打开网页，选定文件，才能转换。自己做事一般能省一步就省一步，所以想通过找到一些提供支持的服务来简化步骤。</p>
+
+<p><!--more--></p>
+
+<p>目前常用的支持CLI(Command Line Interface)的文件格式转换软件（服务）以及优缺点如下：
+1. Calibre ：主打电子书管理，功能非常全面，从一键发送kindle，添加图书信息，添加tag，文件转换。一应俱全。 ；文件太。。大。</p>
+
+<ol>
+  <li>
+    <p><a href="http://pandoc.org/">pandoc </a>： 支持很多格式之间的文档转换。（HTML,XML,ePub,PDF, Tex）；不支持mobi格式作为输入或者输出</p>
+  </li>
+  <li>
+    <p><a href="https://convertio.co/zh/cli/">convertio</a> ：在线文件转换服务，提供API，可以利用CLI在线命令行转换。  暂时有bug</p>
+  </li>
+</ol>
+
+<h2 id="calibre">Calibre</h2>
+<p>安装好Calibre后，还不能直接使用CLI，
+需要建立<a href="https://github.com/GitbookIO/gitbook/issues/333">软链接</a></p>
+
+<pre><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+</code></pre>
+
+<p>或者设置全局变量</p>
+
+<pre><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+</code></pre>
+
+<p>之后即可转换文件</p>
+
+<pre><code>ebook-convert input_file output_file
+</code></pre>
+
+<p>具体可选配置可以点<a href="https://manual.calibre-ebook.com/generated/en/cli-index.html#">这里</a>。</p>
+
+<h2 id="convertio">Convertio</h2>
+
+<ol>
+  <li>
+    <p>注册获取API Key</p>
+  </li>
+  <li>
+    <p>Installation</p>
+
+    <pre><code> wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
+ chmod +x /usr/local/bin/convertio
+</code></pre>
+  </li>
+  <li>
+    <p>Convert</p>
+
+    <pre><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
+ convertio -f jpg input.pdf
+</code></pre>
+  </li>
+</ol>
+
+<p><img src="http://7xo4c2.com1.z0.glb.clouddn.com/convertio.jpeg" alter="convertio" width="75%" /></p>
+
+<p>在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。</p>
 
 
   </section>

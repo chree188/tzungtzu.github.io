@@ -714,28 +714,24 @@
 					<integer>56</integer>
 				</dict>
 			</dict>
-			<key>2016-09-17-self-control.md</key>
+			<key>2016-09-17-self-control - 2.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>495808638.64849597</real>
+				<real>497112714.65984601</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>63</integer>
+					<integer>66</integer>
 				</dict>
 			</dict>
-			<key>Untitled.md</key>
+			<key>2016-10-02-do-better.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>495808524.72104901</real>
 				<key>lastModification</key>
-				<real>495808524.72104901</real>
+				<real>497114213.10609198</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>62</integer>
+					<integer>71</integer>
 				</dict>
 			</dict>
 		</dict>
@@ -747,10 +743,10 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>2016-09-17-self-control.md</string>
+			<string>2016-10-02-do-better.md</string>
 		</array>
 		<array>
-			<string>Untitled.md</string>
+			<string>2016-09-17-self-control - 2.md</string>
 		</array>
 		<array>
 			<string>2016-09-04-hazel-rule.md</string>
@@ -984,7 +980,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>64</integer>
+			<integer>72</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
