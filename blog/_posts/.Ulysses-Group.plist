@@ -744,6 +744,16 @@
 					<integer>75</integer>
 				</dict>
 			</dict>
+			<key>2016-10-16-communicate.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>498286965.41557997</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>81</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>495101194.34689999</real>
@@ -752,6 +762,9 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-10-16-communicate.md</string>
+		</array>
 		<array>
 			<string>2016-10-09-howtocommunicate.md</string>
 		</array>
@@ -993,7 +1006,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>76</integer>
+			<integer>82</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
