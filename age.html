@@ -34,12 +34,12 @@
 		var m = thetime.getMinutes();
 		var s = thetime.getSeconds();
 		var mm = thetime.getMilliseconds();
-		var d = thetime.getDay();
+		var d = thetime.getDate();
 		var mon = thetime.getMonth();
 		var y = thetime.getFullYear();
 		var z = thetime.getTimezoneOffset();
 		var day = (mm/1000+s+m*60+(h+8+z/60)*60*60)/(24*60*60);
-		var MyAge = (y-1990)+(mon-5)/12+(d-1+day-11)/30/12;
+		var MyAge = (y-1990)+(mon+1-5)/12+(d+day-11)/30/12;
 		//MyAge = Myage.toFixed(2);
 		var FixedAge = MyAge.toFixed(11);
 
