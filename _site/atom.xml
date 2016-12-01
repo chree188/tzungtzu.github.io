@@ -4,12 +4,162 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2016-10-23T17:05:34+08:00</updated>
+ <updated>2016-11-27T13:57:11+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
  </author>
 
+ 
+ <entry>
+   <title>keyboard shortcut for ctrl on Mac</title>
+   <link href="http://tzungtzu.com/2016/11/27/shortcut.html"/>
+   <updated>2016-11-27T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2016/11/27/shortcut</id>
+   <content type="html">&lt;p&gt;Ctrl 的使用&lt;/p&gt;
+
+&lt;p&gt;记录一下Ctrl的用法，可以很方便的在文本上使用，避免把右手移到方向键以及减少步骤，试试看会不会常用。&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-movement&quot;&gt;光标移动基本快捷键(Basic Movement)&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+      &lt;th&gt;Keystroke&lt;/th&gt;
+      &lt;th&gt;Remember as&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;移到行首&lt;/td&gt;
+      &lt;td&gt;Control-A&lt;/td&gt;
+      &lt;td&gt;A=Start of Alphabet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;移至行末&lt;/td&gt;
+      &lt;td&gt;Control-E&lt;/td&gt;
+      &lt;td&gt;E=End&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;上移一行&lt;/td&gt;
+      &lt;td&gt;Control-P&lt;/td&gt;
+      &lt;td&gt;P=Previous&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;下移一行&lt;/td&gt;
+      &lt;td&gt;Control-N&lt;/td&gt;
+      &lt;td&gt;N=Next&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;左移一个字符&lt;/td&gt;
+      &lt;td&gt;Control-B&lt;/td&gt;
+      &lt;td&gt;B=Back&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;右移一个字符&lt;/td&gt;
+      &lt;td&gt;Control-F&lt;/td&gt;
+      &lt;td&gt;F=Forward&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;左删一个字符&lt;/td&gt;
+      &lt;td&gt;Control-H&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;右删一个字符&lt;/td&gt;
+      &lt;td&gt;Control-D&lt;/td&gt;
+      &lt;td&gt;D=Delete&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;右删所有字符&lt;/td&gt;
+      &lt;td&gt;Control-K&lt;/td&gt;
+      &lt;td&gt;K=Kill&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;左删所有字符&lt;/td&gt;
+      &lt;td&gt;Control-U&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;调换光标左右的字符（简直是冒泡排序）&lt;/td&gt;
+      &lt;td&gt;Control-T&lt;/td&gt;
+      &lt;td&gt;T=Tose&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;在光标后插入一行（=Enter）&lt;/td&gt;
+      &lt;td&gt;Control-O&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Scroll down&lt;/td&gt;
+      &lt;td&gt;Ctrl-V&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Center the current line in the window&lt;/td&gt;
+      &lt;td&gt;Ctrl-L&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://support.apple.com/en-us/HT201236&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>《影响力》读书笔记</title>
+   <link href="http://tzungtzu.com/2016/11/27/influence.html"/>
+   <updated>2016-11-27T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2016/11/27/influence</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;在我们复杂的生活中，大脑学会了一系列自动反应来处理复杂的信息加工，通过捷径来简化生活，而如今这一捷径也会别人利用。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;互惠原理&lt;/strong&gt;中，先让步的一方既选择了自己施恩的方式，又选择了自己获取回报的形式。这是「拒绝-退让」策略。&lt;/li&gt;
+  &lt;li&gt;当人做出承诺之后，&lt;strong&gt;个人承诺&lt;/strong&gt;就会建立起一套自圆其说的体系，让自己接受承诺，以及为当初的承诺找理由，这是「抛低球」策略。&lt;/li&gt;
+  &lt;li&gt;对于&lt;strong&gt;社会认同&lt;/strong&gt;现象。最重要的是要独立思考判断，并采取行动，避免「多元无知」效应。&lt;/li&gt;
+  &lt;li&gt;为了完成一个任务进行合作时，我们就会认为自己和对方再为同一个目标而奋斗。谨防对方通过同盟&lt;strong&gt;博得好感&lt;/strong&gt;的策略。&lt;/li&gt;
+  &lt;li&gt;我们服从的是&lt;strong&gt;权威符号&lt;/strong&gt;，而非权威本身。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;稀缺&lt;/strong&gt;带来的狂热并不会增加商品本身的实用性价值。&lt;/li&gt;
+  &lt;li&gt;当一条捷径摆在你面前的时候，你要警惕是带来简洁高效的快捷反应还是别人谋私的虚假信号。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>读书笔记（未完成）</title>
+   <link href="http://tzungtzu.com/2016/10/22/relationship.html"/>
+   <updated>2016-10-22T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2016/10/22/relationship</id>
+   <content type="html">&lt;p&gt;连看这本书，都是对女人应该怎么对待男人的认同点更多，男人的感受，女人该做的事情。而其实这本书于我，应该是知道自己应该怎么做，自己那些地方看待女人的方式有错误。&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;男人：&lt;/p&gt;
+
+&lt;p&gt;·  明白爱情真正的价值感在于付出&lt;/p&gt;
+
+&lt;p&gt;·  女人的滔滔不绝，寻求问题解决方法不是首要需求，更在乎别人的感同身受和安慰&lt;/p&gt;
+
+&lt;p&gt;理解女人的需要，女人缺乏安全感时，就会躲避，包括一切亲密举动。明智的男人学着支持女人度过这一周期，给予需要的爱和陪伴&lt;/p&gt;
+
+&lt;p&gt;·  女人就像波浪线
+·  波浪线式的情感
+·  情绪弹性的表现
+·  无法阻止的波浪轨迹
+·  并不是男人造成的
+·  默默的陪伴和支持，而不是告诉对方不应该沉底&lt;/p&gt;
+
+&lt;p&gt;对于主动请求帮助    男人容易因为对方的付出而降低自己的责任&lt;/p&gt;
+
+&lt;p&gt;·  过去的阴影
+·  90/10原则
+·  在你郁郁不乐时，90%以上都与过去的经历有关
+·  而当前让你不愉快的原因，充其量只有10%&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>酸奶123</title>
@@ -370,171 +520,6 @@
 
 &lt;p&gt;在这一点上，Kindle做的很好，不但有相关的服务，还有KindleGen这样的软件，可以直接利用CLI将不同格式文件转化为mobi格式。&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>Tour de Mont Blanc 2016</title>
-   <link href="http://tzungtzu.com/2016/07/30/tmb-packing-2.html"/>
-   <updated>2016-07-30T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/07/30/tmb-packing - 2</id>
-   <content type="html">&lt;embed src=&quot;http://player.youku.com/player.php/sid/XMTYyOTA3MjIxNg==/v.swf&quot; allowfullscreen=&quot;true&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowscriptaccess=&quot;always&quot; type=&quot;application/x-shockwave-flash&quot; /&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;这次的行程远没有之前计划的那么简单，穿越垭口需要上下几百米。我们五人同行只有三人走完了全程。拖延症的我在一个月以后终于整理了一下照片，具体tips再慢慢补上。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/tmb-iPhone.png&quot; alter=&quot;tmb&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>给几天后的TMB徒步</title>
-   <link href="http://tzungtzu.com/2016/06/15/tmb-packing.html"/>
-   <updated>2016-06-15T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/06/15/tmb-packing</id>
-   <content type="html">&lt;p&gt;这次徒步和上次&lt;a href=&quot;http://tzungtzu.cshozzy.com/2014/08/02/trekking.html&quot;&gt;瑞典徒步&lt;/a&gt;不同，不算重装（不需要准备炉头，帐篷）。一路上都有refuge住。所以特意用了新买的Osprey 38，基本能装好所有需要的东西。&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;打包方法&lt;/h2&gt;
-
-&lt;p&gt;说说打包，常用的物品应在近开口处，宿营时才用的物品放在里面。轻、软的物品在下　重、硬的物品在上。不能压的物品应在上方。尽量不外挂。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;重物在上有利于使背包重心尽可能的靠近人体的重心　不易使人腰腹部肌肉疲劳。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;盖包：用于装带雨具、地图、小食品等。这类物品在一旦需要时　可以很方便的请同行者帮助取出。&lt;/li&gt;
-  &lt;li&gt;两侧包：用于装带一些常用物品。如水壶、电筒、洗漱用具、卫生纸、急用药品、应急食品、太阳镜、手套、小相机、胶卷等物品（可能淋湿，注意包装）&lt;/li&gt;
-  &lt;li&gt;主包：则装带其他重要物品。如睡袋、换洗衣服、餐具等&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;!--more--&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;行李准备&lt;/h2&gt;
-
-&lt;p&gt;根据我的个人习惯，行李基本分为以下几类：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;衣服装备类&lt;/li&gt;
-  &lt;li&gt;生活用品类&lt;/li&gt;
-  &lt;li&gt;数码类&lt;/li&gt;
-  &lt;li&gt;药品类&lt;/li&gt;
-  &lt;li&gt;食品类&lt;/li&gt;
-  &lt;li&gt;个人财产类&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;1. 衣服装备类&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;冲锋衣（重要）&lt;/li&gt;
-  &lt;li&gt;徒步鞋（重要）&lt;/li&gt;
-  &lt;li&gt;登山杖（非常有用，节省30%腿部的力量，上山省力，下山保护膝盖，不确认路况还是额外的一个支点和探路器）&lt;/li&gt;
-  &lt;li&gt;睡袋，防潮垫，帐篷（后两样此次不需要）&lt;/li&gt;
-  &lt;li&gt;手电，地图&lt;/li&gt;
-  &lt;li&gt;贴身速干衣裤（注意不要是棉的，在汗湿之后不透气，寒冷时导致失温）抓绒外套，冲锋衣，贴身舒适衣裤（不在外睡的话也可以少带）&lt;/li&gt;
-  &lt;li&gt;袜子（可以考虑一天一双，在出汗时候一定要换，不然容易起水泡），帽子，手套，拖鞋，便鞋&lt;/li&gt;
-  &lt;li&gt;防晒外套（没有买到），太阳镜，防晒霜&lt;/li&gt;
-  &lt;li&gt;雨衣&lt;/li&gt;
-  &lt;li&gt;内衣裤多带&lt;/li&gt;
-  &lt;li&gt;围巾／头巾&lt;/li&gt;
-  &lt;li&gt;叉勺，水壶，瑞士军刀&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;2. 数码类&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;相机（可多备电池）&lt;/li&gt;
-  &lt;li&gt;手机（记录GPS数据）&lt;/li&gt;
-  &lt;li&gt;转换插头（重要），移动电源，各类充电线&lt;/li&gt;
-  &lt;li&gt;U盘&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;3. 生活用品类&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;速干毛巾&lt;/li&gt;
-  &lt;li&gt;香皂，洗发水(小锡袋试用装）&lt;/li&gt;
-  &lt;li&gt;牙膏牙刷&lt;/li&gt;
-  &lt;li&gt;面巾纸，湿纸巾&lt;/li&gt;
-  &lt;li&gt;凡士林&lt;/li&gt;
-  &lt;li&gt;大小不同的密封袋&lt;/li&gt;
-  &lt;li&gt;折叠便携盆，暖宝宝（重装必备）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-5&quot;&gt;4. 药品类&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;感冒药，肠胃药&lt;/li&gt;
-  &lt;li&gt;云南白药&lt;/li&gt;
-  &lt;li&gt;驱蚊喷雾&lt;/li&gt;
-  &lt;li&gt;急救箱&lt;/li&gt;
-  &lt;li&gt;护踝护膝&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-6&quot;&gt;5. 食品类&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;泡腾片（尽量多吃蔬菜水果）&lt;/li&gt;
-  &lt;li&gt;能量棒，巧克力&lt;/li&gt;
-  &lt;li&gt;口香糖&lt;/li&gt;
-  &lt;li&gt;坚果&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-7&quot;&gt;6. 个人财产类&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;现金&lt;/li&gt;
-  &lt;li&gt;护照／ID，文件复印件，重要文件扫描备份存在网上&lt;/li&gt;
-  &lt;li&gt;机票，车票订单&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tips&quot;&gt;一些Tips&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;提前清空手机相机的照片。&lt;/li&gt;
-  &lt;li&gt;在当地可以购买明信片，徒步纪念T恤。&lt;/li&gt;
-  &lt;li&gt;保证每天饮水&lt;/li&gt;
-  &lt;li&gt;2000以上就都是雪了，所以有一大部分都是在雪地里徒步。&lt;/li&gt;
-&lt;/ol&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>It’s time to say goodbye</title>
-   <link href="http://tzungtzu.com/2016/05/15/goodbye.html"/>
-   <updated>2016-05-15T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/05/15/goodbye</id>
-   <content type="html">&lt;p&gt;来荷兰被推荐的这个剧，当时一个周末看完了第一季就决定追下去。现在回想，孩子气，博学多才，偶尔闯点小祸的C叔谁不喜欢呢。除了脱线的C叔，高颜的K姐，搞笑基友的R和E，以及爱吐槽的妈妈和&lt;strong&gt;越来越&lt;/strong&gt;漂亮的女儿A。都是舍不得这部剧的理由。&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;人老了就特别舍不得身边一直陪伴的事物，说的就是我。这几年它经常代替cm成为我的下饭剧。没想到最后因为失去主演而结束了。希望下周的Finale能有个圆满的结局。一直有看到戏外的一些八卦，心疼K姐是肯定的，不过能看到剧中两个人的感情一路开花结果，影迷们也满足了。&lt;/p&gt;
-
-&lt;p&gt;摊开来讲，一个轻松的探案喜剧，总因为新的形式或主题还有创意，变得好精致。回想起来还有很多隐藏梗可以用，C叔的老爸自始自终是个神奇的人物，巴黎那集闪亮登场之后，我一直很期待再看到。&lt;/p&gt;
-
-&lt;p&gt;有惊喜，也有期待。有满足，也有遗憾。就像我们的生活一样，好聚好散。电视还是生活，都有完结的时候。&lt;strong&gt;结束的方式，是人品的体现&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;希望大家记得的都是美好的时候。看到Ryan小天使的twitter封面时，我想。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/66fa60dfgw1f425dqats0j20r80f9diu.jpg&quot; alter=&quot;castle&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  

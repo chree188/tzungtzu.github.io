@@ -3,13 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>childOrder</key>
-	<array/>
+	<array>
+		<string>New Folder</string>
+	</array>
 	<key>createMarkedFile</key>
 	<integer>0</integer>
 	<key>resolutionData</key>
 	<dict>
 		<key>childOrder</key>
-		<dict/>
+		<dict>
+			<key>New Folder</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>502080369.70737702</real>
+				<key>lastModification</key>
+				<real>502080369.70737702</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>6</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>createMarkedFile</key>
 		<real>480849650</real>
 		<key>sheetClusters</key>
@@ -774,18 +791,44 @@
 					<integer>89</integer>
 				</dict>
 			</dict>
-			<key>Untitled.md</key>
+			<key>2016-11-27-influence.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>500297725.351803</real>
 				<key>lastModification</key>
-				<real>500297725.351803</real>
+				<real>501913099.78797799</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>93</integer>
+					<integer>100</integer>
+				</dict>
+			</dict>
+			<key>2016-11-27-shortcut.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>501916959.90500098</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>108</integer>
+				</dict>
+			</dict>
+			<key>2016-11-29-christmas.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>502093409.259727</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>114</integer>
+				</dict>
+			</dict>
+			<key>2016-12-1-where-am-i.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>502283672.81045502</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>120</integer>
 				</dict>
 			</dict>
 		</dict>
@@ -797,7 +840,16 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>Untitled.md</string>
+			<string>2016-12-1-where-am-i.md</string>
+		</array>
+		<array>
+			<string>2016-11-29-christmas.md</string>
+		</array>
+		<array>
+			<string>2016-11-27-shortcut.md</string>
+		</array>
+		<array>
+			<string>2016-11-27-influence.md</string>
 		</array>
 		<array>
 			<string>2016-10-22-relationship.md</string>
@@ -1039,7 +1091,7 @@
 		<key>childOrder</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>3</integer>
+			<integer>6</integer>
 		</dict>
 		<key>createMarkedFile</key>
 		<dict>
@@ -1049,7 +1101,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>93</integer>
+			<integer>121</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
