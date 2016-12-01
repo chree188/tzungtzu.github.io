@@ -11,4 +11,4 @@ tags:
 ---
 
 
-Has a blog, read on douban, chirps on twitter, cook on xiachufang, play ukulele on youtube.
+Has a blog, read on douban, chirps on twitter, cooks on xiachufang, plays ukulele on youtube.
