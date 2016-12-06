@@ -3,30 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>childOrder</key>
-	<array>
-		<string>New Folder</string>
-	</array>
+	<array/>
 	<key>createMarkedFile</key>
 	<integer>0</integer>
 	<key>resolutionData</key>
 	<dict>
 		<key>childOrder</key>
-		<dict>
-			<key>New Folder</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>502080369.70737702</real>
-				<key>lastModification</key>
-				<real>502080369.70737702</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>6</integer>
-				</dict>
-			</dict>
-		</dict>
+		<dict/>
 		<key>createMarkedFile</key>
 		<real>480849650</real>
 		<key>sheetClusters</key>
@@ -831,6 +814,16 @@
 					<integer>120</integer>
 				</dict>
 			</dict>
+			<key>2016-12-6-vag-in-salad.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>502725859.32179201</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>124</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>495101194.34689999</real>
@@ -839,6 +832,9 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2016-12-6-vag-in-salad.md</string>
+		</array>
 		<array>
 			<string>2016-12-1-where-am-i.md</string>
 		</array>
@@ -1101,7 +1097,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>121</integer>
+			<integer>125</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
