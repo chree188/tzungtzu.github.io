@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 沙拉里的蔬菜
+title: 《时蔬小话》读书笔记二 —— 沙拉里的蔬菜
 categories:
 - Reading
 
