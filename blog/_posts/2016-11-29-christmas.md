@@ -22,4 +22,5 @@ tags:
 
 最近抽个时间扒一首圣诞曲子吧，不知道完整录下来是不是要等到明年了，感觉今年是来不及了。
 
+
 彩蛋：macOS 的 Photos.app 中自动添加了分类 Christmas Tree，Google Photos也会自动生成标签，搜索Christmas Tree 也可以显示照片里的圣诞树，圣诞周边，和上面写有 Christmas的照片（(￣▽￣”)有红绿彩灯的高楼也被识别出来了）
