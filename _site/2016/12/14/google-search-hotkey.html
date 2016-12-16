@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>记第N次调试Handoff和Airdrop</title>
+    <title>没有打断感</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -46,11 +46,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>记第N次调试Handoff和Airdrop </h2>
+    <h2>没有打断感 </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2016-03-28">2016-03-28</time>
+    <time datetime="2016-12-14">2016-12-14</time>
   </span>
   
 
@@ -68,27 +68,71 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#handoff" title="handoff">#handoff</a>&nbsp;
+    <a href="/tags.html#macOS" title="macOS">#macOS</a>&nbsp;
     
-    <a href="/tags.html#airdrop" title="airdrop">#airdrop</a>&nbsp;
+    <a href="/tags.html#Alfred" title="Alfred">#Alfred</a>&nbsp;
     
-    <a href="/tags.html#Apple" title="Apple">#Apple</a>&nbsp;
+    <a href="/tags.html#AppleScript" title="AppleScript">#AppleScript</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p>升级到OS X10.11.4后，iPhone到Mac的Handoff一直不好用，趁着复活节假期重新配置了一遍。终于又看到熟悉的图标。自己经常设备转换，还是能提高很多效率的。流程如下：</p>
+  <p>喜欢 Tweetbot 在背景页面打开连接这个细节。以及在 Chrome 查看网页的时候会使用「从背景页打开」。</p>
 
-<ol>
-  <li>注销Mac和iPhone的Apple ID</li>
-  <li>重新开启各设备的Handoff功能和<em>蓝牙</em>。</li>
-  <li>删除Mac Bluetooth配置文件（library/preference/com.apple.bluetooth.plist）,重启。</li>
-  <li>对iPhone 进行Reset Network Settings。</li>
-</ol>
+<p>于是做了一个在 Alfred 里的 Workflow（也完全可以在 Automator 里创建 Services 实现）。实现的功能是：</p>
 
-<p>如果前两项不能正常使用Handoff 和Airdrop，尝试后两项。
-<!--more--></p>
+<blockquote>
+  <p>在「任何」软件阅读的时候可以选中文字进行搜索，自动在背景页面打开，需要的时候再在 Chrome 查看，达到没有打断感的体验。</p>
+</blockquote>
+
+<!--more-->
+
+<p>具体来说，</p>
+
+<h3 id="google-">1. 实现的基本动作，是选中文本进行 Google 搜索。</h3>
+
+<p>我采用的语言是基于 macOS 系统层面的 AppleScript，主要原因是简单。（当然我也在看脚本运行的方法，它们更加强大）</p>
+
+<pre><code> tell application "Google Chrome"
+        tell window 1
+            set newTab to make new tab with properties {URL:myurl}
+        end tell
+end tell
+</code></pre>
+
+<p>其中 myurl 就是我们要搜索的 URL。</p>
+
+<h3 id="section">2. 对不同的应用进行不同处理。</h3>
+
+<p>如果当前在 Chrome， 则从 Chrome 背景页面打开；如果当前在其他 App，只需要在 Chrome 打开新页面即可，方便跳转 App 的时候查看。
+只需要做一个条件判断当前 Focus 的 App 是否为 Chrome。</p>
+
+<pre><code>tell application "System Events"
+    set activeApp to name of first application process 
+end tell
+
+if 
+else
+endif
+</code></pre>
+
+<p>在这里我们把它设为 activeApp.</p>
+
+<h3 id="section-1">3. 加强搜索能力。</h3>
+
+<p>如果想要继续加强这个搜索，比如我查看网页时会看到没有加入超链接的链接，可以考虑直接选中就打开链接，避免搜索这个重复过程。同时也可以将这个快捷键同时作用于这两种搜索方法上。</p>
+
+<h3 id="section-2">4. 避免误按。</h3>
+
+<p>通过异常抛出来处理当选中文字为空字符串的误用。</p>
+
+<h3 id="section-3">5. 设置不同快捷键给特定搜索。</h3>
+
+<p>可以设置更多快捷键给 wiki，douban 等专门的搜索。</p>
+
+<p>最后给出这个 workflow 的<a href="https://github.com/tzungtzu/alfred-workflows/raw/master/Downloads/Google%20Search%20HotKey.alfredworkflow">下载地址</a>吧。</p>
+
 
   </section>
   <section class="comment">

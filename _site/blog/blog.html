@@ -49,6 +49,86 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2016/12/14/google-search-hotkey.html">没有打断感</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2016-12-14">2016-12-14</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#macOS" title="macOS">#macOS</a>
+      
+      <a href="/tags.html#Alfred" title="Alfred">#Alfred</a>
+      
+      <a href="/tags.html#AppleScript" title="AppleScript">#AppleScript</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p>喜欢 Tweetbot 在背景页面打开连接这个细节。以及在 Chrome 查看网页的时候会使用「从背景页打开」。</p>
+
+<p>于是做了一个在 Alfred 里的 Workflow（也完全可以在 Automator 里创建 Services 实现）。实现的功能是：</p>
+
+<blockquote>
+  <p>在「任何」软件阅读的时候可以选中文字进行搜索，自动在背景页面打开，需要的时候再在 Chrome 查看，达到没有打断感的体验。</p>
+</blockquote>
+
+<!--more-->
+
+<p>具体来说，</p>
+
+<h3 id="google-">1. 实现的基本动作，是选中文本进行 Google 搜索。</h3>
+
+<p>我采用的语言是基于 macOS 系统层面的 AppleScript，主要原因是简单。（当然我也在看脚本运行的方法，它们更加强大）</p>
+
+<pre><code> tell application "Google Chrome"
+        tell window 1
+            set newTab to make new tab with properties {URL:myurl}
+        end tell
+end tell
+</code></pre>
+
+<p>其中 myurl 就是我们要搜索的 URL。</p>
+
+<h3 id="section">2. 对不同的应用进行不同处理。</h3>
+
+<p>如果当前在 Chrome， 则从 Chrome 背景页面打开；如果当前在其他 App，只需要在 Chrome 打开新页面即可，方便跳转 App 的时候查看。
+只需要做一个条件判断当前 Focus 的 App 是否为 Chrome。</p>
+
+<pre><code>tell application "System Events"
+    set activeApp to name of first application process 
+end tell
+
+if 
+else
+endif
+</code></pre>
+
+<p>在这里我们把它设为 activeApp.</p>
+
+<h3 id="section-1">3. 加强搜索能力。</h3>
+
+<p>如果想要继续加强这个搜索，比如我查看网页时会看到没有加入超链接的链接，可以考虑直接选中就打开链接，避免搜索这个重复过程。同时也可以将这个快捷键同时作用于这两种搜索方法上。</p>
+
+<h3 id="section-2">4. 避免误按。</h3>
+
+<p>通过异常抛出来处理当选中文字为空字符串的误用。</p>
+
+<h3 id="section-3">5. 设置不同快捷键给特定搜索。</h3>
+
+<p>可以设置更多快捷键给 wiki，douban 等专门的搜索。</p>
+
+<p>最后给出这个 workflow 的<a href="https://github.com/tzungtzu/alfred-workflows/raw/master/Downloads/Google%20Search%20HotKey.alfredworkflow">下载地址</a>吧。</p>
+
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2016/12/06/veg-in-salad.html">《时蔬小话》读书笔记二 —— 沙拉里的蔬菜</a></h2>
     </section>
     <section class="meta">
@@ -200,41 +280,6 @@
     </section>
     </article>
   
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2016/11/29/christmas.html">圣诞将至随想</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2016-11-29">2016-11-29</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#christmas" title="christmas">#christmas</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>昨晚鬼使神差地打开了名渡山遼的Christmas Album，听着Last Christmas 入眠，才发现圣诞已经那么近了。</p>
-
-<p><!--more--></p>
-
-<p>去年圣诞是在德国姐姐家过的，也是我第一次跟着欧洲传统家庭一起过的圣诞节。对欧洲人来说，圣诞节是Triditional Family 团聚的节日。而 New Year’s Day 
-是一个小家庆祝的日子。在平安夜，大家都会聚到父母家（正巧昨天看This is Us的感恩节Ep也是这样），见到许久没有见到的兄弟姐妹，相互问好，以及把自己早早准备好的圣诞礼物放在家中的圣诞树下。到了晚上吃饭前，全家人站在圣诞树前唱着圣诞歌曲（我记得我那时还在咔嚓咔嚓拍照），那时候深刻的感到一家人在一起的幸福感。接下来，拆礼物，一起吃圣诞大餐。每个家庭都会有自己的圣诞传统，大家心里都暖洋洋的。</p>
-
-<p>父母总是急切地抓住任何一样东西，想把最好的给孩子，长大后的孩子何尝不是呢，节日给了一个机会让彼此把对对方的爱，感激说出来。</p>
-
-<p>以后即使不在欧洲，有这种心境，心中有圣诞树，就好了吧。</p>
-
-<p>最近抽个时间扒一首圣诞曲子吧，不知道完整录下来是不是要等到明年了，感觉今年是来不及了。</p>
-
-<p>彩蛋：macOS 的 Photos.app 中自动添加了分类 Christmas Tree，Google Photos也会自动生成标签，搜索Christmas Tree 也可以显示照片里的圣诞树，圣诞周边，和上面写有 Christmas的照片（(￣▽￣”)有红绿彩灯的高楼也被识别出来了）</p>
-
-    </section>
-    </article>
-  
   </ul>
   <div class="center">
   <a href="/archive.html" class="circle-wrapper">
@@ -257,5 +302,6 @@
       
 <!--       站长统计cnzz -->
       <script src="https://s11.cnzz.com/z_stat.php?id=1260991989&web_id=1260991989" language="JavaScript"></script>
+      <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260991989'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260991989' type='text/javascript'%3E%3C/script%3E"));</script>
   </body>
 </html>

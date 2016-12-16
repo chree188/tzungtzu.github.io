@@ -4,12 +4,75 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2016-12-15T09:47:45+08:00</updated>
+ <updated>2016-12-16T12:55:30+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
  </author>
 
+ 
+ <entry>
+   <title>没有打断感</title>
+   <link href="http://tzungtzu.com/2016/12/14/google-search-hotkey.html"/>
+   <updated>2016-12-14T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2016/12/14/google-search-hotkey</id>
+   <content type="html">&lt;p&gt;喜欢 Tweetbot 在背景页面打开连接这个细节。以及在 Chrome 查看网页的时候会使用「从背景页打开」。&lt;/p&gt;
+
+&lt;p&gt;于是做了一个在 Alfred 里的 Workflow（也完全可以在 Automator 里创建 Services 实现）。实现的功能是：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在「任何」软件阅读的时候可以选中文字进行搜索，自动在背景页面打开，需要的时候再在 Chrome 查看，达到没有打断感的体验。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;具体来说，&lt;/p&gt;
+
+&lt;h3 id=&quot;google-&quot;&gt;1. 实现的基本动作，是选中文本进行 Google 搜索。&lt;/h3&gt;
+
+&lt;p&gt;我采用的语言是基于 macOS 系统层面的 AppleScript，主要原因是简单。（当然我也在看脚本运行的方法，它们更加强大）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; tell application &quot;Google Chrome&quot;
+        tell window 1
+            set newTab to make new tab with properties {URL:myurl}
+        end tell
+end tell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中 myurl 就是我们要搜索的 URL。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;2. 对不同的应用进行不同处理。&lt;/h3&gt;
+
+&lt;p&gt;如果当前在 Chrome， 则从 Chrome 背景页面打开；如果当前在其他 App，只需要在 Chrome 打开新页面即可，方便跳转 App 的时候查看。
+只需要做一个条件判断当前 Focus 的 App 是否为 Chrome。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &quot;System Events&quot;
+    set activeApp to name of first application process 
+end tell
+
+if 
+else
+endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在这里我们把它设为 activeApp.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;3. 加强搜索能力。&lt;/h3&gt;
+
+&lt;p&gt;如果想要继续加强这个搜索，比如我查看网页时会看到没有加入超链接的链接，可以考虑直接选中就打开链接，避免搜索这个重复过程。同时也可以将这个快捷键同时作用于这两种搜索方法上。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;4. 避免误按。&lt;/h3&gt;
+
+&lt;p&gt;通过异常抛出来处理当选中文字为空字符串的误用。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;5. 设置不同快捷键给特定搜索。&lt;/h3&gt;
+
+&lt;p&gt;可以设置更多快捷键给 wiki，douban 等专门的搜索。&lt;/p&gt;
+
+&lt;p&gt;最后给出这个 workflow 的&lt;a href=&quot;https://github.com/tzungtzu/alfred-workflows/raw/master/Downloads/Google%20Search%20HotKey.alfredworkflow&quot;&gt;下载地址&lt;/a&gt;吧。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>《时蔬小话》读书笔记二 —— 沙拉里的蔬菜</title>
@@ -515,26 +578,6 @@
 4. 不要用中立或冷淡的态度体现出对别人不幸的漠不关心，而要用同理心去理解别人的处境，安抚别人的情绪；不要只是说“有时候事情就是会出错，没办法”，而可以说“我知道你花了好多时间和心血在这个计划上，但有时候事情确实不能顺我们的意”；
 5. 不要说话的时候自带优越感，表现出“我比你优秀”，而要用谦虚平等的口吻；不要说“你这样做是不对的”，而可以说“如果你愿意的话，我可以告诉你我曾经用过的有效方法”；
 6. 不要用确定性的口吻来彰显自己的自负和武断，你怎么能保证自己就是对的呢？可以用协商的态度来和对方讨论；不要说“那绝对是不可能的”，可以改说“我想你用那个方法可能会出点麻烦”。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>读书笔记：《精进》</title>
-   <link href="http://tzungtzu.com/2016/10/02/do-better.html"/>
-   <updated>2016-10-02T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/10/02/do-better</id>
-   <content type="html">&lt;h3 id=&quot;section&quot;&gt;本书的主题&lt;/h3&gt;
-
-&lt;p&gt;通过七个方面讲解如何自我提高&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;主要声明和论点&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://7xo4c2.com1.z0.glb.clouddn.com/do-better.png&quot; alter=&quot;do-better&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;这本书和自己的关系&lt;/h3&gt;
-
 </content>
  </entry>
  

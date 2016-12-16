@@ -3,13 +3,37 @@
 <plist version="1.0">
 <dict>
 	<key>childOrder</key>
-	<array/>
+	<array>
+		<string>Technology</string>
+		<string>test</string>
+	</array>
 	<key>createMarkedFile</key>
 	<integer>0</integer>
 	<key>resolutionData</key>
 	<dict>
 		<key>childOrder</key>
-		<dict/>
+		<dict>
+			<key>Technology</key>
+			<dict>
+				<key>lastModification</key>
+				<real>503556592.138901</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>10</integer>
+				</dict>
+			</dict>
+			<key>test</key>
+			<dict>
+				<key>lastModification</key>
+				<real>503556576.41032898</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>9</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>createMarkedFile</key>
 		<real>480849650</real>
 		<key>sheetClusters</key>
@@ -833,13 +857,13 @@
 				<key>explicitUnassignment</key>
 				<true/>
 				<key>firstUnassignment</key>
-				<real>502940644.32849503</real>
+				<real>503555110.01941001</real>
 				<key>lastModification</key>
-				<real>502940644.32849503</real>
+				<real>503555110.01941001</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>130</integer>
+					<integer>134</integer>
 				</dict>
 			</dict>
 		</dict>
@@ -1108,7 +1132,7 @@
 		<key>childOrder</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>7</integer>
+			<integer>10</integer>
 		</dict>
 		<key>createMarkedFile</key>
 		<dict>
@@ -1118,7 +1142,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>131</integer>
+			<integer>134</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
