@@ -4,6 +4,8 @@
 <dict>
 	<key>childOrder</key>
 	<array>
+		<string>Diary</string>
+		<string>Reading</string>
 		<string>Technology</string>
 		<string>test</string>
 	</array>
@@ -13,6 +15,26 @@
 	<dict>
 		<key>childOrder</key>
 		<dict>
+			<key>Diary</key>
+			<dict>
+				<key>lastModification</key>
+				<real>503984281.873528</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>16</integer>
+				</dict>
+			</dict>
+			<key>Reading</key>
+			<dict>
+				<key>lastModification</key>
+				<real>503642324.907812</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>13</integer>
+				</dict>
+			</dict>
 			<key>Technology</key>
 			<dict>
 				<key>lastModification</key>
@@ -610,22 +632,30 @@
 			</dict>
 			<key>2015-12-27-2016.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>503991184.680206</real>
 				<key>lastModification</key>
-				<real>480849650</real>
+				<real>503991184.680206</real>
 				<key>version</key>
 				<dict>
-					<key>legacy-480849650.000000</key>
-					<integer>1</integer>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>137</integer>
 				</dict>
 			</dict>
 			<key>2016-01-29-2015summary.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>503984328.44101399</real>
 				<key>lastModification</key>
-				<real>480849650</real>
+				<real>503984328.44101399</real>
 				<key>version</key>
 				<dict>
-					<key>legacy-480849650.000000</key>
-					<integer>1</integer>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>136</integer>
 				</dict>
 			</dict>
 			<key>2016-03-01-classic_music.md</key>
@@ -828,28 +858,18 @@
 					<integer>114</integer>
 				</dict>
 			</dict>
-			<key>2016-12-1-where-am-i.md</key>
+			<key>2016-12-6-veg-in-salad.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
 				<true/>
 				<key>firstUnassignment</key>
-				<real>503295743.47793198</real>
+				<real>503642335.83012301</real>
 				<key>lastModification</key>
-				<real>503295743.47793198</real>
+				<real>503642335.83012301</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>131</integer>
-				</dict>
-			</dict>
-			<key>2016-12-6-veg-in-salad.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>502726775.70029199</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>126</integer>
+					<integer>135</integer>
 				</dict>
 			</dict>
 			<key>Untitled.md</key>
@@ -879,9 +899,6 @@
 		</array>
 		<array>
 			<string>2016-12-6-veg-in-salad.md</string>
-		</array>
-		<array>
-			<string>2016-12-1-where-am-i.md</string>
 		</array>
 		<array>
 			<string>2016-11-29-christmas.md</string>
@@ -1132,7 +1149,7 @@
 		<key>childOrder</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>10</integer>
+			<integer>16</integer>
 		</dict>
 		<key>createMarkedFile</key>
 		<dict>
@@ -1142,7 +1159,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>134</integer>
+			<integer>137</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
