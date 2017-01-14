@@ -16,10 +16,23 @@
 					<integer>3</integer>
 				</dict>
 			</dict>
+			<key>2017-01-14-record-sound.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506100512.83506602</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2017-01-14-record-sound.md</string>
+		</array>
 		<array>
 			<string>2016-12-14-google-search-hotkey.md</string>
 		</array>
@@ -31,7 +44,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>4</integer>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </dict>
