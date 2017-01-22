@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2016-12-28T21:22:40+08:00</updated>
+ <updated>2017-01-22T19:17:34+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -12,10 +12,75 @@
 
  
  <entry>
+   <title>Mac 录屏／录音 内录系统声音</title>
+   <link href="http://tzungtzu.com/2017/01/14/record-sound.html"/>
+   <updated>2017-01-14T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/01/14/record-sound</id>
+   <content type="html">&lt;p&gt;因为私人原因，需要录系统播放声音。可以通过录屏软件 ScreenFlow。QuickTime 为了防止盗版，不能录系统音频。但是可以通过安装 SoundFlower 解决。SoundFlower 是一个虚拟音频设备（下载地址点&lt;a href=&quot;https://github.com/mattingalls/Soundflower/releases/tag/2.0b2&quot;&gt;这里&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;audio-midi-setup&quot;&gt;打开 Audio MIDI Setup：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新建一个 “Multi Output Device”，选择“Built-in Output” 和 “Soundflower(2ch)“&lt;/li&gt;
+  &lt;li&gt;新建一个 “Aggregate Device”，选择“External Microphone”和“Soundflower(2ch)”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;preference---sound-&quot;&gt;&lt;strong&gt;在 Preference - Sound 里设置音频输出源&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;输出源设置为刚刚设置的 “Multi Output Device”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;quicktime&quot;&gt;接下来打开QuickTime，在音频／录屏录制部分选择输入源&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如果在内录的时候需要不录下 mic 的声音，就在输入源选择 “Soundflower（2ch）”&lt;/li&gt;
+  &lt;li&gt;如果在内录的时候需要录下 mic 的声音，就在输入源选择 “Aggregate Device”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;最后，可选择压缩文件。&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;注意&lt;/h3&gt;
+
+&lt;p&gt;经过修改输出源，无法调节系统的声音大小。等用完了录屏需求，可以将输出源修改回内置麦克风。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017两周记录</title>
+   <link href="http://tzungtzu.com/2017/01/14/twoweeks.html"/>
+   <updated>2017-01-14T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/01/14/twoweeks</id>
+   <content type="html">&lt;p&gt;2017转眼就过去两周，时间过的挺快的。这一年的行走大概要像徒步一样，前一半时间走60-70%，后半年才能走的从容。&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;这两周确定了在深圳工作。又要背着行囊去新的城市，虽然这个城市有朋友，但是自己这个对走进一个新城市总是怵怵的。这会是新的挑战，工作之路就这样走上去了，希望照着计划正常进行。毕竟27岁了还不稳定是对自己的不负责任，更不用说对亲人了。&lt;/p&gt;
+
+&lt;p&gt;另外，2017我遇到的第一件事情的感受就是好朋友感情会淡。尽管以前觉得没有兄弟的我们会是把对方当亲兄弟一样。但是亲兄弟也要各自组建家庭，然后家庭为重。觉得挺伤心无奈的，这么说可能玻璃心矫情了点，还没进社会的我知道这些也不是坏事吧。但不管怎么样，想告诉自己，诚心对人，才能得到真心。&lt;/p&gt;
+
+&lt;p&gt;最近尝试多线程看几本书，倒是一本都还没看完，这种方法满没有成就感的，看来不适合我。过年大概要看机器学习的书度日了。去年说的把 S. 看一遍果然是 flag。不过其实这也是自己给自己的借口。每天一定要看几页书，其实也是习惯。&lt;/p&gt;
+
+&lt;p&gt;觉得自己写得有点丧，应该开心点，毕竟2017还有好多期待。事情一般会比我考虑的好，我喜欢惊喜，等你来。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>2016 总结</title>
-   <link href="http://tzungtzu.com/2016/12/21/2016.html"/>
+   <link href="http://tzungtzu.com/2016/12/21/2016-summary.html"/>
    <updated>2016-12-21T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/12/21/2016</id>
+   <id>http://tzungtzu.com/2016/12/21/2016-summary</id>
    <content type="html">&lt;p&gt;在大龄青年的路上又走多了一年，自己的成长有点慢，以至于没发现时间走的那么快。2016 从年初就不平静，有很多 drama，也有自己不努力作为而没有抓住的机会。有变化，有成长，有感恩，体验过了极度开心和极度悲恸，看透了很多表象，做了一些改变，改变了一些坏习惯，却始终没有对自己下狠心，放在碎石和烈火中淬炼。应该给自己多一点压力，毕竟不会总是有足够的时间可以表现完美以后再出发。&lt;/p&gt;
 
 &lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
@@ -202,6 +267,7 @@
 &lt;h3 id=&quot;section-23&quot;&gt;年度计划&lt;/h3&gt;
 
 &lt;ol&gt;
+  &lt;li&gt;谈恋爱&lt;a href=&quot;https://twitter.com/tzungtzuli/status/815559309543227392&quot;&gt;。&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;不要丢掉好奇心&lt;/li&gt;
   &lt;li&gt;丢掉一些惊喜和不确定&lt;/li&gt;
   &lt;li&gt;多看一些能给自己思考的书，和本专业深度的书。以及做总结。&lt;/li&gt;
@@ -215,6 +281,7 @@
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://2016bestnine.com/tzungtzu&quot;&gt;https://2016bestnine.com/tzungtzu&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.pingwest.com/google-search-in-year-2016/&quot;&gt;http://www.pingwest.com/google-search-in-year-2016/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/standbyme/2016/share?user_id=43375245&quot;&gt;https://book.douban.com/standbyme/2016/share?user_id=43375245&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 </content>
@@ -328,7 +395,7 @@
 
 &lt;p&gt;茄科植物对于人类是非常重要的一大科，提供给人类许多种食物和药物。茄科植物一般都含有不同量的&lt;strong&gt;生物碱&lt;/strong&gt;，对人类具有一定的毒性，根据其生物碱含量的多少，有的品种可以作为食物，有的品种可以作为药物。烟草也是茄科植物。&lt;/p&gt;
 
-&lt;h3 id=&quot;section-7&quot;&gt;五、山药&lt;/h3&gt;
+&lt;h3 id=&quot;section-7&quot;&gt;五、薯蓣&lt;/h3&gt;
 
 &lt;p&gt;马铃薯是荷兰人带到中国的，所以中国有的地方也叫它荷兰薯。而它在中国只被当作调剂的蔬菜，只在偏远的西北和山西，马铃薯站住了脚步。 山西人也叫它山药蛋。&lt;/p&gt;
 
@@ -776,158 +843,6 @@ endif
   &lt;li&gt;&lt;strong&gt;稀缺&lt;/strong&gt;带来的狂热并不会增加商品本身的实用性价值。&lt;/li&gt;
   &lt;li&gt;当一条捷径摆在你面前的时候，你要警惕是带来简洁高效的快捷反应还是别人谋私的虚假信号。&lt;/li&gt;
 &lt;/ol&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>读书笔记（未完成）</title>
-   <link href="http://tzungtzu.com/2016/10/22/relationship.html"/>
-   <updated>2016-10-22T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/10/22/relationship</id>
-   <content type="html">&lt;p&gt;连看这本书，都是对女人应该怎么对待男人的认同点更多，男人的感受，女人该做的事情。而其实这本书于我，应该是知道自己应该怎么做，自己那些地方看待女人的方式有错误。&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;男人：&lt;/p&gt;
-
-&lt;p&gt;·  明白爱情真正的价值感在于付出&lt;/p&gt;
-
-&lt;p&gt;·  女人的滔滔不绝，寻求问题解决方法不是首要需求，更在乎别人的感同身受和安慰&lt;/p&gt;
-
-&lt;p&gt;理解女人的需要，女人缺乏安全感时，就会躲避，包括一切亲密举动。明智的男人学着支持女人度过这一周期，给予需要的爱和陪伴&lt;/p&gt;
-
-&lt;p&gt;·  女人就像波浪线
-·  波浪线式的情感
-·  情绪弹性的表现
-·  无法阻止的波浪轨迹
-·  并不是男人造成的
-·  默默的陪伴和支持，而不是告诉对方不应该沉底&lt;/p&gt;
-
-&lt;p&gt;对于主动请求帮助    男人容易因为对方的付出而降低自己的责任&lt;/p&gt;
-
-&lt;p&gt;·  过去的阴影
-·  90/10原则
-·  在你郁郁不乐时，90%以上都与过去的经历有关
-·  而当前让你不愉快的原因，充其量只有10%&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>酸奶123</title>
-   <link href="http://tzungtzu.com/2016/10/21/yogurt.html"/>
-   <updated>2016-10-21T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/10/21/yogurt</id>
-   <content type="html">&lt;h3 id=&quot;section&quot;&gt;什么是酸奶&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;「风味发酵乳」、「风味酸乳」、「发酵乳」、「酸乳」之间都有何区别？&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;发酵乳： 牛羊乳或乳粉为原料，经杀菌，发酵后制成的pH值降低的产品&lt;/li&gt;
-  &lt;li&gt;酸乳：杀菌 接种_嗜热链球菌_和_保加利亚乳杆菌_发酵制成的产品&lt;/li&gt;
-  &lt;li&gt;风味发酵乳： 80%以上为乳或乳粉，添加其他原料，经过杀菌发酵，pH值降低，发酵前或后添加或不添加_食品添加剂、营养强化剂、果蔬、谷物_等制成的产品。&lt;/li&gt;
-  &lt;li&gt;风味酸乳：同理，就是接种_嗜热链球菌_和_保加利亚乳杆菌_发酵后添加或不添加_食品添加剂、营养强化剂、果蔬、谷物_等制成的产品。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;几种酸奶的区别&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;风味VS原味
-风味 指的不是酸奶的味道，而是指里面添加了别的东西。如水果，谷物，以及各种增加营养、改善口感的添加剂。（糖、奶油、炼乳）&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;酸乳VS发酵乳
-差异在于添加菌种的类别
-酸乳的配料表中，只能出现_嗜热链球菌_和_保加利亚乳杆菌_两种最常见的乳酸菌。而发酵乳中的菌种更多样，出了基本的两种，还有双歧杆菌、嗜酸乳杆菌、干酪乳杆菌等。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;酸乳中的两种乳酸菌，在肠道中短命，对改善肠道环境并没有什么用，相比之下，双歧杆菌等，能够在肠道生存较长时间、真正起到改善消化道功能的作用。&lt;/p&gt;
-
-&lt;p&gt;但是大部分饮料的配料表的前两位是水和白砂糖。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;按照加工工艺和制作方法，酸奶分哪些种类，每种种类有何特点？&lt;/h3&gt;
-
-&lt;h4 id=&quot;section-3&quot;&gt;老酸奶&lt;/h4&gt;
-&lt;p&gt;关键字：凝固
-质地：凝胶状，豆腐块
-特色：口感细腻、厚实&lt;/p&gt;
-
-&lt;p&gt;防止酸奶颠散，一般加入使用明胶、果胶、卡拉胶，甚至皮革中下脚料里提炼出的凝胶剂（不合法），另酸奶出现那种凝冻般无法搅拌的状态。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-4&quot;&gt;普通酸奶&lt;/h4&gt;
-&lt;p&gt;关键字：搅拌调味
-质地：稀薄
-特色：顺滑、奶味足&lt;/p&gt;
-
-&lt;p&gt;将固体酸奶搅拌开，进行调味，分装，冷藏&lt;/p&gt;
-
-&lt;h4 id=&quot;section-5&quot;&gt;常温酸奶&lt;/h4&gt;
-&lt;p&gt;关键字：无活性菌
-质地：稀薄
-特色：无活性益生菌，甜度高&lt;/p&gt;
-
-&lt;p&gt;做好后进行巴氏消毒，利乐包装。因为里面没有活性菌，所以可以不放冰箱。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-6&quot;&gt;希腊酸奶&lt;/h4&gt;
-&lt;p&gt;关键字：过滤
-质地：浓稠绵密
-特色：低糖，高蛋白，口味偏酸&lt;/p&gt;
-
-&lt;p&gt;跟老酸奶的区别就是过滤乳清。将酸奶静置分层分离上层的乳清。
-一杯滤乳清酸奶，比一般酸奶多三到四倍的鲜奶，所以也拥有更高的蛋白质。&lt;/p&gt;
-
-&lt;p&gt;冰岛酸奶skyr，比希腊酸奶用奶量更高，奶味更浓郁，更厚实。&lt;/p&gt;
-
-&lt;p&gt;要在家自己制作希腊酸奶，可以使用咖啡滤纸过滤乳清，我准备使用滤布，可以重复使用。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-7&quot;&gt;如何才能挑对酸奶？&lt;/h3&gt;
-
-&lt;p&gt;只从最基本的营养和添加角度出发，那些标准可以评判一杯酸奶的好坏。
-1. 要有活性菌
-	酸奶之所以健康，一大原因就是益生菌对肠道功能的改善。出了关注益生菌，还要留意菌的添加量，一般来说要大于一亿才能在肠道中起到效果。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;含糖量低、少添加的酸奶
- 注意含量中的碳水化合物，低脂不一定是低糖，一般不要超过一百克里有12.5g糖。热量400就算高了。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;尽可能选择非复原乳酸奶
- 复原乳就是奶粉，这样奶里对热敏感的维生素和矿物质都没有了。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;不要以浓稠度判断酸奶的营养
- 有的酸奶只是因为添加了增稠剂得到浓稠的质地，而希腊酸奶虽然蛋白质高，其中的微量元素和乳糖等也随着过滤而流失。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;section-8&quot;&gt;市面上有哪些优秀的酸奶值得推荐？&lt;/h4&gt;
-
-&lt;p&gt;光明如实发酵乳、兰格格风味酸乳、和润纯酸奶、优诺优丝原味发酵乳、乐纯零脂肪元气酸奶、黑天鹅脱脂希腊式发酵乳、尤贝希腊式无糖酸奶&lt;/p&gt;
-
-&lt;p&gt;优诺优丝是唯一一款搅拌型酸奶&lt;/p&gt;
-
-&lt;p&gt;两款国产的滤乳清酸奶：尤贝Uibek和乐纯。乐纯的酸甜度平衡均匀，美中不足是吃进数口后会略显粘腻，回味微苦；而在新疆天山脚下土生土长的Uibek，入口饱满度极为惊艳，奶体也显得更为细腻柔滑。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-9&quot;&gt;酸奶的各种吃法&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;加sause，配薯片&lt;/li&gt;
-  &lt;li&gt;胡萝卜蘸希腊酸奶&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;section-10&quot;&gt;参考文章：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5Mzc5NTk1OQ==&amp;amp;mid=2652999756&amp;amp;idx=1&amp;amp;sn=e4a62e9da437380aa9fb5b76845cdaf3&amp;amp;chksm=bd44aa548a332342ab08172285b044350320f47a82ccc999f6557c8947bc0d0c140e45184b89&amp;amp;scene=21&quot; title=&quot;那么多年酸奶，感觉都白喝了！&quot;&gt; 那么多年酸奶，感觉都白喝了！ &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://m.weibo.cn/status/4029514780325455?wm=3333_2001&amp;amp;sourcetype=weixin&amp;amp;from=singlemessage&amp;amp;isappinstalled=1&quot; title=&quot;30款的酸奶测评&quot;&gt; 30款的酸奶测评 &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/22872196&quot; title=&quot;酸奶测评，只用看这一篇就够了&quot;&gt; 酸奶测评，只用看这一篇就够了 &lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
 </content>
  </entry>
  
