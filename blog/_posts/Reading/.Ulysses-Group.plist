@@ -26,10 +26,23 @@
 					<integer>2</integer>
 				</dict>
 			</dict>
+			<key>2017-02-03-hacker-and-painter.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507828505.99492198</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>23</integer>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2017-02-03-hacker-and-painter.md</string>
+		</array>
 		<array>
 			<string>2016-12-17-foreign-fruit.md</string>
 		</array>
@@ -44,7 +57,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>18</integer>
+			<integer>24</integer>
 		</dict>
 	</dict>
 </dict>

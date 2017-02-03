@@ -4,12 +4,68 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-01-26T22:22:07+08:00</updated>
+ <updated>2017-02-03T23:31:54+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
  </author>
 
+ 
+ <entry>
+   <title>《黑客与画家》读书笔记</title>
+   <link href="http://tzungtzu.com/2017/02/03/hacker-and-painter.html"/>
+   <updated>2017-02-03T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/02/03/hacker-and-painter</id>
+   <content type="html">&lt;h3 id=&quot;section&quot;&gt;书呆子&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;为什么聪明的小孩一直不受同龄人的欢迎呢？答案就是他们真的不想让自己受欢迎。对他们来说，聪明比受欢迎更重要。&lt;/li&gt;
+  &lt;li&gt;如今社会，我们面临一个更严峻的问题，他与当前的诸多难题具有共同的起因，即专业化。当工作的专业程度越来越高时，&lt;a href=&quot;&quot;&gt;我们必须接受更长时间的训练。&lt;/a&gt;这也导致当今的青少年在生产活动中根本是毫无用处的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;黑客与画家&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;科学界的每一个人，暗地里都相信数学家比自己聪明。我觉得，数学家自己也相信这一点。最后的结果就是科学家往往会把自己的工作尽可能弄得看上去像数学。&lt;/li&gt;
+  &lt;li&gt;如果黑客认识到自己与其他创作者——比如作家和画家——是一类人，这种诱惑对他就不起作用。作家和画家没有“对数学的妒忌”，他们认为自己在从事与数学完全不相关的事情。我认为，黑客也是如此。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;借鉴绘画，我们写代码时调试也如同打草稿。整个过程一开始是一张草图，然后填入细节。&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;大学和实验室强迫黑客成为科学家，企业强迫黑客成为工程师。&lt;/li&gt;
+  &lt;li&gt;要是你很热爱编程，你就不可避免地会开发你自己的项目。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;不能说的话：&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;找出不能说的话：真话，异端邪说，时空差异diff，道貌岸然，观察禁忌的产生。这样的目的在于好奇，了解真相避免犯错，也是一种很好的脑力训练。&lt;/li&gt;
+  &lt;li&gt;训练自己去想那些不能想的事情，你获得的好处会超过所得到的想法本身。如果你能“远远地”跳出传统思维，提出让别人一听就脑袋轰一声炸开的惊人观点，那么你就在“小小地”跳出传统思维方面不会有任何困难。要知道，人们把后面的这种情况称为“创新”。&lt;/li&gt;
+  &lt;li&gt;请记住，所谓“流行”（传统观念也是一种流行），本质上就是自己看不见自己的样子。否则就不会有流行了。对于那些被流行抓住的人，流行就不再是流行，而是应该要做的正确事情。只有保持一定的距离才能观察到人们观念的变化，发现流行（也就是人们自以为正确的事情）到底是什么。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;如何创造财富：&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;从经济学观点看，你可以把创业想象成一个压缩过程，你的所有工作年份被压缩成了短短几年。&lt;strong&gt;你不再是低强度地工作四十年，而是以极限强度工作四年。&lt;/strong&gt;在高技术领域，这种压缩的回报尤其丰厚，工作效率越高，额外报酬就越高。&lt;/li&gt;
+  &lt;li&gt;如果你有一个令你感到安全的工作，你是不会致富的，因为没有危险，就几乎等于没有可放大性。&lt;/li&gt;
+  &lt;li&gt;创业公司不像能经受打击的黑熊，也不像有盔甲保护的螃蟹，而是像蚊子一样，不带有任何防御，就是为了达到一个目的而活着。蚊子唯一的防御就是，作为一个物种，它们的数量极多，但是作为个体，却极难生存。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;设计者的品味：&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;正如逻辑学的“奥卡姆剃刀”原则所说，简单的解释就是最好的解释。&lt;/li&gt;
+  &lt;li&gt;优秀设计师也是如此，他们的工作看上去很容易。大多数时候，这是一种错觉。作家的文章读起来流畅自如，但是背后其实经过了反复修改。&lt;/li&gt;
+  &lt;li&gt;人们有时会说自己有了“状态”，我的理解是，他们这时可以控制自己的脊髓。&lt;strong&gt;脊髓是更本能的反应&lt;/strong&gt;，面对难题时，它能释放你的直觉。&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Install matplotlib on macOS Sierra</title>
@@ -767,104 +823,6 @@ endif
 &lt;p&gt;最近抽个时间扒一首圣诞曲子吧，不知道完整录下来是不是要等到明年了，感觉今年是来不及了。&lt;/p&gt;
 
 &lt;p&gt;彩蛋：macOS 的 Photos.app 中自动添加了分类 Christmas Tree，Google Photos也会自动生成标签，搜索Christmas Tree 也可以显示照片里的圣诞树，圣诞周边，和上面写有 Christmas的照片（(￣▽￣”)有红绿彩灯的高楼也被识别出来了）&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>keyboard shortcut for ctrl on Mac</title>
-   <link href="http://tzungtzu.com/2016/11/27/shortcut.html"/>
-   <updated>2016-11-27T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/11/27/shortcut</id>
-   <content type="html">&lt;p&gt;Ctrl 的使用&lt;/p&gt;
-
-&lt;p&gt;记录一下Ctrl的用法，可以很方便的在文本上使用，避免把右手移到方向键以及减少步骤，试试看会不会常用。&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-movement&quot;&gt;光标移动基本快捷键(Basic Movement)&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Action&lt;/th&gt;
-      &lt;th&gt;Keystroke&lt;/th&gt;
-      &lt;th&gt;Remember as&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到行首&lt;/td&gt;
-      &lt;td&gt;Control-A&lt;/td&gt;
-      &lt;td&gt;A=Start of Alphabet&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移至行末&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Control-E&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;E=End&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;上移一行&lt;/td&gt;
-      &lt;td&gt;Control-P&lt;/td&gt;
-      &lt;td&gt;P=Previous&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;下移一行&lt;/td&gt;
-      &lt;td&gt;Control-N&lt;/td&gt;
-      &lt;td&gt;N=Next&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;左移一个字符&lt;/td&gt;
-      &lt;td&gt;Control-B&lt;/td&gt;
-      &lt;td&gt;B=Back&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;右移一个字符&lt;/td&gt;
-      &lt;td&gt;Control-F&lt;/td&gt;
-      &lt;td&gt;F=Forward&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;左删一个字符&lt;/td&gt;
-      &lt;td&gt;Control-H&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;右删一个字符&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Control-D&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;D=Delete&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;右删所有字符&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Control-K&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;K=Kill&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;左删所有字符&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Control-U&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Mac 不支持&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;调换光标左右的字符（简直是冒泡排序）&lt;/td&gt;
-      &lt;td&gt;Control-T&lt;/td&gt;
-      &lt;td&gt;T=Tose&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在光标后插入一行（=Enter）&lt;/td&gt;
-      &lt;td&gt;Control-O&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Scroll down&lt;/td&gt;
-      &lt;td&gt;Ctrl-V&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Center the current line in the window&lt;/td&gt;
-      &lt;td&gt;Ctrl-L&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://support.apple.com/en-us/HT201236&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;
-
 </content>
  </entry>
  
