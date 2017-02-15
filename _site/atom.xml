@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-03T23:52:35+08:00</updated>
+ <updated>2017-02-15T23:40:08+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -149,6 +149,42 @@
 &lt;h3 id=&quot;section-1&quot;&gt;注意&lt;/h3&gt;
 
 &lt;p&gt;经过修改输出源，无法调节系统的声音大小。等用完了录屏需求，可以将输出源修改回内置麦克风。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dataframe</title>
+   <link href="http://tzungtzu.com/2017/01/14/dataframe.html"/>
+   <updated>2017-01-14T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/01/14/dataframe</id>
+   <content type="html">
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: DataFrame 列的提取与添加
+categories: 
+- Technology
+tags:
+- python
+- pandas&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;pandas是基于Numpy构建的 
+Series 在算术运算时自动对其不同索引的数据&lt;/p&gt;
+
+&lt;p&gt;DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。&lt;/p&gt;
+
+&lt;p&gt;返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。
+行索引字段是ix&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;frame ['year'] = frame.year
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将列表活数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Frame['newcolumn'] = series
+&lt;/code&gt;&lt;/pre&gt;
 
 </content>
  </entry>
@@ -801,28 +837,6 @@ endif
    <updated>2016-12-01T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2016/12/01/where-am-i</id>
    <content type="html">&lt;p&gt;Has a blog, read on douban, chirps on twitter, cooks on xiachufang, plays ukulele on youtube.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>圣诞将至随想</title>
-   <link href="http://tzungtzu.com/2016/11/29/christmas.html"/>
-   <updated>2016-11-29T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/11/29/christmas</id>
-   <content type="html">&lt;p&gt;昨晚鬼使神差地打开了名渡山遼的Christmas Album，听着Last Christmas 入眠，才发现圣诞已经那么近了。&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;去年圣诞是在德国姐姐家过的，也是我第一次跟着欧洲传统家庭一起过的圣诞节。对欧洲人来说，圣诞节是Triditional Family 团聚的节日。而 New Year’s Day 
-是一个小家庆祝的日子。在平安夜，大家都会聚到父母家（正巧昨天看This is Us的感恩节Ep也是这样），见到许久没有见到的兄弟姐妹，相互问好，以及把自己早早准备好的圣诞礼物放在家中的圣诞树下。到了晚上吃饭前，全家人站在圣诞树前唱着圣诞歌曲（我记得我那时还在咔嚓咔嚓拍照），那时候深刻的感到一家人在一起的幸福感。接下来，拆礼物，一起吃圣诞大餐。每个家庭都会有自己的圣诞传统，大家心里都暖洋洋的。&lt;/p&gt;
-
-&lt;p&gt;父母总是急切地抓住任何一样东西，想把最好的给孩子，长大后的孩子何尝不是呢，节日给了一个机会让彼此把对对方的爱，感激说出来。&lt;/p&gt;
-
-&lt;p&gt;以后即使不在欧洲，有这种心境，心中有圣诞树，就好了吧。&lt;/p&gt;
-
-&lt;p&gt;最近抽个时间扒一首圣诞曲子吧，不知道完整录下来是不是要等到明年了，感觉今年是来不及了。&lt;/p&gt;
-
-&lt;p&gt;彩蛋：macOS 的 Photos.app 中自动添加了分类 Christmas Tree，Google Photos也会自动生成标签，搜索Christmas Tree 也可以显示照片里的圣诞树，圣诞周边，和上面写有 Christmas的照片（(￣▽￣”)有红绿彩灯的高楼也被识别出来了）&lt;/p&gt;
 </content>
  </entry>
  
