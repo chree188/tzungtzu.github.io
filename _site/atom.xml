@@ -4,12 +4,74 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-15T23:40:45+08:00</updated>
+ <updated>2017-02-16T18:38:27+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
  </author>
 
+ 
+ <entry>
+   <title>pandas 中 DataFrame 的分割和合并</title>
+   <link href="http://tzungtzu.com/2017/02/15/dataframe.html"/>
+   <updated>2017-02-15T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/02/15/dataframe</id>
+   <content type="html">&lt;p&gt;pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
+DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。&lt;/p&gt;
+
+&lt;p&gt;在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
+ &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;取出一列&lt;/h3&gt;
+
+&lt;p&gt;通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;frame ['year'] = frame.year  
+frame.ix['three']  #获取行数据
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;删除一列&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;frame.drop(['a','b']) #删除a，b行
+frame.drop([two],axis=1) #删除two 列。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;添加一列&lt;/h3&gt;
+
+&lt;p&gt;将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Frame['newcolumn'] = series  #在Frame 创建新列
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;type&quot;&gt;改变一列的 type&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
+	pd.to_numeric(s, errors =”coerce”)&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;修改索引&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;obj = obj.reindex(['a','b','c','d','e'])
+frame = frame.reindex(index=[], cloumns=[])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;将列变成索引&lt;/h3&gt;
+
+&lt;p&gt;将某列作为列的索引，会生成一个新的 DataFrame
+	frame2 = frame.set_index([‘c’])&lt;/p&gt;
+
+&lt;h3 id=&quot;a&quot;&gt;统计a列中元素的重复次数&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;df.groupby('a').size() 生成一个 Series 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;ab&quot;&gt;统计a列中不同元素在b列的求和&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;df.groupby('a').sum() 生成一个 DataFrame
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>《黑客与画家》读书笔记</title>
@@ -149,44 +211,6 @@
 &lt;h3 id=&quot;section-1&quot;&gt;注意&lt;/h3&gt;
 
 &lt;p&gt;经过修改输出源，无法调节系统的声音大小。等用完了录屏需求，可以将输出源修改回内置麦克风。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Dataframe</title>
-   <link href="http://tzungtzu.com/2017/01/14/dataframe.html"/>
-   <updated>2017-01-14T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/01/14/dataframe</id>
-   <content type="html">
-&lt;hr /&gt;
-&lt;p&gt;layout: post
-title: DataFrame 列的提取与添加
-categories: 
-- Technology
-tags:
-- python
-- pandas&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;pandas是基于Numpy构建的 
-Series 在算术运算时自动对其不同索引的数据&lt;/p&gt;
-
-&lt;p&gt;DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。
-行索引字段是ix&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;frame ['year'] = frame.year
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;将列表活数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Frame['newcolumn'] = series
-&lt;/code&gt;&lt;/pre&gt;
 
 </content>
  </entry>

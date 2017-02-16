@@ -16,16 +16,6 @@
 					<integer>3</integer>
 				</dict>
 			</dict>
-			<key>2017-01-14-dataframe.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>508866005.424712</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>27</integer>
-				</dict>
-			</dict>
 			<key>2017-01-14-record-sound.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -46,12 +36,22 @@
 					<integer>21</integer>
 				</dict>
 			</dict>
+			<key>2017-02-15-dataframe.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508893936.68352097</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>29</integer>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>2017-01-14-dataframe.md</string>
+			<string>2017-02-15-dataframe.md</string>
 		</array>
 		<array>
 			<string>2017-01-26-install-matplotlib-on-macos-sierra.md</string>
@@ -70,7 +70,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>28</integer>
+			<integer>30</integer>
 		</dict>
 	</dict>
 </dict>

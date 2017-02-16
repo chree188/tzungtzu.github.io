@@ -49,6 +49,83 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2017/02/15/dataframe.html">pandas 中 DataFrame 的分割和合并</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-02-15">2017-02-15</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#python" title="python">#python</a>
+      
+      <a href="/tags.html#pandas" title="pandas">#pandas</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p>pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
+DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。</p>
+
+<p>在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
+ <!--more--></p>
+
+<h3 id="section">取出一列</h3>
+
+<p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
+
+<pre><code>frame ['year'] = frame.year  
+frame.ix['three']  #获取行数据
+</code></pre>
+
+<h3 id="section-1">删除一列</h3>
+
+<pre><code>frame.drop(['a','b']) #删除a，b行
+frame.drop([two],axis=1) #删除two 列。
+</code></pre>
+
+<h3 id="section-2">添加一列</h3>
+
+<p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
+
+<pre><code>Frame['newcolumn'] = series  #在Frame 创建新列
+</code></pre>
+
+<h3 id="type">改变一列的 type</h3>
+
+<pre><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
+</code></pre>
+
+<p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
+	pd.to_numeric(s, errors =”coerce”)</p>
+
+<h3 id="section-3">修改索引</h3>
+
+<pre><code>obj = obj.reindex(['a','b','c','d','e'])
+frame = frame.reindex(index=[], cloumns=[])
+</code></pre>
+
+<h3 id="section-4">将列变成索引</h3>
+
+<p>将某列作为列的索引，会生成一个新的 DataFrame
+	frame2 = frame.set_index([‘c’])</p>
+
+<h3 id="a">统计a列中元素的重复次数</h3>
+<pre><code>df.groupby('a').size() 生成一个 Series 
+</code></pre>
+
+<h3 id="ab">统计a列中不同元素在b列的求和</h3>
+<pre><code>df.groupby('a').sum() 生成一个 DataFrame
+</code></pre>
+
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2017/02/03/hacker-and-painter.html">《黑客与画家》读书笔记</a></h2>
     </section>
     <section class="meta">
@@ -171,69 +248,6 @@
 <p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fc4dp1hflpj313k0i0aha.jpg" alter="" width="75%" /></p>
 
 <p>Enjoy!</p>
-
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2017/01/14/record-sound.html">Mac 录屏／录音 内录系统声音</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-01-14">2017-01-14</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#mac" title="mac">#mac</a>
-      
-      <a href="/tags.html#preference" title="preference">#preference</a>
-      
-      <a href="/tags.html#sound" title="sound">#sound</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>因为私人原因，需要录系统播放声音。可以通过录屏软件 ScreenFlow。QuickTime 为了防止盗版，不能录系统音频。但是可以通过安装 SoundFlower 解决。SoundFlower 是一个虚拟音频设备（下载地址点<a href="https://github.com/mattingalls/Soundflower/releases/tag/2.0b2">这里</a>）</p>
-
-<p><!--more--></p>
-
-<h3 id="audio-midi-setup">打开 Audio MIDI Setup：</h3>
-
-<ul>
-  <li>新建一个 “Multi Output Device”，选择“Built-in Output” 和 “Soundflower(2ch)“</li>
-  <li>新建一个 “Aggregate Device”，选择“External Microphone”和“Soundflower(2ch)”</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="preference---sound-"><strong>在 Preference - Sound 里设置音频输出源</strong></h3>
-
-<ul>
-  <li>输出源设置为刚刚设置的 “Multi Output Device”</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="quicktime">接下来打开QuickTime，在音频／录屏录制部分选择输入源</h3>
-
-<ul>
-  <li>如果在内录的时候需要不录下 mic 的声音，就在输入源选择 “Soundflower（2ch）”</li>
-  <li>如果在内录的时候需要录下 mic 的声音，就在输入源选择 “Aggregate Device”</li>
-</ul>
-
-<p><br /></p>
-
-<h3 id="section">最后，可选择压缩文件。</h3>
-
-<p><br /></p>
-
-<h3 id="section-1">注意</h3>
-
-<p>经过修改输出源，无法调节系统的声音大小。等用完了录屏需求，可以将输出源修改回内置麦克风。</p>
-
 
     </section>
     </article>
