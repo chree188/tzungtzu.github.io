@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-16T18:38:27+08:00</updated>
+ <updated>2017-02-16T18:39:57+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -63,12 +63,17 @@ frame = frame.reindex(index=[], cloumns=[])
 	frame2 = frame.set_index([‘c’])&lt;/p&gt;
 
 &lt;h3 id=&quot;a&quot;&gt;统计a列中元素的重复次数&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;df.groupby('a').size() 生成一个 Series 
+&lt;pre&gt;&lt;code&gt;df.groupby('a').size()
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;生成一个 Series&lt;/p&gt;
+
 &lt;h3 id=&quot;ab&quot;&gt;统计a列中不同元素在b列的求和&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;df.groupby('a').sum() 生成一个 DataFrame
+
+&lt;pre&gt;&lt;code&gt;df.groupby('a').sum()
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;生成一个 DataFrame&lt;/p&gt;
 
 </content>
  </entry>

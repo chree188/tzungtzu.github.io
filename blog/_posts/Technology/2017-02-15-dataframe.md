@@ -56,10 +56,12 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 ### 统计a列中元素的重复次数
 	df.groupby('a').size()
+
 生成一个 Series 
 
 ### 统计a列中不同元素在b列的求和
 
 	df.groupby('a').sum()
+
 生成一个 DataFrame
 

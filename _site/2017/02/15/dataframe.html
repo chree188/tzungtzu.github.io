@@ -123,12 +123,17 @@ frame = frame.reindex(index=[], cloumns=[])
 	frame2 = frame.set_index([‘c’])</p>
 
 <h3 id="a">统计a列中元素的重复次数</h3>
-<pre><code>df.groupby('a').size() 生成一个 Series 
+<pre><code>df.groupby('a').size()
 </code></pre>
 
+<p>生成一个 Series</p>
+
 <h3 id="ab">统计a列中不同元素在b列的求和</h3>
-<pre><code>df.groupby('a').sum() 生成一个 DataFrame
+
+<pre><code>df.groupby('a').sum()
 </code></pre>
+
+<p>生成一个 DataFrame</p>
 
 
   </section>
