@@ -85,11 +85,11 @@
 <h3 id="readmemd-">1.  找不到 README.md 文件</h3>
 <p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
 
-<pre><code>val textFile = “/usr/mint/README.md”
+<pre><code>val textFile = “/usr/mint/README.md” 
 </code></pre>
 
 <h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
-<p>新建文件夹，包含simpleApp.scala  simple.sbt 两个文件</p>
+<p>新建文件夹，包含simpleApp.scala, simple.sbt 两个文件</p>
 
 <h3 id="sbt">3. 无法使用 sbt</h3>
 <p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>

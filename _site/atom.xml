@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-24T16:25:45+08:00</updated>
+ <updated>2017-02-24T16:27:19+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -25,11 +25,11 @@
 &lt;h3 id=&quot;readmemd-&quot;&gt;1.  找不到 README.md 文件&lt;/h3&gt;
 &lt;p&gt;需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;val textFile = “/usr/mint/README.md”
+&lt;pre&gt;&lt;code&gt;val textFile = “/usr/mint/README.md” 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;simpleapp-&quot;&gt;2. 安装 simpleApp 的目录结构&lt;/h3&gt;
-&lt;p&gt;新建文件夹，包含simpleApp.scala  simple.sbt 两个文件&lt;/p&gt;
+&lt;p&gt;新建文件夹，包含simpleApp.scala, simple.sbt 两个文件&lt;/p&gt;
 
 &lt;h3 id=&quot;sbt&quot;&gt;3. 无法使用 sbt&lt;/h3&gt;
 &lt;p&gt;Spark 中没有自带 sbt，需要自行&lt;a href=&quot;http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html&quot;&gt;安装&lt;/a&gt;&lt;/p&gt;
