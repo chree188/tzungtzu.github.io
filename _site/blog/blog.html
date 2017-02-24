@@ -192,9 +192,8 @@ frame = frame.reindex(index=[], cloumns=[])
     
     </section>
     <section class="post">
-    <p>neo4j 是一种图数据库，图数据库着重于数据之间的关系，而非数据本身的信息。一个 RDBMS 被优化用于局和数据。而 neo4j <strong>擅长于高度关联的数据</strong>。</p>
-
-<p><!--more--></p>
+    <p>neo4j 是一种图数据库，图数据库着重于数据之间的关系，而非数据本身的信息。一个 RDBMS 被优化用于聚合数据。而 neo4j <strong>擅长于高度关联的数据</strong>。 优点是插入查询方便，搜索便利方法方便。缺点是超大节点的操作慢。
+ <!--more--></p>
 
 <h3 id="neo4j-">neo4j 模型建立</h3>
 
@@ -243,7 +242,7 @@ frame = frame.reindex(index=[], cloumns=[])
     <p>多个模式同时匹配</p>
   </li>
   <li>查找节点
-      
+       
     <ul>
       <li>通过id</li>
       <li>通过INDEX  START john = n: User(name: “”)</li>
