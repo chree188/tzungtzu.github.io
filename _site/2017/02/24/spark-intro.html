@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>pandas 中 DataFrame 的分割和合并</title>
+    <title>Spark 入门遇到的一些坑</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -46,11 +46,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>pandas 中 DataFrame 的分割和合并 </h2>
+    <h2>Spark 入门遇到的一些坑 </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-02-15">2017-02-15</time>
+    <time datetime="2017-02-24">2017-02-24</time>
   </span>
   
 
@@ -68,75 +68,31 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#python" title="python">#python</a>&nbsp;
+    <a href="/tags.html#spark" title="spark">#spark</a>&nbsp;
     
-    <a href="/tags.html#pandas" title="pandas">#pandas</a>&nbsp;
+    <a href="/tags.html#scala" title="scala">#scala</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p>pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
-DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。</p>
+  <p>Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式的内存抽象。</p>
 
-<p>在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
- <!--more--></p>
+<p>用<a href="https://spark.apache.org/docs/latest/quick-start.html">官方文档</a>入门的时候遇到一些问题，以下是解决办法。</p>
 
-<h3 id="section">取出一列</h3>
+<p><!--more--></p>
 
-<p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
+<h3 id="readmemd-">1.  找不到 README.md 文件</h3>
+<p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
 
-<pre><code>frame ['year'] = frame.year  
-frame.ix['three']  #获取行数据
+<pre><code>val textFile = “/usr/mint/README.md”
 </code></pre>
 
-<h3 id="section-1">删除一列</h3>
+<h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
+<p>新建文件夹，包含simpleApp.scala  simple.sbt 两个文件</p>
 
-<pre><code>frame.drop(['a','b']) #删除a，b行
-frame.drop([two],axis=1) #删除two 列。
-</code></pre>
-
-<h3 id="section-2">添加一列</h3>
-
-<p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
-
-<pre><code>Frame['newcolumn'] = series  #在Frame 创建新列
-</code></pre>
-
-<h3 id="type">改变一列的 type</h3>
-
-<pre><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
-</code></pre>
-
-<p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
-	pd.to_numeric(s, errors =”coerce”)</p>
-
-<h3 id="section-3">修改索引</h3>
-
-<pre><code>obj = obj.reindex(['a','b','c','d','e'])
-frame = frame.reindex(index=[], cloumns=[])
-</code></pre>
-
-<h3 id="section-4">将列变成索引</h3>
-
-<p>将某列作为列的索引，会生成一个新的 DataFrame
-	frame2 = frame.set_index([‘c’])</p>
-
-<h2 id="section-5">聚类</h2>
-
-<h3 id="a">统计a列中元素的重复次数</h3>
-<pre><code>df.groupby('a').size()
-</code></pre>
-
-<h3 id="ab">统计a列中不同元素在b列的求和</h3>
-
-<pre><code>df.groupby('a').sum()
-</code></pre>
-
-<h3 id="dataframe">合并两个dataframe</h3>
-
-<pre><code>pd.merge(alb)
-</code></pre>
+<h3 id="sbt">3. 无法使用 sbt</h3>
+<p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>
 
 
   </section>

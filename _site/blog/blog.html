@@ -49,6 +49,47 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2017/02/24/spark-intro.html">Spark 入门遇到的一些坑</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-02-24">2017-02-24</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#spark" title="spark">#spark</a>
+      
+      <a href="/tags.html#scala" title="scala">#scala</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p>Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式的内存抽象。</p>
+
+<p>用<a href="https://spark.apache.org/docs/latest/quick-start.html">官方文档</a>入门的时候遇到一些问题，以下是解决办法。</p>
+
+<p><!--more--></p>
+
+<h3 id="readmemd-">1.  找不到 README.md 文件</h3>
+<p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
+
+<pre><code>val textFile = “/usr/mint/README.md”
+</code></pre>
+
+<h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
+<p>新建文件夹，包含simpleApp.scala  simple.sbt 两个文件</p>
+
+<h3 id="sbt">3. 无法使用 sbt</h3>
+<p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>
+
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2017/02/15/dataframe.html">pandas 中 DataFrame 的分割和合并</a></h2>
     </section>
     <section class="meta">
@@ -112,18 +153,21 @@ frame = frame.reindex(index=[], cloumns=[])
 <p>将某列作为列的索引，会生成一个新的 DataFrame
 	frame2 = frame.set_index([‘c’])</p>
 
+<h2 id="section-5">聚类</h2>
+
 <h3 id="a">统计a列中元素的重复次数</h3>
 <pre><code>df.groupby('a').size()
 </code></pre>
-
-<p>生成一个 Series</p>
 
 <h3 id="ab">统计a列中不同元素在b列的求和</h3>
 
 <pre><code>df.groupby('a').sum()
 </code></pre>
 
-<p>生成一个 DataFrame</p>
+<h3 id="dataframe">合并两个dataframe</h3>
+
+<pre><code>pd.merge(alb)
+</code></pre>
 
 
     </section>
@@ -131,128 +175,183 @@ frame = frame.reindex(index=[], cloumns=[])
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2017/02/03/hacker-and-painter.html">《黑客与画家》读书笔记</a></h2>
+      <h2><a href="/2017/02/13/neo4j.html">neo4j 入门</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2017-02-03">2017-02-03</time>
+      <time datetime="2017-02-13">2017-02-13</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#编程" title="编程">#编程</a>
+      <a href="/tags.html#neo4j" title="neo4j">#neo4j</a>
       
-      <a href="/tags.html#习惯" title="习惯">#习惯</a>
+      <a href="/tags.html#NoSQL" title="NoSQL">#NoSQL</a>
       
     </span>
     
     </section>
     <section class="post">
-    <h3 id="section">书呆子</h3>
-
-<ol>
-  <li>为什么聪明的小孩一直不受同龄人的欢迎呢？答案就是他们真的不想让自己受欢迎。对他们来说，聪明比受欢迎更重要。</li>
-  <li>如今社会，我们面临一个更严峻的问题，他与当前的诸多难题具有共同的起因，即专业化。当工作的专业程度越来越高时，<a href="">我们必须接受更长时间的训练。</a>这也导致当今的青少年在生产活动中根本是毫无用处的。</li>
-</ol>
+    <p>neo4j 是一种图数据库，图数据库着重于数据之间的关系，而非数据本身的信息。一个 RDBMS 被优化用于局和数据。而 neo4j <strong>擅长于高度关联的数据</strong>。</p>
 
 <p><!--more--></p>
 
-<h3 id="section-1">黑客与画家</h3>
+<h3 id="neo4j-">neo4j 模型建立</h3>
+
+<p>neo4j 中的概念： 节点，关系，属性，标签（针对节点），类型（针对关系）</p>
+
+<p>属性：重要的数据结构，不同于关系数据库模型的特征。节点和关系可以具有任意数量的属性，重要的key／value 。</p>
+
+<p>用标签可以扩展属性组，用于将节点划分到特定集合。</p>
+
+<p>模型中的元素可以是显式和隐式（是否直接作为节点），也可以是不变或者可变的。</p>
+
+<h3 id="neo4j--1">neo4j 开发</h3>
 
 <ol>
-  <li>科学界的每一个人，暗地里都相信数学家比自己聪明。我觉得，数学家自己也相信这一点。最后的结果就是科学家往往会把自己的工作尽可能弄得看上去像数学。</li>
-  <li>如果黑客认识到自己与其他创作者——比如作家和画家——是一类人，这种诱惑对他就不起作用。作家和画家没有“对数学的妒忌”，他们认为自己在从事与数学完全不相关的事情。我认为，黑客也是如此。</li>
-  <li><strong>借鉴绘画，我们写代码时调试也如同打草稿。整个过程一开始是一张草图，然后填入细节。</strong></li>
-  <li>大学和实验室强迫黑客成为科学家，企业强迫黑客成为工程师。</li>
-  <li>要是你很热爱编程，你就不可避免地会开发你自己的项目。</li>
+  <li>通过核心 Java API（系统级）</li>
+  <li>通过查询语言 Cypher（易读，结构强大）
+    <ol>
+      <li>
+        <p>查找起始节点<br />
+     START user = node(1)</p>
+      </li>
+      <li>
+        <p>跟随关系遍历图形<br />
+     MATCH (user)-<a href="">r: HAS_SEEN</a>-(movie)</p>
+      </li>
+      <li>
+        <p>返回最终节点。<br />
+     RETURN movie</p>
+      </li>
+    </ol>
+  </li>
 </ol>
 
-<p><br /></p>
-
-<h3 id="section-2">不能说的话：</h3>
-<ol>
-  <li>找出不能说的话：真话，异端邪说，时空差异diff，道貌岸然，观察禁忌的产生。这样的目的在于好奇，了解真相避免犯错，也是一种很好的脑力训练。</li>
-  <li>训练自己去想那些不能想的事情，你获得的好处会超过所得到的想法本身。如果你能“远远地”跳出传统思维，提出让别人一听就脑袋轰一声炸开的惊人观点，那么你就在“小小地”跳出传统思维方面不会有任何困难。要知道，人们把后面的这种情况称为“创新”。</li>
-  <li>请记住，所谓“流行”（传统观念也是一种流行），本质上就是自己看不见自己的样子。否则就不会有流行了。对于那些被流行抓住的人，流行就不再是流行，而是应该要做的正确事情。只有保持一定的距离才能观察到人们观念的变化，发现流行（也就是人们自以为正确的事情）到底是什么。</li>
-</ol>
-
-<p><br /></p>
-
-<h3 id="section-3">如何创造财富：</h3>
-
-<ol>
-  <li>从经济学观点看，你可以把创业想象成一个压缩过程，你的所有工作年份被压缩成了短短几年。<strong>你不再是低强度地工作四十年，而是以极限强度工作四年。</strong>在高技术领域，这种压缩的回报尤其丰厚，工作效率越高，额外报酬就越高。</li>
-  <li>如果你有一个令你感到安全的工作，你是不会致富的，因为没有危险，就几乎等于没有可放大性。</li>
-  <li>创业公司不像能经受打击的黑熊，也不像有盔甲保护的螃蟹，而是像蚊子一样，不带有任何防御，就是为了达到一个目的而活着。蚊子唯一的防御就是，作为一个物种，它们的数量极多，但是作为个体，却极难生存。</li>
-</ol>
-
-<p><br /></p>
-
-<h3 id="section-4">设计者的品味：</h3>
+<h3 id="cypher-"> Cypher 基本句法</h3>
+<p> 
++ start - 查找图形中的起始节点 
++ match - 匹配图形模式，可以定位子图形 
++ where - 基于某种标准过滤数据 
++ return - 返回感兴趣的结果</p>
 
 <ol>
-  <li>正如逻辑学的“奥卡姆剃刀”原则所说，简单的解释就是最好的解释。</li>
-  <li>优秀设计师也是如此，他们的工作看上去很容易。大多数时候，这是一种错觉。作家的文章读起来流畅自如，但是背后其实经过了反复修改。</li>
-  <li>人们有时会说自己有了“状态”，我的理解是，他们这时可以控制自己的脊髓。<strong>脊髓是更本能的反应</strong>，面对难题时，它能释放你的直觉。</li>
+  <li>模式匹配</li>
+  <li>节点和关系连接</li>
+  <li>两个关系链接三个节点</li>
+  <li>
+    <p>多个模式同时匹配</p>
+  </li>
+  <li>查找节点
+      
+    <ul>
+      <li>通过id</li>
+      <li>通过INDEX  START john = n: User(name: “”)</li>
+      <li>查询多个起始节点   START john = n: User(name: “”)， jack = n: User(name: “”)</li>
+      <li>分页结果：
+ ORDER  结果排序
+ SKIP  进行分页
+ LIMIT  限定输出数量</li>
+    </ul>
+  </li>
+  <li>
+    <p>过滤数据
+ 可以通过正则表达式过滤
+ WHERE friend.mail = /@gmail.com/</p>
+  </li>
+  <li>返回结果
+ 返回属性，关系，路径以及分页结果</li>
 </ol>
 
+<ul>
+  <li>ORDER 排序</li>
+  <li>SKIP 跳到指定的页</li>
+  <li>LIMIT 限制输出数量</li>
+</ul>
 
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2017/01/26/install-matplotlib-on-macos-sierra.html">Install matplotlib on macOS Sierra</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-01-26">2017-01-26</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#python" title="python">#python</a>
-      
-      <a href="/tags.html#matplotlab" title="matplotlab">#matplotlab</a>
-      
-      <a href="/tags.html#踩过的坑" title="踩过的坑">#踩过的坑</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>在 macOS 下安装 matplotlab 报错，</p>
+<ol>
+  <li>更新节点数据</li>
+</ol>
 
-<p><img src="https://ww4.sinaimg.cn/large/006tNc79gy1fc4e38a0dwj31380isk0g.jpg" alter="" width="75%" /></p>
+<p>建立新节点和查找已有节点
+CREATE语句 设置节点对应的关系</p>
 
-<p>Google 看到解决方法：
- <!--more-->
-	sudo pip -H install matplotlib</p>
+<ol>
+  <li>
+    <p>删除数据
+DELETE 注意选择删除节点，关系</p>
+  </li>
+  <li>
+    <p>更新节点和关系属性
+SET john.yob = 1973</p>
+  </li>
+</ol>
 
-<pre><code>sudo pip install matplotlib --ignore-installed six
-</code></pre>
+<p>8.删除属性
+start n= john
+delete n.name</p>
 
-<p>以及关闭SIP（system integrity protection）</p>
+<h3 id="cypher">高级 Cypher</h3>
 
-<p>都不能成功安装。</p>
+<ol>
+  <li>数据聚合</li>
+</ol>
 
-<p>最后找到了解决办法：</p>
+<p>非聚合条目（节点），聚合函数（COUNT）</p>
 
-<h4 id="install-pig-config">1.install pig-config</h4>
-<pre><code>brew install pkg-config
-</code></pre>
+<ol>
+  <li>Cypher函数，
+p = (n)-&gt;<a href="">r: IS_FRIEND_OF*1..3</a>-()</li>
+</ol>
 
-<h4 id="install-freetype">2.install freetype</h4>
-<pre><code>brew install freetype
-</code></pre>
+<p>NODES(path)</p>
 
-<h4 id="install-matplotlib">3.install matplotlib</h4>
-<pre><code>pip install matplotlib
-</code></pre>
+<p>HAS(Entity.propertyName)</p>
 
-<p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fc4dp1hflpj313k0i0aha.jpg" alter="" width="75%" /></p>
+<p>ALL(),  NONE(), SINGLE()</p>
 
-<p>Enjoy!</p>
+<ol>
+  <li>链式查询一个查询的输出链接到另一个查询
+MATCH  n-<a href="">r</a>-()
+with TYPE(r) as TYPE, count(*) AS COUNT
+where COUNT &gt;1</li>
+</ol>
+
+<p>命名with 语句中的输出字段是强制性的。</p>
+
+<ul>
+  <li>shortestpath</li>
+  <li>allshortestpaths
+ extract( x in collection | expression ) 例如：</li>
+</ul>
+
+<h3 id="tips">Tips</h3>
+
+<ol>
+  <li>首次登陆必须修改密码，否则无法使用</li>
+  <li>neo4j 默认只能从本机访问，如果需要从外网访问，修改配置文件即可。</li>
+  <li>网页控制台（基于网页的接口）</li>
+</ol>
+
+<p>MAX  DESC</p>
+
+<p>新建一个node，包括变量名和label，并添加属性。</p>
+
+<h3 id="section">可以做以下尝试：</h3>
+<p>使用Match和属性查找一个节点。</p>
+
+<p>使用Match和关系查找相关节点。</p>
+
+<p>使用Match进行推荐。</p>
+
+<p>使用Match寻找最多4跳以内的节点。</p>
+
+<p>使用Match寻找两节点之间的最短路径<a href="">。</a></p>
+
+<p><a href="">https://github.com/linonetwo/neo4j-tutorial-Chinese/blob/master/Chapters/1.md</a></p>
+
+<p><a href="http://www.infoq.com/cn/articles/graph-nosql-neo4j">http://www.infoq.com/cn/articles/graph-nosql-neo4j</a></p>
+
 
     </section>
     </article>

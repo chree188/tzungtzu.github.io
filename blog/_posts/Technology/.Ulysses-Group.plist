@@ -36,6 +36,16 @@
 					<integer>21</integer>
 				</dict>
 			</dict>
+			<key>2017-02-13-neo4j.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>509019407.24629802</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>33</integer>
+				</dict>
+			</dict>
 			<key>2017-02-15-dataframe.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -46,10 +56,26 @@
 					<integer>29</integer>
 				</dict>
 			</dict>
+			<key>2017-02-24-spark-intro.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>509617334.80860901</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>37</integer>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2017-02-24-spark-intro.md</string>
+		</array>
+		<array>
+			<string>2017-02-13-neo4j.md</string>
+		</array>
 		<array>
 			<string>2017-02-15-dataframe.md</string>
 		</array>
@@ -70,7 +96,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>30</integer>
+			<integer>38</integer>
 		</dict>
 	</dict>
 </dict>
