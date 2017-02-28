@@ -21,7 +21,7 @@ Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式�
 ### 1.  找不到 README.md 文件
 需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR\_USER\_NAME 目录下，或者将文件路径改为绝对路径。如：
 
-	val textFile = “/usr/mint/README.md” 
+	val textFile = “/usr/mine/path/README.md” 
 
 ### 2. 安装 simpleApp 的目录结构
 新建文件夹，包含simpleApp.scala, simple.sbt 两个文件

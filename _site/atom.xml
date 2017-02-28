@@ -4,12 +4,61 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-24T16:59:48+08:00</updated>
+ <updated>2017-02-28T19:10:07+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
  </author>
 
+ 
+ <entry>
+   <title>Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</title>
+   <link href="http://tzungtzu.com/2017/02/28/spark-integrate-jn.html"/>
+   <updated>2017-02-28T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/02/28/spark-integrate-jn</id>
+   <content type="html">&lt;p&gt;Jupyer Notebook is an interactive notebook environment and it supports Spark.&lt;/p&gt;
+
+&lt;h3 id=&quot;jupyter-notebook-installation&quot;&gt;1 . jupyter Notebook installation&lt;/h3&gt;
+
+&lt;h3 id=&quot;scala-spark-installation&quot;&gt;2 . Scala, Spark installation&lt;/h3&gt;
+
+&lt;h3 id=&quot;toree-installation&quot;&gt;3 . &lt;strong&gt;Toree installation&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Apache Toree is tool to configure Jupiter notebook to run with Spark.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;configure-different-apache-toree-kernels&quot;&gt;4 . Configure different Apache Toree kernels&lt;/h3&gt;
+
+&lt;p&gt;for Scala:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$jupyter toree install --spark_home=/usr/local/bin/apache-spark/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;for PySpark:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$jupyter toree install --spark_home=/usr/local/bin/apache-spark/ --interpreters=PySpark
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;even SparkR, SQL&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$Jupyter toree install --interpreter=SparkR,SQL
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;and-you-can-check-installation-by&quot;&gt;5 .  and you can Check installation by&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$jupyter kernelspec list
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;references:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://toree.incubator.apache.org/documentation/user/installation.html&quot; title=&quot;Apache Toree Installation&quot;&gt;https://toree.incubator.apache.org/documentation/user/installation.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook&quot; title=&quot; solution is to install Apache Toree.&quot;&gt;http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Spark 入门遇到的一些坑</title>
@@ -25,7 +74,7 @@
 &lt;h3 id=&quot;readmemd-&quot;&gt;1.  找不到 README.md 文件&lt;/h3&gt;
 &lt;p&gt;需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;val textFile = “/usr/mint/README.md” 
+&lt;pre&gt;&lt;code&gt;val textFile = “/usr/mine/path/README.md” 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;simpleapp-&quot;&gt;2. 安装 simpleApp 的目录结构&lt;/h3&gt;
@@ -108,7 +157,7 @@ frame = frame.reindex(index=[], cloumns=[])
  </entry>
  
  <entry>
-   <title>neo4j 入门</title>
+   <title>neo4j 常用命令</title>
    <link href="http://tzungtzu.com/2017/02/13/neo4j.html"/>
    <updated>2017-02-13T00:00:00+08:00</updated>
    <id>http://tzungtzu.com/2017/02/13/neo4j</id>
@@ -244,19 +293,36 @@ where COUNT &amp;gt;1&lt;/li&gt;
  extract( x in collection | expression ) 例如：&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&quot;section&quot;&gt;其他&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;从 CSV 文件导入到 Neo4j&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; LOAD CSV WITH HEADER FROM &quot;url&quot; AS row
+ MERGE (src:Character {name: row.Source})
+ MERGE (tgt:Character {name: row.Target})
+ MERGE (src)-[r:INTERACTS]-&amp;gt;(tgt)
+ SET r.weight = toInt(row.Weight)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;首次登陆必须修改密码，否则无法使用&lt;/li&gt;
   &lt;li&gt;neo4j 默认只能从本机访问，如果需要从外网访问，修改配置文件即可。&lt;/li&gt;
   &lt;li&gt;网页控制台（基于网页的接口）&lt;/li&gt;
+  &lt;li&gt;添加 APOC 时，需要将jar文件放在default.graphdb下的plugins，重启即可。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;MAX  DESC&lt;/p&gt;
 
 &lt;p&gt;新建一个node，包括变量名和label，并添加属性。&lt;/p&gt;
 
-&lt;h3 id=&quot;section&quot;&gt;可以做以下尝试：&lt;/h3&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;可以做以下尝试：&lt;/h3&gt;
 &lt;p&gt;使用Match和属性查找一个节点。&lt;/p&gt;
 
 &lt;p&gt;使用Match和关系查找相关节点。&lt;/p&gt;
@@ -880,69 +946,6 @@ where COUNT &amp;gt;1&lt;/li&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>没有打断感</title>
-   <link href="http://tzungtzu.com/2016/12/14/google-search-hotkey.html"/>
-   <updated>2016-12-14T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/12/14/google-search-hotkey</id>
-   <content type="html">&lt;p&gt;喜欢 Tweetbot 在背景页面打开连接这个细节。以及在 Chrome 查看网页的时候会使用「从背景页打开」。&lt;/p&gt;
-
-&lt;p&gt;于是做了一个在 Alfred 里的 Workflow（也完全可以在 Automator 里创建 Services 实现）。实现的功能是：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;在「任何」软件阅读的时候可以选中文字进行搜索，自动在背景页面打开，需要的时候再在 Chrome 查看，达到没有打断感的体验。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;具体来说，&lt;/p&gt;
-
-&lt;h3 id=&quot;google-&quot;&gt;1. 实现的基本动作，是选中文本进行 Google 搜索。&lt;/h3&gt;
-
-&lt;p&gt;我采用的语言是基于 macOS 系统层面的 AppleScript，主要原因是简单。（当然我也在看脚本运行的方法，它们更加强大）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; tell application &quot;Google Chrome&quot;
-        tell window 1
-            set newTab to make new tab with properties {URL:myurl}
-        end tell
-end tell
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;其中 myurl 就是我们要搜索的 URL。&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;2. 对不同的应用进行不同处理。&lt;/h3&gt;
-
-&lt;p&gt;如果当前在 Chrome， 则从 Chrome 背景页面打开；如果当前在其他 App，只需要在 Chrome 打开新页面即可，方便跳转 App 的时候查看。
-只需要做一个条件判断当前 Focus 的 App 是否为 Chrome。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tell application &quot;System Events&quot;
-    set activeApp to name of first application process 
-end tell
-
-if 
-else
-endif
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在这里我们把它设为 activeApp.&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;3. 加强搜索能力。&lt;/h3&gt;
-
-&lt;p&gt;如果想要继续加强这个搜索，比如我查看网页时会看到没有加入超链接的链接，可以考虑直接选中就打开链接，避免搜索这个重复过程。同时也可以将这个快捷键同时作用于这两种搜索方法上。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;4. 避免误按。&lt;/h3&gt;
-
-&lt;p&gt;通过异常抛出来处理当选中文字为空字符串的误用。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;5. 设置不同快捷键给特定搜索。&lt;/h3&gt;
-
-&lt;p&gt;可以设置更多快捷键给 wiki，douban 等专门的搜索。&lt;/p&gt;
-
-&lt;p&gt;最后给出这个 workflow 的&lt;a href=&quot;https://github.com/tzungtzu/alfred-workflows/raw/master/Downloads/Google%20Search%20HotKey.alfredworkflow&quot;&gt;下载地址&lt;/a&gt;吧。&lt;/p&gt;
-
 </content>
  </entry>
  

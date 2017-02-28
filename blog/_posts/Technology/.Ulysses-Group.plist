@@ -66,10 +66,23 @@
 					<integer>37</integer>
 				</dict>
 			</dict>
+			<key>2017-02-28-spark-integrate-jn.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>509972756.69259799</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>41</integer>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2017-02-28-spark-integrate-jn.md</string>
+		</array>
 		<array>
 			<string>2017-02-24-spark-intro.md</string>
 		</array>
@@ -96,7 +109,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>38</integer>
+			<integer>42</integer>
 		</dict>
 	</dict>
 </dict>

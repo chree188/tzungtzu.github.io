@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>Spark 入门遇到的一些坑</title>
+    <title>Integrate Spark(Scala & PySpark) with Jupiter Notebook</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -46,11 +46,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>Spark 入门遇到的一些坑 </h2>
+    <h2>Integrate Spark(Scala & PySpark) with Jupiter Notebook </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-02-24">2017-02-24</time>
+    <time datetime="2017-02-28">2017-02-28</time>
   </span>
   
 
@@ -68,31 +68,58 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#spark" title="spark">#spark</a>&nbsp;
+    <a href="/tags.html#Jupyter Notebook" title="Jupyter Notebook">#Jupyter Notebook</a>&nbsp;
     
-    <a href="/tags.html#scala" title="scala">#scala</a>&nbsp;
+    <a href="/tags.html#Spark" title="Spark">#Spark</a>&nbsp;
+    
+    <a href="/tags.html#Scala" title="Scala">#Scala</a>&nbsp;
+    
+    <a href="/tags.html#Toree" title="Toree">#Toree</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p>Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式的内存抽象。</p>
+  <p>Jupyer Notebook is an interactive notebook environment and it supports Spark.</p>
 
-<p>用<a href="https://spark.apache.org/docs/latest/quick-start.html">官方文档</a>入门的时候遇到一些问题，以下是解决办法。</p>
+<h3 id="jupyter-notebook-installation">1 . jupyter Notebook installation</h3>
 
-<p><!--more--></p>
+<h3 id="scala-spark-installation">2 . Scala, Spark installation</h3>
 
-<h3 id="readmemd-">1.  找不到 README.md 文件</h3>
-<p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
+<h3 id="toree-installation">3 . <strong>Toree installation</strong></h3>
 
-<pre><code>val textFile = “/usr/mine/path/README.md” 
+<p>Apache Toree is tool to configure Jupiter notebook to run with Spark.</p>
+
+<pre><code>$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
 </code></pre>
 
-<h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
-<p>新建文件夹，包含simpleApp.scala, simple.sbt 两个文件</p>
+<h3 id="configure-different-apache-toree-kernels">4 . Configure different Apache Toree kernels</h3>
 
-<h3 id="sbt">3. 无法使用 sbt</h3>
-<p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>
+<p>for Scala:</p>
+
+<pre><code>$jupyter toree install --spark_home=/usr/local/bin/apache-spark/
+</code></pre>
+
+<p>for PySpark:</p>
+
+<pre><code>$jupyter toree install --spark_home=/usr/local/bin/apache-spark/ --interpreters=PySpark
+</code></pre>
+
+<p>even SparkR, SQL</p>
+
+<pre><code>$Jupyter toree install --interpreter=SparkR,SQL
+</code></pre>
+
+<h3 id="and-you-can-check-installation-by">5 .  and you can Check installation by</h3>
+<pre><code>$jupyter kernelspec list
+</code></pre>
+
+<h3 id="references">references:</h3>
+
+<ol>
+  <li><a href="https://toree.incubator.apache.org/documentation/user/installation.html" title="Apache Toree Installation">https://toree.incubator.apache.org/documentation/user/installation.html</a></li>
+  <li><a href="http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook" title=" solution is to install Apache Toree.">http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook</a></li>
+</ol>
 
 
   </section>

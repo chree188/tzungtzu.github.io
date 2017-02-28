@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>neo4j 入门</title>
+    <title>neo4j 常用命令</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -46,7 +46,7 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>neo4j 入门 </h2>
+    <h2>neo4j 常用命令 </h2>
   </section>
   <section class="meta">
 	<span class="time">
@@ -71,6 +71,8 @@
     <a href="/tags.html#neo4j" title="neo4j">#neo4j</a>&nbsp;
     
     <a href="/tags.html#NoSQL" title="NoSQL">#NoSQL</a>&nbsp;
+    
+    <a href="/tags.html#Cypher" title="Cypher">#Cypher</a>&nbsp;
     
   </span>
   
@@ -208,19 +210,36 @@ where COUNT &gt;1</li>
  extract( x in collection | expression ) 例如：</li>
 </ul>
 
+<h3 id="section">其他</h3>
+
+<ol>
+  <li>
+    <p>从 CSV 文件导入到 Neo4j</p>
+
+    <pre><code> LOAD CSV WITH HEADER FROM "url" AS row
+ MERGE (src:Character {name: row.Source})
+ MERGE (tgt:Character {name: row.Target})
+ MERGE (src)-[r:INTERACTS]-&gt;(tgt)
+ SET r.weight = toInt(row.Weight)
+</code></pre>
+  </li>
+  <li></li>
+</ol>
+
 <h3 id="tips">Tips</h3>
 
 <ol>
   <li>首次登陆必须修改密码，否则无法使用</li>
   <li>neo4j 默认只能从本机访问，如果需要从外网访问，修改配置文件即可。</li>
   <li>网页控制台（基于网页的接口）</li>
+  <li>添加 APOC 时，需要将jar文件放在default.graphdb下的plugins，重启即可。</li>
 </ol>
 
 <p>MAX  DESC</p>
 
 <p>新建一个node，包括变量名和label，并添加属性。</p>
 
-<h3 id="section">可以做以下尝试：</h3>
+<h3 id="section-1">可以做以下尝试：</h3>
 <p>使用Match和属性查找一个节点。</p>
 
 <p>使用Match和关系查找相关节点。</p>

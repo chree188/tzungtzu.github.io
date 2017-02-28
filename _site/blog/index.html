@@ -50,6 +50,82 @@
   <article class="content">
     
     <section class="title">
+      <h2><a href="/2017/02/28/spark-integrate-jn.html">Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-02-28">2017-02-28</time>
+    </span>
+    
+    
+    
+    <span class="tags">
+      
+      <a href="/tags.html#Jupyter Notebook" title="Jupyter Notebook">#Jupyter Notebook</a>
+      
+      <a href="/tags.html#Spark" title="Spark">#Spark</a>
+      
+      <a href="/tags.html#Scala" title="Scala">#Scala</a>
+      
+      <a href="/tags.html#Toree" title="Toree">#Toree</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+		        <div class="content">
+					 <p>Jupyer Notebook is an interactive notebook environment and it supports Spark.</p>
+
+<h3 id="jupyter-notebook-installation">1 . jupyter Notebook installation</h3>
+
+<h3 id="scala-spark-installation">2 . Scala, Spark installation</h3>
+
+<h3 id="toree-installation">3 . <strong>Toree installation</strong></h3>
+
+<p>Apache Toree is tool to configure Jupiter notebook to run with Spark.</p>
+
+<pre><code>$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
+</code></pre>
+
+<h3 id="configure-different-apache-toree-kernels">4 . Configure different Apache Toree kernels</h3>
+
+<p>for Scala:</p>
+
+<pre><code>$jupyter toree install --spark_home=/usr/local/bin/apache-spark/
+</code></pre>
+
+<p>for PySpark:</p>
+
+<pre><code>$jupyter toree install --spark_home=/usr/local/bin/apache-spark/ --interpreters=PySpark
+</code></pre>
+
+<p>even SparkR, SQL</p>
+
+<pre><code>$Jupyter toree install --interpreter=SparkR,SQL
+</code></pre>
+
+<h3 id="and-you-can-check-installation-by">5 .  and you can Check installation by</h3>
+<pre><code>$jupyter kernelspec list
+</code></pre>
+
+<h3 id="references">references:</h3>
+
+<ol>
+  <li><a href="https://toree.incubator.apache.org/documentation/user/installation.html" title="Apache Toree Installation">https://toree.incubator.apache.org/documentation/user/installation.html</a></li>
+  <li><a href="http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook" title=" solution is to install Apache Toree.">http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook</a></li>
+</ol>
+
+
+<!-- 		        </div> -->
+		    	<!-- 标签 -->
+       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/02/28/spark-integrate-jn.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
+ <!-- readmore按钮 -->
+<br />
+        	
+<!--     </section> -->
+<!--     </article> -->
+  
+    <section class="title">
       <h2><a href="/2017/02/24/spark-intro.html">Spark 入门遇到的一些坑</a></h2>
     </section>
     <section class="meta">
@@ -119,38 +195,6 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 <!--     </section> -->
 <!--     </article> -->
   
-    <section class="title">
-      <h2><a href="/2017/02/13/neo4j.html">neo4j 入门</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-02-13">2017-02-13</time>
-    </span>
-    
-    
-    
-    <span class="tags">
-      
-      <a href="/tags.html#neo4j" title="neo4j">#neo4j</a>
-      
-      <a href="/tags.html#NoSQL" title="NoSQL">#NoSQL</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-		        <div class="content">
-					 <p>neo4j 是一种图数据库，图数据库着重于数据之间的关系，而非数据本身的信息。一个 RDBMS 被优化用于聚合数据。而 neo4j <strong>擅长于高度关联的数据</strong>。 优点是插入查询方便，搜索便利方法方便。缺点是超大节点的操作慢。
- 
-<!-- 		        </div> -->
-		    	<!-- 标签 -->
-       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/02/13/neo4j.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
- <!-- readmore按钮 -->
-<br />
-        	
-<!--     </section> -->
-<!--     </article> -->
-  
 <!--   </ul> -->
   <div class="center">
   <a href="/archive.html" class="circle-wrapper">
@@ -161,7 +205,7 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
   </div>
 <!-- </div> -->
 
-</p></div></section></p></div></section></p></div></section></article></ul></div>
+</p></div></section></p></div></section></div></section></article></ul></div>
 
         </div>
 
