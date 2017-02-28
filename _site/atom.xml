@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-28T19:10:07+08:00</updated>
+ <updated>2017-02-28T19:12:53+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -28,6 +28,8 @@
 
 &lt;pre&gt;&lt;code&gt;$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;configure-different-apache-toree-kernels&quot;&gt;4 . Configure different Apache Toree kernels&lt;/h3&gt;
 

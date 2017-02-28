@@ -25,7 +25,7 @@ Jupyer Notebook is an interactive notebook environment and it supports Spark.
 
 	$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
 
-
+ <!--more-->
 
 ### 4 . Configure different Apache Toree kernels
 
