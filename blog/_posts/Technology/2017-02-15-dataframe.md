@@ -67,3 +67,10 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 	pd.merge(alb)
 
+## 将 index 转为 value
+
+	df.reset_index()
+
+## 将dataframe 转为 list of lists／list of dicts
+
+	df.values.tolist()

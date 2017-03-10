@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-02-28T19:12:53+08:00</updated>
+ <updated>2017-03-02T09:44:06+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -35,12 +35,12 @@
 
 &lt;p&gt;for Scala:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$jupyter toree install --spark_home=/usr/local/bin/apache-spark/
+&lt;pre&gt;&lt;code&gt;$jupyter toree install spark_home=~/data/spark-2.0.1-bin-hadoop2.6/
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;for PySpark:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$jupyter toree install --spark_home=/usr/local/bin/apache-spark/ --interpreters=PySpark
+&lt;pre&gt;&lt;code&gt;$jupyter toree install --spark_home=~/data/spark-2.0.1-bin-hadoop2.6/  --interpreters=PySpark
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;even SparkR, SQL&lt;/p&gt;
@@ -58,6 +58,14 @@
   &lt;li&gt;&lt;a href=&quot;https://toree.incubator.apache.org/documentation/user/installation.html&quot; title=&quot;Apache Toree Installation&quot;&gt;https://toree.incubator.apache.org/documentation/user/installation.html&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook&quot; title=&quot; solution is to install Apache Toree.&quot;&gt;http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;details&gt;
+&lt;summary&gt; More details&lt;/summary&gt;
+
+Detail test
+
+
+&lt;/details&gt;
 
 </content>
  </entry>

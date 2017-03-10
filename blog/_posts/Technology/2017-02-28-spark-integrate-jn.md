@@ -31,11 +31,11 @@ Jupyer Notebook is an interactive notebook environment and it supports Spark.
 
 for Scala:
 
-	$jupyter toree install --spark_home=/usr/local/bin/apache-spark/
+	$jupyter toree install spark_home=~/data/spark-2.0.1-bin-hadoop2.6/
  
 for PySpark:
 
-	$jupyter toree install --spark_home=/usr/local/bin/apache-spark/ --interpreters=PySpark
+	$jupyter toree install --spark_home=~/data/spark-2.0.1-bin-hadoop2.6/  --interpreters=PySpark
 
 even SparkR, SQL
 
@@ -50,6 +50,15 @@ even SparkR, SQL
 
 1. [https://toree.incubator.apache.org/documentation/user/installation.html][1]
 2. [http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook][2]
+
+
+<details>
+<summary> More details</summary>
+
+Detail test
+
+
+</details>
 
 [1]:	https://toree.incubator.apache.org/documentation/user/installation.html "Apache Toree Installation"
 [2]:	http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook " solution is to install Apache Toree."

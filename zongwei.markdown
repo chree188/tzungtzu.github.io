@@ -27,6 +27,10 @@ Research Assistant in WrightEagle, working on hierarchical planning for large Ma
 
 ## Publications
 
+## Skills
+Java, Python, SQL, Neo4j, Spark
+
+
 ## Technical Reports
 
 ## Honors and Awards
