@@ -830,20 +830,6 @@
 					<integer>114</integer>
 				</dict>
 			</dict>
-			<key>2017-02-15-jupyter.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508865877.37425798</real>
-				<key>lastModification</key>
-				<real>508865877.37425798</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>139</integer>
-				</dict>
-			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>495101194.34689999</real>
@@ -852,9 +838,6 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
-		<array>
-			<string>2017-02-15-jupyter.md</string>
-		</array>
 		<array>
 			<string>2016-11-29-christmas.md</string>
 		</array>
@@ -1098,7 +1081,7 @@
 		<key>childOrder</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>16</integer>
+			<integer>17</integer>
 		</dict>
 		<key>createMarkedFile</key>
 		<dict>
