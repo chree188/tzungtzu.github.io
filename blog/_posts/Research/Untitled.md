@@ -24,10 +24,10 @@ tags:
                 sigma π(i)Pij = π(j)Pji
 
 
-主动构造马氏链，使其有我们想要的平稳分布π，
+MCMC的关键：主动构造马氏链，使其有我们想要的平稳分布π，
 
 
 references：
 
 1. http://blog.csdn.net/lanchunhui/article/details/50451620
-2. 
+2. http://blog.csdn.net/lanchunhui/article/details/50363851

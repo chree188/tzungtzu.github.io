@@ -5,6 +5,7 @@ name: "tzungtzu"
 markdown: kramdown
 highlighter: rouge
 
+
 #每页显示的文章数
 paginate: 5
 
