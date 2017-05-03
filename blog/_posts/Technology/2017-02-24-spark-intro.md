@@ -29,7 +29,16 @@ Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式�
 ### 3. 无法使用 sbt
 Spark 中没有自带 sbt，需要自行[安装][2]
 
+### 4.  connector
 
+下载最新  否则 mvn install 报错
+ https://spark-packages.org/package/neo4j-contrib/neo4j-spark-connector
+
+ 安装graphframe
+
+ spark-shell --packages neo4j-contrib:neo4j-spark-connector:2.0.0-M2
+
+ 修改bolt 地址，如果是内网ip 需要写内网ip
 
 
 [1]:	https://spark.apache.org/docs/latest/quick-start.html

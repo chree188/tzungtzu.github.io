@@ -5,12 +5,12 @@ layout: page
 ---
 
 ### 点亮一片技能树
-数据分析师
-荷兰语，日语；
-画画；书法；
-钢琴；吉他；架子鼓
-植物入门ing
-滑板
+数据分析师|
+荷兰语，日语；|
+画画；书法；|
+钢琴；吉他；架子鼓|
+植物入门ing|
+滑板|
 肠粉
 
 。。。用时间块来记录做的时间
@@ -28,16 +28,10 @@ layout: page
 
 [想读的书][1]
 
-想要的（都是短期内不会买的吧）：
-
-卡包，wifi音箱，<del>邮差包，料理机，运动半指手套 osprey [pixel 22][2] [ ][3] </del>，机械键盘，智能手表，Lego Technic，拼图，Don’t Starve 冬帽，sony W273，Garmin Forerunner 235，[空气炸锅][4]，手帕，AKG Q350，GoPro，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini， ARC’TERYX Mistral 8L，登山安全守，
-
-### 欲购清单
-[Subway Coat Hooks][6]
+### 欲购清单 (谁知道什么时候会买呢)
 
 
-
-
+gopro, young person card卡包，wifi音箱，<del>邮差包，AKG Q350，料理机，运动半指手套, [osprey pixel 22][2] [ ][3] </del>，机械键盘，Lego Technic，拼图，Garmin Forerunner 235，apple watch, [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini， ARC’TERYX Mistral 8L，登山安全守，[Time Capsule][8],[Subway Coat Hooks][6], Contigo，Don’t Starve 冬帽
 
 
 [https://www.douban.com/doulist/45368167/][7]
@@ -58,5 +52,6 @@ layout: page
 [5]:	http://www.smartlifein.com/medical/201607/13813.html#0-tsina-1-99215-397232819ff9a47a7b7e80a40613cfe1
 [6]:	http://www.umbra.com/cad/subway-multi-hook
 [7]:	https://www.douban.com/doulist/45368167/
+[8]:    https://www.zhihu.com/question/20748261
 
 [image-1]:	http://7xo4c2.com1.z0.glb.clouddn.com/dontstarve.JPG
