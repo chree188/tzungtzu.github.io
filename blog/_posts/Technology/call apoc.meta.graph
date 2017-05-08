@@ -1,0 +1,12 @@
+call apoc.meta.graph 
+
+get node categories relationship
+
+
+>match (n:uid) return count(n)
+
+2369106
+
+
+
+number，name被 很多uid（address_book） 连接

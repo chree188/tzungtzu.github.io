@@ -45,6 +45,27 @@ even SparkR, SQL
 	$jupyter kernelspec list
 
 
+### 6. add 3rd Party Libraries
+1. List all packages you will use.
+
+SPARK_PKGS=$(cat << END | xargs echo | sed 's/ /,/g'
+neo4j-contrib:neo4j-spark-connector:2.0.0-M2
+END)
+
+2. Define SPARK_OPTS and SPARK_HOME.
+
+SPARK_OPTS="--packages=$SPARK_PKGS"
+SPARK_HOME=~/data/spark-2.0.1-bin-hadoop2.6/
+
+3. Configure Toree to use these packages.
+
+jupyter toree install \
+  --spark_home=$SPARK_HOME \
+  --spark_opts=$SPARK_OPTS
+
+22222222222
+Adding Remote Packages
+You can use Apache Toree's AddDeps magic to add dependencies from Maven central. You must specify the company name, artifact ID, and version. To resolve any transitive dependencies, you must explicitly specify the --transitive flag.
 
 ### references:
 

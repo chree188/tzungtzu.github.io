@@ -23,6 +23,10 @@ Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式�
 
 	val textFile = “/usr/mine/path/README.md” 
 
+    区分hdfs:///和 file:///
+
+    "file:///home/ubuntu/data/spark-2.0.1-bin-hadoop2.6/LICENSE"
+
 ### 2. 安装 simpleApp 的目录结构
 新建文件夹，包含simpleApp.scala, simple.sbt 两个文件
 
@@ -38,7 +42,14 @@ Spark 中没有自带 sbt，需要自行[安装][2]
 
  spark-shell --packages neo4j-contrib:neo4j-spark-connector:2.0.0-M2
 
- 修改bolt 地址，如果是内网ip 需要写内网ip
+ tips  修改bolt 地址，如果是内网ip 需要写内网ip
+
+ dataframe 看作是结构化的RDD
+
+ dataframe 遵守RDD具有的规则，如转换和行动。另外还有额外的SQL接口
+ df.select('year').count()   其中select 为转换， count 为行动操作。
+
+
 
 
 [1]:	https://spark.apache.org/docs/latest/quick-start.html
