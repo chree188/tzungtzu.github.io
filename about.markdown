@@ -8,7 +8,7 @@ NAME：tzungtzu
 
 AGE：2013第9个质数岁生日
 
-EMAIL: tzungtzu.weiATgmail.com
+EMAIL: tzungtzuDOTweiATgmailDOTcom
 
 复杂网络博士在读，于河南[代村技术学院][1]。
 
