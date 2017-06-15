@@ -4,8 +4,6 @@ layout: page
 
 ---
 
-### 
-
 
 ### 点亮一片技能树
 数据分析师|
@@ -23,18 +21,23 @@ layout: page
 种薄荷，葱；
 徒步乞力马扎罗
 一个人旅行
+自己MOC 伦勃朗 lego
 
 ### 连滚带爬坚持
 每周两次健身
 虽然现在不有氧了，但是一个月一次跑步吧
-自己MOC 伦勃朗 lego
+
 
 [想读的书][1]
+
+
 
 ### 欲购清单 (谁知道什么时候会买呢)
 
 
-gopro, young person card卡包，wifi音箱，<del>邮差包，AKG Q350，料理机，运动半指手套, [osprey pixel 22][2] [ ][3] </del>，机械键盘，Lego Technic，拼图，Garmin Forerunner 235，apple watch, [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini， ARC’TERYX Mistral 8L，登山安全守，[Time Capsule][6],[Subway Coat Hooks][7], Contigo，Don’t Starve 冬帽
+<del>邮差包，AKG Q350，料理机，运动半指手套, [osprey pixel 22][2] [ ][3]，Bose QC 20i </del>
+
+gopro, young person card卡包，wifi音箱，机械键盘，Lego Technic，拼图，Garmin Forerunner 235，apple watch, [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini(最近迷 Taylor Baby)， ARC’TERYX Mistral 8L，登山安全守，[Time Capsule][6], [Subway Coat Hooks][7], Contigo，Don’t Starve 冬帽
 
 
 [https://www.douban.com/doulist/45368167/][8]
