@@ -6,6 +6,26 @@
 	<dict>
 		<key>sheetClusters</key>
 		<dict>
+			<key>05-24-haskell.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551802</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>06-31-tiger-leaping-gorge.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551897</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
 			<key>2016-12-14-google-search-hotkey.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -76,10 +96,149 @@
 					<integer>41</integer>
 				</dict>
 			</dict>
+			<key>2017-03-14-autohotkey.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551802</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>2017-03-15-networkx.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551498</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>2017-05-04-graphx-in-action.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551701</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>2017-06-29-graph-analysis.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551999</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>2017-06-29-pw-protected-feed.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551897</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>3-23-windows-setup.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551802</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>3-30-data-warehouse.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551701</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>4-10-hive.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551701</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>4-6-skin.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551599</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>6-20-ml-intro.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551999</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>6-20-settings.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551999</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>6-23-fp-in-scala.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>520590386.00551999</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>44</integer>
+				</dict>
+			</dict>
+			<key>Untitled.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>520590390.56282002</real>
+				<key>lastModification</key>
+				<real>520590390.56282002</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>45</integer>
+				</dict>
+			</dict>
 		</dict>
+		<key>sheetOrder</key>
+		<real>520590310.69082099</real>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>Untitled.md</string>
+		</array>
 		<array>
 			<string>2017-02-28-spark-integrate-jn.md</string>
 		</array>
@@ -101,7 +260,51 @@
 		<array>
 			<string>2016-12-14-google-search-hotkey.md</string>
 		</array>
+		<array>
+			<string>2017-03-15-networkx.md</string>
+		</array>
+		<array>
+			<string>4-6-skin.md</string>
+		</array>
+		<array>
+			<string>3-30-data-warehouse.md</string>
+		</array>
+		<array>
+			<string>2017-05-04-graphx-in-action.md</string>
+		</array>
+		<array>
+			<string>4-10-hive.md</string>
+		</array>
+		<array>
+			<string>2017-03-14-autohotkey.md</string>
+		</array>
+		<array>
+			<string>3-23-windows-setup.md</string>
+		</array>
+		<array>
+			<string>05-24-haskell.md</string>
+		</array>
+		<array>
+			<string>06-31-tiger-leaping-gorge.md</string>
+		</array>
+		<array>
+			<string>2017-06-29-pw-protected-feed.md</string>
+		</array>
+		<array>
+			<string>6-20-ml-intro.md</string>
+		</array>
+		<array>
+			<string>6-20-settings.md</string>
+		</array>
+		<array>
+			<string>6-23-fp-in-scala.md</string>
+		</array>
+		<array>
+			<string>2017-06-29-graph-analysis.md</string>
+		</array>
 	</array>
+	<key>sheetOrder</key>
+	<string>creationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>versioning</key>
@@ -109,7 +312,12 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>42</integer>
+			<integer>45</integer>
+		</dict>
+		<key>sheetOrder</key>
+		<dict>
+			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 </dict>
