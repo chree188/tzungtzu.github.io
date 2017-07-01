@@ -3,6 +3,9 @@
 
 1. Centrality
 
+$E = mc^2$
+
+
 + node centrality
     * Cd（vi）=di/(n-1)
 + closeness centrality
