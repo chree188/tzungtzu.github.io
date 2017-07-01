@@ -3,7 +3,11 @@
 
 1. Centrality
 
+
+##text latex
+
 $E = mc^2$
+
 
 
 + node centrality
