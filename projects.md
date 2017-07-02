@@ -1,4 +1,4 @@
----
+c---
 title: PROJECTS
 layout: home
 
