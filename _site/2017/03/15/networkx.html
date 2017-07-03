@@ -19,8 +19,40 @@
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -80,12 +112,14 @@
   
   </section>
   <section class="post">
-  <pre><code class="language-python">import networkx as nx
+  <p><code class="highlighter-rouge">python
+import networkx as nx
 print nx
-</code></pre>
+</code></p>
 
-<pre><code>&lt;module 'networkx' from '/usr/local/lib/python2.7/dist-packages/networkx/__init__.pyc'&gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;module 'networkx' from '/usr/local/lib/python2.7/dist-packages/networkx/__init__.pyc'&gt;
 </code></pre>
+</div>
 
 <p>创建图</p>
 
@@ -100,36 +134,39 @@ print g.nodes()
 print g.edges()
 print g.number_of_edges()</p>
 
-<p>#directed network
-g1 = nx.DiGraph()
+<h1 id="directed-network">directed network</h1>
+<p>g1 = nx.DiGraph()
 #weighted networks
 g1.add_weighted_edges_from([(1,2,1.5)])#u,v,w are parameters for src, dest and weight
 print g1.get_edge_data(1,2)</p>
 
 <p>图算法</p>
 
-<pre><code class="language-python">#algathm
+<p>```python
+#algathm</p>
 
-path = nx.all_pairs_shortest_path(g)
+<p>path = nx.all_pairs_shortest_path(g)</p>
 
-print path[1][3]
+<p>print path[1][3]
+```</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[1, 2, 3]
 </code></pre>
-
-<pre><code>[1, 2, 3]
-</code></pre>
+</div>
 
 <p>绘制图</p>
 
-<pre><code class="language-python">import networkx as nx
-%matplotlib inline
+<p>```python
+import networkx as nx
+%matplotlib inline</p>
 
-g = nx.Graph()
+<p>g = nx.Graph()
 edge_list = [(1,2),(1,3),(1,4),(2,3),(2,4),(2,5),(3,4),(3,5),(4,6)]
-g.add_edges_from(edge_list)
+g.add_edges_from(edge_list)</p>
 
-nx.draw(g, node_color='y', with_labels=True, node_size=800)  
+<p>nx.draw(g, node_color=’y’, with_labels=True, node_size=800)</p>
 
-</code></pre>
+<p>```</p>
 
 <p><img src="networkx_files/networkx_7_0.png" alt="png" /></p>
 
@@ -139,22 +176,25 @@ nx.draw(g, node_color='y', with_labels=True, node_size=800)
 
 <p>k_core(G,k=n)得到的是由所有k-shell值不小于n的节点组成的G的子图</p>
 
-<pre><code class="language-python">ks = nx.k_shell(g,1)
-print ks.nodes()
+<p>```python
+ks = nx.k_shell(g,1)
+print ks.nodes()</p>
 
-kc = nx.k_core(g,2)
-nx.draw(kc, node_color='y', with_labels=True, node_size=800)
-</code></pre>
+<p>kc = nx.k_core(g,2)
+nx.draw(kc, node_color=’y’, with_labels=True, node_size=800)
+```</p>
 
-<pre><code>[6]
+<div class="highlighter-rouge"><pre class="highlight"><code>[6]
 </code></pre>
+</div>
 
 <p><img src="networkx_files/networkx_9_1.png" alt="png" /></p>
 
 <p>从 neo4j 导入数据</p>
 
-<pre><code class="language-python">
-</code></pre>
+<p>```python</p>
+
+<p>```</p>
 
   </section>
   <section class="comment">
@@ -193,7 +233,7 @@ nx.draw(kc, node_color='y', with_labels=True, node_size=800)
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

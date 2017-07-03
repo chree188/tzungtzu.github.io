@@ -19,8 +19,40 @@
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -80,9 +112,9 @@
   
   </section>
   <section class="post">
-  <p>###1. 图基本概念</p>
+  <h3 id="section">1. 图基本概念</h3>
 
-<p>####数学方式表示社会网络</p>
+<h4 id="section-1">数学方式表示社会网络</h4>
 
 <p>~<!--more-->~</p>
 
@@ -113,20 +145,21 @@
   </tbody>
 </table>
 
-<p>####遍历 Traversal</p>
+<h4 id="traversal">遍历 Traversal</h4>
 
-<pre><code class="language-python">networkx.traversal.dfs_edges()
+<p><code class="highlighter-rouge">python
+networkx.traversal.dfs_edges()
 networkx.traversal.dfs_tree()
 networkx.traversal.bfs_edges()
 networkx.traversal.bfs_tree()
-</code></pre>
+</code></p>
 
-<p>####路径 Paths
-<code>python
+<h4 id="paths">路径 Paths</h4>
+<p><code class="highlighter-rouge">python
 networkx.algorithm.shortest_path()
 </code></p>
 
-<p>####图的距离： 节点和邻居如何联系</p>
+<h4 id="section-2">图的距离： 节点和邻居如何联系</h4>
 
 <ol>
   <li>最短路径</li>
@@ -134,11 +167,11 @@ networkx.algorithm.shortest_path()
   <li>欧几里得距离： 欧式距离短表示结构，作用相似</li>
 </ol>
 
-<p>###2. 节点层面分析</p>
+<h3 id="section-3">2. 节点层面分析</h3>
 
-<p>####社会网络的取样和数据采集法</p>
+<h4 id="section-4">社会网络的取样和数据采集法</h4>
 
-<p>####<strong>中心性</strong> 权力和影响力</p>
+<h4 id="section-5"><strong>中心性</strong> 权力和影响力</h4>
 
 <ol>
   <li>程度中心性 Degree Centrality：粉丝数量</li>
@@ -148,8 +181,8 @@ networkx.algorithm.shortest_path()
   <li>PageRank</li>
 </ol>
 
-<p>###3. 群体层面分析
-####子图——自我中心网
+<h3 id="section-6">3. 群体层面分析</h3>
+<p>####子图——自我中心网
 ####岛屿方法
 ```python
 #trim
@@ -204,7 +237,7 @@ nx.draw(g,with_labels= True)
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

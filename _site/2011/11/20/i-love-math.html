@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -96,8 +132,9 @@
 
 <p>则     k+1=6(l+2)   +9(m+1)      +20(n-1)</p>
 
-<pre><code>   k+2=6(l-3)   +9m         +20(n+1)   (l,m,n足够大)
+<div class="highlighter-rouge"><pre class="highlight"><code>   k+2=6(l-3)   +9m         +20(n+1)   (l,m,n足够大)
 </code></pre>
+</div>
 
 <p>随着k-&gt;k+2不断递推，l会越来越小，但是通过 20<em>3转化成6</em>10 可以转化l值，从而可以得到完备的归纳，可以知道归纳的k的初值是（l,m,n）=(0,0,3)</p>
 
@@ -174,7 +211,7 @@
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

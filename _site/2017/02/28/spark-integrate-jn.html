@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -90,8 +126,9 @@
 
 <p>Apache Toree is tool to configure Jupiter notebook to run with Spark.</p>
 
-<pre><code>$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
+<div class="highlighter-rouge"><pre class="highlight"><code>$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
 </code></pre>
+</div>
 
 <p><!--more--></p>
 
@@ -99,22 +136,54 @@
 
 <p>for Scala:</p>
 
-<pre><code>$jupyter toree install spark_home=~/data/spark-2.0.1-bin-hadoop2.6/
+<div class="highlighter-rouge"><pre class="highlight"><code>$jupyter toree install spark_home=~/data/spark-2.0.1-bin-hadoop2.6/
 </code></pre>
+</div>
 
 <p>for PySpark:</p>
 
-<pre><code>$jupyter toree install --spark_home=~/data/spark-2.0.1-bin-hadoop2.6/  --interpreters=PySpark
+<div class="highlighter-rouge"><pre class="highlight"><code>$jupyter toree install --spark_home=~/data/spark-2.0.1-bin-hadoop2.6/  --interpreters=PySpark
 </code></pre>
+</div>
 
 <p>even SparkR, SQL</p>
 
-<pre><code>$Jupyter toree install --interpreter=SparkR,SQL
+<div class="highlighter-rouge"><pre class="highlight"><code>$Jupyter toree install --interpreter=SparkR,SQL
 </code></pre>
+</div>
 
 <h3 id="and-you-can-check-installation-by">5 .  and you can Check installation by</h3>
-<pre><code>$jupyter kernelspec list
+<div class="highlighter-rouge"><pre class="highlight"><code>$jupyter kernelspec list
 </code></pre>
+</div>
+
+<h3 id="add-3rd-party-libraries">6. add 3rd Party Libraries</h3>
+<ol>
+  <li>List all packages you will use.</li>
+</ol>
+
+<p>SPARK_PKGS=$(cat « END | xargs echo | sed ‘s/ /,/g’
+neo4j-contrib:neo4j-spark-connector:2.0.0-M2
+END)</p>
+
+<ol>
+  <li>Define SPARK_OPTS and SPARK_HOME.</li>
+</ol>
+
+<p>SPARK_OPTS=”–packages=$SPARK_PKGS”
+SPARK_HOME=~/data/spark-2.0.1-bin-hadoop2.6/</p>
+
+<ol>
+  <li>Configure Toree to use these packages.</li>
+</ol>
+
+<p>jupyter toree install \
+  –spark_home=$SPARK_HOME \
+  –spark_opts=$SPARK_OPTS</p>
+
+<p>22222222222
+Adding Remote Packages
+You can use Apache Toree’s AddDeps magic to add dependencies from Maven central. You must specify the company name, artifact ID, and version. To resolve any transitive dependencies, you must explicitly specify the –transitive flag.</p>
 
 <h3 id="references">references:</h3>
 
@@ -169,7 +238,7 @@ Detail test
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

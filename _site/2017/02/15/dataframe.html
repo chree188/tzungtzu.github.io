@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -86,36 +122,41 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 <p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
 
-<pre><code>frame ['year'] = frame.year  
+<div class="highlighter-rouge"><pre class="highlight"><code>frame ['year'] = frame.year  
 frame.ix['three']  #获取行数据
 </code></pre>
+</div>
 
 <h3 id="section-1">删除一列</h3>
 
-<pre><code>frame.drop(['a','b']) #删除a，b行
+<div class="highlighter-rouge"><pre class="highlight"><code>frame.drop(['a','b']) #删除a，b行
 frame.drop([two],axis=1) #删除two 列。
 </code></pre>
+</div>
 
 <h3 id="section-2">添加一列</h3>
 
 <p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
 
-<pre><code>Frame['newcolumn'] = series  #在Frame 创建新列
+<div class="highlighter-rouge"><pre class="highlight"><code>Frame['newcolumn'] = series  #在Frame 创建新列
 </code></pre>
+</div>
 
 <h3 id="type">改变一列的 type</h3>
 
-<pre><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
+<div class="highlighter-rouge"><pre class="highlight"><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
 </code></pre>
+</div>
 
 <p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
 	pd.to_numeric(s, errors =”coerce”)</p>
 
 <h3 id="section-3">修改索引</h3>
 
-<pre><code>obj = obj.reindex(['a','b','c','d','e'])
+<div class="highlighter-rouge"><pre class="highlight"><code>obj = obj.reindex(['a','b','c','d','e'])
 frame = frame.reindex(index=[], cloumns=[])
 </code></pre>
+</div>
 
 <h3 id="section-4">将列变成索引</h3>
 
@@ -125,18 +166,52 @@ frame = frame.reindex(index=[], cloumns=[])
 <h2 id="section-5">聚类</h2>
 
 <h3 id="a">统计a列中元素的重复次数</h3>
-<pre><code>df.groupby('a').size()
+<div class="highlighter-rouge"><pre class="highlight"><code>df.groupby('a').size()
 </code></pre>
+</div>
 
 <h3 id="ab">统计a列中不同元素在b列的求和</h3>
 
-<pre><code>df.groupby('a').sum()
+<div class="highlighter-rouge"><pre class="highlight"><code>df.groupby('a').sum()
 </code></pre>
+</div>
 
 <h3 id="dataframe">合并两个dataframe</h3>
 
-<pre><code>pd.merge(alb)
+<div class="highlighter-rouge"><pre class="highlight"><code>pd.merge(alb)
 </code></pre>
+</div>
+
+<h3 id="index--value">将 index 转为 value</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>df.reset_index()
+</code></pre>
+</div>
+
+<h3 id="dataframe--list-of-listslist-of-dicts">将dataframe 转为 list of lists／list of dicts</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>df.values.tolist()
+</code></pre>
+</div>
+
+<h3 id="section-6">切片</h3>
+
+<h3 id="section-7">数据筛选</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>a[a.proportion&gt;0.5]
+</code></pre>
+</div>
+
+<h3 id="df-index-httpopuskonghycnipynbtwo-diff-df-operationhtml">df 设定某列为index (http://opus.konghy.cn/ipynb/two-diff-df-operation.html)</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>df.set_index('column_name')
+</code></pre>
+</div>
+
+<h3 id="df-0">df 相加（自动补0）</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>df.add(f2, fill_value=0)
+</code></pre>
+</div>
 
 
   </section>
@@ -176,7 +251,7 @@ frame = frame.reindex(index=[], cloumns=[])
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

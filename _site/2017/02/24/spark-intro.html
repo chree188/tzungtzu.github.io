@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -85,14 +121,35 @@
 <h3 id="readmemd-">1.  找不到 README.md 文件</h3>
 <p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
 
-<pre><code>val textFile = “/usr/mine/path/README.md” 
+<div class="highlighter-rouge"><pre class="highlight"><code>val textFile = “/usr/mine/path/README.md” 
+
+区分hdfs:///和 file:///
+
+"file:///home/ubuntu/data/spark-2.0.1-bin-hadoop2.6/LICENSE"
 </code></pre>
+</div>
 
 <h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
 <p>新建文件夹，包含simpleApp.scala, simple.sbt 两个文件</p>
 
 <h3 id="sbt">3. 无法使用 sbt</h3>
 <p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>
+
+<h3 id="connector">4.  connector</h3>
+
+<p>下载最新  否则 mvn install 报错
+ https://spark-packages.org/package/neo4j-contrib/neo4j-spark-connector</p>
+
+<p>安装graphframe</p>
+
+<p>spark-shell –packages neo4j-contrib:neo4j-spark-connector:2.0.0-M2</p>
+
+<p>tips  修改bolt 地址，如果是内网ip 需要写内网ip</p>
+
+<p>dataframe 看作是结构化的RDD</p>
+
+<p>dataframe 遵守RDD具有的规则，如转换和行动。另外还有额外的SQL接口
+ df.select(‘year’).count()   其中select 为转换， count 为行动操作。</p>
 
 
   </section>
@@ -132,7 +189,7 @@
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -49,203 +85,171 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2017/02/28/spark-integrate-jn.html">Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</a></h2>
+      <h2><a href="/2017/07/01/latex.html">Latex</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2017-02-28">2017-02-28</time>
+      <time datetime="2017-07-01">2017-07-01</time>
     </span>
     
     <span class="tags">
-      
-      <a href="/tags.html#Jupyter Notebook" title="Jupyter Notebook">#Jupyter Notebook</a>
-      
-      <a href="/tags.html#Spark" title="Spark">#Spark</a>
-      
-      <a href="/tags.html#Scala" title="Scala">#Scala</a>
-      
-      <a href="/tags.html#Toree" title="Toree">#Toree</a>
       
     </span>
     
     </section>
     <section class="post">
-    <p>Jupyer Notebook is an interactive notebook environment and it supports Spark.</p>
+    <h2 id="latex-">latex 用法</h2>
 
-<h3 id="jupyter-notebook-installation">1 . jupyter Notebook installation</h3>
+<p>Greek Letters $\eta$ and $\mu$</p>
 
-<h3 id="scala-spark-installation">2 . Scala, Spark installation</h3>
+<p>Fraction $\frac{a}{b}$</p>
 
-<h3 id="toree-installation">3 . <strong>Toree installation</strong></h3>
+<p>Power $a^b$</p>
 
-<p>Apache Toree is tool to configure Jupiter notebook to run with Spark.</p>
+<p>Subscript $a_b$</p>
 
-<pre><code>$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
+<p>Derivate $\frac{\partial y}{\partial t} $</p>
+
+<p>Vector $\vec{n}$</p>
+
+<p>Bold $\mathbf{n}$</p>
+
+<p>To time differential $\dot{F}$</p>
+
+<p>Matrix (lcr here means left, center or right for each column)
+[</p>
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
+      <h2><a href="/2017/06/29/pw-protected-feed.html">How to subscribe to password protected feeds</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-06-29">2017-06-29</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#rss" title="rss">#rss</a>
+      
+      <a href="/tags.html#feed" title="feed">#feed</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p>Usually, we use rss reader like feedly, inoreader to read RSS feeds. This feature makes it possible to subscribe to RSS feeds using any RSS news reader which supports HTTP authentication.</p>
+
+<p>For subscribing to password-protected feeds, most RSS readers are not supported as feedly, or should get upgraded feature like inoreder. But we have other method to solve the problem.</p>
+
+<p>To subscribe to a password-protected RSS feed, use the following formation for the RSS URL:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>http://[username]:[password]@[domain]/[path]
 </code></pre>
+</div>
 
-<p><!--more--></p>
+<p>Note that the ‘@’ character in the username (if you use) must be replaced with %40 (the URL for the ‘@’ character).</p>
 
-<h3 id="configure-different-apache-toree-kernels">4 . Configure different Apache Toree kernels</h3>
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
+      <h2><a href="/2017/06/29/graph-analysis.html">Graph Analysis</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-06-29">2017-06-29</time>
+    </span>
+    
+    <span class="tags">
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <h2 id="graph-analysis">Graph Analysis</h2>
 
-<p>for Scala:</p>
+<h2 id="centrality">Centrality</h2>
+<ul>
+  <li>node centrality
+    <ul>
+      <li>$C_d（v_i）=\frac{d_i}{n-1}$</li>
+    </ul>
+  </li>
+  <li>closeness centrality
+    <ul>
+      <li>$C_c(v_i)=\frac{1}{\frac{\Sigma_j(l_{ij})}{n-1}}$</li>
+      <li>那些在社交网络中经常与人互动、人际关系颇好的人，比如公司中的八卦传播者，往往亲近中心性得分较高。</li>
+      <li>消息传播者</li>
+    </ul>
+  </li>
+  <li>betweenness centrality
+    <ul>
+      <li>$C_b(v_i)=\frac{\Sigma l_{st}(i)}{l_{st}}$</li>
+      <li>$c_b(v_i)_{norm} = \frac{c_b(v_i)}{(n-1)(n-2)}$</li>
+      <li>节点的居间程度越大，那么它在节点相互之间的信息传播起到的作用也就越大。在两个社会网络之间的人，比如跨界者，往往拥有较高的居间中心性。</li>
+      <li>所以在社区分析的时候，也是重要的评判标准</li>
+    </ul>
+  </li>
+  <li>eigenvalue centrality
+    <ul>
+      <li>网络中的每个节点都有一个相对指数值，高指数节点的连接对一个节点的贡献度比低指数节点的贡献度高。
+当前节点的中心性取决lj于邻居节点们的中心性。</li>
+    </ul>
+  </li>
+  <li>cluster coefficient
+    <ul>
+      <li>顶点之间结集成团的程度的系数</li>
+      <li>C= 3×tri/（3×tri+open tri）zs</li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Ci = 2</td>
+              <td>ejk</td>
+              <td>/i(i-1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<pre><code>$jupyter toree install spark_home=~/data/spark-2.0.1-bin-hadoop2.6/
-</code></pre>
+<p>三种指标所表达的“重要”，其含义是不完全一样的</p>
 
-<p>for PySpark:</p>
-
-<pre><code>$jupyter toree install --spark_home=~/data/spark-2.0.1-bin-hadoop2.6/  --interpreters=PySpark
-</code></pre>
-
-<p>even SparkR, SQL</p>
-
-<pre><code>$Jupyter toree install --interpreter=SparkR,SQL
-</code></pre>
-
-<h3 id="and-you-can-check-installation-by">5 .  and you can Check installation by</h3>
-<pre><code>$jupyter kernelspec list
-</code></pre>
-
-<h3 id="references">references:</h3>
-
+<h2 id="section">社区发现</h2>
 <ol>
-  <li><a href="https://toree.incubator.apache.org/documentation/user/installation.html" title="Apache Toree Installation">https://toree.incubator.apache.org/documentation/user/installation.html</a></li>
-  <li><a href="http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook" title=" solution is to install Apache Toree.">http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook</a></li>
+  <li>GN
+    <ul>
+      <li>分裂法
+        <ul>
+          <li>step0: 计算每条边的介数（$O(nm)$ with BFS）</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Louvain
+    <ul>
+      <li>模块度 (http://www.cnblogs.com/tychyg/p/5277137.html)</li>
+      <li>$Q=\frac{1}{2m} \Sigma(A_{ij}-\frac{k_i k_j}{2m}) \delta(c_i,c_j)$</li>
+      <li>模块度（modularity）指的是网络中连接社区结构内部顶点的边所占的比例，减去在同样的社团结构下任意连接这两个节点的比例的期望值。</li>
+    </ul>
+  </li>
+  <li>label propagation algrithm</li>
+  <li>K-means</li>
 </ol>
 
-<details>
-<summary> More details</summary>
-
-Detail test
-
-
-</details>
-
-
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2017/02/24/spark-intro.html">Spark 入门遇到的一些坑</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-02-24">2017-02-24</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#spark" title="spark">#spark</a>
-      
-      <a href="/tags.html#scala" title="scala">#scala</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式的内存抽象。</p>
-
-<p>用<a href="https://spark.apache.org/docs/latest/quick-start.html">官方文档</a>入门的时候遇到一些问题，以下是解决办法。</p>
-
-<p><!--more--></p>
-
-<h3 id="readmemd-">1.  找不到 README.md 文件</h3>
-<p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
-
-<pre><code>val textFile = “/usr/mine/path/README.md” 
-</code></pre>
-
-<h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
-<p>新建文件夹，包含simpleApp.scala, simple.sbt 两个文件</p>
-
-<h3 id="sbt">3. 无法使用 sbt</h3>
-<p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>
-
-
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2017/02/15/dataframe.html">pandas 中 DataFrame 的分割和合并</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-02-15">2017-02-15</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#python" title="python">#python</a>
-      
-      <a href="/tags.html#pandas" title="pandas">#pandas</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
-DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。</p>
-
-<p>在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
- <!--more--></p>
-
-<h3 id="section">取出一列</h3>
-
-<p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
-
-<pre><code>frame ['year'] = frame.year  
-frame.ix['three']  #获取行数据
-</code></pre>
-
-<h3 id="section-1">删除一列</h3>
-
-<pre><code>frame.drop(['a','b']) #删除a，b行
-frame.drop([two],axis=1) #删除two 列。
-</code></pre>
-
-<h3 id="section-2">添加一列</h3>
-
-<p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
-
-<pre><code>Frame['newcolumn'] = series  #在Frame 创建新列
-</code></pre>
-
-<h3 id="type">改变一列的 type</h3>
-
-<pre><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
-</code></pre>
-
-<p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
-	pd.to_numeric(s, errors =”coerce”)</p>
-
-<h3 id="section-3">修改索引</h3>
-
-<pre><code>obj = obj.reindex(['a','b','c','d','e'])
-frame = frame.reindex(index=[], cloumns=[])
-</code></pre>
-
-<h3 id="section-4">将列变成索引</h3>
-
-<p>将某列作为列的索引，会生成一个新的 DataFrame
-	frame2 = frame.set_index([‘c’])</p>
-
-<h2 id="section-5">聚类</h2>
-
-<h3 id="a">统计a列中元素的重复次数</h3>
-<pre><code>df.groupby('a').size()
-</code></pre>
-
-<h3 id="ab">统计a列中不同元素在b列的求和</h3>
-
-<pre><code>df.groupby('a').sum()
-</code></pre>
-
-<h3 id="dataframe">合并两个dataframe</h3>
-
-<pre><code>pd.merge(alb)
-</code></pre>
+<h4 id="references">references</h4>
+<ol>
+  <li>复杂网络中聚类算法总结(http://www.cnblogs.com/tychyg/p/5277137.html)</li>
+</ol>
 
 
     </section>
@@ -266,7 +270,7 @@ frame = frame.reindex(index=[], cloumns=[])
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

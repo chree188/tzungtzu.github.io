@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-03-02T09:44:06+08:00</updated>
+ <updated>2017-07-03T01:49:29+00:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -12,950 +12,478 @@
 
  
  <entry>
-   <title>Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</title>
-   <link href="http://tzungtzu.com/2017/02/28/spark-integrate-jn.html"/>
-   <updated>2017-02-28T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/02/28/spark-integrate-jn</id>
-   <content type="html">&lt;p&gt;Jupyer Notebook is an interactive notebook environment and it supports Spark.&lt;/p&gt;
+   <title>Latex</title>
+   <link href="http://tzungtzu.com/2017/07/01/latex.html"/>
+   <updated>2017-07-01T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/07/01/latex</id>
+   <content type="html">&lt;h2 id=&quot;latex-&quot;&gt;latex 用法&lt;/h2&gt;
 
-&lt;h3 id=&quot;jupyter-notebook-installation&quot;&gt;1 . jupyter Notebook installation&lt;/h3&gt;
+&lt;p&gt;Greek Letters $\eta$ and $\mu$&lt;/p&gt;
 
-&lt;h3 id=&quot;scala-spark-installation&quot;&gt;2 . Scala, Spark installation&lt;/h3&gt;
+&lt;p&gt;Fraction $\frac{a}{b}$&lt;/p&gt;
 
-&lt;h3 id=&quot;toree-installation&quot;&gt;3 . &lt;strong&gt;Toree installation&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Power $a^b$&lt;/p&gt;
 
-&lt;p&gt;Apache Toree is tool to configure Jupiter notebook to run with Spark.&lt;/p&gt;
+&lt;p&gt;Subscript $a_b$&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$sudo pip install -i http://pypi.anaconda,org/hyoon/simple toree
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Derivate $\frac{\partial y}{\partial t} $&lt;/p&gt;
 
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;Vector $\vec{n}$&lt;/p&gt;
 
-&lt;h3 id=&quot;configure-different-apache-toree-kernels&quot;&gt;4 . Configure different Apache Toree kernels&lt;/h3&gt;
+&lt;p&gt;Bold $\mathbf{n}$&lt;/p&gt;
 
-&lt;p&gt;for Scala:&lt;/p&gt;
+&lt;p&gt;To time differential $\dot{F}$&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$jupyter toree install spark_home=~/data/spark-2.0.1-bin-hadoop2.6/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;for PySpark:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$jupyter toree install --spark_home=~/data/spark-2.0.1-bin-hadoop2.6/  --interpreters=PySpark
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;even SparkR, SQL&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$Jupyter toree install --interpreter=SparkR,SQL
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;and-you-can-check-installation-by&quot;&gt;5 .  and you can Check installation by&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$jupyter kernelspec list
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;references:&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://toree.incubator.apache.org/documentation/user/installation.html&quot; title=&quot;Apache Toree Installation&quot;&gt;https://toree.incubator.apache.org/documentation/user/installation.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook&quot; title=&quot; solution is to install Apache Toree.&quot;&gt;http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;details&gt;
-&lt;summary&gt; More details&lt;/summary&gt;
-
-Detail test
-
-
-&lt;/details&gt;
-
+&lt;p&gt;Matrix (lcr here means left, center or right for each column)
+[&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>Spark 入门遇到的一些坑</title>
-   <link href="http://tzungtzu.com/2017/02/24/spark-intro.html"/>
-   <updated>2017-02-24T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/02/24/spark-intro</id>
-   <content type="html">&lt;p&gt;Apache Spark 是一个新兴的大数据处理通用引擎，提供了分布式的内存抽象。&lt;/p&gt;
+   <title>How to subscribe to password protected feeds</title>
+   <link href="http://tzungtzu.com/2017/06/29/pw-protected-feed.html"/>
+   <updated>2017-06-29T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/06/29/pw-protected-feed</id>
+   <content type="html">&lt;p&gt;Usually, we use rss reader like feedly, inoreader to read RSS feeds. This feature makes it possible to subscribe to RSS feeds using any RSS news reader which supports HTTP authentication.&lt;/p&gt;
 
-&lt;p&gt;用&lt;a href=&quot;https://spark.apache.org/docs/latest/quick-start.html&quot;&gt;官方文档&lt;/a&gt;入门的时候遇到一些问题，以下是解决办法。&lt;/p&gt;
+&lt;p&gt;For subscribing to password-protected feeds, most RSS readers are not supported as feedly, or should get upgraded feature like inoreder. But we have other method to solve the problem.&lt;/p&gt;
 
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;To subscribe to a password-protected RSS feed, use the following formation for the RSS URL:&lt;/p&gt;
 
-&lt;h3 id=&quot;readmemd-&quot;&gt;1.  找不到 README.md 文件&lt;/h3&gt;
-&lt;p&gt;需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;val textFile = “/usr/mine/path/README.md” 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://[username]:[password]@[domain]/[path]
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;h3 id=&quot;simpleapp-&quot;&gt;2. 安装 simpleApp 的目录结构&lt;/h3&gt;
-&lt;p&gt;新建文件夹，包含simpleApp.scala, simple.sbt 两个文件&lt;/p&gt;
-
-&lt;h3 id=&quot;sbt&quot;&gt;3. 无法使用 sbt&lt;/h3&gt;
-&lt;p&gt;Spark 中没有自带 sbt，需要自行&lt;a href=&quot;http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html&quot;&gt;安装&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;Note that the ‘@’ character in the username (if you use) must be replaced with %40 (the URL for the ‘@’ character).&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>pandas 中 DataFrame 的分割和合并</title>
-   <link href="http://tzungtzu.com/2017/02/15/dataframe.html"/>
-   <updated>2017-02-15T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/02/15/dataframe</id>
-   <content type="html">&lt;p&gt;pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
-DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。&lt;/p&gt;
+   <title>Graph Analysis</title>
+   <link href="http://tzungtzu.com/2017/06/29/graph-analysis.html"/>
+   <updated>2017-06-29T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/06/29/graph-analysis</id>
+   <content type="html">&lt;h2 id=&quot;graph-analysis&quot;&gt;Graph Analysis&lt;/h2&gt;
 
-&lt;p&gt;在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
- &lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;取出一列&lt;/h3&gt;
-
-&lt;p&gt;通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;frame ['year'] = frame.year  
-frame.ix['three']  #获取行数据
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;删除一列&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;frame.drop(['a','b']) #删除a，b行
-frame.drop([two],axis=1) #删除two 列。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;添加一列&lt;/h3&gt;
-
-&lt;p&gt;将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Frame['newcolumn'] = series  #在Frame 创建新列
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;type&quot;&gt;改变一列的 type&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
-	pd.to_numeric(s, errors =”coerce”)&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;修改索引&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;obj = obj.reindex(['a','b','c','d','e'])
-frame = frame.reindex(index=[], cloumns=[])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;将列变成索引&lt;/h3&gt;
-
-&lt;p&gt;将某列作为列的索引，会生成一个新的 DataFrame
-	frame2 = frame.set_index([‘c’])&lt;/p&gt;
-
-&lt;h2 id=&quot;section-5&quot;&gt;聚类&lt;/h2&gt;
-
-&lt;h3 id=&quot;a&quot;&gt;统计a列中元素的重复次数&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;df.groupby('a').size()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;ab&quot;&gt;统计a列中不同元素在b列的求和&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;df.groupby('a').sum()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;dataframe&quot;&gt;合并两个dataframe&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;pd.merge(alb)
-&lt;/code&gt;&lt;/pre&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>neo4j 常用命令</title>
-   <link href="http://tzungtzu.com/2017/02/13/neo4j.html"/>
-   <updated>2017-02-13T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/02/13/neo4j</id>
-   <content type="html">&lt;p&gt;neo4j 是一种图数据库，图数据库着重于数据之间的关系，而非数据本身的信息。一个 RDBMS 被优化用于聚合数据。而 neo4j &lt;strong&gt;擅长于高度关联的数据&lt;/strong&gt;。 优点是插入查询方便，搜索便利方法方便。缺点是超大节点的操作慢。
- &lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;neo4j-&quot;&gt;neo4j 模型建立&lt;/h3&gt;
-
-&lt;p&gt;neo4j 中的概念： 节点，关系，属性，标签（针对节点），类型（针对关系）&lt;/p&gt;
-
-&lt;p&gt;属性：重要的数据结构，不同于关系数据库模型的特征。节点和关系可以具有任意数量的属性，重要的key／value 。&lt;/p&gt;
-
-&lt;p&gt;用标签可以扩展属性组，用于将节点划分到特定集合。&lt;/p&gt;
-
-&lt;p&gt;模型中的元素可以是显式和隐式（是否直接作为节点），也可以是不变或者可变的。&lt;/p&gt;
-
-&lt;h3 id=&quot;neo4j--1&quot;&gt;neo4j 开发&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;通过核心 Java API（系统级）&lt;/li&gt;
-  &lt;li&gt;通过查询语言 Cypher（易读，结构强大）
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;查找起始节点&lt;br /&gt;
-     START user = node(1)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;跟随关系遍历图形&lt;br /&gt;
-     MATCH (user)-&lt;a href=&quot;&quot;&gt;r: HAS_SEEN&lt;/a&gt;-(movie)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;返回最终节点。&lt;br /&gt;
-     RETURN movie&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;cypher-&quot;&gt; Cypher 基本句法&lt;/h3&gt;
-&lt;p&gt; 
-+ start - 查找图形中的起始节点 
-+ match - 匹配图形模式，可以定位子图形 
-+ where - 基于某种标准过滤数据 
-+ return - 返回感兴趣的结果&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;模式匹配&lt;/li&gt;
-  &lt;li&gt;节点和关系连接&lt;/li&gt;
-  &lt;li&gt;两个关系链接三个节点&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;多个模式同时匹配&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;查找节点
-       
+&lt;h2 id=&quot;centrality&quot;&gt;Centrality&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;node centrality
     &lt;ul&gt;
-      &lt;li&gt;通过id&lt;/li&gt;
-      &lt;li&gt;通过INDEX  START john = n: User(name: “”)&lt;/li&gt;
-      &lt;li&gt;查询多个起始节点   START john = n: User(name: “”)， jack = n: User(name: “”)&lt;/li&gt;
-      &lt;li&gt;分页结果：
- ORDER  结果排序
- SKIP  进行分页
- LIMIT  限定输出数量&lt;/li&gt;
+      &lt;li&gt;$C_d（v_i）=\frac{d_i}{n-1}$&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;过滤数据
- 可以通过正则表达式过滤
- WHERE friend.mail = /@gmail.com/&lt;/p&gt;
+  &lt;li&gt;closeness centrality
+    &lt;ul&gt;
+      &lt;li&gt;$C_c(v_i)=\frac{1}{\frac{\Sigma_j(l_{ij})}{n-1}}$&lt;/li&gt;
+      &lt;li&gt;那些在社交网络中经常与人互动、人际关系颇好的人，比如公司中的八卦传播者，往往亲近中心性得分较高。&lt;/li&gt;
+      &lt;li&gt;消息传播者&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;返回结果
- 返回属性，关系，路径以及分页结果&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ORDER 排序&lt;/li&gt;
-  &lt;li&gt;SKIP 跳到指定的页&lt;/li&gt;
-  &lt;li&gt;LIMIT 限制输出数量&lt;/li&gt;
+  &lt;li&gt;betweenness centrality
+    &lt;ul&gt;
+      &lt;li&gt;$C_b(v_i)=\frac{\Sigma l_{st}(i)}{l_{st}}$&lt;/li&gt;
+      &lt;li&gt;$c_b(v_i)_{norm} = \frac{c_b(v_i)}{(n-1)(n-2)}$&lt;/li&gt;
+      &lt;li&gt;节点的居间程度越大，那么它在节点相互之间的信息传播起到的作用也就越大。在两个社会网络之间的人，比如跨界者，往往拥有较高的居间中心性。&lt;/li&gt;
+      &lt;li&gt;所以在社区分析的时候，也是重要的评判标准&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;eigenvalue centrality
+    &lt;ul&gt;
+      &lt;li&gt;网络中的每个节点都有一个相对指数值，高指数节点的连接对一个节点的贡献度比低指数节点的贡献度高。
+当前节点的中心性取决lj于邻居节点们的中心性。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;cluster coefficient
+    &lt;ul&gt;
+      &lt;li&gt;顶点之间结集成团的程度的系数&lt;/li&gt;
+      &lt;li&gt;C= 3×tri/（3×tri+open tri）zs&lt;/li&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Ci = 2&lt;/td&gt;
+              &lt;td&gt;ejk&lt;/td&gt;
+              &lt;td&gt;/i(i-1)&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;更新节点数据&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;三种指标所表达的“重要”，其含义是不完全一样的&lt;/p&gt;
 
-&lt;p&gt;建立新节点和查找已有节点
-CREATE语句 设置节点对应的关系&lt;/p&gt;
-
+&lt;h2 id=&quot;section&quot;&gt;社区发现&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;删除数据
-DELETE 注意选择删除节点，关系&lt;/p&gt;
+  &lt;li&gt;GN
+    &lt;ul&gt;
+      &lt;li&gt;分裂法
+        &lt;ul&gt;
+          &lt;li&gt;step0: 计算每条边的介数（$O(nm)$ with BFS）&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;更新节点和关系属性
-SET john.yob = 1973&lt;/p&gt;
+  &lt;li&gt;Louvain
+    &lt;ul&gt;
+      &lt;li&gt;模块度 (http://www.cnblogs.com/tychyg/p/5277137.html)&lt;/li&gt;
+      &lt;li&gt;$Q=\frac{1}{2m} \Sigma(A_{ij}-\frac{k_i k_j}{2m}) \delta(c_i,c_j)$&lt;/li&gt;
+      &lt;li&gt;模块度（modularity）指的是网络中连接社区结构内部顶点的边所占的比例，减去在同样的社团结构下任意连接这两个节点的比例的期望值。&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;label propagation algrithm&lt;/li&gt;
+  &lt;li&gt;K-means&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;8.删除属性
-start n= john
-delete n.name&lt;/p&gt;
-
-&lt;h3 id=&quot;cypher&quot;&gt;高级 Cypher&lt;/h3&gt;
-
+&lt;h4 id=&quot;references&quot;&gt;references&lt;/h4&gt;
 &lt;ol&gt;
-  &lt;li&gt;数据聚合&lt;/li&gt;
+  &lt;li&gt;复杂网络中聚类算法总结(http://www.cnblogs.com/tychyg/p/5277137.html)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;非聚合条目（节点），聚合函数（COUNT）&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Trekking List</title>
+   <link href="http://tzungtzu.com/2017/06/12/trekking-list.html"/>
+   <updated>2017-06-12T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/06/12/trekking-list</id>
+   <content type="html">&lt;p&gt;今天听说：&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Cypher函数，
-p = (n)-&amp;gt;&lt;a href=&quot;&quot;&gt;r: IS_FRIEND_OF*1..3&lt;/a&gt;-()&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;别以为休息可以随便，玩乐更需要计划，，生活也需要讲究效率&lt;/p&gt;
 
-&lt;p&gt;NODES(path)&lt;/p&gt;
-
-&lt;p&gt;HAS(Entity.propertyName)&lt;/p&gt;
-
-&lt;p&gt;ALL(),  NONE(), SINGLE()&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;链式查询一个查询的输出链接到另一个查询
-MATCH  n-&lt;a href=&quot;&quot;&gt;r&lt;/a&gt;-()
-with TYPE(r) as TYPE, count(*) AS COUNT
-where COUNT &amp;gt;1&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;命名with 语句中的输出字段是强制性的。&lt;/p&gt;
+&lt;p&gt;深以为然。另外想起wyw说我之前写的游记干货不够，决定记录下自己的已经去的和要去的徒步地点list，准备工作和tips。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;shortestpath&lt;/li&gt;
-  &lt;li&gt;allshortestpaths
- extract( x in collection | expression ) 例如：&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;其他&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;从 CSV 文件导入到 Neo4j&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; LOAD CSV WITH HEADER FROM &quot;url&quot; AS row
- MERGE (src:Character {name: row.Source})
- MERGE (tgt:Character {name: row.Target})
- MERGE (src)-[r:INTERACTS]-&amp;gt;(tgt)
- SET r.weight = toInt(row.Weight)
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
+  &lt;li&gt;丽江虎跳峡（6-9月）&lt;/li&gt;
+  &lt;li&gt;深圳桔钓沙（3，4，10，11）&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;首次登陆必须修改密码，否则无法使用&lt;/li&gt;
-  &lt;li&gt;neo4j 默认只能从本机访问，如果需要从外网访问，修改配置文件即可。&lt;/li&gt;
-  &lt;li&gt;网页控制台（基于网页的接口）&lt;/li&gt;
-  &lt;li&gt;添加 APOC 时，需要将jar文件放在default.graphdb下的plugins，重启即可。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;MAX  DESC&lt;/p&gt;
-
-&lt;p&gt;新建一个node，包括变量名和label，并添加属性。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;可以做以下尝试：&lt;/h3&gt;
-&lt;p&gt;使用Match和属性查找一个节点。&lt;/p&gt;
-
-&lt;p&gt;使用Match和关系查找相关节点。&lt;/p&gt;
-
-&lt;p&gt;使用Match进行推荐。&lt;/p&gt;
-
-&lt;p&gt;使用Match寻找最多4跳以内的节点。&lt;/p&gt;
-
-&lt;p&gt;使用Match寻找两节点之间的最短路径&lt;a href=&quot;&quot;&gt;。&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;https://github.com/linonetwo/neo4j-tutorial-Chinese/blob/master/Chapters/1.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/graph-nosql-neo4j&quot;&gt;http://www.infoq.com/cn/articles/graph-nosql-neo4j&lt;/a&gt;&lt;/p&gt;
-
+&lt;/ul&gt;
 </content>
  </entry>
  
  <entry>
-   <title>《黑客与画家》读书笔记</title>
-   <link href="http://tzungtzu.com/2017/02/03/hacker-and-painter.html"/>
-   <updated>2017-02-03T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/02/03/hacker-and-painter</id>
-   <content type="html">&lt;h3 id=&quot;section&quot;&gt;书呆子&lt;/h3&gt;
+   <title>《理科生的人生设计指南》读书笔记</title>
+   <link href="http://tzungtzu.com/2017/05/18/turtoral.html"/>
+   <updated>2017-05-18T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/05/18/turtoral</id>
+   <content type="html">&lt;p&gt;消耗的能量应该有一个大方向让琐碎变得有意义，人生需要设计。&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;为什么聪明的小孩一直不受同龄人的欢迎呢？答案就是他们真的不想让自己受欢迎。对他们来说，聪明比受欢迎更重要。&lt;/li&gt;
-  &lt;li&gt;如今社会，我们面临一个更严峻的问题，他与当前的诸多难题具有共同的起因，即专业化。当工作的专业程度越来越高时，&lt;a href=&quot;&quot;&gt;我们必须接受更长时间的训练。&lt;/a&gt;这也导致当今的青少年在生产活动中根本是毫无用处的。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;section&quot;&gt;朋友熟人&lt;/h3&gt;
+
+&lt;p&gt;每年列出12个有趣任务的名单，然后自己主动去约见。&lt;/p&gt;
+
+&lt;p&gt;经常说谢谢就能找到伴侣&lt;/p&gt;
 
 &lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;黑客与画家&lt;/h3&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;表现&lt;/h3&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;科学界的每一个人，暗地里都相信数学家比自己聪明。我觉得，数学家自己也相信这一点。最后的结果就是科学家往往会把自己的工作尽可能弄得看上去像数学。&lt;/li&gt;
-  &lt;li&gt;如果黑客认识到自己与其他创作者——比如作家和画家——是一类人，这种诱惑对他就不起作用。作家和画家没有“对数学的妒忌”，他们认为自己在从事与数学完全不相关的事情。我认为，黑客也是如此。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;借鉴绘画，我们写代码时调试也如同打草稿。整个过程一开始是一张草图，然后填入细节。&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;大学和实验室强迫黑客成为科学家，企业强迫黑客成为工程师。&lt;/li&gt;
-  &lt;li&gt;要是你很热爱编程，你就不可避免地会开发你自己的项目。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;表现能力：向他人穿搭、表达自己想法和成果的能力&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;实力 x 表现 =  得到的社会评价
+提高表现力的五种方法：
+1. 大量撰写论文
+2. 申请专利
+3. 出版、演讲
+4. 制作博客、网页
+5. 出版刊物&lt;/p&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;不能说的话：&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;找出不能说的话：真话，异端邪说，时空差异diff，道貌岸然，观察禁忌的产生。这样的目的在于好奇，了解真相避免犯错，也是一种很好的脑力训练。&lt;/li&gt;
-  &lt;li&gt;训练自己去想那些不能想的事情，你获得的好处会超过所得到的想法本身。如果你能“远远地”跳出传统思维，提出让别人一听就脑袋轰一声炸开的惊人观点，那么你就在“小小地”跳出传统思维方面不会有任何困难。要知道，人们把后面的这种情况称为“创新”。&lt;/li&gt;
-  &lt;li&gt;请记住，所谓“流行”（传统观念也是一种流行），本质上就是自己看不见自己的样子。否则就不会有流行了。对于那些被流行抓住的人，流行就不再是流行，而是应该要做的正确事情。只有保持一定的距离才能观察到人们观念的变化，发现流行（也就是人们自以为正确的事情）到底是什么。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;利用自己的研究，设立受欢迎的博客&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;section-2&quot;&gt;时间&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-3&quot;&gt;如何创造财富：&lt;/h3&gt;
+&lt;p&gt;考虑人生的时间分配时，以年为单位&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;从经济学观点看，你可以把创业想象成一个压缩过程，你的所有工作年份被压缩成了短短几年。&lt;strong&gt;你不再是低强度地工作四十年，而是以极限强度工作四年。&lt;/strong&gt;在高技术领域，这种压缩的回报尤其丰厚，工作效率越高，额外报酬就越高。&lt;/li&gt;
-  &lt;li&gt;如果你有一个令你感到安全的工作，你是不会致富的，因为没有危险，就几乎等于没有可放大性。&lt;/li&gt;
-  &lt;li&gt;创业公司不像能经受打击的黑熊，也不像有盔甲保护的螃蟹，而是像蚊子一样，不带有任何防御，就是为了达到一个目的而活着。蚊子唯一的防御就是，作为一个物种，它们的数量极多，但是作为个体，却极难生存。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;section-3&quot;&gt;麻烦&lt;/h3&gt;
+&lt;p&gt;危机管理
+1. 做好突然出事的心理准备
+2. 突然出事的时候要诚实地面对
+3. 树立“社会整体的看法最正确”的想法&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;设计者的品味：&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;正如逻辑学的“奥卡姆剃刀”原则所说，简单的解释就是最好的解释。&lt;/li&gt;
-  &lt;li&gt;优秀设计师也是如此，他们的工作看上去很容易。大多数时候，这是一种错觉。作家的文章读起来流畅自如，但是背后其实经过了反复修改。&lt;/li&gt;
-  &lt;li&gt;人们有时会说自己有了“状态”，我的理解是，他们这时可以控制自己的脊髓。&lt;strong&gt;脊髓是更本能的反应&lt;/strong&gt;，面对难题时，它能释放你的直觉。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;人生设计是个大家说。没有假说就没有进步&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>Install matplotlib on macOS Sierra</title>
-   <link href="http://tzungtzu.com/2017/01/26/install-matplotlib-on-macos-sierra.html"/>
-   <updated>2017-01-26T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/01/26/install-matplotlib-on-macos-sierra</id>
-   <content type="html">&lt;p&gt;在 macOS 下安装 matplotlab 报错，&lt;/p&gt;
+   <title>《古典音乐简单到不行》读书笔记</title>
+   <link href="http://tzungtzu.com/2017/05/15/classic-music.html"/>
+   <updated>2017-05-15T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/05/15/classic-music</id>
+   <content type="html">&lt;h3 id=&quot;section&quot;&gt;古典音乐&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://ww4.sinaimg.cn/large/006tNc79gy1fc4e38a0dwj31380isk0g.jpg&quot; alter=&quot;&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;为什么古典音乐到最后会流传到全世界，那是因为音乐的基础都在古典音乐里。（do re mi 这些音乐最根本的基础／记录音乐的乐谱／和声系统）&lt;/p&gt;
 
-&lt;p&gt;Google 看到解决方法：
- &lt;!--more--&gt;
-	sudo pip -H install matplotlib&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo pip install matplotlib --ignore-installed six
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;以及关闭SIP（system integrity protection）&lt;/p&gt;
-
-&lt;p&gt;都不能成功安装。&lt;/p&gt;
-
-&lt;p&gt;最后找到了解决办法：&lt;/p&gt;
-
-&lt;h4 id=&quot;install-pig-config&quot;&gt;1.install pig-config&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;brew install pkg-config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;install-freetype&quot;&gt;2.install freetype&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;brew install freetype
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;install-matplotlib&quot;&gt;3.install matplotlib&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;pip install matplotlib
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://ww3.sinaimg.cn/large/006tNc79gy1fc4dp1hflpj313k0i0aha.jpg&quot; alter=&quot;&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enjoy!&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Mac 录屏／录音 内录系统声音</title>
-   <link href="http://tzungtzu.com/2017/01/14/record-sound.html"/>
-   <updated>2017-01-14T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/01/14/record-sound</id>
-   <content type="html">&lt;p&gt;因为私人原因，需要录系统播放声音。可以通过录屏软件 ScreenFlow。QuickTime 为了防止盗版，不能录系统音频。但是可以通过安装 SoundFlower 解决。SoundFlower 是一个虚拟音频设备（下载地址点&lt;a href=&quot;https://github.com/mattingalls/Soundflower/releases/tag/2.0b2&quot;&gt;这里&lt;/a&gt;）&lt;/p&gt;
+&lt;p&gt;古典音乐风格：巴洛克音乐、古典乐拍、浪漫约拍、民族、近代、现代
+类型：管弦乐，格局，芭蕾舞剧，独奏，合奏&lt;/p&gt;
 
 &lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;audio-midi-setup&quot;&gt;打开 Audio MIDI Setup：&lt;/h3&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;泛音&lt;/h3&gt;
+&lt;p&gt;常用的自然泛音，一個在空弦高八度的位置（即弦長的1/2處），它的實際音高比空弦高八度；一個在空弦音高純四度的位置（即弦長的1/4處，第一把位的3指音），它的實際音高比空弦高兩個八度；一個是在空弦音高純五度的位置（即弦長的1/3處，第一把位的4指音），它的實際音高比空弦音高8度+5度，也就是這個4指音的高八度。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;新建一个 “Multi Output Device”，选择“Built-in Output” 和 “Soundflower(2ch)“&lt;/li&gt;
-  &lt;li&gt;新建一个 “Aggregate Device”，选择“External Microphone”和“Soundflower(2ch)”&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;针对ukulele，三个自然泛音对应12品（高八度），5品（高两个八度），7品（高8+5度）&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;section-2&quot;&gt;乐曲的种类：&lt;/h3&gt;
+&lt;p&gt;交响曲：管弦乐团的音乐会上挑大梁的纯管弦乐团作品
+协奏曲：独奏乐器和管弦乐团协奏的音乐。通常三个乐章，许多是钢琴和小提琴的名曲。
+交响诗：单乐章组成的管线乐曲
+序曲：开始时演奏的短篇管弦乐曲。
+组曲：三首以上的短曲组成的作品。包含管弦乐组曲，芭蕾组曲，以及交响组曲。&lt;/p&gt;
 
-&lt;h3 id=&quot;preference---sound-&quot;&gt;&lt;strong&gt;在 Preference - Sound 里设置音频输出源&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;section-3&quot;&gt;乐符：&lt;/h3&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;输出源设置为刚刚设置的 “Multi Output Device”&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;四分音符为一拍&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;同属的大调比小调多一个小三度（F大调vs d小调&lt;/p&gt;
 
-&lt;h3 id=&quot;quicktime&quot;&gt;接下来打开QuickTime，在音频／录屏录制部分选择输入源&lt;/h3&gt;
+&lt;p&gt;大调音阶： WWHWWWH =&amp;gt; C D E F G A B
+小调音阶： WHWWHWW =&amp;gt; C D Eb F G Ab Bb
+五声音阶： C D E G A （去4，7）
+中古调式： C Db Eb F G Ab Bb
+全音音阶： C D E F# G# A#&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;如果在内录的时候需要不录下 mic 的声音，就在输入源选择 “Soundflower（2ch）”&lt;/li&gt;
-  &lt;li&gt;如果在内录的时候需要录下 mic 的声音，就在输入源选择 “Aggregate Device”&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;强弱记号：
+piano  弱  forte 强&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;作曲：和声学和对位法&lt;/p&gt;
 
-&lt;h3 id=&quot;section&quot;&gt;最后，可选择压缩文件。&lt;/h3&gt;
+&lt;p&gt;和声学：音符的直向重叠法和变化方式的学习
+Do Mi Sol
+Tonic 主音（I） 
+Dominent属音（V） 
+Subdobminent下属音（IV）&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;对位法：复调音乐的一种，两种以上的旋律线（Melody Line）彼此协调谐和，完成一首完整统一的乐曲的方法。&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;注意&lt;/h3&gt;
+&lt;p&gt;作曲法？&lt;/p&gt;
 
-&lt;p&gt;经过修改输出源，无法调节系统的声音大小。等用完了录屏需求，可以将输出源修改回内置麦克风。&lt;/p&gt;
+&lt;p&gt;古典的和声和流行的和弦&lt;/p&gt;
+
+&lt;p&gt;G调的C和弦还是说G调的主和弦&lt;/p&gt;
+
+&lt;p&gt;在古典的和声学中，相对于C大调或d小调等乐曲具有的主调，则&lt;em&gt;以罗马数字来表示是“何种性格的和弦”&lt;/em&gt;，对照主和弦的Do Mi Sol（I），Sol Si Re 便是属和弦，Fa La Do是下属和弦&lt;/p&gt;
+
+&lt;p&gt;在和弦中，&lt;em&gt;用英文字母和数字表示构成和弦的音符，和调性或其他东西没有任何关联。&lt;/em&gt;Do Mi Sol 是C和弦，加上了比C高7度的音就是C7和弦，如果是小调和弦酒就加上m便成Cm7 （加6度音变成C6，加7，9度音变成C9）&lt;/p&gt;
+
+&lt;p&gt;（「C」 是所謂的「大3和弦」是由 I -III- V級音所組成（基本的3度和聲） 
+以C調來說組成音便是：1-3-5&lt;/p&gt;
+
+&lt;p&gt;「C7」 是所謂的「屬和弦」是由 I -III- V- bVII級音所組成 （把大7和弦的7度音降個半音就ok啦） 
+以C調來說組成音便是：1-3-5-b7&lt;/p&gt;
+
+&lt;p&gt;「Cmaj7」 是所謂的「大7和弦」是由 I -III- V- VII 級音所組成（把原來的大3和弦再加一個7度音就是啦） 
+以C調來說組成音便是：1-3-5-7&lt;/p&gt;
+
+&lt;p&gt;「Cmaj7-5」 是所謂的「大7和弦減5」是由 I -III- bV- VII級音所組成 （-5的話就是將大7和弦的5度音降半音就可了） 
+以C調來說組成音便是：1-3-b5-7 ）&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;所以和声学可称作相对和声，和弦名可以叫做绝对和音。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;乐章：&lt;/h3&gt;
+
+&lt;p&gt;快板，慢板，诙谐曲，终曲（起承转合）
+基本上交响曲和弦乐四重奏是四个乐章，协奏曲和鸣奏曲等是三个乐章，也有例外。&lt;/p&gt;
+
+&lt;p&gt;旋律，和声，节奏&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>2017两周记录</title>
-   <link href="http://tzungtzu.com/2017/01/14/twoweeks.html"/>
-   <updated>2017-01-14T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2017/01/14/twoweeks</id>
-   <content type="html">&lt;p&gt;2017转眼就过去两周，时间过的挺快的。这一年的行走大概要像徒步一样，前一半时间走60-70%，后半年才能走的从容。&lt;/p&gt;
+   <title>Spark GraphX in Action 笔记</title>
+   <link href="http://tzungtzu.com/2017/05/04/graphx-in-action.html"/>
+   <updated>2017-05-04T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/05/04/graphx-in-action</id>
+   <content type="html">&lt;p&gt;一、&lt;/p&gt;
+
+&lt;p&gt;Hadoop的关键能力：
+1. HDFS —— 分布式存储
+2. MapReduce —— 分布式计算&lt;/p&gt;
+
+&lt;p&gt;GraphX 用边RDD 和顶点RDD 来表示一个图。&lt;/p&gt;
+
+&lt;p&gt;GraphX 内部是一个批处理系统，并没有融入Spark Streaming.&lt;/p&gt;
+
+&lt;p&gt;图存储: 分布式文件存储与图数据库
+两全其美： 事务用图数据库，图处理用GraphX。&lt;/p&gt;
+
+&lt;p&gt;图是模型化&lt;strong&gt;连接&lt;/strong&gt;数据的自然和强大的使用方式&lt;/p&gt;
+
+&lt;p&gt;Spark 也提供了M/R API（分布式计算）和分布式存储。与 Hadoop 不同，Spark 在集群的内存中保存数据，Hadoop 在集群的磁盘中存储。&lt;/p&gt;
+
+&lt;p&gt;图数据的类型，图算法&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;这两周确定了在深圳工作。又要背着行囊去新的城市，虽然这个城市有朋友，但是自己这个对走进一个新城市总是怵怵的。这会是新的挑战，工作之路就这样走上去了，希望照着计划正常进行。毕竟27岁了还不稳定是对自己的不负责任，更不用说对亲人了。&lt;/p&gt;
+&lt;p&gt;二、&lt;/p&gt;
 
-&lt;p&gt;另外，2017我遇到的第一件事情的感受就是好朋友感情会淡。尽管以前觉得没有兄弟的我们会是把对方当亲兄弟一样。但是亲兄弟也要各自组建家庭，然后家庭为重。觉得挺伤心无奈的，这么说可能玻璃心矫情了点，还没进社会的我知道这些也不是坏事吧。但不管怎么样，想告诉自己，诚心对人，才能得到真心。&lt;/p&gt;
+&lt;p&gt;spark—shell 提醒变量 sc可以直接使用。启动时在上下文创建一个 org.apache.spark.SparkContext 对象的实例sc.&lt;/p&gt;
 
-&lt;p&gt;最近尝试多线程看几本书，倒是一本都还没看完，这种方法满没有成就感的，看来不适合我。过年大概要看机器学习的书度日了。去年说的把 S. 看一遍果然是 flag。不过其实这也是自己给自己的借口。每天一定要看几页书，其实也是习惯。&lt;/p&gt;
+&lt;p&gt;Spark Shell 是 REPL（读取-求值-输出） 的一个实例。&lt;/p&gt;
 
-&lt;p&gt;觉得自己写得有点丧，应该开心点，毕竟2017还有好多期待。事情一般会比我考虑的好，我喜欢惊喜，等你来。&lt;/p&gt;
+&lt;p&gt;import org.apache.spark.graphx._ 
+scala 用 _ 作通配符， java 用 *。
+导入依赖，&lt;/p&gt;
+
+&lt;p&gt;val graph = GraphLoader.edgeListFile(sc,”file:///home/ubuntu/data/users/zongwei/data/cit-HepTh.txt”)&lt;/p&gt;
+
+&lt;p&gt;GraphLoader是 GraphX库里的对象， edgeListFile是GL里面的函数，用于加载边列表格式的文本文件，生成图&lt;/p&gt;
+
+&lt;p&gt;graph.inDegrees.reduce((a,b)=&amp;gt;if(a._2&amp;gt;b._2) a else b)
+图对象调用 inDegrees 方法。得到一个VertexRDD
+reduce()函数，将每两条数据归并成一个结果。并且Scala的匿名函数可以将函数作为参数传递到其他函数(无需声明的内联函数的形式)&lt;/p&gt;
+
+&lt;p&gt;val v = graph.pageRank(0.001).vertices
+v.reduce((a,b)=&amp;gt;if(a._2&amp;gt;b._2) a else b)&lt;/p&gt;
+
+&lt;p&gt;三、
+1. 不变性
+2. 函数是一等公民&lt;/p&gt;
+
+&lt;p&gt;轻松声明函数为内联的并且可以到处传递它们。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;声明式迭代技术&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;函数式编程不推荐使用for循环&lt;/p&gt;
+
+&lt;p&gt;函数式编程的天然迭代方式是 map() 和递归&lt;/p&gt;
+
+&lt;p&gt;map() 接受一个函数作为参数并将其应用于集合中的每一个元素。&lt;/p&gt;
+
+&lt;p&gt;递归用来让函数调用自身&lt;/p&gt;
+
+&lt;p&gt;map &amp;amp; reduce
+map() 函数将传入的一个转换函数作为参数，把一个集合转变成另一个集合。
+reduce() 函数传入一个两两合并的聚集函数作为参数((Int,Int) =&amp;gt; Int),把一个集合聚集为单个值。&lt;/p&gt;
+
+&lt;p&gt;_+_是 (a,b)=&amp;gt;a+b 的简写。
+Scala 特有的归并/聚集用法。&lt;/p&gt;
+
+&lt;p&gt;Spark:&lt;/p&gt;
+
+&lt;p&gt;scala 影响 Spark 最重要的设计概念 RDD。
+RDD是分布在集群多个节点上的数据集合。 RDD是不可变的（不能被修改或更新）。但是可以从已有RDD根据转换方法生成新的RDD。&lt;/p&gt;
+
+&lt;p&gt;延迟求值&lt;/p&gt;
+
+&lt;p&gt;RDD的API函数有两种： transformation（map()） 和 action（reduce()）. 
+前者：传入一个RDD，输出一个新的RDD。后者：除了前者的部分 
+reduce(func), collect(), count(), first(), take(n), saveAsTextFile(path), foreach(func), countByKey()&lt;/p&gt;
+
+&lt;p&gt;DAG(有向无环图)对RDD的处理被隐藏起来以便于对外提供基础的功能。&lt;/p&gt;
+
+&lt;p&gt;Spark 需要两个主要系统：分布式文件系统（HDFS）和集群管理系统（YARN）。
+Distributed Storage &amp;amp; Cluster Manager&lt;/p&gt;
+
+&lt;p&gt;SparkContext 对象是使用 Spark 的入口。&lt;/p&gt;
+
+&lt;p&gt;常用RDD操作
+1. m/r 
+2. 键值对
+3. zip()
+    同时迭代两个集合，保存在RDD中。
+    zipWithIndex()，union()（未必是追加在后面）,distinct() 
+4. MLlib&lt;/p&gt;
+
+&lt;p&gt;四、&lt;/p&gt;
+
+&lt;p&gt;GraphX 的基础类&lt;/p&gt;
+
+&lt;p&gt;Graph 是 GraphX 的基础类，它包含边RDD和顶点RDD，&lt;/p&gt;
+
+&lt;p&gt;triplets() 方法根据VertexId 将顶点和边联合在一起。返回 EdgeTriplet
+[VD,ED] 类型的RDD，它是 Edge[ED] 的子类。&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>2016 总结</title>
-   <link href="http://tzungtzu.com/2016/12/21/2016-summary.html"/>
-   <updated>2016-12-21T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/12/21/2016-summary</id>
-   <content type="html">&lt;p&gt;在大龄青年的路上又走多了一年，自己的成长有点慢，以至于没发现时间走的那么快。2016 从年初就不平静，有很多 drama，也有自己不努力作为而没有抓住的机会。有变化，有成长，有感恩，体验过了极度开心和极度悲恸，看透了很多表象，做了一些改变，改变了一些坏习惯，却始终没有对自己下狠心，放在碎石和烈火中淬炼。应该给自己多一点压力，毕竟不会总是有足够的时间可以表现完美以后再出发。&lt;/p&gt;
+   <title>社交网络在互联网金融中的应用</title>
+   <link href="http://tzungtzu.com/2017/04/18/fin-network.html"/>
+   <updated>2017-04-18T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/04/18/fin-network</id>
+   <content type="html">&lt;p&gt;互联网金融面临的欺诈风险
+1. 伪冒欺诈：变更申请资料，获得高额额度
+2. 欺诈交易：无还款意愿；双向欺诈&lt;/p&gt;
 
 &lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section&quot;&gt;年度书籍&lt;/h3&gt;
-
-&lt;p&gt;科普：《时蔬小话》&lt;/p&gt;
-
-&lt;p&gt;小说：《你一生的故事》&lt;/p&gt;
-
-&lt;p&gt;今年其实给自己的时间挺多的，抑或是去年下的决心，也可能是自己的习惯，真正了解一件事情，从读书开始。看到自己的读书&lt;a href=&quot;http://112.74.27.115:7400/user/tzungtzu/stat/books&quot;&gt;数据&lt;/a&gt;，总的来说广度很够，深度却有待加强。&lt;/p&gt;
-
-&lt;p&gt;科普书看的不少，做一件事了解一个领域的决心也下过不少，遇见这本对我胃口的书是我的运气，它满足了我对厨房和植物这两个领域的好奇心。&lt;/p&gt;
-
-&lt;p&gt;今年还看了一些心理，沟通方面的畅销书，还不能说受益匪浅，但能够感到对我思考的帮助。每本书不是孤立的个体，很多内容其实是相互联系的，学会联系之后才能够更好的利用。我也觉得它们讲的不单是社会心理、自控和沟通，我相信不管在做什么之前能够想想其中的精髓，都会对你的行动有所帮助。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;年度电影&lt;/h3&gt;
-&lt;p&gt;&amp;lt;驴得水&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;Spotlight&amp;gt;
-&amp;lt;辉く女 杏篇&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;年度剧集&lt;/h3&gt;
-&lt;p&gt;&amp;lt;家族的形式&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;重版出来&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;This is us&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;请回答 1988&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;年度综艺&lt;/h3&gt;
-&lt;p&gt;&amp;lt;晓松奇谈&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;年度音乐&lt;/h3&gt;
-
-&lt;embed src=&quot;//music.163.com/style/swf/widget.swf?sid=36924025&amp;amp;type=2&amp;amp;auto=1&amp;amp;width=278&amp;amp;height=32&quot; width=&quot;298&quot; height=&quot;52&quot; allownetworking=&quot;all&quot; /&gt;
-
-&lt;p&gt;“Romantica - 伍々慧”&lt;/p&gt;
-
-&lt;p&gt;“White Warm Breath - 名渡山遼”&lt;/p&gt;
-
-&lt;p&gt;“只怕不够时间看你白头 - 林二汶”&lt;/p&gt;
-
-&lt;p&gt;“Little Lou, Ugly Jack, Prophet John - Norah Jones”&lt;/p&gt;
-
-&lt;p&gt;“浪费 - 徐佳莹”&lt;/p&gt;
-
-&lt;p&gt;“Flaming - 郑成河”&lt;/p&gt;
-
-&lt;p&gt;对 ukulele 编曲变挑剔，学编曲，慢慢转向更丰富的 Guitar Solo，也听对胃口的 Vocal。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-5&quot;&gt;年度食物&lt;/h3&gt;
-
-&lt;p&gt;山核桃味瓜子&lt;/p&gt;
-
-&lt;p&gt;才知道国内出了这么神奇的口味，还有自己做的小米粥，鸡胸肉和芒果百香果smoothie，以及回国很难吃到的 Lay’s Sensation，欧洲才有的 pasta flavor。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-6&quot;&gt;年度餐厅&lt;/h3&gt;
-
-&lt;p&gt;脑袋浮现的都是海牙的餐厅，都是 Ashlee 带我去吃的。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-7&quot;&gt;年度坚持&lt;/h3&gt;
-&lt;p&gt;健身&lt;/p&gt;
-
-&lt;p&gt;开始健身本来是为了练背提高杀球能力，结果反客为主，也超越了有氧成为了我 2016 主要的运动。&lt;/p&gt;
-
-&lt;p&gt;好奇心&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-8&quot;&gt;年度城市&lt;/h3&gt;
-
-&lt;p&gt;Courmayer  同样是徒步沿途的城市，它比 Chamonix 朴素多了。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-9&quot;&gt;年度照片&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006tKfTcgw1fay7fqt96sj30mr0sgakv.jpg&quot; alter=&quot;endive&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-10&quot;&gt;年度旅行&lt;/h3&gt;
-
-&lt;p&gt;完成了愿望之一 TMB&lt;/p&gt;
-
-&lt;p&gt;跟靠谱的朋友开心的旅行，同时也设立了新的徒步目标。今年没有开拓别的新的疆域，来日方长。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;app&quot;&gt;年度 App&lt;/h3&gt;
-&lt;p&gt;gyrosco.pe 它告诉我们好看的数据才是有用的。展示了数据的魅力。&lt;/p&gt;
-
-&lt;p&gt;Forest，Overcast，Keep&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-11&quot;&gt;年度游戏&lt;/h3&gt;
-&lt;p&gt;Pokemon Go：让人疯狂的 AR 游戏，不过现在日活降了不少，有点昙花一现的感觉，不过取而代之的有国内的摩拜单车 Go。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-12&quot;&gt;年度电子设备&lt;/h3&gt;
-&lt;p&gt;MacBook Pro&lt;/p&gt;
-
-&lt;p&gt;不论是自动化还是软件，MBP 都给了很多新的可能，同时也说明了我宅的程度。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-13&quot;&gt;年度败家&lt;/h3&gt;
-&lt;p&gt;今年大概是变迁的原因，而且太省。最终没有买一件大件，有点讶异。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-14&quot;&gt;年度基友&lt;/h3&gt;
-&lt;p&gt;FB，野爷，以及TMB小分队。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-15&quot;&gt;年度进步&lt;/h3&gt;
-&lt;p&gt;喜欢上写作&lt;/p&gt;
-
-&lt;p&gt;厨艺，以及变壮了&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-16&quot;&gt;年度技能&lt;/h3&gt;
-&lt;p&gt;Pad 换屏&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-17&quot;&gt;年度糟糕&lt;/h3&gt;
-&lt;p&gt;今年回国没带爸妈出去走走&lt;/p&gt;
-
-&lt;p&gt;iPhone进水，Pad碎屏。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-18&quot;&gt;年度对比&lt;/h3&gt;
-
-&lt;p&gt;对比年初的&lt;a href=&quot;http://tzungtzu.cshozzy.com/2015/12/27/2016.html&quot;&gt;新年计划&lt;/a&gt;：&lt;/p&gt;
-
-&lt;h4 id=&quot;grid-diary&quot;&gt;1. 坚持用Grid Diary记录日常&lt;/h4&gt;
-&lt;p&gt;没有用Grid Diary了，改用Dayone，不过偶尔会忘记。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-19&quot;&gt;2. 找到满意的工作，不论欧洲还是回国。&lt;/h4&gt;
-&lt;p&gt;工作待定，回国有几个面试。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-20&quot;&gt;3. 学习其他的好玩的技能。&lt;/h4&gt;
-&lt;p&gt;正在认识蔬菜，以及学了前端和AppleScript。&lt;/p&gt;
-
-&lt;h4 id=&quot;tt&quot;&gt;4. 去一趟日本或者完成横穿欧亚。（感觉26岁前完不成了T.T）&lt;/h4&gt;
-&lt;p&gt;没去日本和西伯利亚，跟小伙伴去了一趟TMB&lt;/p&gt;
-
-&lt;h4 id=&quot;section-21&quot;&gt;5. 带爸妈出去玩一趟,地点未定。&lt;/h4&gt;
-&lt;p&gt;要推迟到今年过年了；（&lt;/p&gt;
-
-&lt;h4 id=&quot;evernoteinstapaper&quot;&gt;6. 每日阅读，用evernote+instapaper整理信息。&lt;/h4&gt;
-&lt;p&gt;有自己的固定阅读信息流。每月固定整理 Evernote 信息。&lt;/p&gt;
-
-&lt;h4 id=&quot;ulysses&quot;&gt;7. 坚持用Ulysses写东西，为以后工作攒干货。&lt;/h4&gt;
-&lt;p&gt;看了不少书，也写了不少东西，感受到阅读和写作给自己带来的变化。但是干货嘛，见仁见智。2017继续努力&lt;/p&gt;
-
-&lt;h4 id=&quot;section-22&quot;&gt;8. 坚持运动；）饮食健康&lt;/h4&gt;
-&lt;p&gt;自从健身之后，自己做减脂餐很轻松了。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-23&quot;&gt;年度计划&lt;/h3&gt;
+&lt;p&gt;社交网络算法运用到反欺诈
+1. 分析节点指标：centrailty，cluster coefficient, triangle count, connected compoents
+2. PageRank
+3. 社区发现： GN，FastUnfolding， LPA， SLPA，WalkTrap&lt;/p&gt;
+
+&lt;p&gt;具体判定：
+一度/二度触黑
+一机多人
+组团欺诈
+识别关联商家是否正常（需要区分不同类型的用户）&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;谈恋爱&lt;a href=&quot;https://twitter.com/tzungtzuli/status/815559309543227392&quot;&gt;。&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;不要丢掉好奇心&lt;/li&gt;
-  &lt;li&gt;丢掉一些惊喜和不确定&lt;/li&gt;
-  &lt;li&gt;多看一些能给自己思考的书，和本专业深度的书。以及做总结。&lt;/li&gt;
-  &lt;li&gt;运动后喝热水，不马上喝冷饮&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;reference&quot;&gt;Reference：&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://2016bestnine.com/tzungtzu&quot;&gt;https://2016bestnine.com/tzungtzu&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.pingwest.com/google-search-in-year-2016/&quot;&gt;http://www.pingwest.com/google-search-in-year-2016/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/standbyme/2016/share?user_id=43375245&quot;&gt;https://book.douban.com/standbyme/2016/share?user_id=43375245&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;与坏用户有大量关联的用户更可能是坏用户&lt;/li&gt;
+  &lt;li&gt;PageRank 高分段部分的坏账率更高？&lt;/li&gt;
+  &lt;li&gt;通过社区发现算法来评估每个用户的组团欺诈风险&lt;/li&gt;
+  &lt;li&gt;挖掘失联用户的通信社交网络&lt;/li&gt;
 &lt;/ol&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>《时蔬小话》读书笔记三 —— 异域之实</title>
-   <link href="http://tzungtzu.com/2016/12/17/foreign-fruit.html"/>
-   <updated>2016-12-17T00:00:00+08:00</updated>
-   <id>http://tzungtzu.com/2016/12/17/foreign-fruit</id>
-   <content type="html">&lt;h3 id=&quot;section&quot;&gt;一、辣椒🌶️&lt;/h3&gt;
+   <title>最近几周/四月</title>
+   <link href="http://tzungtzu.com/2017/04/17/april.html"/>
+   <updated>2017-04-17T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/04/17/april</id>
+   <content type="html">&lt;p&gt;今天照例打开reeder，发现几个关注的博主都更新了，听着别人讲着自己的故事，也想回顾自己的故事。&lt;/p&gt;
 
-&lt;p&gt;辣味来自于辣椒素，在口中产生复杂刺激，让人体释放令人愉悦的内啡肽。（人类真是变态，从芸薹类的芥子，莴苣菊苣的苦味到辣椒的辣，都挑痛苦的吃。）鸟类对辣椒素没有感受，以及可以促进肠胃蠕动，加快种子排泄，达到传播种子的作用。&lt;/p&gt;
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;p&gt;和茄子同属茄科，也称「辣茄」。是辣椒属植物的统称，原产中南美洲热带地区。我们现在吃的辣椒时人们驯化并栽培的5（/30）种。辣椒果实容易干燥，种子容易携带。&lt;/p&gt;
+&lt;p&gt;月初是清明，也参加了人生第一个葬礼。回到家的时候天气非常不好，看到大家的气息也都阴沉沉的，父亲因为一周内说话太多，喉咙都哑了，让人心疼。农村的葬礼，仪式感非常重视，一直忙到下午四点，清醒的是，这一天没有下雨，如父亲所说，老天爷。之后和另一个朋友聊到葬礼，她也是第一次看到父亲流泪，那么感性。一晃我们长大，却经常要在工作和亲情中做选择，我们应该怎么选择。&lt;/p&gt;
 
-&lt;!--more--&gt;
+&lt;p&gt;这个月是以去顺德吃吃吃开始的，度过了蛮愉快的三天，冲淡了清明的阴霾。吃了很多，发现最好吃的还是早茶，也不用迷恋名店，早些起来路过一些当地的酒店，如果门口有本地老人在等待，那一定不会让你失望。相比猪肉婆却让我们失望了，没有吃到招牌的炒沙虫，以及黑暗的柚皮煲，实在是名不副实，尽管如此，还是有很多人前往，需要预约才能吃到。&lt;/p&gt;
 
-&lt;p&gt;野生草本辣椒（Capsicum annuum）也叫一年生辣椒，经过培育出很多种类，没有辣味的甜椒、辣味适中的番椒（cayenne）、墨西哥辣椒（jalapeno）是最出名的三个栽培种。番椒在中国也培育成了&lt;a href=&quot;http://baike.baidu.com/view/5309833.htm?fromtitle=%E7%89%9B%E8%A7%92%E6%A4%92&amp;amp;fromid=9747811&amp;amp;type=syn&quot;&gt;牛角椒&lt;/a&gt;（辣椒油，郫县豆瓣），&lt;a href=&quot;http://baike.baidu.com/view/9549555.htm&quot;&gt;线辣椒&lt;/a&gt;（剁椒鱼头），&lt;a href=&quot;http://baike.baidu.com/subview/467797/467797.htm&quot;&gt;杭椒&lt;/a&gt;（原产东北）。&lt;/p&gt;
+&lt;p&gt;如果说这两周其他大事，那就一定要数谈恋爱了。很久没有恋爱了，对此也十分谨慎，遇到一个彼此交流很轻松的朋友不容易，我也不想错过。和以前恋爱很不一样的是，感觉什么都能直接拿上台面讲（也许是我以前的恋爱方式不对？）。彼此不费劲是我们对这份感情最大的安全感。很期待接下来一起写的生活。自己也会更加努力。&lt;/p&gt;
 
-&lt;p&gt;灌木辣椒，和草本辣椒不同，是木本植物，更大的区别是，灌木辣椒的果实朝上生长，所以又叫朝天椒。个头比草本辣椒小很多，味道却更浓重，制作成了Tabasco sauce。在中国发展的品种有云贵的小米椒，重庆火锅里的樱桃辣椒，还有园艺观赏的五彩椒。&lt;/p&gt;
+&lt;p&gt;自己也成了抛弃单身朋友的人，希望还能和好朋友们保持联系。也许恋爱的确会让人少18:11看书，少时间弹琴，但是我的生活中多了一个彼此，多么让人开心的事情。&lt;/p&gt;
 
-&lt;p&gt;另外，还有海南的黄灯笼辣椒（Capsicum chinense），国际上将中华辣椒确定为辣椒的五大栽培种之一，其它四种分别为一年生辣椒（C.annuum）、灌木状辣椒（C.frutesces）、浆果辣椒（C.baccatum）、茸毛辣椒（C.pubescens）。黄灯笼椒辣度高，一般不作为鲜食，用做药材或制造辣椒素。最有名的有娜迦毒蛇和断魂椒。&lt;/p&gt;
+&lt;p&gt;这几周还见了几个很多年不见的朋友同学，都让我看到了自己行业外的世界，无论是医生还是金融方面的同学。都很有冲进让自己动力满满。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>《为数据而生》读书笔记</title>
+   <link href="http://tzungtzu.com/2017/04/08/big-data.html"/>
+   <updated>2017-04-08T00:00:00+00:00</updated>
+   <id>http://tzungtzu.com/2017/04/08/big-data</id>
+   <content type="html">&lt;p&gt;信息量很丰富的一本书，同时记住的是作者丰富的项目经历和认识的牛人&lt;/p&gt;
 
-&lt;p&gt;观赏型辣椒还有南美的风铃椒和墨西哥的茸毛椒。&lt;/p&gt;
+&lt;p&gt;一切都会被记录，一切都会被分析。&lt;/p&gt;
 
-&lt;p&gt;有趣的知识：
-辣椒的果肩越宽，性格越温和&lt;/p&gt;
+&lt;p&gt;主动或被动，我们都是数据的贡献者。&lt;/p&gt;
 
-&lt;p&gt;有一种分类如下&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:
-1. 樱桃类辣椒，叶中等大小，圆形、卵圆或椭圆形，果小如樱桃，圆形或扁圆形，红、黄或微紫色，辣味甚强，制干辣椒或供观赏，如成都的扣子椒、五色椒等；
-2. 圆锥椒类，植株矮，果实为圆锥形或圆筒形，&lt;strong&gt;多向上生长&lt;/strong&gt;，味辣，如仓平的鸡心椒等；
-3. 簇生椒类，叶狭长，果实簇生，&lt;strong&gt;向上生长&lt;/strong&gt;，果色深红，果肉薄，辣味甚强，油分高，多作干辣椒栽培，晚熟，耐热，抗病毒力强，如贵州七星椒等；
-4. 长椒类，株型矮小至高大，分枝性强，叶片较小或中等，果实一般下垂，为长角形，先端尖，微弯曲，似牛角、羊角、线形。果肉薄或厚，肉薄、辛辣味浓，供干制、腌渍或制辣椒酱，如陕西的大角椒；肉厚，辛辣味适中的供鲜食，如长沙牛角椒等；
-5. 甜柿椒类，分枝性较弱，叶片和果实均较大。根据辣椒的生长分枝和结果习性，也可分为无限生长类型、有限生长类型和部分有限生长类型。&lt;/p&gt;
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;section-1&quot;&gt;辣椒在中国&lt;/h4&gt;
+&lt;p&gt;六种数据类型：文本、图像、语音、网络、空间轨迹和时间序列。&lt;/p&gt;
 
-&lt;p&gt;“番椒丛生，白花，果俨似秃笔头，微辣色红，甚可观。” 番椒和番薯的叫法类似。从上海传来，也叫海椒。葡萄牙人把辣椒种子带来。&lt;/p&gt;
+&lt;p&gt;web 1.0 分析
+2.0 外化
+3.0 集成&lt;/p&gt;
 
-&lt;p&gt;在中国本土的椒指花椒（原产中国）和被称为「越椒」的食茱萸。后者后来被挤出餐桌。&lt;/p&gt;
-
-&lt;p&gt;中国的五味「酸甜苦辛咸」，辛原指一切带刺激性气味的食材，花椒、葱姜蒜。辣椒让辛字的意思发生微妙变化，不但刺激，更有火辣在其后，口语表述也变成了「酸甜苦辣咸」。辣椒也从番物变成了中国文化不可或缺元素之一。&lt;/p&gt;
-
-&lt;h4 id=&quot;shu&quot;&gt;辣度SHU&lt;/h4&gt;
-
-&lt;p&gt;1kg辣椒打成浆，使用多少升水混合果浆可以让人无法尝出辣味。最辣的达到10^6 SHU， 中国最辣的涮涮辣，拥有灯笼椒和朝天椒的血统，辣度只有 10^5 数量级。大红袍只有2500。&lt;/p&gt;
-
-&lt;p&gt;无色无味的辣椒素几乎不溶于水，冰镇过的酸奶应该解辣是最好选择（奶制品和淀粉制品都可）：乳酸的酸性可以中和部分碱性的辣椒素，而辣椒素本身也易溶于酸奶中含的脂肪。另外辣椒素会在黏膜慢慢分解，辣感消失。相反，酒精会增加辣椒素的吸收。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;二、茄子🍆&lt;/h3&gt;
-
-&lt;p&gt;茄科茄属的矮小植物。紫茎，紫花，紫果是茄子最基本的特征。&lt;/p&gt;
-
-&lt;p&gt;原产印度，大概南北朝或更在传入中国。跟着佛教东传而来，最初叫伽，音qié，古代伽和茄互通，二茄子从草本，所以茄更合适。后来也叫落苏，酪酥，源于酥烂的口感。江南有落苏节。&lt;/p&gt;
-
-&lt;p&gt;「茄：芙蕖茎，从艸加声」 于是茄最早读音为「加」，指荷花的花梗和叶柄。&lt;/p&gt;
-
-&lt;p&gt;茄子被土耳其帝国引入到欧洲，种植在地中海沿岸，当做装饰。茄子属于茄科植物，茄科植物在欧洲名声一向不好，使人致命的颠茄、催情迷乱的曼陀罗，还有帮助女巫起扫把满天飞的天仙子&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;，甚至同属茄属的番茄和马铃薯的经历都曲折。&lt;/p&gt;
-
-&lt;p&gt;野生茄子果实成熟为黄色或紫色，栽培茄子多为紫色，也有白色（被取名eggplant）绿色和花色条纹种类。生茄子有小毒不能吃，而且茄子苗上有刺。茄子能不停开花结果，一直吃到霜降。秋霜已过，哎温度的茄子智能无力回天的枯萎。&lt;/p&gt;
-
-&lt;p&gt;茄子吸油，因为茄子肉质细胞中包含大量气体，在煎茄子的时候细胞壁预热发生破裂，细胞中的气体迅速散发，空隙只能用油来填充。可以先用盐水浸泡使细胞中水分吸出，用手挤压出细胞中的气体，在放回水中浸泡防止气体回到茄子中。（下次试试）注意茄子的老嫩，嫩茄子可比酥油，老茄子只剩「芝麻」。挑茄子从茄子盖 —— 萼片来看，翻开萼片，如果茄子皮的绿环宽且鲜绿，就是嫩茄子。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;三、番茄🍅&lt;/h3&gt;
-
-&lt;p&gt;立秋后，「本茄」已老「番茄」上位。&lt;/p&gt;
-
-&lt;p&gt;茄科番茄属的番茄，多毛而发黏的枝叶会发出难闻的味道。番茄全株是有毒的，果实在青涩的时候也有毒素。&lt;/p&gt;
-
-&lt;p&gt;番茄和番椒，番薯都是明末由葡萄牙人带来的。开始只作为赏玩。&lt;/p&gt;
-
-&lt;p&gt;番茄原产南美，很早被英国人称作「love apple」，相对南欧，北欧更晚接受。&lt;/p&gt;
-
-&lt;p&gt;Ketchup原指英国人模仿广州的「鲑汁」制作的咸味和香料调制的酱汁。后来加入番茄酱，推向了市场。&lt;/p&gt;
-
-&lt;p&gt;番茄和圣女果是茄科番茄属&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;四、马铃薯🥔&lt;/h3&gt;
-
-&lt;p&gt;茄科茄属的传奇之物。传奇在于它对人类历史有着深远影响。果实毒性很强。块茎含有一些生物碱，是安全的，当发芽的时候，食用可能中毒。&lt;/p&gt;
-
-&lt;p&gt;马铃薯是世界第三大重要的粮食作物，仅次于小麦和玉米。
-容易种植，产量高，而且营养丰富。除去富含的淀粉，它含有的维生素C，维生素B以及蛋白质都可以满足人体的需要。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-5&quot;&gt;马铃薯的历史&lt;/h4&gt;
-
-&lt;p&gt;野生马铃薯有和番茄类似的紫黑色浆果，大小和圆度都很像马胸前挂着的铃铛。和番茄一样，马铃薯也是茄科的有毒植物。马铃薯和番茄叶子都长着黏黏的柔毛，利用这些黏毛，它们可以「捉」小昆虫为自己「肥田」。漫长的进化中，它利用自己肥大的&lt;strong&gt;地下茎&lt;/strong&gt;来作为来年发芽的「种子」。利用块茎无性繁殖，马铃薯在多变的气候中自我进化出适应各种环境的品种。这种变异性也有一个缺陷，当单独品种的的马铃薯离开它适宜的环境后，会发生块茎退化。如果不用种子繁殖，它的块茎会越来越小，最后消失的无影无踪。因为品种的多样，西班牙人只带走了少量种类的马铃薯。&lt;/p&gt;
-
-&lt;p&gt;西班牙人是欧洲第一个吃马铃薯的民族。也让欧洲第一次认识了美洲。马铃薯对坏血病有预防作用，马铃薯主要作为航船的食物，因为外面有绒毛，本土依然没有人吃。&lt;/p&gt;
-
-&lt;p&gt;1574年荷兰起义的一场重要战争，打败西班牙后，他们将西班牙人留下的马铃薯、洋葱和胡萝卜填饱肚子。1581年荷兰独立，为了纪念这场重要的战役，这三样食物被定为「国菜」。接下来是德国，法国。而英国，是欧洲最后一个对马铃薯怀有偏见的国家。认为马铃薯的廉价会让人们产生依赖，不愿工作而懒惰起来。&lt;/p&gt;
-
-&lt;p&gt;整个欧洲的马铃薯品种有限，有的因为退化的特点，无法长期配种。而适应欧洲气候的瓶中，因为上百年的无性繁殖是的他们的基因基本没有发生变化。无性繁殖的弊病越来越明显，卷叶病和干腐病困扰种植者。马铃薯天敌并不多，人们对病毒和真菌等微生物引起的病害没有认识，无性繁殖的马铃薯容易受到微生物侵害，病毒甚至可以潜伏在块茎里。为了解决这个轮扰，人们从美国进口新的种类，借以改良品种。然而，另一个问题潜伏其中——「晚疫病」。1846年，席卷整个欧洲。&lt;/p&gt;
-
-&lt;p&gt;这场灾难，让人们思考到植物的多样性。在马铃薯多样性丰富的安第斯山区，任何一兵不会大规模爆发，因为不同种类抵抗微生物和病毒的能力不同，他们很难在不同品种间传播。这产灾难后，人们在「旧文明」中找到了抵抗「晚疫病」的品种。&lt;/p&gt;
-
-&lt;p&gt;灾难后很多国家也种了其他作物，来自东亚的参薯、薯蓣，来自美洲的番薯、菊芋。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;薯蓣：薯蓣科薯蓣属的藤本植物。传粉不容易，有自己的繁殖方式，株芽落入土壤生根发芽。&lt;/li&gt;
-  &lt;li&gt;番薯：旋花科番薯属植物。块根能吃，它的嫩茎叶也可以当蔬菜食用。&lt;/li&gt;
-  &lt;li&gt;蕹菜：旋花科番薯属。因为茎秆中空，也叫空心菜。多栽培于中国以及东南亚地区，他的枝条在有水环境下极易生根，因此多使用水培。&lt;/li&gt;
-  &lt;li&gt;菊芋：菊科向日葵属植物。孕育种子需要较高的温度，也可以通过块茎繁殖。&lt;/li&gt;
-  &lt;li&gt;菊薯：菊科菊薯&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;PS:颜色浅／深的外皮光滑／粗糙，皮比较薄／厚。去皮后里面是黄／白心，这样的土豆是泥／沙土地里长出来的，口感脆，适宜炒／炖着吃。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-6&quot;&gt;茄科植物&lt;/h4&gt;
-
-&lt;p&gt;茄科植物对于人类是非常重要的一大科，提供给人类许多种食物和药物。茄科植物一般都含有不同量的&lt;strong&gt;生物碱&lt;/strong&gt;，对人类具有一定的毒性，根据其生物碱含量的多少，有的品种可以作为食物，有的品种可以作为药物。烟草也是茄科植物。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-7&quot;&gt;五、薯蓣&lt;/h3&gt;
-
-&lt;p&gt;马铃薯是荷兰人带到中国的，所以中国有的地方也叫它荷兰薯。而它在中国只被当作调剂的蔬菜，只在偏远的西北和山西，马铃薯站住了脚步。 山西人也叫它山药蛋。&lt;/p&gt;
-
-&lt;p&gt;大多数人说的山药，只的是&lt;strong&gt;薯蓣科薯蓣属&lt;/strong&gt;的薯蓣。是长着长藤的攀援植物。而土豆是矮矮的长在地上。&lt;/p&gt;
-
-&lt;p&gt;薯蓣是中国非常古老的一种食物，汉字的「薯」就是指它。唐代因为两次避讳改为山药。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;北望少泽，其上多草薯藇。 ———— 山海经&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;薯蓣长长的&lt;strong&gt;地下块茎&lt;/strong&gt;，富含水分，不易保存。因此没有被人们广泛栽培。&lt;/p&gt;
-
-&lt;p&gt;薯蓣不但可以吃，还可以用作重要，尤其是滋补的药膳。现产自淮河流域的「淮山」和河南沁阳等地的「怀山」是薯蓣最具药用价值的两个品种。&lt;/p&gt;
-
-&lt;p&gt;爬藤植物，喜欢生长在山林中，攀附在其他植物上获取更多的阳光。藤不粗壮，叶子很有特点：叶有三尖，花很小。和其他植物不同的，植株分雄雌，只有雌株授粉后才结实。我们吃的薯蓣是它粗大的地下块茎。竖直深深长在地下。皮草薄脆嫩，需要技巧才能保证块茎的完整，这段的薯蓣很容易发霉变质。&lt;/p&gt;
-
-&lt;p&gt;薯蓣种子不易发芽，利用珠芽来繁殖。发芽后不长成枝条，而是发育成小球一样的块茎。秋天植株枯死，块茎保留着充足的养分，落入土中生根发芽。当这些块茎在隐蔽的灌木下长出长藤，就是人们叫的「山药蛋」。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-8&quot;&gt;番外：香芋&lt;/h4&gt;
-&lt;p&gt;甘薯，也是产自中国的薯蓣属植物，还有山薯、板脚薯（参薯）。长相丑陋的&lt;a href=&quot;https://www.wikiwand.com/zh-hans/%E5%8F%82%E8%96%AF&quot;&gt;参薯&lt;/a&gt;的一个培育种就是香芋，它和天南星科的芋头是两个品种。香芋（ube, purple yam）原产菲利宾（南洋），被波西米亚人带到夏威夷成为了特色产品。香芋味道醇厚，香味浓郁，紫色肉心。和芋头是不同的。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-9&quot;&gt;薯蓣在欧洲&lt;/h4&gt;
-&lt;p&gt;参薯和薯蓣在欧洲大航海时代被带到非洲，薯蓣被错叫成 yam。带回欧洲在1846年马琳书灾难中作为替代品救了欧洲人的命。之后很快被番薯替代，因为它的种植和收获是在麻烦。不如番薯划算。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-10&quot;&gt;薯蓣属植物&lt;/h4&gt;
-&lt;p&gt;西南产的薯莨块根种富含多酚和鞣质，用来作为鞣制皮革的原料以及丝绸织物香云纱。&lt;/p&gt;
-
-&lt;p&gt;中国有49种薯蓣属植物分布在去全国大部分地区。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-11&quot;&gt;六、番薯🍠&lt;/h3&gt;
-
-&lt;p&gt;番薯是旋花科藤本植物，看上去柔弱，只会蜿蜒趴在地上，实际上有很强的侵占性。藤蔓上会长出不定根，不论是徒然还是石缝都能深深扎下去，膨大成肥厚的&lt;strong&gt;块根&lt;/strong&gt;。番薯耐得住干旱，它把有限的水分储存在肥大的块根；忍受得了盐碱，它把根系吸收的盐分通过分泌腺分泌出来；耐得了炎热，开会选择日出时候，防止烈日灼伤花朵，如果气候适宜，初秋清晨开出牵牛花一样的花朵。&lt;/p&gt;
-
-&lt;p&gt;旋花科植物大多是有毒的植物，番薯是个例外。我们常吃的部分是它根系发育成的&lt;strong&gt;块根&lt;/strong&gt;（马铃薯和薯蓣是分生的地下茎发育成的块状茎）。番薯易得，是人畜共食的经济作物，喂猪可以用番薯藤叶，因此是穷人的宝贝。（小时候父亲总跟我说，他小时候家里穷，每餐白米饭里都混有番薯。另外现在人们返璞归真吃起了蕃薯藤叶，也挺有意思。）但是番薯也不能一日三餐地吃，番薯富含的果胶和果糖会刺激肠胃发生反酸，常年吧番薯当粮食的地方，人们大多都有胃病。然而穷人有穷人的办法，人们发现番薯叶子和嫩梢煮粥搭配番薯可以减轻反酸的毛病，于是番薯叶子也被端上了餐桌，成为了利食的蔬菜。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-12&quot;&gt;番薯的历史&lt;/h4&gt;
-&lt;p&gt;番薯和马铃薯一样，来自美洲，是西班牙船队第一次把番薯带到菲利宾和东南亚。万历年间一场大旱，福建人开始试种蕃薯藤，之后是广东。和马铃薯一样，都是明清时期频发的荒灾使其在内地传播。&lt;/p&gt;
-
-&lt;p&gt;番薯和马铃薯都来自南美秘鲁。但是习性不同的是马铃薯适合高山，番薯喜欢干旱和炎热。这是欧洲无法给予的自然条件，所以只在马铃薯灾的时候零食出现在欧洲农田。之后西班牙人把它带到了东方，在东南亚产量马上超过了曾经主要地位的参薯，在中国也受到了欢迎，和同时传来的玉米一起成为了开垦穷山恶水的先锋。番薯的吃法有烤、蒸（馏）、烀等。&lt;/p&gt;
-
-&lt;h4 id=&quot;wng-water-spinach&quot;&gt;番外：蕹（wèng）菜 （Water spinach）&lt;/h4&gt;
-
-&lt;p&gt;番薯的叶子可以解毒，在旋花科还有另一种作「解毒」草药的蔬菜，它就是蕹菜。传说可以解断肠草的毒。&lt;/p&gt;
-
-&lt;p&gt;蕹菜原产东南亚，广东也叫通菜。清淡舒爽的蕹菜可以清肠胃里的火气。&lt;strong&gt;初夏到白露&lt;/strong&gt;是蕹菜大量上市的季节。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;秋茄白露蕹，毒过饭匙枪。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;过了白露，蕹菜就吃不到了。秋天茄子一肚子细籽，而蕹菜开花结实，开出&lt;strong&gt;旋花科植物特有的喇叭形花朵&lt;/strong&gt;，多为白色，偶尔粉红。&lt;/p&gt;
-
-&lt;h3 id=&quot;jerusalem-artichoke&quot;&gt;七、菊芋（Jerusalem Artichoke）&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;菊科向日葵属&lt;/strong&gt;植物，也叫洋姜，有类似姜块的&lt;strong&gt;块茎&lt;/strong&gt;。剥皮吃有淡淡的甜味加上劲道又水水的脆感。英文中 Artichoke 是&lt;a href=&quot;https://www.wikiwand.com/zh/%E8%8F%9C%E8%96%8A&quot;&gt;菜薊&lt;/a&gt;（jì）（菊科菜薊属），但是她们并不是同一品种。只是味道相似被误认。&lt;/p&gt;
-
-&lt;p&gt;洋姜很少拿来直接吃（切丝炒肉丝听起来不错）。也可以作为腌菜。&lt;/p&gt;
-
-&lt;p&gt;这是来自北美洲的菊科植物。被带到欧洲后，成为了牲畜的口粮，但是茎秆粗糙，叶子上长满毛刺，牲畜也只在万不得已菜作为食物；因为极容易繁衍，很快就成为了杂草。知道马铃薯灾难时期，穷人不得不作为救命粮食。&lt;/p&gt;
-
-&lt;p&gt;欧洲人的吃法和马铃薯相似，块茎煮熟压成泥拌沙拉。现在人们认为菊芋是一种健康的食物，因为富含淀粉和菊糖，尤其是菊糖，这种带甜味的低聚果糖被人体吸收后，不会被有机体分解和利用。因此可以作为糖尿病人的安全甜味剂，同时被人体吸收后会有饱腹感，也可以作为减肥食品。然而新鲜和煮熟的菊芋不能多吃，因为菊糖会引起胃胀气。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;菊糖&lt;/em&gt;是&lt;a href=&quot;https://www.wikiwand.com/zh-hans/%E8%8F%8A%E7%A7%91&quot;&gt;菊科&lt;/a&gt;植物的显著特征之一，这个家族的成员都会用这种糖类代替淀粉成为存贮能量的来源。&lt;/p&gt;
-
-&lt;h3 id=&quot;yacon-&quot;&gt;八、菊薯（yacon 亚贡）&lt;/h3&gt;
-
-&lt;p&gt;原产南美洲的&lt;strong&gt;块根&lt;/strong&gt;植物，也是富含菊糖的美味食物。也叫雪莲果。菊薯的块根口感上和其他块茎块根类植物不同，它的块根肉质雪白，水分非常充足，味甜爽口。所以经常作为水果来吃。因为不含淀粉，所以热量是很低的。&lt;/p&gt;
-
-&lt;p&gt;菊薯和菊芋都属于菊科，吃的部分都在地下，但是是指不同。菊薯吃的是块根，菊芋吃的是块茎，前者是拘束的根膨大发育形成，后者是菊芋的地下走茎发育而成。如果要从实物区别，可以观察两者身上的&lt;strong&gt;芽眼&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;如果是块茎，它的芽眼大多是光溜溜表坡下的小坑，这些小坑排列整齐，一般对称分布在块茎周围，对成的芽眼之间还有隐约的连线，这些痕迹就是地下茎附生的鳞片或叶片脱落的痕迹。有的芽眼还会突出。有序排列，最后汇聚在远离母体植物的一侧，形成一个顶芽。&lt;/li&gt;
-  &lt;li&gt;如果是块根，不是没中块根都有芽眼（菊薯的没有），番薯的块根则有很多芽眼，这些芽眼分布不均匀。密集地分布在靠近母体植物的一侧，没有大小区分。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;菊薯块根没有繁殖能力，但是菊薯还会长出油芽眼的块茎，他们形态上区别很大，块茎很像菊芋，生长在地上茎杆附近靠近地表的地方。而块根是块茎贮藏水分和养分的地方。&lt;/p&gt;
-
-&lt;p&gt;PS 薯蓣科植物不含乳汁，旋花科植物常有乳汁，表现在块根上有白浆&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;品种&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;部分&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;马铃薯&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;块茎&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;番薯&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;块根&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;薯蓣&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;块茎&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;参薯&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;块茎&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;菊芋&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;块茎&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;菊薯&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;块根&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/view/2361992.htm&quot;&gt;http://baike.baidu.com/view/2361992.htm&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;古代欧洲，人们认为天仙子的根具有无墨之力，女巫八天仙子抹在大腿上就能骑扫把。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
+&lt;p&gt;成为大数据企业：
+1. 全面数据化
+2. 整理数据资源，建立数据标准，形成管理规范
+3. 建设数据管理平台
+4. 建立海量数据的深入分析能力
+5. 建立外部数据的战略储备
+6. 建立数据的外部创新能力
+7. 推动自身数据的开放与共享
+8. 数据产业的战略投资布局&lt;/p&gt;
 </content>
  </entry>
  

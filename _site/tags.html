@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -79,7 +115,7 @@
 
 <a href="#代尔夫特理工" title="代尔夫特理工" rel="1">代尔夫特理工</a>
 
-<a href="#朋友" title="朋友" rel="1">朋友</a>
+<a href="#朋友" title="朋友" rel="2">朋友</a>
 
 <a href="#博客" title="博客" rel="3">博客</a>
 
@@ -247,7 +283,7 @@
 
 <a href="#习惯" title="习惯" rel="3">习惯</a>
 
-<a href="#classic music" title="classic music" rel="1">classic music</a>
+<a href="#classic music" title="classic music" rel="2">classic music</a>
 
 <a href="#Yundi" title="Yundi" rel="1">Yundi</a>
 
@@ -258,6 +294,10 @@
 <a href="#Evernote" title="Evernote" rel="1">Evernote</a>
 
 <a href="#IFTTT" title="IFTTT" rel="1">IFTTT</a>
+
+<a href="#networkx" title="networkx" rel="2">networkx</a>
+
+<a href="#social network" title="social network" rel="1">social network</a>
 
 <a href="#日剧" title="日剧" rel="1">日剧</a>
 
@@ -341,7 +381,7 @@
 
 <a href="#sound" title="sound" rel="1">sound</a>
 
-<a href="#python" title="python" rel="2">python</a>
+<a href="#python" title="python" rel="3">python</a>
 
 <a href="#matplotlab" title="matplotlab" rel="1">matplotlab</a>
 
@@ -363,11 +403,49 @@
 
 <a href="#Jupyter Notebook" title="Jupyter Notebook" rel="1">Jupyter Notebook</a>
 
-<a href="#Spark" title="Spark" rel="1">Spark</a>
+<a href="#Spark" title="Spark" rel="2">Spark</a>
 
 <a href="#Scala" title="Scala" rel="1">Scala</a>
 
 <a href="#Toree" title="Toree" rel="1">Toree</a>
+
+<a href="#Windows" title="Windows" rel="1">Windows</a>
+
+<a href="#AutoHotKey" title="AutoHotKey" rel="1">AutoHotKey</a>
+
+<a href="#爱好" title="爱好" rel="1">爱好</a>
+
+<a href="#工作" title="工作" rel="1">工作</a>
+
+<a href="#big data" title="big data" rel="1">big data</a>
+
+<a href="#四月" title="四月" rel="1">四月</a>
+
+<a href="#葬礼" title="葬礼" rel="1">葬礼</a>
+
+<a href="#恋爱" title="恋爱" rel="1">恋爱</a>
+
+<a href="#金融" title="金融" rel="1">金融</a>
+
+<a href="#互联网" title="互联网" rel="1">互联网</a>
+
+<a href="#社交网络" title="社交网络" rel="1">社交网络</a>
+
+<a href="#GraphX" title="GraphX" rel="1">GraphX</a>
+
+<a href="#music theory" title="music theory" rel="1">music theory</a>
+
+<a href="#harmony" title="harmony" rel="1">harmony</a>
+
+<a href="#orchestra" title="orchestra" rel="1">orchestra</a>
+
+<a href="#人生" title="人生" rel="1">人生</a>
+
+<a href="#指南" title="指南" rel="1">指南</a>
+
+<a href="#rss" title="rss" rel="1">rss</a>
+
+<a href="#feed" title="feed" rel="1">feed</a>
 
 </div>
 
@@ -498,6 +576,11 @@
 
 
   <li class="listing-seperator" id="朋友">朋友</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-17">2017-04-17</time>
+  <a href="/2017/04/17/april.html" title="最近几周/四月">最近几周/四月</a>
+  </li>
 
   <li class="listing-item">
   <time datetime="2011-09-27">2011-09-27</time>
@@ -1357,6 +1440,11 @@
   <li class="listing-seperator" id="classic music">classic music</li>
 
   <li class="listing-item">
+  <time datetime="2017-05-15">2017-05-15</time>
+  <a href="/2017/05/15/classic-music.html" title="《古典音乐简单到不行》读书笔记">《古典音乐简单到不行》读书笔记</a>
+  </li>
+
+  <li class="listing-item">
   <time datetime="2016-03-01">2016-03-01</time>
   <a href="/2016/03/01/classic_music.html" title="古典音乐的时候你在想什么">古典音乐的时候你在想什么</a>
   </li>
@@ -1399,6 +1487,27 @@
   <li class="listing-item">
   <time datetime="2016-03-06">2016-03-06</time>
   <a href="/2016/03/06/evernote-note-to-omnifocus.html" title="利用IFTTT将Evernote note同步到OmniFocus">利用IFTTT将Evernote note同步到OmniFocus</a>
+  </li>
+
+
+  <li class="listing-seperator" id="networkx">networkx</li>
+
+  <li class="listing-item">
+  <time datetime="2017-03-15">2017-03-15</time>
+  <a href="/2017/03/15/networkx.html" title="python 工具包 networkx 使用方法">python 工具包 networkx 使用方法</a>
+  </li>
+
+  <li class="listing-item">
+  <time datetime="2016-03-20">2016-03-20</time>
+  <a href="/2016/03/20/SNA.html" title="社会网络分析">社会网络分析</a>
+  </li>
+
+
+  <li class="listing-seperator" id="social network">social network</li>
+
+  <li class="listing-item">
+  <time datetime="2016-03-20">2016-03-20</time>
+  <a href="/2016/03/20/SNA.html" title="社会网络分析">社会网络分析</a>
   </li>
 
 
@@ -1813,6 +1922,11 @@
   <li class="listing-seperator" id="python">python</li>
 
   <li class="listing-item">
+  <time datetime="2017-03-15">2017-03-15</time>
+  <a href="/2017/03/15/networkx.html" title="python 工具包 networkx 使用方法">python 工具包 networkx 使用方法</a>
+  </li>
+
+  <li class="listing-item">
   <time datetime="2017-02-15">2017-02-15</time>
   <a href="/2017/02/15/dataframe.html" title="pandas 中 DataFrame 的分割和合并">pandas 中 DataFrame 的分割和合并</a>
   </li>
@@ -1906,6 +2020,11 @@
   <li class="listing-seperator" id="Spark">Spark</li>
 
   <li class="listing-item">
+  <time datetime="2017-05-04">2017-05-04</time>
+  <a href="/2017/05/04/graphx-in-action.html" title="Spark GraphX in Action 笔记">Spark GraphX in Action 笔记</a>
+  </li>
+
+  <li class="listing-item">
   <time datetime="2017-02-28">2017-02-28</time>
   <a href="/2017/02/28/spark-integrate-jn.html" title="Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook">Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</a>
   </li>
@@ -1924,6 +2043,158 @@
   <li class="listing-item">
   <time datetime="2017-02-28">2017-02-28</time>
   <a href="/2017/02/28/spark-integrate-jn.html" title="Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook">Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</a>
+  </li>
+
+
+  <li class="listing-seperator" id="Windows">Windows</li>
+
+  <li class="listing-item">
+  <time datetime="2017-03-14">2017-03-14</time>
+  <a href="/2017/03/14/autohotkey.html" title="autohotkey to modify keyboard on windows">autohotkey to modify keyboard on windows</a>
+  </li>
+
+
+  <li class="listing-seperator" id="AutoHotKey">AutoHotKey</li>
+
+  <li class="listing-item">
+  <time datetime="2017-03-14">2017-03-14</time>
+  <a href="/2017/03/14/autohotkey.html" title="autohotkey to modify keyboard on windows">autohotkey to modify keyboard on windows</a>
+  </li>
+
+
+  <li class="listing-seperator" id="爱好">爱好</li>
+
+  <li class="listing-item">
+  <time datetime="2017-03-22">2017-03-22</time>
+  <a href="/2017/03/22/think.html" title="一个决定不一定对">一个决定不一定对</a>
+  </li>
+
+
+  <li class="listing-seperator" id="工作">工作</li>
+
+  <li class="listing-item">
+  <time datetime="2017-03-22">2017-03-22</time>
+  <a href="/2017/03/22/think.html" title="一个决定不一定对">一个决定不一定对</a>
+  </li>
+
+
+  <li class="listing-seperator" id="big data">big data</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-08">2017-04-08</time>
+  <a href="/2017/04/08/big-data.html" title="《为数据而生》读书笔记">《为数据而生》读书笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="四月">四月</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-17">2017-04-17</time>
+  <a href="/2017/04/17/april.html" title="最近几周/四月">最近几周/四月</a>
+  </li>
+
+
+  <li class="listing-seperator" id="葬礼">葬礼</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-17">2017-04-17</time>
+  <a href="/2017/04/17/april.html" title="最近几周/四月">最近几周/四月</a>
+  </li>
+
+
+  <li class="listing-seperator" id="恋爱">恋爱</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-17">2017-04-17</time>
+  <a href="/2017/04/17/april.html" title="最近几周/四月">最近几周/四月</a>
+  </li>
+
+
+  <li class="listing-seperator" id="金融">金融</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-18">2017-04-18</time>
+  <a href="/2017/04/18/fin-network.html" title="社交网络在互联网金融中的应用">社交网络在互联网金融中的应用</a>
+  </li>
+
+
+  <li class="listing-seperator" id="互联网">互联网</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-18">2017-04-18</time>
+  <a href="/2017/04/18/fin-network.html" title="社交网络在互联网金融中的应用">社交网络在互联网金融中的应用</a>
+  </li>
+
+
+  <li class="listing-seperator" id="社交网络">社交网络</li>
+
+  <li class="listing-item">
+  <time datetime="2017-04-18">2017-04-18</time>
+  <a href="/2017/04/18/fin-network.html" title="社交网络在互联网金融中的应用">社交网络在互联网金融中的应用</a>
+  </li>
+
+
+  <li class="listing-seperator" id="GraphX">GraphX</li>
+
+  <li class="listing-item">
+  <time datetime="2017-05-04">2017-05-04</time>
+  <a href="/2017/05/04/graphx-in-action.html" title="Spark GraphX in Action 笔记">Spark GraphX in Action 笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="music theory">music theory</li>
+
+  <li class="listing-item">
+  <time datetime="2017-05-15">2017-05-15</time>
+  <a href="/2017/05/15/classic-music.html" title="《古典音乐简单到不行》读书笔记">《古典音乐简单到不行》读书笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="harmony">harmony</li>
+
+  <li class="listing-item">
+  <time datetime="2017-05-15">2017-05-15</time>
+  <a href="/2017/05/15/classic-music.html" title="《古典音乐简单到不行》读书笔记">《古典音乐简单到不行》读书笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="orchestra">orchestra</li>
+
+  <li class="listing-item">
+  <time datetime="2017-05-15">2017-05-15</time>
+  <a href="/2017/05/15/classic-music.html" title="《古典音乐简单到不行》读书笔记">《古典音乐简单到不行》读书笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="人生">人生</li>
+
+  <li class="listing-item">
+  <time datetime="2017-05-18">2017-05-18</time>
+  <a href="/2017/05/18/turtoral.html" title="《理科生的人生设计指南》读书笔记">《理科生的人生设计指南》读书笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="指南">指南</li>
+
+  <li class="listing-item">
+  <time datetime="2017-05-18">2017-05-18</time>
+  <a href="/2017/05/18/turtoral.html" title="《理科生的人生设计指南》读书笔记">《理科生的人生设计指南》读书笔记</a>
+  </li>
+
+
+  <li class="listing-seperator" id="rss">rss</li>
+
+  <li class="listing-item">
+  <time datetime="2017-06-29">2017-06-29</time>
+  <a href="/2017/06/29/pw-protected-feed.html" title="How to subscribe to password protected feeds">How to subscribe to password protected feeds</a>
+  </li>
+
+
+  <li class="listing-seperator" id="feed">feed</li>
+
+  <li class="listing-item">
+  <time datetime="2017-06-29">2017-06-29</time>
+  <a href="/2017/06/29/pw-protected-feed.html" title="How to subscribe to password protected feeds">How to subscribe to password protected feeds</a>
   </li>
 
 
@@ -1953,7 +2224,7 @@ $(function () {
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

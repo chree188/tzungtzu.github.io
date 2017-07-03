@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -59,6 +95,97 @@
     <li class="listing-seperator">2017</li>
   
   <li class="listing-item">
+    <time datetime="2017-07-01">2017-07-01</time>
+    <a href="/2017/07/01/latex.html" title="Latex">Latex</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-06-29">2017-06-29</time>
+    <a href="/2017/06/29/pw-protected-feed.html" title="How to subscribe to password protected feeds">How to subscribe to password protected feeds</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-06-29">2017-06-29</time>
+    <a href="/2017/06/29/graph-analysis.html" title="Graph Analysis">Graph Analysis</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-06-12">2017-06-12</time>
+    <a href="/2017/06/12/trekking-list.html" title="Trekking List">Trekking List</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-05-18">2017-05-18</time>
+    <a href="/2017/05/18/turtoral.html" title="《理科生的人生设计指南》读书笔记">《理科生的人生设计指南》读书笔记</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-05-15">2017-05-15</time>
+    <a href="/2017/05/15/classic-music.html" title="《古典音乐简单到不行》读书笔记">《古典音乐简单到不行》读书笔记</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-05-04">2017-05-04</time>
+    <a href="/2017/05/04/graphx-in-action.html" title="Spark GraphX in Action 笔记">Spark GraphX in Action 笔记</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-04-18">2017-04-18</time>
+    <a href="/2017/04/18/fin-network.html" title="社交网络在互联网金融中的应用">社交网络在互联网金融中的应用</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-04-17">2017-04-17</time>
+    <a href="/2017/04/17/april.html" title="最近几周/四月">最近几周/四月</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-04-08">2017-04-08</time>
+    <a href="/2017/04/08/big-data.html" title="《为数据而生》读书笔记">《为数据而生》读书笔记</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-03-22">2017-03-22</time>
+    <a href="/2017/03/22/think.html" title="一个决定不一定对">一个决定不一定对</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-03-15">2017-03-15</time>
+    <a href="/2017/03/15/networkx.html" title="python 工具包 networkx 使用方法">python 工具包 networkx 使用方法</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-03-14">2017-03-14</time>
+    <a href="/2017/03/14/autohotkey.html" title="autohotkey to modify keyboard on windows">autohotkey to modify keyboard on windows</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
     <time datetime="2017-02-28">2017-02-28</time>
     <a href="/2017/02/28/spark-integrate-jn.html" title="Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook">Integrate Spark(Scala &amp; PySpark) with Jupiter Notebook</a>
   </li>
@@ -89,6 +216,13 @@
   <li class="listing-item">
     <time datetime="2017-02-03">2017-02-03</time>
     <a href="/2017/02/03/hacker-and-painter.html" title="《黑客与画家》读书笔记">《黑客与画家》读书笔记</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2017-01-26">2017-01-26</time>
+    <a href="/2017/01/26/install-matplotlib-on-macos-sierra.resource-commit.html" title="Install Matplotlib On Macos Sierra.resource/commit">Install Matplotlib On Macos Sierra.resource/commit</a>
   </li>
 
   
@@ -267,6 +401,20 @@
   <li class="listing-item">
     <time datetime="2016-03-23">2016-03-23</time>
     <a href="/2016/03/23/kazoku.html" title="关于《家族的形式》的几句话和一些台词，cut">关于《家族的形式》的几句话和一些台词，cut</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2016-03-20">2016-03-20</time>
+    <a href="/2016/03/20/SNA.resource-commit.html" title="Sna.resource/commit">Sna.resource/commit</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2016-03-20">2016-03-20</time>
+    <a href="/2016/03/20/SNA.html" title="社会网络分析">社会网络分析</a>
   </li>
 
   
@@ -728,7 +876,7 @@
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->

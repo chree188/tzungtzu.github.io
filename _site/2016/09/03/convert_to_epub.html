@@ -12,11 +12,47 @@
     <link rel="stylesheet" href="/media/css/github.css">
 <!--     <link rel="styesheet" href="/media/css/folder/popup.css"> -->
     <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
     </script>
- <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	  
 
   </head>
@@ -102,18 +138,21 @@
 <p>安装好Calibre后，还不能直接使用CLI，
 需要建立<a href="https://github.com/GitbookIO/gitbook/issues/333">软链接</a></p>
 
-<pre><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+<div class="highlighter-rouge"><pre class="highlight"><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
 </code></pre>
+</div>
 
 <p>或者设置全局变量</p>
 
-<pre><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+<div class="highlighter-rouge"><pre class="highlight"><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
 </code></pre>
+</div>
 
 <p>之后即可转换文件</p>
 
-<pre><code>ebook-convert input_file output_file
+<div class="highlighter-rouge"><pre class="highlight"><code>ebook-convert input_file output_file
 </code></pre>
+</div>
 
 <p>具体可选配置可以点<a href="https://manual.calibre-ebook.com/generated/en/cli-index.html#">这里</a>。</p>
 
@@ -126,16 +165,18 @@
   <li>
     <p>Installation</p>
 
-    <pre><code> wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
+    <div class="highlighter-rouge"><pre class="highlight"><code> wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
  chmod +x /usr/local/bin/convertio
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Convert</p>
 
-    <pre><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
+    <div class="highlighter-rouge"><pre class="highlight"><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
  convertio -f jpg input.pdf
 </code></pre>
+    </div>
   </li>
 </ol>
 
@@ -181,7 +222,7 @@
 
 
 		
-        <footer>&copy; 2011 ~ 2016 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
+        <footer>&copy; 2011 ~ 2017 ♥ tzungtzu | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext iv">sext iv</a> | 🕶️ <span data-hk-page="current"> - </span> hits<span class="pause"> | </span>
         <div><span></span></div>
         </footer>
       </div> <!-- main -->
