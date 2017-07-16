@@ -448,12 +448,16 @@
 			</dict>
 			<key>7-13-finance.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>521794821.27478802</real>
 				<key>lastModification</key>
-				<real>521793735.02909201</real>
+				<real>521794821.27478802</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>68</integer>
+					<integer>70</integer>
 				</dict>
 			</dict>
 			<key>7-5-python.md</key>
@@ -637,7 +641,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>69</integer>
+			<integer>71</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
