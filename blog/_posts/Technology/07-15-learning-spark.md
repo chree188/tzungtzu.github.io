@@ -41,3 +41,13 @@ Spark 的工作：
 
 在 Python 中，传递函数到 Spark 有三种方式。
     1. 对于较短的函数，可以通过 lambda 表达式来传递，或者，也可以用顶级函数或者局部定 义的函数。
+
+
+
+
+###常见变换和动作
+
+* 元素级的变换： map(), filter(), flatmap() 每个输入元素返回多个输出元素
+* 伪集合操作：distinct(), union(RDD2),intersection(), substract()
+    - distinct()很昂贵，因为它需要所有的数据通过网络进行 Shuffling 以确保唯一性。
+* 
