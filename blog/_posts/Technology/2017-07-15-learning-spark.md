@@ -1,4 +1,13 @@
-#learning spark
+---
+layout: post
+title: 《Learning Spark》读书笔记-RDD
+categories: 
+- Technology
+tags:
+- spark
+- rdd
+
+---
 
 ##RDD 编程
 
@@ -10,6 +19,8 @@ Spark 的工作：
 3. 对RDD 调用操作计算出结果
 
 在底层， Spark 将包含在 RDD 中的数据自动分布到整个集群，并将你对其执行的操作并行化。
+
+ <!--more-->
 
 ###创建RDD
 
@@ -48,6 +59,21 @@ Spark 的工作：
 ###常见变换和动作
 
 * 元素级的变换： map(), filter(), flatmap() 每个输入元素返回多个输出元素
-* 伪集合操作：distinct(), union(RDD2),intersection(), substract()
-    - distinct()很昂贵，因为它需要所有的数据通过网络进行 Shuffling 以确保唯一性。
-* 
+* 伪集合操作：distinct(), union(RDD2),intersection(), substract()，cartesian(other)
+    - distinct()很昂贵，因为它需要所有的数据通过网络进行 Shuffling 以确保唯一性。intersection, substract 也需要通过网络 shuffle 数据来识别公共元素。
+* 动作： reduce(), fold(), aggregate()[1][2], collect(), take(n)
+    - Map（映射）: 把洋葱、番茄、辣椒和大蒜切碎，是各自作用在这些物体上的一个Map操作。
+    - Reduce（化简）:研磨机通常将map操作的蔬菜碎聚集在了一起。
+    - take(n)返回 RDD 中的 n 个元素，试图最小化访问的分区的数目。所以它返回的
+是有偏差的集合。重要的是知道这操作不会以你期待的顺序返回数据。
+* 特殊类型的转换
+    - 有些函数只对某种类型的 RDD 可用，比如 mean()和 variance()对数值类型的 RDD
+可用，而 join()对键值对类型的 RDD 可用。
+
+
+
+
+###references
+1. http://www.jianshu.com/p/15739e95a46e
+2. http://m.blog.csdn.net/a1628864705/article/details/52757384
+
