@@ -50,7 +50,13 @@ Spark 中没有自带 sbt，需要自行[安装][2]
  df.select('year').count()   其中select 为转换， count 为行动操作。
 
 
+### 5. graphframe 安装错误
 
+
+    file:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar 
+
+    把相关的依赖包安装到指定位置即可
 
 [1]:	https://spark.apache.org/docs/latest/quick-start.html
 [2]:	http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html
+[3]:    

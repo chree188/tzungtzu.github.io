@@ -50,6 +50,7 @@ even SparkR, SQL
 
 SPARK_PKGS=$(cat << END | xargs echo | sed 's/ /,/g'
 neo4j-contrib:neo4j-spark-connector:2.0.0-M2
+graphframes:graphframes:0.5.0-spark2.0-s_2.11
 END)
 
 2. Define SPARK_OPTS and SPARK_HOME.
@@ -59,11 +60,11 @@ SPARK_HOME=~/data/spark-2.0.1-bin-hadoop2.6/
 
 3. Configure Toree to use these packages.
 
-jupyter toree install \
+sudo jupyter toree install \
   --spark_home=$SPARK_HOME \
   --spark_opts=$SPARK_OPTS
 
-22222222222
+
 Adding Remote Packages
 You can use Apache Toree's AddDeps magic to add dependencies from Maven central. You must specify the company name, artifact ID, and version. To resolve any transitive dependencies, you must explicitly specify the --transitive flag.
 
@@ -83,3 +84,4 @@ Detail test
 
 [1]:	https://toree.incubator.apache.org/documentation/user/installation.html "Apache Toree Installation"
 [2]:	http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook " solution is to install Apache Toree."
+[3]:    https://github.com/asimjalis/apache-toree-quickstart
