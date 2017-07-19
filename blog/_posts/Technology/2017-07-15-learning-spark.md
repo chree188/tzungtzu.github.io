@@ -61,7 +61,7 @@ Spark 的工作：
 * 元素级的变换： map(), filter(), flatmap() 每个输入元素返回多个输出元素
 * 伪集合操作：distinct(), union(RDD2),intersection(), substract()，cartesian(other)
     - distinct()很昂贵，因为它需要所有的数据通过网络进行 Shuffling 以确保唯一性。intersection, substract 也需要通过网络 shuffle 数据来识别公共元素。
-* 动作： reduce(), fold(), aggregate()[1][2], collect(), take(n)
+* 动作： reduce(), fold(), aggregate()[1][2], collect(), take(n)，top()
     - Map（映射）: 把洋葱、番茄、辣椒和大蒜切碎，是各自作用在这些物体上的一个Map操作。
     - Reduce（化简）:研磨机通常将map操作的蔬菜碎聚集在了一起。
     - take(n)返回 RDD 中的 n 个元素，试图最小化访问的分区的数目。所以它返回的
