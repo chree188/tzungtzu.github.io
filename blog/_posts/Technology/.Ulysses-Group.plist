@@ -39,21 +39,41 @@
 			<key>07-21-go-in-action.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>522509308.35440499</real>
+				<real>522512666.54645503</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>77</integer>
+					<integer>82</integer>
 				</dict>
 			</dict>
 			<key>07-23-iterm.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>522509344.30607402</real>
+				<real>522512666.551319</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>78</integer>
+					<integer>84</integer>
+				</dict>
+			</dict>
+			<key>07-27-keyboard-shortcuts.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>522814450.633026</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>94</integer>
+				</dict>
+			</dict>
+			<key>07-27-mac-work.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>522815221.60737199</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>98</integer>
 				</dict>
 			</dict>
 			<key>2011-11-20-i-love-math.markdown</key>
@@ -399,11 +419,21 @@
 			<key>2017-07-19-neo4j-spark-connector.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>522509308.35440397</real>
+				<real>522512666.53747702</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>77</integer>
+					<integer>80</integer>
+				</dict>
+			</dict>
+			<key>2017-07-27-python-mouse.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>522839570.641011</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>104</integer>
 				</dict>
 			</dict>
 			<key>3-23-windows-setup.md</key>
@@ -486,28 +516,28 @@
 					<integer>77</integer>
 				</dict>
 			</dict>
-			<key>7-13-gut.md</key>
+			<key>7-16-spark-graph.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
 				<true/>
 				<key>firstUnassignment</key>
-				<real>522077275.91310102</real>
+				<real>522811509.538656</real>
 				<key>lastModification</key>
-				<real>522077275.91310102</real>
+				<real>522814404.422396</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>74</integer>
+					<integer>87</integer>
 				</dict>
 			</dict>
 			<key>7-16-spark-graphx.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>522509308.35440397</real>
+				<real>522512666.55013603</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>77</integer>
+					<integer>83</integer>
 				</dict>
 			</dict>
 			<key>7-17-key-value-pairs.md</key>
@@ -523,11 +553,11 @@
 			<key>7-18-spark-3rd-lib.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>522509308.35440499</real>
+				<real>522512666.54395002</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>77</integer>
+					<integer>81</integer>
 				</dict>
 			</dict>
 			<key>7-5-python.md</key>
@@ -540,12 +570,55 @@
 					<integer>47</integer>
 				</dict>
 			</dict>
+			<key>Untitled - 2.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>522814418.13706201</real>
+				<key>lastModification</key>
+				<real>522814418.13706201</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>93</integer>
+				</dict>
+			</dict>
+			<key>Untitled - 3.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>522814417.44949299</real>
+				<key>lastModification</key>
+				<real>522814417.44949299</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>92</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
-		<real>520590310.69082099</real>
+		<real>522831818.06967503</real>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>Untitled - 3.md</string>
+		</array>
+		<array>
+			<string>Untitled - 2.md</string>
+		</array>
+		<array>
+			<string>2017-07-27-python-mouse.md</string>
+		</array>
+		<array>
+			<string>07-27-mac-work.md</string>
+		</array>
+		<array>
+			<string>07-27-keyboard-shortcuts.md</string>
+		</array>
 		<array>
 			<string>07-23-iterm.md</string>
 		</array>
@@ -679,9 +752,6 @@
 			<string>2017-07-10-fridge.md</string>
 		</array>
 		<array>
-			<string>7-13-gut.md</string>
-		</array>
-		<array>
 			<string>7-5-python.md</string>
 		</array>
 		<array>
@@ -705,9 +775,12 @@
 		<array>
 			<string>07-21-go-in-action.md</string>
 		</array>
+		<array>
+			<string>7-16-spark-graph.md</string>
+		</array>
 	</array>
 	<key>sheetOrder</key>
-	<string>creationDate</string>
+	<string>modificationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>versioning</key>
@@ -715,12 +788,12 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>79</integer>
+			<integer>105</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 </dict>
