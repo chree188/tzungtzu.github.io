@@ -76,6 +76,26 @@
 					<integer>98</integer>
 				</dict>
 			</dict>
+			<key>07-27-ssh.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>522854855.25367898</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>108</integer>
+				</dict>
+			</dict>
+			<key>07-28-organize-folder.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>522922055.90004599</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>112</integer>
+				</dict>
+			</dict>
 			<key>2011-11-20-i-love-math.markdown</key>
 			<dict>
 				<key>lastModification</key>
@@ -611,6 +631,12 @@
 			<string>Untitled - 2.md</string>
 		</array>
 		<array>
+			<string>07-28-organize-folder.md</string>
+		</array>
+		<array>
+			<string>07-27-ssh.md</string>
+		</array>
+		<array>
 			<string>2017-07-27-python-mouse.md</string>
 		</array>
 		<array>
@@ -788,7 +814,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>105</integer>
+			<integer>113</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
