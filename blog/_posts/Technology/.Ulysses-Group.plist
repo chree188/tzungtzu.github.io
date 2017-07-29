@@ -618,6 +618,16 @@
 					<integer>92</integer>
 				</dict>
 			</dict>
+			<key>mac-setting.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>522999358.68245399</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>116</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>522831818.06967503</real>
@@ -629,6 +639,9 @@
 		</array>
 		<array>
 			<string>Untitled - 2.md</string>
+		</array>
+		<array>
+			<string>mac-setting.md</string>
 		</array>
 		<array>
 			<string>07-28-organize-folder.md</string>
@@ -814,7 +827,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>113</integer>
+			<integer>117</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
