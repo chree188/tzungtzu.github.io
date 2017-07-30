@@ -29,10 +29,14 @@ tags:
 		
 
  Homebrew的使用
-•	安装软件：brew install 软件名，例：brew install wget
-•	搜索软件：brew search 软件名，例：brew search wget
-•	卸载软件：brew uninstall 软件名，例：brew uninstall wget
-•	更新所有软件：brew update
+
+•	添加到环境变量 `echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile`
+•	检查并更新 `brew doctor; brew update`
+•	安装包 `brew install <package_name>`
+•	更新包 `brew upgrade <package_name>`
+•	清理旧版本 `brew cleanup`
+•	列出包 `brew list --versions` 
+
 * Zsh:
 		wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 		#设置theme 

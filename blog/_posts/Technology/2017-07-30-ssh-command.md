@@ -26,4 +26,10 @@ tags:
 		exit  #主动断开和对方的连接
 		
 
+### - 重启服务器
+		sudo reboot
 
+### - 关机
+		shutdown -h now 现在立即关机
+		shutdown -r now 现在立即重启
+		shutdown -r +3 三分钟后重启
