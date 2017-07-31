@@ -490,6 +490,16 @@
 					<integer>130</integer>
 				</dict>
 			</dict>
+			<key>2017-07-31-ssh-publickey.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523187927.49164599</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>139</integer>
+				</dict>
+			</dict>
 			<key>3-23-windows-setup.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -663,6 +673,9 @@
 		</array>
 		<array>
 			<string>Untitled - 2.md</string>
+		</array>
+		<array>
+			<string>2017-07-31-ssh-publickey.md</string>
 		</array>
 		<array>
 			<string>2017-07-30-ssh-command.md</string>
@@ -857,7 +870,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>134</integer>
+			<integer>140</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
