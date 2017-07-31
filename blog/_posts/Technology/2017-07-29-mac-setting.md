@@ -26,16 +26,16 @@ tags:
 
 * Homebrew：
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-		
+	 
 
  Homebrew的使用
 
-•	添加到环境变量 `echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile`
-•	检查并更新 `brew doctor; brew update`
-•	安装包 `brew install <package_name>`
-•	更新包 `brew upgrade <package_name>`
-•	清理旧版本 `brew cleanup`
-•	列出包 `brew list --versions` 
+• 添加到环境变量 `echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile`
+• 检查并更新 `brew doctor; brew update`
+• 安装包 `brew install <package_name>`
+• 更新包 `brew upgrade <package_name>`
+• 清理旧版本 `brew cleanup`
+• 列出包 `brew list --versions` 
 
 * Zsh:
 		wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
@@ -60,6 +60,7 @@ tags:
 		sudo cp /usr/share/vim/vimrc ~/.vimrc 
 		sudo mkdir colors
 		sudo mv solarized.vim ~/.vim/colors
+
 
 
 ### References:

@@ -96,16 +96,6 @@
 					<integer>112</integer>
 				</dict>
 			</dict>
-			<key>07-29-mac-setting.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>523098872.540474</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>122</integer>
-				</dict>
-			</dict>
 			<key>07-30-python.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -480,6 +470,16 @@
 					<integer>104</integer>
 				</dict>
 			</dict>
+			<key>2017-07-29-mac-setting.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523178754.783912</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>133</integer>
+				</dict>
+			</dict>
 			<key>2017-07-30-ssh-command.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -671,7 +671,7 @@
 			<string>07-30-python.md</string>
 		</array>
 		<array>
-			<string>07-29-mac-setting.md</string>
+			<string>2017-07-29-mac-setting.md</string>
 		</array>
 		<array>
 			<string>07-28-organize-folder.md</string>
@@ -857,7 +857,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>132</integer>
+			<integer>134</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
