@@ -110,6 +110,16 @@
 					<integer>132</integer>
 				</dict>
 			</dict>
+			<key>08-01-ssh-sql.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523267656.49636298</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>143</integer>
+				</dict>
+			</dict>
 			<key>2011-11-20-i-love-math.markdown</key>
 			<dict>
 				<key>lastModification</key>
@@ -662,6 +672,16 @@
 					<integer>92</integer>
 				</dict>
 			</dict>
+			<key>sql.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523269159.878649</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>147</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>522831818.06967503</real>
@@ -673,6 +693,12 @@
 		</array>
 		<array>
 			<string>Untitled - 2.md</string>
+		</array>
+		<array>
+			<string>sql.md</string>
+		</array>
+		<array>
+			<string>08-01-ssh-sql.md</string>
 		</array>
 		<array>
 			<string>2017-07-31-ssh-publickey.md</string>
@@ -870,7 +896,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>140</integer>
+			<integer>148</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
