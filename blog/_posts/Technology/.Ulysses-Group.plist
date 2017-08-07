@@ -96,6 +96,30 @@
 					<integer>112</integer>
 				</dict>
 			</dict>
+			<key>07-30-python.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>523101517.66144502</real>
+				<key>lastModification</key>
+				<real>523101517.66144502</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>132</integer>
+				</dict>
+			</dict>
+			<key>08-01-ssh-sql.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523267656.49636298</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>143</integer>
+				</dict>
+			</dict>
 			<key>2011-11-20-i-love-math.markdown</key>
 			<dict>
 				<key>lastModification</key>
@@ -456,6 +480,36 @@
 					<integer>104</integer>
 				</dict>
 			</dict>
+			<key>2017-07-29-mac-setting.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523178754.783912</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>133</integer>
+				</dict>
+			</dict>
+			<key>2017-07-30-ssh-command.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523101327.392708</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>130</integer>
+				</dict>
+			</dict>
+			<key>2017-07-31-ssh-publickey.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>523187927.49164599</real>
+				<key>version</key>
+				<dict>
+					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
+					<integer>139</integer>
+				</dict>
+			</dict>
 			<key>3-23-windows-setup.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -536,20 +590,6 @@
 					<integer>77</integer>
 				</dict>
 			</dict>
-			<key>7-16-spark-graph.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>522811509.538656</real>
-				<key>lastModification</key>
-				<real>522814404.422396</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>87</integer>
-				</dict>
-			</dict>
 			<key>7-16-spark-graphx.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -590,42 +630,24 @@
 					<integer>47</integer>
 				</dict>
 			</dict>
-			<key>Untitled - 2.md</key>
+			<key>neo4j.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>522814418.13706201</real>
 				<key>lastModification</key>
-				<real>522814418.13706201</real>
+				<real>523550042.80298901</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>93</integer>
+					<integer>151</integer>
 				</dict>
 			</dict>
-			<key>Untitled - 3.md</key>
+			<key>sql.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>522814417.44949299</real>
 				<key>lastModification</key>
-				<real>522814417.44949299</real>
+				<real>523269159.878649</real>
 				<key>version</key>
 				<dict>
 					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>92</integer>
-				</dict>
-			</dict>
-			<key>mac-setting.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>522999358.68245399</real>
-				<key>version</key>
-				<dict>
-					<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-					<integer>116</integer>
+					<integer>147</integer>
 				</dict>
 			</dict>
 		</dict>
@@ -635,13 +657,25 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>Untitled - 3.md</string>
+			<string>neo4j.md</string>
 		</array>
 		<array>
-			<string>Untitled - 2.md</string>
+			<string>sql.md</string>
 		</array>
 		<array>
-			<string>mac-setting.md</string>
+			<string>08-01-ssh-sql.md</string>
+		</array>
+		<array>
+			<string>2017-07-31-ssh-publickey.md</string>
+		</array>
+		<array>
+			<string>2017-07-30-ssh-command.md</string>
+		</array>
+		<array>
+			<string>07-30-python.md</string>
+		</array>
+		<array>
+			<string>2017-07-29-mac-setting.md</string>
 		</array>
 		<array>
 			<string>07-28-organize-folder.md</string>
@@ -814,9 +848,6 @@
 		<array>
 			<string>07-21-go-in-action.md</string>
 		</array>
-		<array>
-			<string>7-16-spark-graph.md</string>
-		</array>
 	</array>
 	<key>sheetOrder</key>
 	<string>modificationDate</string>
@@ -827,7 +858,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>ad7a521d1787e10fe551008a3c488c2a7fd0fd943bbc510aed82209a34ad4618</key>
-			<integer>117</integer>
+			<integer>152</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
