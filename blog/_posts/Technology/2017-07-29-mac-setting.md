@@ -20,7 +20,7 @@ tags:
  <!--more-->
 
 - 很多配置在 Dropbox 所以首先要下载 Dropbox, 个人将 licences，settings， backups 都存在 Dropbox。
-- Alfred 通过 Advanced-Syncing 同步（必须主设备先同步，从设备的配置会被覆盖） workflow需要另外下载
+- Alfred 通过 Advanced-Syncing 同步（必须主设备先同步，从设备的配置会被覆盖） <del>workflow需要另外下载</del>workflow 也可以自动同步。
 
 ### 3. 配置工作环境：
 
