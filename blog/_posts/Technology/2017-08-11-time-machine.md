@@ -12,7 +12,7 @@ tags:
 
 昨天手一抖关闭 FileVault 功能，解密的时候非正常关机，导致系统坏了，通过 Time Machine 恢复系统到四月的 macOS Sierra。
 
- ~<!--more-->~
+<!--more-->
 
 还好最近一直在处理 mac 备份，同步的问题，按照[配置 macOS](http://tzungtzu.github.io/2017/07/29/mac-setting.html) 的步骤：
 
