@@ -67,6 +67,31 @@ tags:
 		sudo mkdir colors
 		sudo mv solarized.vim ~/.vim/colors
 
+5. '~/.ssh/conf, zshrc'配置
+
+		# Example aliases
+		alias clr='clear'
+		alias grep="grep --color=auto"
+		alias -s html='vim'   # 在命令行直接输入后缀为 html 的文件名，会在 Vim 中打开
+		alias -s rb='vim'     # 在命令行直接输入 ruby 文件，会在 Vim 中打开
+		alias -s py='vim'      # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+		alias -s js='vim'
+		alias -s c='vim'
+		alias -s java='vim'
+		alias -s txt='vim'
+		alias -s gz='tar -xzvf' # 在命令行直接输入后缀为 gz 的文件名，会自动解压打开
+		alias -s tgz='tar -xzvf'
+		alias -s zip='unzip'
+		alias -s bz2='tar -xjvf'
+		alias zshconfig='vi ~/.zshrc'
+		alias vimconfig='vi ~/.vimrc'
+		alias ll='ls -l'
+		alias vi='vim'
+		alias subl='open -a "Sublime Text"'
+		alias zshconfig='vi ~/.zshrc'
+		alias vimconfig='vi ~/.vimrc'
+
+
 
 
 ### References:
