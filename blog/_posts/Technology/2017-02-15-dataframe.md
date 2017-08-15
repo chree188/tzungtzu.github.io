@@ -90,4 +90,7 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 	### 去除NaN
 	df2.dropna()
-
+###重新index
+	df1.index = range(len(df1))  
+###按某列去重
+	DataFrame.drop_duplicates('column')

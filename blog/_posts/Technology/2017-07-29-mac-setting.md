@@ -62,12 +62,12 @@ tags:
 		wget 
 		sudo python get-pip.py
 
-4.  vim语法高亮
+###4.  vim语法高亮
 		sudo cp /usr/share/vim/vimrc ~/.vimrc 
 		sudo mkdir colors
 		sudo mv solarized.vim ~/.vim/colors
 
-5. '~/.ssh/conf, zshrc'配置
+###5. '~/.ssh/conf, zshrc'配置
 
 		# Example aliases
 		alias clr='clear'
@@ -92,7 +92,11 @@ tags:
 		alias vimconfig='vi ~/.vimrc'
 
 
+###6. Markdown Sublime [shortcut](https://github.com/SublimeText-Markdown/MarkdownEditing#key-bindings)
 
+###7. Mackup [配置恢复](https://github.com/lra/mackup)
+
+permission error 解决方法： 修改owner 为 tzungtzu
 
 ### References:
 1. [小土刀][3]()

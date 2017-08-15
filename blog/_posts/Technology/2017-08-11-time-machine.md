@@ -19,7 +19,7 @@ tags:
 1. 找到存好的 Surge，翻墙是第一步 
 2. Dropbox， 基本同步
 3. Dropbox 中有保存的 文本替换，BTT 文件 （这些文件需要时常保存）
-4. 重新安装配置 iTerm，zshrcconfig
+4. 重新安装配置 iTerm，zshrcconfig, vimrc, sshconfig, sublime-key-binding
 
 
 
