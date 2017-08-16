@@ -21,31 +21,31 @@
 			}
 		},
 		{
-			"file": "07-21-go-in-action.md",
-			"settings":
-			{
-				"buffer_size": 29,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "2017-08-12-think-bayes.md",
 			"settings":
 			{
-				"buffer_size": 740,
+				"buffer_size": 1183,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "贝叶斯思维"
 			}
 		},
 		{
-			"file": "2017-02-13-neo4j.md",
+			"file": "2017-03-14-autohotkey.md",
 			"settings":
 			{
-				"buffer_size": 2910,
+				"buffer_size": 1159,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"864718034925711\",\"865607031538024\",\"862155035541829\",\"352273017386340\",\"865607039280124\",\"004999010640000\",\"869554026695227\",\"864744035789484\",\"111111111111111\"",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix",
+				"name": "\"864718034925711\",\"865607031538024\",\"8621550355418"
 			}
 		}
 	],
@@ -57,16 +57,20 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "e ve",
+		"last_filter": "ever",
 		"selected_items":
 		[
 			[
-				"e ve",
-				"Evernote: Open Evernote Note"
+				"ever",
+				"Evernote: List recent notes"
 			],
 			[
 				"evernote",
-				"Evernote: Send to Evernote as new note"
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"e ve",
+				"Evernote: Open Evernote Note"
 			],
 			[
 				"Package Control: ins",
@@ -102,22 +106,28 @@
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-01-26-install-matplotlib-on-macos-sierra.resource"
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-01-26-install-matplotlib-on-macos-sierra.resource",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Travel"
 	],
 	"file_history":
 	[
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Travel/2017-07-03-tiger-leapping-gorge.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-02-15-dataframe.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-29-mac-setting.md",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/User/OmniMarkupPreviewer.sublime-settings",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/Evernote/Evernote.sublime-settings",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/OmniMarkupPreviewer.sublime-settings",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-02-13-neo4j.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-11-time-machine.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/07-23-iterm.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-11-ssh-socks5.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-01-latex.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2016-11-27-shortcut.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-03-14-autohotkey.md",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-29-mac-setting.md",
 		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/User/Evernote.sublime-settings",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/fintech.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-07-macos-app-language.md",
-		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/OmniMarkupPreviewer.sublime-settings",
-		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/User/OmniMarkupPreviewer.sublime-settings",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/about.markdown",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-07-mysql.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/4-10-hive.md",
@@ -147,6 +157,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tzungtzu",
+			"trek",
+			"^",
 			"快捷键",
 			"ctrl",
 			"c t r l",
@@ -201,10 +214,12 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 202.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -212,11 +227,40 @@
 				},
 				{
 					"buffer": 1,
-					"file": "07-21-go-in-action.md",
+					"file": "2017-08-12-think-bayes.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								449,
+								449
+							]
+						],
+						"settings":
+						{
+							"auto_name": "贝叶斯思维",
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 601.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "2017-03-14-autohotkey.md",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 29,
+						"buffer_size": 1159,
 						"regions":
 						{
 						},
@@ -235,59 +279,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "2017-08-12-think-bayes.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 740,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								422,
-								422
-							]
-						],
-						"settings":
-						{
-							"auto_name": "贝叶斯思维",
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "2017-02-13-neo4j.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2910,
+						"buffer_size": 161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								213
+								0,
+								161
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"auto_name": "\"864718034925711\",\"865607031538024\",\"8621550355418",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -376,7 +390,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 294.0,
+	"side_bar_width": 228.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
