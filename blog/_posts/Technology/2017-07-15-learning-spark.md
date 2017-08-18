@@ -28,6 +28,8 @@ Spark 的工作：
 
 最简单的创建 RDD 的方式就是将你程序中已存在的集合传递给 SparkContext 的 parallelize()方法，
 
+    > val rdd = sc.parallelize(Array(1, 2, 3, 4))
+
 针对外部读取数据： path = "file:///home/ubuntu/data/spark-2.0.1-bin-hadoop2.6/LICENSE"
 
     spark默认是从hdfs读取文件，也可以指定sc.textFile("路径").在路径前面加上hdfs://表示从hdfs文件系统上读
@@ -71,8 +73,15 @@ Spark 的工作：
 可用，而 join()对键值对类型的 RDD 可用。
 
 
+###常用函数
 
+    spark-shell --packages neo4j-contrib:neo4j-spark-connector:2.0.0-M2,graphframes:graphframes:0.5.0-spark2.0-s_2.11
 
+    a.groupBy(x => { if (x % 2 == 0) "even" else "odd" }).collect
+    rdd.map(x=> {if (x==3) (1,x) else (2,x)}).collect()
+    rdd.countByKey()
+
+    
 ###references
 1. http://www.jianshu.com/p/15739e95a46e
 2. http://m.blog.csdn.net/a1628864705/article/details/52757384
