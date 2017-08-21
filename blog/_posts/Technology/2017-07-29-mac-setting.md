@@ -98,6 +98,11 @@ tags:
 
 permission error 解决方法： 修改owner 为 tzungtzu
 
+###8. pip 安装制定版本
+
+	pip install py2neo==2.0.9
+
+
 ### References:
 1. [小土刀][3]()
 2. [][4]()
