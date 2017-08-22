@@ -12,34 +12,6 @@
 	"buffers":
 	[
 		{
-			"file": "2016-08-08-statistic.md",
-			"settings":
-			{
-				"buffer_size": 1226,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "2017-08-12-think-bayes.md",
-			"settings":
-			{
-				"buffer_size": 1183,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "贝叶斯思维"
-			}
-		},
-		{
-			"file": "2017-03-14-autohotkey.md",
-			"settings":
-			{
-				"buffer_size": 1159,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"contents": "\"864718034925711\",\"865607031538024\",\"862155035541829\",\"352273017386340\",\"865607039280124\",\"004999010640000\",\"869554026695227\",\"864744035789484\",\"111111111111111\"",
 			"settings":
 			{
@@ -102,15 +74,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-01-26-install-matplotlib-on-macos-sierra.resource",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Travel"
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io"
 	],
 	"file_history":
 	[
+		"/Users/tzungtzu/Workspace/git/tzungtzu.github.io/blog/_posts/Technology/2016-08-08-statistic.md",
+		"/Users/tzungtzu/Workspace/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-12-think-bayes.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Travel/2017-07-03-tiger-leapping-gorge.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-02-15-dataframe.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-29-mac-setting.md",
@@ -192,98 +161,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "2016-08-08-statistic.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								279,
-								279
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 202.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "2017-08-12-think-bayes.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1183,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								449,
-								449
-							]
-						],
-						"settings":
-						{
-							"auto_name": "贝叶斯思维",
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 601.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "2017-03-14-autohotkey.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1159,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"semi_transient": false,
 					"settings":
 					{
@@ -307,7 +189,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -390,7 +272,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 228.0,
+	"side_bar_width": 202.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
