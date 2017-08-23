@@ -1,14 +1,28 @@
-##Playing with Instagram's API 
+---
+layout: post
+title: Playing with Instagram's API 
+categories: 
+- 
+tags:
+- instagram
+- api
+- cron
+
+---
 
 以下是一个关于使用 Instagram API 的 turtorial。 同时给出利用 API 用脚本给女朋友点赞的例子。（enlightened by cyan）
 
+<!--more-->
+
 1. 安装 instagram python api.
 
-    #prerequisites
-    pip install httplib2
-    pip install simplejson
-    #
-    pip install python-instagram
+
+        #prerequisites
+        pip install httplib2
+        pip install simplejson
+        #
+        pip install python-instagram
+
 
 ！！特别注意：
 
@@ -59,7 +73,12 @@
     其中 user_id="5106250160" 改成要点赞的好友的id。
     解决 KeyError: 'data' with Python Instagram API client[5] 即可。
 
+    需要注意，由于沙盒机制，必须先邀请好友进入沙盒。
 
+
+4. 设置定时任务。
+    
+     */2 * * * *  表示每两分钟执行一次。crontab
 
     
 
