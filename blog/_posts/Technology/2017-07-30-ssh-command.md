@@ -33,3 +33,6 @@ tags:
 		shutdown -h now 现在立即关机
 		shutdown -r now 现在立即重启
 		shutdown -r +3 三分钟后重启
+
+
+
