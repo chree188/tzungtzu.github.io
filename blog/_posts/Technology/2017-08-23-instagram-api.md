@@ -80,7 +80,8 @@ tags:
     
      */2 * * * *  表示每两分钟执行一次。crontab
 
-    
+Tips:
+https://www.instagram.com/tzungtzu/media/ 可以获取 media without auth.
 
 
 
