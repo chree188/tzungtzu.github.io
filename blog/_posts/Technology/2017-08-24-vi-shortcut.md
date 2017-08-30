@@ -1,13 +1,14 @@
 ---
 layout: post
-title: vi 快捷键
-categories: Technology
-- 
+title:  vi 快捷键
+categories: 
+- Technology
 tags:
 - vi
 - shortcuts
 
 ---
+
 
 习惯用 ctrl 的[快捷键](http://tzungtzu.github.io/2016/11/27/shortcut.html)，发现在 vi 里使用不了，所以记录下方便查找和使用。
 

@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-07-03T01:49:29+00:00</updated>
+ <updated>2017-08-30T15:06:40+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -12,478 +12,669 @@
 
  
  <entry>
-   <title>Latex</title>
-   <link href="http://tzungtzu.com/2017/07/01/latex.html"/>
-   <updated>2017-07-01T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/07/01/latex</id>
-   <content type="html">&lt;h2 id=&quot;latex-&quot;&gt;latex 用法&lt;/h2&gt;
-
-&lt;p&gt;Greek Letters $\eta$ and $\mu$&lt;/p&gt;
-
-&lt;p&gt;Fraction $\frac{a}{b}$&lt;/p&gt;
-
-&lt;p&gt;Power $a^b$&lt;/p&gt;
-
-&lt;p&gt;Subscript $a_b$&lt;/p&gt;
-
-&lt;p&gt;Derivate $\frac{\partial y}{\partial t} $&lt;/p&gt;
-
-&lt;p&gt;Vector $\vec{n}$&lt;/p&gt;
-
-&lt;p&gt;Bold $\mathbf{n}$&lt;/p&gt;
-
-&lt;p&gt;To time differential $\dot{F}$&lt;/p&gt;
-
-&lt;p&gt;Matrix (lcr here means left, center or right for each column)
-[&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>How to subscribe to password protected feeds</title>
-   <link href="http://tzungtzu.com/2017/06/29/pw-protected-feed.html"/>
-   <updated>2017-06-29T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/06/29/pw-protected-feed</id>
-   <content type="html">&lt;p&gt;Usually, we use rss reader like feedly, inoreader to read RSS feeds. This feature makes it possible to subscribe to RSS feeds using any RSS news reader which supports HTTP authentication.&lt;/p&gt;
-
-&lt;p&gt;For subscribing to password-protected feeds, most RSS readers are not supported as feedly, or should get upgraded feature like inoreder. But we have other method to solve the problem.&lt;/p&gt;
-
-&lt;p&gt;To subscribe to a password-protected RSS feed, use the following formation for the RSS URL:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://[username]:[password]@[domain]/[path]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Note that the ‘@’ character in the username (if you use) must be replaced with %40 (the URL for the ‘@’ character).&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Graph Analysis</title>
-   <link href="http://tzungtzu.com/2017/06/29/graph-analysis.html"/>
-   <updated>2017-06-29T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/06/29/graph-analysis</id>
-   <content type="html">&lt;h2 id=&quot;graph-analysis&quot;&gt;Graph Analysis&lt;/h2&gt;
-
-&lt;h2 id=&quot;centrality&quot;&gt;Centrality&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;node centrality
-    &lt;ul&gt;
-      &lt;li&gt;$C_d（v_i）=\frac{d_i}{n-1}$&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;closeness centrality
-    &lt;ul&gt;
-      &lt;li&gt;$C_c(v_i)=\frac{1}{\frac{\Sigma_j(l_{ij})}{n-1}}$&lt;/li&gt;
-      &lt;li&gt;那些在社交网络中经常与人互动、人际关系颇好的人，比如公司中的八卦传播者，往往亲近中心性得分较高。&lt;/li&gt;
-      &lt;li&gt;消息传播者&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;betweenness centrality
-    &lt;ul&gt;
-      &lt;li&gt;$C_b(v_i)=\frac{\Sigma l_{st}(i)}{l_{st}}$&lt;/li&gt;
-      &lt;li&gt;$c_b(v_i)_{norm} = \frac{c_b(v_i)}{(n-1)(n-2)}$&lt;/li&gt;
-      &lt;li&gt;节点的居间程度越大，那么它在节点相互之间的信息传播起到的作用也就越大。在两个社会网络之间的人，比如跨界者，往往拥有较高的居间中心性。&lt;/li&gt;
-      &lt;li&gt;所以在社区分析的时候，也是重要的评判标准&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;eigenvalue centrality
-    &lt;ul&gt;
-      &lt;li&gt;网络中的每个节点都有一个相对指数值，高指数节点的连接对一个节点的贡献度比低指数节点的贡献度高。
-当前节点的中心性取决lj于邻居节点们的中心性。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;cluster coefficient
-    &lt;ul&gt;
-      &lt;li&gt;顶点之间结集成团的程度的系数&lt;/li&gt;
-      &lt;li&gt;C= 3×tri/（3×tri+open tri）zs&lt;/li&gt;
-      &lt;li&gt;
-        &lt;table&gt;
-          &lt;tbody&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Ci = 2&lt;/td&gt;
-              &lt;td&gt;ejk&lt;/td&gt;
-              &lt;td&gt;/i(i-1)&lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/tbody&gt;
-        &lt;/table&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+   <title>《大便通》读书笔记</title>
+   <link href="http://tzungtzu.com/2017/08/25/shit.html"/>
+   <updated>2017-08-25T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/25/shit</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;三分之一食物残渣，三分之一肠黏膜，三分之一细菌。&lt;/li&gt;
+  &lt;li&gt;大肠的功能不仅仅是排除食物残渣，大肠的蠕动影响着人类的健康，在大肠内发生的变化中，对人体有益的是发酵，有害的事腐败，即使是同种物质，如果大肠蠕动功能良好就是发酵，不好就会腐败。腐败后，腐败物质经过肠壁再次被人体吸收，成为多种疾病的诱因。&lt;/li&gt;
+  &lt;li&gt;人体脏器中，和疾病相关最多的就是大肠，万病之源。&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;三种指标所表达的“重要”，其含义是不完全一样的&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;社区发现&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;GN
-    &lt;ul&gt;
-      &lt;li&gt;分裂法
-        &lt;ul&gt;
-          &lt;li&gt;step0: 计算每条边的介数（$O(nm)$ with BFS）&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Louvain
-    &lt;ul&gt;
-      &lt;li&gt;模块度 (http://www.cnblogs.com/tychyg/p/5277137.html)&lt;/li&gt;
-      &lt;li&gt;$Q=\frac{1}{2m} \Sigma(A_{ij}-\frac{k_i k_j}{2m}) \delta(c_i,c_j)$&lt;/li&gt;
-      &lt;li&gt;模块度（modularity）指的是网络中连接社区结构内部顶点的边所占的比例，减去在同样的社团结构下任意连接这两个节点的比例的期望值。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;label propagation algrithm&lt;/li&gt;
-  &lt;li&gt;K-means&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;references&quot;&gt;references&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;复杂网络中聚类算法总结(http://www.cnblogs.com/tychyg/p/5277137.html)&lt;/li&gt;
-&lt;/ol&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Trekking List</title>
-   <link href="http://tzungtzu.com/2017/06/12/trekking-list.html"/>
-   <updated>2017-06-12T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/06/12/trekking-list</id>
-   <content type="html">&lt;p&gt;今天听说：&lt;/p&gt;
-
-&lt;p&gt;别以为休息可以随便，玩乐更需要计划，，生活也需要讲究效率&lt;/p&gt;
-
-&lt;p&gt;深以为然。另外想起wyw说我之前写的游记干货不够，决定记录下自己的已经去的和要去的徒步地点list，准备工作和tips。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;丽江虎跳峡（6-9月）&lt;/li&gt;
-  &lt;li&gt;深圳桔钓沙（3，4，10，11）&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>《理科生的人生设计指南》读书笔记</title>
-   <link href="http://tzungtzu.com/2017/05/18/turtoral.html"/>
-   <updated>2017-05-18T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/05/18/turtoral</id>
-   <content type="html">&lt;p&gt;消耗的能量应该有一个大方向让琐碎变得有意义，人生需要设计。&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;朋友熟人&lt;/h3&gt;
-
-&lt;p&gt;每年列出12个有趣任务的名单，然后自己主动去约见。&lt;/p&gt;
-
-&lt;p&gt;经常说谢谢就能找到伴侣&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;表现&lt;/h3&gt;
-
-&lt;p&gt;表现能力：向他人穿搭、表达自己想法和成果的能力&lt;/p&gt;
-
-&lt;p&gt;实力 x 表现 =  得到的社会评价
-提高表现力的五种方法：
-1. 大量撰写论文
-2. 申请专利
-3. 出版、演讲
-4. 制作博客、网页
-5. 出版刊物&lt;/p&gt;
-
-&lt;p&gt;利用自己的研究，设立受欢迎的博客&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;时间&lt;/h3&gt;
-
-&lt;p&gt;考虑人生的时间分配时，以年为单位&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;麻烦&lt;/h3&gt;
-&lt;p&gt;危机管理
-1. 做好突然出事的心理准备
-2. 突然出事的时候要诚实地面对
-3. 树立“社会整体的看法最正确”的想法&lt;/p&gt;
-
-&lt;p&gt;人生设计是个大家说。没有假说就没有进步&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>《古典音乐简单到不行》读书笔记</title>
-   <link href="http://tzungtzu.com/2017/05/15/classic-music.html"/>
-   <updated>2017-05-15T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/05/15/classic-music</id>
-   <content type="html">&lt;h3 id=&quot;section&quot;&gt;古典音乐&lt;/h3&gt;
-
-&lt;p&gt;为什么古典音乐到最后会流传到全世界，那是因为音乐的基础都在古典音乐里。（do re mi 这些音乐最根本的基础／记录音乐的乐谱／和声系统）&lt;/p&gt;
-
-&lt;p&gt;古典音乐风格：巴洛克音乐、古典乐拍、浪漫约拍、民族、近代、现代
-类型：管弦乐，格局，芭蕾舞剧，独奏，合奏&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;泛音&lt;/h3&gt;
-&lt;p&gt;常用的自然泛音，一個在空弦高八度的位置（即弦長的1/2處），它的實際音高比空弦高八度；一個在空弦音高純四度的位置（即弦長的1/4處，第一把位的3指音），它的實際音高比空弦高兩個八度；一個是在空弦音高純五度的位置（即弦長的1/3處，第一把位的4指音），它的實際音高比空弦音高8度+5度，也就是這個4指音的高八度。&lt;/p&gt;
-
-&lt;p&gt;针对ukulele，三个自然泛音对应12品（高八度），5品（高两个八度），7品（高8+5度）&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;乐曲的种类：&lt;/h3&gt;
-&lt;p&gt;交响曲：管弦乐团的音乐会上挑大梁的纯管弦乐团作品
-协奏曲：独奏乐器和管弦乐团协奏的音乐。通常三个乐章，许多是钢琴和小提琴的名曲。
-交响诗：单乐章组成的管线乐曲
-序曲：开始时演奏的短篇管弦乐曲。
-组曲：三首以上的短曲组成的作品。包含管弦乐组曲，芭蕾组曲，以及交响组曲。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;乐符：&lt;/h3&gt;
-
-&lt;p&gt;四分音符为一拍&lt;/p&gt;
-
-&lt;p&gt;同属的大调比小调多一个小三度（F大调vs d小调&lt;/p&gt;
-
-&lt;p&gt;大调音阶： WWHWWWH =&amp;gt; C D E F G A B
-小调音阶： WHWWHWW =&amp;gt; C D Eb F G Ab Bb
-五声音阶： C D E G A （去4，7）
-中古调式： C Db Eb F G Ab Bb
-全音音阶： C D E F# G# A#&lt;/p&gt;
-
-&lt;p&gt;强弱记号：
-piano  弱  forte 强&lt;/p&gt;
-
-&lt;p&gt;作曲：和声学和对位法&lt;/p&gt;
-
-&lt;p&gt;和声学：音符的直向重叠法和变化方式的学习
-Do Mi Sol
-Tonic 主音（I） 
-Dominent属音（V） 
-Subdobminent下属音（IV）&lt;/p&gt;
-
-&lt;p&gt;对位法：复调音乐的一种，两种以上的旋律线（Melody Line）彼此协调谐和，完成一首完整统一的乐曲的方法。&lt;/p&gt;
-
-&lt;p&gt;作曲法？&lt;/p&gt;
-
-&lt;p&gt;古典的和声和流行的和弦&lt;/p&gt;
-
-&lt;p&gt;G调的C和弦还是说G调的主和弦&lt;/p&gt;
-
-&lt;p&gt;在古典的和声学中，相对于C大调或d小调等乐曲具有的主调，则&lt;em&gt;以罗马数字来表示是“何种性格的和弦”&lt;/em&gt;，对照主和弦的Do Mi Sol（I），Sol Si Re 便是属和弦，Fa La Do是下属和弦&lt;/p&gt;
-
-&lt;p&gt;在和弦中，&lt;em&gt;用英文字母和数字表示构成和弦的音符，和调性或其他东西没有任何关联。&lt;/em&gt;Do Mi Sol 是C和弦，加上了比C高7度的音就是C7和弦，如果是小调和弦酒就加上m便成Cm7 （加6度音变成C6，加7，9度音变成C9）&lt;/p&gt;
-
-&lt;p&gt;（「C」 是所謂的「大3和弦」是由 I -III- V級音所組成（基本的3度和聲） 
-以C調來說組成音便是：1-3-5&lt;/p&gt;
-
-&lt;p&gt;「C7」 是所謂的「屬和弦」是由 I -III- V- bVII級音所組成 （把大7和弦的7度音降個半音就ok啦） 
-以C調來說組成音便是：1-3-5-b7&lt;/p&gt;
-
-&lt;p&gt;「Cmaj7」 是所謂的「大7和弦」是由 I -III- V- VII 級音所組成（把原來的大3和弦再加一個7度音就是啦） 
-以C調來說組成音便是：1-3-5-7&lt;/p&gt;
-
-&lt;p&gt;「Cmaj7-5」 是所謂的「大7和弦減5」是由 I -III- bV- VII級音所組成 （-5的話就是將大7和弦的5度音降半音就可了） 
-以C調來說組成音便是：1-3-b5-7 ）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;所以和声学可称作相对和声，和弦名可以叫做绝对和音。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;乐章：&lt;/h3&gt;
-
-&lt;p&gt;快板，慢板，诙谐曲，终曲（起承转合）
-基本上交响曲和弦乐四重奏是四个乐章，协奏曲和鸣奏曲等是三个乐章，也有例外。&lt;/p&gt;
-
-&lt;p&gt;旋律，和声，节奏&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Spark GraphX in Action 笔记</title>
-   <link href="http://tzungtzu.com/2017/05/04/graphx-in-action.html"/>
-   <updated>2017-05-04T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/05/04/graphx-in-action</id>
-   <content type="html">&lt;p&gt;一、&lt;/p&gt;
-
-&lt;p&gt;Hadoop的关键能力：
-1. HDFS —— 分布式存储
-2. MapReduce —— 分布式计算&lt;/p&gt;
-
-&lt;p&gt;GraphX 用边RDD 和顶点RDD 来表示一个图。&lt;/p&gt;
-
-&lt;p&gt;GraphX 内部是一个批处理系统，并没有融入Spark Streaming.&lt;/p&gt;
-
-&lt;p&gt;图存储: 分布式文件存储与图数据库
-两全其美： 事务用图数据库，图处理用GraphX。&lt;/p&gt;
-
-&lt;p&gt;图是模型化&lt;strong&gt;连接&lt;/strong&gt;数据的自然和强大的使用方式&lt;/p&gt;
-
-&lt;p&gt;Spark 也提供了M/R API（分布式计算）和分布式存储。与 Hadoop 不同，Spark 在集群的内存中保存数据，Hadoop 在集群的磁盘中存储。&lt;/p&gt;
-
-&lt;p&gt;图数据的类型，图算法&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;二、&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;无菌人没有构建免疫机能的机会，所以抵抗力非常差，没有携带肠道细菌产生的维生素K，所以受伤后血液难以凝固，伤口不易愈合。&lt;/li&gt;
+  &lt;li&gt;肠道细菌以脱落的肠粘膜和输送到大肠的食物残渣为营养来源，有益菌和有害菌营养来源不同。乳酸菌和双歧杆菌以乳糖和葡萄糖为营养源，而有害菌则从蛋白质中摄取营养后产生有害物质。&lt;/li&gt;
+  &lt;li&gt;最典型的大便颜色是土黄色和褐色。这是用来分解、吸收脂肪的胆汁导致的颜色变化。胆汁由肝脏分泌，是在十二指肠内活动的碱性液体。类脂质食物吃得越多胆汁分泌越多，大便颜色加深，颜色越深越有益于有害菌的繁殖。&lt;/li&gt;
+  &lt;li&gt;大量食用谷物、豆类、蔬菜，大便的 pH 值就会下降（酸性上升），大便就会呈黄色。&lt;/li&gt;
+  &lt;li&gt;如果大量摄入膳食纤维和碳水化合物，大便就会很粗。而如果大量食用营养价值低的垃圾食品和零食，大便就会很细，量也会减少。&lt;/li&gt;
+  &lt;li&gt;要努力培养出好的大便&lt;/li&gt;
+  &lt;li&gt;什么是好的大便，比牙膏硬比香蕉软，注意颜色和气味。&lt;/li&gt;
+  &lt;li&gt;双歧杆菌多的大便时黄褐色，会有发酵后的酸味。&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;spark—shell 提醒变量 sc可以直接使用。启动时在上下文创建一个 org.apache.spark.SparkContext 对象的实例sc.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>vi 快捷键</title>
+   <link href="http://tzungtzu.com/2017/08/24/vi-shortcut.html"/>
+   <updated>2017-08-24T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/24/vi-shortcut</id>
+   <content type="html">&lt;p&gt;习惯用 ctrl 的&lt;a href=&quot;http://tzungtzu.github.io/2016/11/27/shortcut.html&quot;&gt;快捷键&lt;/a&gt;，发现在 vi 里使用不了，所以记录下方便查找和使用。&lt;/p&gt;
 
-&lt;p&gt;Spark Shell 是 REPL（读取-求值-输出） 的一个实例。&lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;import org.apache.spark.graphx._ 
-scala 用 _ 作通配符， java 用 *。
-导入依赖，&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+      &lt;th&gt;Keystroke&lt;/th&gt;
+      &lt;th&gt;Remember as&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;左下上右&lt;/td&gt;
+      &lt;td&gt;h,j,k,l&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;下一个词词首&lt;/td&gt;
+      &lt;td&gt;w&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;上一个词词首&lt;/td&gt;
+      &lt;td&gt;b&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;下一个词词尾&lt;/td&gt;
+      &lt;td&gt;e&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;直接跳转到当前屏幕的顶部、中部、底部&lt;/td&gt;
+      &lt;td&gt;H、M、L&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跳转到文件首&lt;/td&gt;
+      &lt;td&gt;gg&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跳转到文件尾&lt;/td&gt;
+      &lt;td&gt;G&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跳转到行首&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跳转到行尾&lt;/td&gt;
+      &lt;td&gt;$&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跳转到下一行的行尾&lt;/td&gt;
+      &lt;td&gt;2$&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;跳转到当前的行首、行尾&lt;/td&gt;
+      &lt;td&gt;()&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;val graph = GraphLoader.edgeListFile(sc,”file:///home/ubuntu/data/users/zongwei/data/cit-HepTh.txt”)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Playing with Instagram's API</title>
+   <link href="http://tzungtzu.com/2017/08/23/instagram-api.html"/>
+   <updated>2017-08-23T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/23/instagram-api</id>
+   <content type="html">&lt;p&gt;以下是一个关于使用 Instagram API 的 turtorial。 同时给出利用 API 用脚本给女朋友点赞的例子。（enlightened by cyan）&lt;/p&gt;
 
-&lt;p&gt;GraphLoader是 GraphX库里的对象， edgeListFile是GL里面的函数，用于加载边列表格式的文本文件，生成图&lt;/p&gt;
-
-&lt;p&gt;graph.inDegrees.reduce((a,b)=&amp;gt;if(a._2&amp;gt;b._2) a else b)
-图对象调用 inDegrees 方法。得到一个VertexRDD
-reduce()函数，将每两条数据归并成一个结果。并且Scala的匿名函数可以将函数作为参数传递到其他函数(无需声明的内联函数的形式)&lt;/p&gt;
-
-&lt;p&gt;val v = graph.pageRank(0.001).vertices
-v.reduce((a,b)=&amp;gt;if(a._2&amp;gt;b._2) a else b)&lt;/p&gt;
-
-&lt;p&gt;三、
-1. 不变性
-2. 函数是一等公民&lt;/p&gt;
-
-&lt;p&gt;轻松声明函数为内联的并且可以到处传递它们。&lt;/p&gt;
+&lt;!--more--&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;声明式迭代技术&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装 instagram python api.&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; #prerequisites
+ pip install httplib2
+ pip install simplejson
+ #
+ pip install python-instagram
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;函数式编程不推荐使用for循环&lt;/p&gt;
+&lt;p&gt;！！特别注意：&lt;/p&gt;
 
-&lt;p&gt;函数式编程的天然迭代方式是 map() 和递归&lt;/p&gt;
-
-&lt;p&gt;map() 接受一个函数作为参数并将其应用于集合中的每一个元素。&lt;/p&gt;
-
-&lt;p&gt;递归用来让函数调用自身&lt;/p&gt;
-
-&lt;p&gt;map &amp;amp; reduce
-map() 函数将传入的一个转换函数作为参数，把一个集合转变成另一个集合。
-reduce() 函数传入一个两两合并的聚集函数作为参数((Int,Int) =&amp;gt; Int),把一个集合聚集为单个值。&lt;/p&gt;
-
-&lt;p&gt;_+_是 (a,b)=&amp;gt;a+b 的简写。
-Scala 特有的归并/聚集用法。&lt;/p&gt;
-
-&lt;p&gt;Spark:&lt;/p&gt;
-
-&lt;p&gt;scala 影响 Spark 最重要的设计概念 RDD。
-RDD是分布在集群多个节点上的数据集合。 RDD是不可变的（不能被修改或更新）。但是可以从已有RDD根据转换方法生成新的RDD。&lt;/p&gt;
-
-&lt;p&gt;延迟求值&lt;/p&gt;
-
-&lt;p&gt;RDD的API函数有两种： transformation（map()） 和 action（reduce()）. 
-前者：传入一个RDD，输出一个新的RDD。后者：除了前者的部分 
-reduce(func), collect(), count(), first(), take(n), saveAsTextFile(path), foreach(func), countByKey()&lt;/p&gt;
-
-&lt;p&gt;DAG(有向无环图)对RDD的处理被隐藏起来以便于对外提供基础的功能。&lt;/p&gt;
-
-&lt;p&gt;Spark 需要两个主要系统：分布式文件系统（HDFS）和集群管理系统（YARN）。
-Distributed Storage &amp;amp; Cluster Manager&lt;/p&gt;
-
-&lt;p&gt;SparkContext 对象是使用 Spark 的入口。&lt;/p&gt;
-
-&lt;p&gt;常用RDD操作
-1. m/r 
-2. 键值对
-3. zip()
-    同时迭代两个集合，保存在RDD中。
-    zipWithIndex()，union()（未必是追加在后面）,distinct() 
-4. MLlib&lt;/p&gt;
-
-&lt;p&gt;四、&lt;/p&gt;
-
-&lt;p&gt;GraphX 的基础类&lt;/p&gt;
-
-&lt;p&gt;Graph 是 GraphX 的基础类，它包含边RDD和顶点RDD，&lt;/p&gt;
-
-&lt;p&gt;triplets() 方法根据VertexId 将顶点和边联合在一起。返回 EdgeTriplet
-[VD,ED] 类型的RDD，它是 Edge[ED] 的子类。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>社交网络在互联网金融中的应用</title>
-   <link href="http://tzungtzu.com/2017/04/18/fin-network.html"/>
-   <updated>2017-04-18T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/04/18/fin-network</id>
-   <content type="html">&lt;p&gt;互联网金融面临的欺诈风险
-1. 伪冒欺诈：变更申请资料，获得高额额度
-2. 欺诈交易：无还款意愿；双向欺诈&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;社交网络算法运用到反欺诈
-1. 分析节点指标：centrailty，cluster coefficient, triangle count, connected compoents
-2. PageRank
-3. 社区发现： GN，FastUnfolding， LPA， SLPA，WalkTrap&lt;/p&gt;
-
-&lt;p&gt;具体判定：
-一度/二度触黑
-一机多人
-组团欺诈
-识别关联商家是否正常（需要区分不同类型的用户）&lt;/p&gt;
+&lt;p&gt;由于这个包已经不再维护，导致有一些代码需要修改，否则后续报错。下面会提示。&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;与坏用户有大量关联的用户更可能是坏用户&lt;/li&gt;
-  &lt;li&gt;PageRank 高分段部分的坏账率更高？&lt;/li&gt;
-  &lt;li&gt;通过社区发现算法来评估每个用户的组团欺诈风险&lt;/li&gt;
-  &lt;li&gt;挖掘失联用户的通信社交网络&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;获取 access token&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;在 Instagram 的开发者中心创建一个 app，获取后续需要的 &lt;em&gt;client_id&lt;/em&gt; 和 &lt;em&gt;client_secret&lt;/em&gt; 。&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;下载&lt;a href=&quot;http://movii.github.io/blog/2017/03/14/node-instagram-get-access-token/&quot;&gt;get_access_token.py&lt;/a&gt;并运行，按要求输入 &lt;em&gt;client_id,client_secret,redirect_url&lt;/em&gt; 以及 &lt;em&gt;code&lt;/em&gt;，输出 &lt;em&gt;access_token&lt;/em&gt;&lt;/p&gt;
+
+        &lt;p&gt;fix for OAuth2AuthExchangeError: You must provide a client_id 
+  在 &lt;em&gt;~/Library/Python/2.7/site-package *中 *instagram/oauth2.py&lt;/em&gt; 102行&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  -        response, content = http_object.request(url, method=&quot;POST&quot;, body=data)
+  +        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+  +        response, content = http_object.request(url, method=&quot;POST&quot;, body=data, headers=headers)
+&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;通过 access token 点赞。&lt;/p&gt;
+
+    &lt;p&gt;main.py&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from time import sleep  
+from instagram.client import InstagramAPI
+import logging
+
+access_token = &quot;&quot;ENTER YOUR ACCESS TOKEN HERE&quot;&quot;
+api = InstagramAPI(access_token=access_token,  
+            client_ips=&quot;YOUR IP&quot;,
+            client_secret=&quot;YOUR SECRET&quot;)
+
+recent_media, next_ = api.user_recent_media(user_id=&quot;5106250160&quot;, count=20)
+
+for media in recent_media:  
+    # Where the media is
+    id_ = media.id
+
+    users = [user.username for user in media.likes]
+    print users
+
+        if &quot;YOUR USERNAME&quot; in users:
+        print(&quot;IN PHOTO&quot;)
+
+    else:
+        print(&quot;LIKING PICTURE&quot;)
+        api.like_media(media_id=id_)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;其中 user_id=”5106250160” 改成要点赞的好友的id。
+解决 KeyError: ‘data’ with Python Instagram API client[5] 即可。&lt;/p&gt;
+
+    &lt;p&gt;需要注意，由于沙盒机制，必须先邀请好友进入沙盒。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;设置定时任务。&lt;/p&gt;
+
+    &lt;p&gt;*/2 * * * *  表示每两分钟执行一次。crontab&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tips:
+https://www.instagram.com/tzungtzu/media/ 可以获取 media without auth.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://movii.github.io/blog/2017/03/14/node-instagram-get-access-token/&quot;&gt;笔记：获取 Instagram API 的 access token&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://leesonhsu.blogspot.hk/2016/04/instagram-api.html&quot;&gt;http://leesonhsu.blogspot.hk/2016/04/instagram-api.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://smashballoon.com/instagram-feed/find-instagram-user-id/?username=gromitintardis&amp;amp;5611zzl19832tjrl=4&quot;&gt;https://smashballoon.com/instagram-feed/find-instagram-user-id/?username=gromitintardis&amp;amp;5611zzl19832tjrl=4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/vgavro/python-instagram/commit/9dfc264571ad7c343af3899445d13afedf23e3aa&quot;&gt;instagram-python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/33924581/keyerror-data-with-python-instagram-api-client&quot;&gt;https://stackoverflow.com/questions/33924581/keyerror-data-with-python-instagram-api-client&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/facebookarchive/python-instagram/blob/master/README.md&quot;&gt;https://github.com/facebookarchive/python-instagram/blob/master/README.md&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>最近几周/四月</title>
-   <link href="http://tzungtzu.com/2017/04/17/april.html"/>
-   <updated>2017-04-17T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/04/17/april</id>
-   <content type="html">&lt;p&gt;今天照例打开reeder，发现几个关注的博主都更新了，听着别人讲着自己的故事，也想回顾自己的故事。&lt;/p&gt;
+   <title>贝叶斯思维</title>
+   <link href="http://tzungtzu.com/2017/08/12/think-bayes.html"/>
+   <updated>2017-08-12T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/12/think-bayes</id>
+   <content type="html">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;联合概率： $p(A and B)=p(A)*p(B&lt;/td&gt;
+      &lt;td&gt;A)$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$p(B_1&lt;/td&gt;
+      &lt;td&gt;V)=\frac{p(B_1)p(V&lt;/td&gt;
+      &lt;td&gt;B_1)}{p(V)}=\frac{p(B1)p(V&lt;/td&gt;
+      &lt;td&gt;B_1)}{p(B_1)p(V&lt;/td&gt;
+      &lt;td&gt;B_1)+p(B_1)p(V&lt;/td&gt;
+      &lt;td&gt;B_2)+…}$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;月初是清明，也参加了人生第一个葬礼。回到家的时候天气非常不好，看到大家的气息也都阴沉沉的，父亲因为一周内说话太多，喉咙都哑了，让人心疼。农村的葬礼，仪式感非常重视，一直忙到下午四点，清醒的是，这一天没有下雨，如父亲所说，老天爷。之后和另一个朋友聊到葬礼，她也是第一次看到父亲流泪，那么感性。一晃我们长大，却经常要在工作和亲情中做选择，我们应该怎么选择。&lt;/p&gt;
+&lt;p&gt;###历时诠释
+根据数据集 D 的内容变化更新假设概率 H 。&lt;/p&gt;
 
-&lt;p&gt;这个月是以去顺德吃吃吃开始的，度过了蛮愉快的三天，冲淡了清明的阴霾。吃了很多，发现最好吃的还是早茶，也不用迷恋名店，早些起来路过一些当地的酒店，如果门口有本地老人在等待，那一定不会让你失望。相比猪肉婆却让我们失望了，没有吃到招牌的炒沙虫，以及黑暗的柚皮煲，实在是名不副实，尽管如此，还是有很多人前往，需要预约才能吃到。&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$p(H&lt;/td&gt;
+      &lt;td&gt;D)=\frac{p(H)p(D&lt;/td&gt;
+      &lt;td&gt;H)}{p(D)}$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;如果说这两周其他大事，那就一定要数谈恋爱了。很久没有恋爱了，对此也十分谨慎，遇到一个彼此交流很轻松的朋友不容易，我也不想错过。和以前恋爱很不一样的是，感觉什么都能直接拿上台面讲（也许是我以前的恋爱方式不对？）。彼此不费劲是我们对这份感情最大的安全感。很期待接下来一起写的生活。自己也会更加努力。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;p(H) 先验概率，即在得到新数据前某一假设的概率。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;p(H&lt;/td&gt;
+          &lt;td&gt;D) 后验概率，即看到新数据后，我们要计算的该假设的概率。&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;p(D&lt;/td&gt;
+          &lt;td&gt;H) &lt;a href=&quot;https://www.wikiwand.com/zh-hk/%E4%BC%BC%E7%84%B6%E5%87%BD%E6%95%B0#/.E6.9C.80.E5.A4.A7.E4.BC.BC.E7.84.B6.E4.BC.B0.E8.AE.A1&quot;&gt;似然度&lt;/a&gt;，该假设下得到这一数据的概率。&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;p(D) 标准化常量，在任何假设下得到这一数据的概率。&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;自己也成了抛弃单身朋友的人，希望还能和好朋友们保持联系。也许恋爱的确会让人少18:11看书，少时间弹琴，但是我的生活中多了一个彼此，多么让人开心的事情。&lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;这几周还见了几个很多年不见的朋友同学，都让我看到了自己行业外的世界，无论是医生还是金融方面的同学。都很有冲进让自己动力满满。&lt;/p&gt;
+&lt;p&gt;似然比是贝叶斯计算中最简单的部分；标准化常量比较棘手，它被定义为所有假设条件下这一数据出现的概率，但因为考虑的是最一般的情况，所以不容易确定这个常量在具体应用场合的现实意义。&lt;/p&gt;
+
+&lt;p&gt;最常见的，可以指定一组假设集来简化。&lt;/p&gt;
+
+&lt;p&gt;互斥：集合中最多一个假设为真。
+完备：集合中，至少一个为真，且集合包含了所有的假设。&lt;/p&gt;
+
+&lt;p&gt;###估计&lt;/p&gt;
+
+&lt;p&gt;前验概率为均匀分布&lt;/p&gt;
+
+&lt;p&gt;前验概率为幂律分布&lt;/p&gt;
+
+&lt;p&gt;置信区间：
+对于点估计，通常使用平均数、中位数或者最大似然值
+对于区间，我们通常给出两个计算值，使得位置量有905的可能落入这两个值之间。这些值定义了一个置信区间。&lt;/p&gt;
+
+&lt;p&gt;积累分布函数：概率密度函数的积分&lt;/p&gt;
+
+&lt;p&gt;###胜率&lt;/p&gt;
+
+&lt;p&gt;胜率（odds）发生的概率和不发生概率的比值。
+赔率是 1/胜率&lt;/p&gt;
+
+&lt;p&gt;如果有A，B两个假设，后验概率的比值为&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$\frac{p(A&lt;/td&gt;
+      &lt;td&gt;D)}{p(B&lt;/td&gt;
+      &lt;td&gt;D)}=\frac{p(A)p(D&lt;/td&gt;
+      &lt;td&gt;A)}{p(B)p(D&lt;/td&gt;
+      &lt;td&gt;B)}$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;如果 A,B 互斥且穷尽，那么 $p(B)=1-p(A)$，那么先验，后验的比率都可以做为胜率，所以就有了贝叶斯定理的胜率形式。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$o(A&lt;/td&gt;
+      &lt;td&gt;D)=o(A)\frac{p(D&lt;/td&gt;
+      &lt;td&gt;A)}{p(D&lt;/td&gt;
+      &lt;td&gt;B)}$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;如果某一假设随着数据的出现呈现了更大的可能性，就可以说“数据支持了假设”。&lt;/p&gt;
+
+&lt;p&gt;胜率模式变形：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$\frac{o(A&lt;/td&gt;
+      &lt;td&gt;D)}{o(A)}=\frac{p(D&lt;/td&gt;
+      &lt;td&gt;A)}{p(D&lt;/td&gt;
+      &lt;td&gt;B)}$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;等式左边是后验胜率和鲜艳胜率的比值，右边是似然比，也称为&lt;strong&gt;贝叶斯因子&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果贝叶斯因子大于1，意味着数据更支持假设A。&lt;/p&gt;
+
 </content>
  </entry>
  
  <entry>
-   <title>《为数据而生》读书笔记</title>
-   <link href="http://tzungtzu.com/2017/04/08/big-data.html"/>
-   <updated>2017-04-08T00:00:00+00:00</updated>
-   <id>http://tzungtzu.com/2017/04/08/big-data</id>
-   <content type="html">&lt;p&gt;信息量很丰富的一本书，同时记住的是作者丰富的项目经历和认识的牛人&lt;/p&gt;
+   <title>恢复系统小记</title>
+   <link href="http://tzungtzu.com/2017/08/11/time-machine.html"/>
+   <updated>2017-08-11T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/11/time-machine</id>
+   <content type="html">&lt;p&gt;昨天手一抖关闭 FileVault 功能，解密的时候非正常关机，导致系统坏了，通过 Time Machine 恢复系统到四月的 macOS Sierra。&lt;/p&gt;
 
-&lt;p&gt;一切都会被记录，一切都会被分析。&lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;主动或被动，我们都是数据的贡献者。&lt;/p&gt;
+&lt;p&gt;还好最近一直在处理 mac 备份，同步的问题，按照&lt;a href=&quot;http://tzungtzu.github.io/2017/07/29/mac-setting.html&quot;&gt;配置 macOS&lt;/a&gt; 的步骤：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;找到存好的 Surge，翻墙是第一步&lt;/li&gt;
+  &lt;li&gt;Dropbox， 基本同步&lt;/li&gt;
+  &lt;li&gt;Dropbox 中有保存的 文本替换，BTT 文件 （这些文件需要时常保存）&lt;/li&gt;
+  &lt;li&gt;重新安装配置 iTerm，zshrcconfig, vimrc, sshconfig, sublime-key-binding&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>通过代理连接 ssh</title>
+   <link href="http://tzungtzu.com/2017/08/11/ssh-socks5.html"/>
+   <updated>2017-08-11T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/11/ssh-socks5</id>
+   <content type="html">&lt;p&gt;安装 Surge 以后，通过&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    echo export ALL_PROXY=socks5://127.0.0.1:6153
+    curl ip.gs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;可以将终端翻墙，但是依然无法连接 ssh，一直通过 Proxifier 来连接 ssh 服务器。&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;下面介绍通过ssh代理(跳板)在终端连线ssh服务器&lt;/p&gt;
+
+&lt;p&gt;使用nc命令(netcat)实现，假设本地SSH代理的监听端口是6153，则ProxyCommand为&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ProxyCommand nc -x 127.0.0.1:3000 %h %p
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在命令行里：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ssh -i ~/Workspace/keys\&amp;amp;/baolei.pem -oProxyCommand=&quot;nc -x 127.0.0.1:6153 %h %p&quot; ubuntu@52.77.156.128
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;也可以添加到&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/conf&lt;/code&gt;里：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # ---ssh
+    Host work
+            Hostname 52.77.156.128
+            User ubuntu
+            PreferredAuthentications publickey
+            IdentityFile ~/Workspace/keys&amp;amp;/baolei.pem
+            ProxyCommand nc -x 127.0.0.1:6153 %h %p
+    #---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;nc也可以用于HTTPS代理，这需要指定所使用的协议，即添加 -X connect 参数。比如ssh_config中的例子&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ProxyCommand /usr/bin/nc -X connect -x 192.0.2.0:8080 %h %p
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;netcat也有很多其他用途，有兴趣可以看看&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.slahser.com/2016/10/03/Migrate-fish88-to-Surge/&quot;&gt;https://www.slahser.com/2016/10/03/Migrate-fish88-to-Surge/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;https://medium.com/@scomper/surge-%E7%9A%84%E5%A2%9E%E5%BC%BA%E6%A8%A1%E5%BC%8F-tun-cc0aaad86ff5&lt;/li&gt;
+  &lt;li&gt;https://www.lainme.com/doku.php/blog/2011/01/%E9%80%8F%E8%BF%87%E4%BB%A3%E7%90%86%E8%BF%9E%E6%8E%A5ssh&lt;/li&gt;
+  &lt;li&gt;https://blog.gtwang.org/linux/linux-utility-netcat-examples/&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>macOS 下修改 app 语言</title>
+   <link href="http://tzungtzu.com/2017/08/07/macos-app-language.html"/>
+   <updated>2017-08-07T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/08/07/macos-app-language</id>
+   <content type="html">&lt;p&gt;macOS 系统语言为英文情况下，修改特定 app 语言为中文。以下以 maps 为例。&lt;/p&gt;
+
+&lt;p&gt;~&lt;!--more--&gt;~&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;[View]-&amp;gt; [Labels]-&amp;gt; [Always Show Labels in English]  取消后，地图上显示的名字将本地化，显示为中文。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果需要 app 的设置都为中文，使用命令行：
+‘‘defaults write com.apple.Maps AppleLanguages ‘(“zh-CN”)’&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;macOS 界面在默认英文语言环境下最赏心悦目，也不用担心翻译带来的歧义；而对于地图等本地化软件，使用中文界面更好。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ssh使用公钥授权不通过的问题解决</title>
+   <link href="http://tzungtzu.com/2017/07/31/ssh-publickey.html"/>
+   <updated>2017-07-31T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/07/31/ssh-publickey</id>
+   <content type="html">&lt;p&gt;如果你连接 ssh 出现问题：
+	Permission denied (publickey,gssapi-keyex,gssapi-with-mic).&lt;/p&gt;
+
+&lt;h2 id=&quot;不用怀疑是你的pem文件有错误&quot;&gt;不用怀疑，是你的pem文件有错误。&lt;/h2&gt;
 
 &lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
 
-&lt;p&gt;六种数据类型：文本、图像、语音、网络、空间轨迹和时间序列。&lt;/p&gt;
+&lt;p&gt;不过，偶尔也会有以下的情况：
+1、下面两个目录的所有权必须是user，所属组也应该是user，权限必须为700
+	\home\user
+	\home\user.ssh
+2、下面公钥文件的所有权必须是user，所属组也应该是user，权限必须为644
+	\home\user.ssh\authorized_keys
+3、下面私钥文件的所有权必须是user，所属组也应该是user，权限必须是600
+	\home\user.ssh\id_rsa&lt;/p&gt;
 
-&lt;p&gt;web 1.0 分析
-2.0 外化
-3.0 集成&lt;/p&gt;
+&lt;p&gt;如果还有问题：将 &lt;code class=&quot;highlighter-rouge&quot;&gt;tc/ssh/sshd_config&lt;/code&gt; 文件进行如下修改：
+	RSAAuthentication yes
+	PubkeyAuthentication yes
+	AuthorizedKeysFile     .ssh/authorized_keys&lt;/p&gt;
 
-&lt;p&gt;成为大数据企业：
-1. 全面数据化
-2. 整理数据资源，建立数据标准，形成管理规范
-3. 建设数据管理平台
-4. 建立海量数据的深入分析能力
-5. 建立外部数据的战略储备
-6. 建立数据的外部创新能力
-7. 推动自身数据的开放与共享
-8. 数据产业的战略投资布局&lt;/p&gt;
+&lt;p&gt;重启sshd 服务&lt;/p&gt;
+
+&lt;p&gt;—&lt;/p&gt;
+&lt;h3 id=&quot;mac-设置-ssh-登录免密登录&quot;&gt;Mac 设置 ssh 登录免密登录&lt;/h3&gt;
+
+&lt;h4 id=&quot;客户端-生成密钥&quot;&gt;客户端 生成密钥&lt;/h4&gt;
+
+&lt;h4 id=&quot;ssh-服务端配置&quot;&gt;ssh 服务端配置&lt;/h4&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;http://laowafang.blog.51cto.com/251518/1364298&lt;/a&gt;()&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/1fdcd9d9cb2f&quot; title=&quot;http://www.jianshu.com/p/1fdcd9d9cb2f&quot;&gt;http://www.jianshu.com/p/1fdcd9d9cb2f &lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ssh 常用命令</title>
+   <link href="http://tzungtzu.com/2017/07/30/ssh-command.html"/>
+   <updated>2017-07-30T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/07/30/ssh-command</id>
+   <content type="html">&lt;h3 id=&quot;--登陆&quot;&gt;- 登陆&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	ssh 主机名@主机IP   #输入对方密码就ok了。如果需要pem，加入-i。 ### - 远程复制(secure copy)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp -r  要传输的文件  我的主机名@主机的IP：路径
+scp [参数] [原路径] [目标路径] ##-r 递归复制整个目录。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从本地服务器复制到远程服务器
+	scp local_file remote_username@remote_ip:remote_folder
+	$scp -r local_folder remote_username@remote_ip:remote_folder&lt;/p&gt;
+
+&lt;h3 id=&quot;--关闭远程登录&quot;&gt;- 关闭远程登录&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	exit  #主动断开和对方的连接
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;--重启服务器&quot;&gt;- 重启服务器&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	sudo reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;--关机&quot;&gt;- 关机&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	shutdown -h now 现在立即关机
+	shutdown -r now 现在立即重启
+	shutdown -r +3 三分钟后重启
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mac 环境配置</title>
+   <link href="http://tzungtzu.com/2017/07/29/mac-setting.html"/>
+   <updated>2017-07-29T00:00:00+08:00</updated>
+   <id>http://tzungtzu.com/2017/07/29/mac-setting</id>
+   <content type="html">&lt;h3 id=&quot;1-翻墙工具&quot;&gt;1. 翻墙工具：&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Surge/Shadowsocks (保存在evernote)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2-常用工具&quot;&gt;2. 常用工具：&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Dropbox, Alfred, Paste，iTerm，Sublimes, Resilio, 1Password, Bartender, SourceTree,&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;很多配置在 Dropbox 所以首先要下载 Dropbox, 个人将 licences，settings， backups 都存在 Dropbox。&lt;/li&gt;
+  &lt;li&gt;Alfred 通过 Advanced-Syncing 同步（必须主设备先同步，从设备的配置会被覆盖） &lt;del&gt;workflow需要另外下载&lt;/del&gt;workflow 也可以自动同步。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-配置工作环境&quot;&gt;3. 配置工作环境：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Homebrew：
+      /usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Homebrew的使用&lt;/p&gt;
+
+&lt;p&gt;• 添加到环境变量 &lt;code class=&quot;highlighter-rouge&quot;&gt;echo 'export PATH=&quot;/usr/local/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bash_profile&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;• 检查并更新 &lt;code class=&quot;highlighter-rouge&quot;&gt;brew doctor; brew update&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;• 安装包 &lt;code class=&quot;highlighter-rouge&quot;&gt;brew install &amp;lt;package_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;• 更新包 &lt;code class=&quot;highlighter-rouge&quot;&gt;brew upgrade &amp;lt;package_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;• 清理旧版本 &lt;code class=&quot;highlighter-rouge&quot;&gt;brew cleanup&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;• 列出包 &lt;code class=&quot;highlighter-rouge&quot;&gt;brew list --versions&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zsh:
+      wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+      #设置theme 
+      #下载zsh语法高亮
+      ##brew install zsh-syntax-highlighting，需要把 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 添加到 .zshrc 的最后面。
+      ##zsh alias&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://get.ftqq.com/992.get&quot;&gt;http://get.ftqq.com/992.get&lt;/a&gt;
+&lt;a href=&quot;http://blog.jobbole.com/80620/&quot;&gt;http://blog.jobbole.com/80620/&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;python 
+      brew install python&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;pip
+    curl https://bootstrap.pypa.io/ez_setup.py -o - | sudo python
+    sudo easy_install pip
+    或者
+    wget 
+    sudo python get-pip.py&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;###4.  vim语法高亮
+		sudo cp /usr/share/vim/vimrc ~/.vimrc 
+		sudo mkdir colors
+		sudo mv solarized.vim ~/.vim/colors&lt;/p&gt;
+
+&lt;p&gt;###5. ‘~/.ssh/conf, zshrc’配置&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	# Example aliases
+	alias clr='clear'
+	alias grep=&quot;grep --color=auto&quot;
+	alias -s html='vim'   # 在命令行直接输入后缀为 html 的文件名，会在 Vim 中打开
+	alias -s rb='vim'     # 在命令行直接输入 ruby 文件，会在 Vim 中打开
+	alias -s py='vim'      # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+	alias -s js='vim'
+	alias -s c='vim'
+	alias -s java='vim'
+	alias -s txt='vim'
+	alias -s gz='tar -xzvf' # 在命令行直接输入后缀为 gz 的文件名，会自动解压打开
+	alias -s tgz='tar -xzvf'
+	alias -s zip='unzip'
+	alias -s bz2='tar -xjvf'
+	alias zshconfig='vi ~/.zshrc'
+	alias vimconfig='vi ~/.vimrc'
+	alias ll='ls -l'
+	alias vi='vim'
+	alias subl='open -a &quot;Sublime Text&quot;'
+	alias zshconfig='vi ~/.zshrc'
+	alias vimconfig='vi ~/.vimrc'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;###6. Markdown Sublime &lt;a href=&quot;https://github.com/SublimeText-Markdown/MarkdownEditing#key-bindings&quot;&gt;shortcut&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;###7. Mackup &lt;a href=&quot;https://github.com/lra/mackup&quot;&gt;配置恢复&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;permission error 解决方法： 修改owner 为 tzungtzu&lt;/p&gt;
+
+&lt;p&gt;###8. pip 安装制定版本&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install py2neo==2.0.9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wdxtub.com/2016/08/08/mac-work-env/&quot;&gt;小土刀&lt;/a&gt;()&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md&quot;&gt;&lt;/a&gt;()&lt;/li&gt;
+&lt;/ol&gt;
+
 </content>
  </entry>
  

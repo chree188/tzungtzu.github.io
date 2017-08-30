@@ -118,7 +118,7 @@
 
 <p><!--more--></p>
 
-<h3 id="readmemd-">1.  找不到 README.md 文件</h3>
+<h3 id="1--找不到-readmemd-文件">1.  找不到 README.md 文件</h3>
 <p>需要将Spark目录下的README.md 文件放到Spark使用的文件系统的相应位置。如果使用的是HDFS，应该放在 /usr/YOUR_USER_NAME 目录下，或者将文件路径改为绝对路径。如：</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>val textFile = “/usr/mine/path/README.md” 
@@ -129,13 +129,13 @@
 </code></pre>
 </div>
 
-<h3 id="simpleapp-">2. 安装 simpleApp 的目录结构</h3>
+<h3 id="2-安装-simpleapp-的目录结构">2. 安装 simpleApp 的目录结构</h3>
 <p>新建文件夹，包含simpleApp.scala, simple.sbt 两个文件</p>
 
-<h3 id="sbt">3. 无法使用 sbt</h3>
+<h3 id="3-无法使用-sbt">3. 无法使用 sbt</h3>
 <p>Spark 中没有自带 sbt，需要自行<a href="http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html">安装</a></p>
 
-<h3 id="connector">4.  connector</h3>
+<h3 id="4--connector">4.  connector</h3>
 
 <p>下载最新  否则 mvn install 报错
  https://spark-packages.org/package/neo4j-contrib/neo4j-spark-connector</p>
@@ -151,6 +151,15 @@
 <p>dataframe 遵守RDD具有的规则，如转换和行动。另外还有额外的SQL接口
  df.select(‘year’).count()   其中select 为转换， count 为行动操作。</p>
 
+<h3 id="5-graphframe-安装错误">5. graphframe 安装错误</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>file:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar 
+
+把相关的依赖包安装到指定位置即可
+</code></pre>
+</div>
+
+<p>[3]:</p>
 
   </section>
   <section class="comment">

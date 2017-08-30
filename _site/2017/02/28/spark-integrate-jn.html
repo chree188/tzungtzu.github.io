@@ -118,11 +118,11 @@
   <section class="post">
   <p>Jupyer Notebook is an interactive notebook environment and it supports Spark.</p>
 
-<h3 id="jupyter-notebook-installation">1 . jupyter Notebook installation</h3>
+<h3 id="1--jupyter-notebook-installation">1 . jupyter Notebook installation</h3>
 
-<h3 id="scala-spark-installation">2 . Scala, Spark installation</h3>
+<h3 id="2--scala-spark-installation">2 . Scala, Spark installation</h3>
 
-<h3 id="toree-installation">3 . <strong>Toree installation</strong></h3>
+<h3 id="3--toree-installation">3 . <strong>Toree installation</strong></h3>
 
 <p>Apache Toree is tool to configure Jupiter notebook to run with Spark.</p>
 
@@ -132,7 +132,7 @@
 
 <p><!--more--></p>
 
-<h3 id="configure-different-apache-toree-kernels">4 . Configure different Apache Toree kernels</h3>
+<h3 id="4--configure-different-apache-toree-kernels">4 . Configure different Apache Toree kernels</h3>
 
 <p>for Scala:</p>
 
@@ -152,18 +152,19 @@
 </code></pre>
 </div>
 
-<h3 id="and-you-can-check-installation-by">5 .  and you can Check installation by</h3>
+<h3 id="5---and-you-can-check-installation-by">5 .  and you can Check installation by</h3>
 <div class="highlighter-rouge"><pre class="highlight"><code>$jupyter kernelspec list
 </code></pre>
 </div>
 
-<h3 id="add-3rd-party-libraries">6. add 3rd Party Libraries</h3>
+<h3 id="6-add-3rd-party-libraries">6. add 3rd Party Libraries</h3>
 <ol>
   <li>List all packages you will use.</li>
 </ol>
 
 <p>SPARK_PKGS=$(cat « END | xargs echo | sed ‘s/ /,/g’
 neo4j-contrib:neo4j-spark-connector:2.0.0-M2
+graphframes:graphframes:0.5.0-spark2.0-s_2.11
 END)</p>
 
 <ol>
@@ -177,12 +178,11 @@ SPARK_HOME=~/data/spark-2.0.1-bin-hadoop2.6/</p>
   <li>Configure Toree to use these packages.</li>
 </ol>
 
-<p>jupyter toree install \
+<p>sudo jupyter toree install \
   –spark_home=$SPARK_HOME \
   –spark_opts=$SPARK_OPTS</p>
 
-<p>22222222222
-Adding Remote Packages
+<p>Adding Remote Packages
 You can use Apache Toree’s AddDeps magic to add dependencies from Maven central. You must specify the company name, artifact ID, and version. To resolve any transitive dependencies, you must explicitly specify the –transitive flag.</p>
 
 <h3 id="references">references:</h3>

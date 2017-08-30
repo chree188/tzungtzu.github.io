@@ -112,9 +112,9 @@
   
   </section>
   <section class="post">
-  <h3 id="section">1. 图基本概念</h3>
+  <p>###1. 图基本概念</p>
 
-<h4 id="section-1">数学方式表示社会网络</h4>
+<p>####数学方式表示社会网络</p>
 
 <p>~<!--more-->~</p>
 
@@ -145,21 +145,21 @@
   </tbody>
 </table>
 
-<h4 id="traversal">遍历 Traversal</h4>
+<p>####遍历 Traversal</p>
 
-<p><code class="highlighter-rouge">python
-networkx.traversal.dfs_edges()
-networkx.traversal.dfs_tree()
-networkx.traversal.bfs_edges()
-networkx.traversal.bfs_tree()
-</code></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">networkx</span><span class="o">.</span><span class="n">traversal</span><span class="o">.</span><span class="n">dfs_edges</span><span class="p">()</span>
+<span class="n">networkx</span><span class="o">.</span><span class="n">traversal</span><span class="o">.</span><span class="n">dfs_tree</span><span class="p">()</span>
+<span class="n">networkx</span><span class="o">.</span><span class="n">traversal</span><span class="o">.</span><span class="n">bfs_edges</span><span class="p">()</span>
+<span class="n">networkx</span><span class="o">.</span><span class="n">traversal</span><span class="o">.</span><span class="n">bfs_tree</span><span class="p">()</span>
+</code></pre>
+</div>
 
-<h4 id="paths">路径 Paths</h4>
-<p><code class="highlighter-rouge">python
-networkx.algorithm.shortest_path()
-</code></p>
+<p>####路径 Paths</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">networkx</span><span class="o">.</span><span class="n">algorithm</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">()</span>
+</code></pre>
+</div>
 
-<h4 id="section-2">图的距离： 节点和邻居如何联系</h4>
+<p>####图的距离： 节点和邻居如何联系</p>
 
 <ol>
   <li>最短路径</li>
@@ -167,11 +167,11 @@ networkx.algorithm.shortest_path()
   <li>欧几里得距离： 欧式距离短表示结构，作用相似</li>
 </ol>
 
-<h3 id="section-3">2. 节点层面分析</h3>
+<p>###2. 节点层面分析</p>
 
-<h4 id="section-4">社会网络的取样和数据采集法</h4>
+<p>####社会网络的取样和数据采集法</p>
 
-<h4 id="section-5"><strong>中心性</strong> 权力和影响力</h4>
+<p>####<strong>中心性</strong> 权力和影响力</p>
 
 <ol>
   <li>程度中心性 Degree Centrality：粉丝数量</li>
@@ -181,23 +181,24 @@ networkx.algorithm.shortest_path()
   <li>PageRank</li>
 </ol>
 
-<h3 id="section-6">3. 群体层面分析</h3>
-<p>####子图——自我中心网
-####岛屿方法
-```python
-#trim
-def trim_degree(g,degree=1):
-    g2 = g
-    d = g2.degree()
-    for n in g2.nodes():
-        if d[n]&lt;= degree: g2.remove_node(n)
-    return g2</p>
+<p>###3. 群体层面分析
+####子图——自我中心网
+####岛屿方法</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#trim</span>
+<span class="k">def</span> <span class="nf">trim_degree</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">degree</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">g2</span> <span class="o">=</span> <span class="n">g</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">g2</span><span class="o">.</span><span class="n">degree</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">g2</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;=</span> <span class="n">degree</span><span class="p">:</span> <span class="n">g2</span><span class="o">.</span><span class="n">remove_node</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">g2</span>
+    
+    
+<span class="n">trim_degree</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 
-<p>trim_degree(g,2)</p>
-
-<p>print len(g)
-nx.draw(g,with_labels= True)
-```</p>
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">with_labels</span><span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+</code></pre>
+</div>
 
 
   </section>

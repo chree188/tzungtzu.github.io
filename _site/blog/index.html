@@ -86,195 +86,108 @@
   <article class="content">
     
     <section class="title">
-      <h2><a href="/2017/07/01/latex.html">Latex</a></h2>
+      <h2><a href="/2017/08/25/shit.html">《大便通》读书笔记</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2017-07-01">2017-07-01</time>
+      <time datetime="2017-08-25">2017-08-25</time>
     </span>
     
     
     
     <span class="tags">
       
-    </span>
-    
-    </section>
-    <section class="post">
-		        <div class="content">
-					 <h2 id="latex-">latex 用法</h2>
-
-<p>Greek Letters $\eta$ and $\mu$</p>
-
-<p>Fraction $\frac{a}{b}$</p>
-
-<p>Power $a^b$</p>
-
-<p>Subscript $a_b$</p>
-
-<p>Derivate $\frac{\partial y}{\partial t} $</p>
-
-<p>Vector $\vec{n}$</p>
-
-<p>Bold $\mathbf{n}$</p>
-
-<p>To time differential $\dot{F}$</p>
-
-<p>Matrix (lcr here means left, center or right for each column)
-[</p>
-
-<!-- 		        </div> -->
-		    	<!-- 标签 -->
-       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/07/01/latex.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
- <!-- readmore按钮 -->
-<br />
-        	
-<!--     </section> -->
-<!--     </article> -->
-  
-    <section class="title">
-      <h2><a href="/2017/06/29/pw-protected-feed.html">How to subscribe to password protected feeds</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-06-29">2017-06-29</time>
-    </span>
-    
-    
-    
-    <span class="tags">
+      <a href="/tags.html#大便" title="大便">#大便</a>
       
-      <a href="/tags.html#rss" title="rss">#rss</a>
+      <a href="/tags.html#大肠" title="大肠">#大肠</a>
       
-      <a href="/tags.html#feed" title="feed">#feed</a>
+      <a href="/tags.html#酸奶" title="酸奶">#酸奶</a>
+      
+      <a href="/tags.html#膳食纤维" title="膳食纤维">#膳食纤维</a>
       
     </span>
     
     </section>
     <section class="post">
 		        <div class="content">
-					 <p>Usually, we use rss reader like feedly, inoreader to read RSS feeds. This feature makes it possible to subscribe to RSS feeds using any RSS news reader which supports HTTP authentication.</p>
-
-<p>For subscribing to password-protected feeds, most RSS readers are not supported as feedly, or should get upgraded feature like inoreder. But we have other method to solve the problem.</p>
-
-<p>To subscribe to a password-protected RSS feed, use the following formation for the RSS URL:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>http://[username]:[password]@[domain]/[path]
-</code></pre>
-</div>
-
-<p>Note that the ‘@’ character in the username (if you use) must be replaced with %40 (the URL for the ‘@’ character).</p>
-
-<!-- 		        </div> -->
-		    	<!-- 标签 -->
-       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/06/29/pw-protected-feed.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
- <!-- readmore按钮 -->
-<br />
-        	
-<!--     </section> -->
-<!--     </article> -->
-  
-    <section class="title">
-      <h2><a href="/2017/06/29/graph-analysis.html">Graph Analysis</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-06-29">2017-06-29</time>
-    </span>
-    
-    
-    
-    <span class="tags">
-      
-    </span>
-    
-    </section>
-    <section class="post">
-		        <div class="content">
-					 <h2 id="graph-analysis">Graph Analysis</h2>
-
-<h2 id="centrality">Centrality</h2>
-<ul>
-  <li>node centrality
-    <ul>
-      <li>$C_d（v_i）=\frac{d_i}{n-1}$</li>
-    </ul>
-  </li>
-  <li>closeness centrality
-    <ul>
-      <li>$C_c(v_i)=\frac{1}{\frac{\Sigma_j(l_{ij})}{n-1}}$</li>
-      <li>那些在社交网络中经常与人互动、人际关系颇好的人，比如公司中的八卦传播者，往往亲近中心性得分较高。</li>
-      <li>消息传播者</li>
-    </ul>
-  </li>
-  <li>betweenness centrality
-    <ul>
-      <li>$C_b(v_i)=\frac{\Sigma l_{st}(i)}{l_{st}}$</li>
-      <li>$c_b(v_i)_{norm} = \frac{c_b(v_i)}{(n-1)(n-2)}$</li>
-      <li>节点的居间程度越大，那么它在节点相互之间的信息传播起到的作用也就越大。在两个社会网络之间的人，比如跨界者，往往拥有较高的居间中心性。</li>
-      <li>所以在社区分析的时候，也是重要的评判标准</li>
-    </ul>
-  </li>
-  <li>eigenvalue centrality
-    <ul>
-      <li>网络中的每个节点都有一个相对指数值，高指数节点的连接对一个节点的贡献度比低指数节点的贡献度高。
-当前节点的中心性取决lj于邻居节点们的中心性。</li>
-    </ul>
-  </li>
-  <li>cluster coefficient
-    <ul>
-      <li>顶点之间结集成团的程度的系数</li>
-      <li>C= 3×tri/（3×tri+open tri）zs</li>
-      <li>
-        <table>
-          <tbody>
-            <tr>
-              <td>Ci = 2</td>
-              <td>ejk</td>
-              <td>/i(i-1)</td>
-            </tr>
-          </tbody>
-        </table>
-      </li>
-    </ul>
-  </li>
+					 <ul>
+  <li>三分之一食物残渣，三分之一肠黏膜，三分之一细菌。</li>
+  <li>大肠的功能不仅仅是排除食物残渣，大肠的蠕动影响着人类的健康，在大肠内发生的变化中，对人体有益的是发酵，有害的事腐败，即使是同种物质，如果大肠蠕动功能良好就是发酵，不好就会腐败。腐败后，腐败物质经过肠壁再次被人体吸收，成为多种疾病的诱因。</li>
+  <li>人体脏器中，和疾病相关最多的就是大肠，万病之源。</li>
 </ul>
 
-<p>三种指标所表达的“重要”，其含义是不完全一样的</p>
 
-<h2 id="section">社区发现</h2>
-<ol>
-  <li>GN
-    <ul>
-      <li>分裂法
-        <ul>
-          <li>step0: 计算每条边的介数（$O(nm)$ with BFS）</li>
-          <li></li>
-          <li></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Louvain
-    <ul>
-      <li>模块度 (http://www.cnblogs.com/tychyg/p/5277137.html)</li>
-      <li>$Q=\frac{1}{2m} \Sigma(A_{ij}-\frac{k_i k_j}{2m}) \delta(c_i,c_j)$</li>
-      <li>模块度（modularity）指的是网络中连接社区结构内部顶点的边所占的比例，减去在同样的社团结构下任意连接这两个节点的比例的期望值。</li>
-    </ul>
-  </li>
-  <li>label propagation algrithm</li>
-  <li>K-means</li>
-</ol>
-
-<h4 id="references">references</h4>
-<ol>
-  <li>复杂网络中聚类算法总结(http://www.cnblogs.com/tychyg/p/5277137.html)</li>
-</ol>
+<!-- 		        </div> -->
+		    	<!-- 标签 -->
+       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/08/25/shit.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
+ <!-- readmore按钮 -->
+<br />
+        	
+<!--     </section> -->
+<!--     </article> -->
+  
+    <section class="title">
+      <h2><a href="/2017/08/24/vi-shortcut.html">vi 快捷键</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-08-24">2017-08-24</time>
+    </span>
+    
+    
+    
+    <span class="tags">
+      
+      <a href="/tags.html#vi" title="vi">#vi</a>
+      
+      <a href="/tags.html#shortcuts" title="shortcuts">#shortcuts</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+		        <div class="content">
+					 <p>习惯用 ctrl 的<a href="http://tzungtzu.github.io/2016/11/27/shortcut.html">快捷键</a>，发现在 vi 里使用不了，所以记录下方便查找和使用。</p>
 
 
 <!-- 		        </div> -->
 		    	<!-- 标签 -->
-       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/06/29/graph-analysis.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
+       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/08/24/vi-shortcut.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
+ <!-- readmore按钮 -->
+<br />
+        	
+<!--     </section> -->
+<!--     </article> -->
+  
+    <section class="title">
+      <h2><a href="/2017/08/23/instagram-api.html">Playing with Instagram's API</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-08-23">2017-08-23</time>
+    </span>
+    
+    
+    
+    <span class="tags">
+      
+      <a href="/tags.html#instagram" title="instagram">#instagram</a>
+      
+      <a href="/tags.html#api" title="api">#api</a>
+      
+      <a href="/tags.html#cron" title="cron">#cron</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+		        <div class="content">
+					 <p>以下是一个关于使用 Instagram API 的 turtorial。 同时给出利用 API 用脚本给女朋友点赞的例子。（enlightened by cyan）</p>
+
+
+<!-- 		        </div> -->
+		    	<!-- 标签 -->
+       <p class="preadmore" style="border-bottom: 1px solid #EBEEEF"><a href="/2017/08/23/instagram-api.html" alt="Read More" class="readmore"><span>&#10149;</span>阅读全文</a></p>
  <!-- readmore按钮 -->
 <br />
         	

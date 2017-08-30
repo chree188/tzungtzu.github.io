@@ -114,9 +114,11 @@
   <section class="post">
   <p>一、</p>
 
-<p>Hadoop的关键能力：
-1. HDFS —— 分布式存储
-2. MapReduce —— 分布式计算</p>
+<p>Hadoop的关键能力：</p>
+<ol>
+  <li>HDFS —— 分布式存储</li>
+  <li>MapReduce —— 分布式计算</li>
+</ol>
 
 <p>GraphX 用边RDD 和顶点RDD 来表示一个图。</p>
 
@@ -154,9 +156,11 @@ reduce()函数，将每两条数据归并成一个结果。并且Scala的匿名�
 <p>val v = graph.pageRank(0.001).vertices
 v.reduce((a,b)=&gt;if(a._2&gt;b._2) a else b)</p>
 
-<p>三、
-1. 不变性
-2. 函数是一等公民</p>
+<p>三、</p>
+<ol>
+  <li>不变性</li>
+  <li>函数是一等公民</li>
+</ol>
 
 <p>轻松声明函数为内联的并且可以到处传递它们。</p>
 
@@ -197,13 +201,15 @@ Distributed Storage &amp; Cluster Manager</p>
 
 <p>SparkContext 对象是使用 Spark 的入口。</p>
 
-<p>常用RDD操作
-1. m/r 
-2. 键值对
-3. zip()
-    同时迭代两个集合，保存在RDD中。
-    zipWithIndex()，union()（未必是追加在后面）,distinct() 
-4. MLlib</p>
+<p>常用RDD操作</p>
+<ol>
+  <li>m/r</li>
+  <li>键值对</li>
+  <li>zip()
+ 同时迭代两个集合，保存在RDD中。
+ zipWithIndex()，union()（未必是追加在后面）,distinct()</li>
+  <li>MLlib</li>
+</ol>
 
 <p>四、</p>
 

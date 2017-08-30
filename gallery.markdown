@@ -3,5 +3,44 @@ title: Gallery
 layout: post
 ---
 
-<table style="width:194px;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/109915721717462682982/TianjinBeijing20125?authuser=0&feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-1gNCsd9qoNA/T6UYvWXfhuE/AAAAAAAAAUw/WnrVOmSL8Tg/s160-c/TianjinBeijing20125.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="https://picasaweb.google.com/109915721717462682982/TianjinBeijing20125?authuser=0&feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">Tianjin&amp;Beijing-2012.5</a></td></tr></table>
-<table style="width:194px;"><tr><td align="center" style="height:194px;background:url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="https://picasaweb.google.com/109915721717462682982/HongKong20121?authuser=0&feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-EtMXN0YidUE/T22xD8oue4E/AAAAAAAAAJg/d6LPTHhsupI/s160-c/HongKong20121.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="https://picasaweb.google.com/109915721717462682982/HongKong20121?authuser=0&feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">HongKong-2012.1</a></td></tr></table>
+
+<script language="JavaScript">   
+        function showTime(){     
+        var thetime=new Date();   //   初始化日期对象 
+        var h = thetime.getHours();
+        var m = thetime.getMinutes();
+        var s = thetime.getSeconds();
+        var mm = thetime.getMilliseconds();
+        var d = thetime.getDate();
+        var mon = thetime.getMonth();
+        var y = thetime.getFullYear();
+        var z = thetime.getTimezoneOffset();
+        var day = (mm/1000+s+m*60+(h+z/60-8)*60*60)/(24*60*60);
+        var MyAge = (y-1990)+(mon+1-5)/12+(d+day-11)/30/12;
+        //MyAge = Myage.toFixed(2);
+        var FixedAge = MyAge.toFixed(11);
+
+        
+            document.getElementById( "timeArea").innerText   =  'It is now ' + thetime.toLocaleString(); 
+            document.getElementById('age').innerHTML = "I am "+ FixedAge +' years old.'
+     
+            window.setTimeout( "showTime()",1);   //setTimeout (表达式,延时时间)其中延时时间以豪秒为单位(1000ms=1s)
+        } 
+
+
+
+</script>
+
+
+
+
+<div id="timeArea" align="center">
+
+</div>
+
+<div id="age" align="center">
+
+</div>
+
+
+

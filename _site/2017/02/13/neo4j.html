@@ -117,7 +117,7 @@
   <p>neo4j 是一种图数据库，图数据库着重于数据之间的关系，而非数据本身的信息。一个 RDBMS 被优化用于聚合数据。而 neo4j <strong>擅长于高度关联的数据</strong>。 优点是插入查询方便，搜索便利方法方便。缺点是超大节点的操作慢。
  <!--more--></p>
 
-<h3 id="neo4j-">neo4j 模型建立</h3>
+<h3 id="neo4j-模型建立">neo4j 模型建立</h3>
 
 <p>neo4j 中的概念： 节点，关系，属性，标签（针对节点），类型（针对关系）</p>
 
@@ -127,7 +127,7 @@
 
 <p>模型中的元素可以是显式和隐式（是否直接作为节点），也可以是不变或者可变的。</p>
 
-<h3 id="neo4j--1">neo4j 开发</h3>
+<h3 id="neo4j-开发">neo4j 开发</h3>
 
 <ol>
   <li>通过核心 Java API（系统级）</li>
@@ -149,12 +149,14 @@
   </li>
 </ol>
 
-<h3 id="cypher-"> Cypher 基本句法</h3>
-<p> 
-+ start - 查找图形中的起始节点 
-+ match - 匹配图形模式，可以定位子图形 
-+ where - 基于某种标准过滤数据 
-+ return - 返回感兴趣的结果</p>
+<h3 id="cypher-基本句法"> Cypher 基本句法</h3>
+<p> </p>
+<ul>
+  <li>start - 查找图形中的起始节点</li>
+  <li>match - 匹配图形模式，可以定位子图形</li>
+  <li>where - 基于某种标准过滤数据</li>
+  <li>return - 返回感兴趣的结果</li>
+</ul>
 
 <ol>
   <li>模式匹配</li>
@@ -164,7 +166,7 @@
     <p>多个模式同时匹配</p>
   </li>
   <li>查找节点
-       
+        
     <ul>
       <li>通过id</li>
       <li>通过INDEX  START john = n: User(name: “”)</li>
@@ -197,6 +199,12 @@
 <p>建立新节点和查找已有节点
 CREATE语句 设置节点对应的关系</p>
 
+<p>CREATE<br />
+    (<node1-label-name>:<node1-name>{<define-properties-list>})-
+	[<relationship-label-name>:<relationship-name>{<define-properties-list>}]
+	-&gt;(<node1-label-name>:<node1-name>{<define-properties-list>})
+RETURN <relationship-label-name></relationship-label-name></define-properties-list></node1-name></node1-label-name></define-properties-list></relationship-name></relationship-label-name></define-properties-list></node1-name></node1-label-name></p>
+
 <ol>
   <li>
     <p>删除数据
@@ -212,7 +220,7 @@ SET john.yob = 1973</p>
 start n= john
 delete n.name</p>
 
-<h3 id="cypher">高级 Cypher</h3>
+<h3 id="高级-cypher">高级 Cypher</h3>
 
 <ol>
   <li>数据聚合</li>
@@ -246,7 +254,7 @@ where COUNT &gt;1</li>
  extract( x in collection | expression ) 例如：</li>
 </ul>
 
-<h3 id="section">其他</h3>
+<h3 id="其他">其他</h3>
 
 <ol>
   <li>
@@ -260,9 +268,11 @@ where COUNT &gt;1</li>
 </code></pre>
     </div>
   </li>
-  <li>一次显示多个点
-     MATCH (n:uid) WHERE n.name IN [‘724972’,’704332’,’724747’] RETURN</li>
-  <li></li>
+  <li>
+    <p>一次显示多个点
+     MATCH (n:uid) WHERE n.name IN [‘724972’,’704332’,’724747’] RETURN
+\3.</p>
+  </li>
 </ol>
 
 <h3 id="tips">Tips</h3>
@@ -272,14 +282,17 @@ where COUNT &gt;1</li>
   <li>neo4j 默认只能从本机访问，如果需要从外网访问，修改配置文件即可。</li>
   <li>网页控制台（基于网页的接口）</li>
   <li>添加 APOC 时，需要将jar文件放在default.graphdb下的plugins，重启即可。</li>
-  <li>步长为2的路径 ()-[<em>2</em>]-()</li>
+  <li>步长为2的路径 ()-[*2]-()</li>
+  <li>match (a)-[*2]-&gt;(b) where a.name=‘Kaine‘ and not (a)-[*1]-&gt;(b) return a,b</li>
+  <li>()-[*..2]-()  步长不超过2</li>
+  <li>$match (n) where EXISTS(n.is_black) return n limit 5  查看属性是否存在<a href=""></a></li>
 </ol>
 
 <p>MAX  DESC</p>
 
 <p>新建一个node，包括变量名和label，并添加属性。</p>
 
-<h3 id="section-1">可以做以下尝试：</h3>
+<h3 id="可以做以下尝试">可以做以下尝试：</h3>
 <p>使用Match和属性查找一个节点。</p>
 
 <p>使用Match和关系查找相关节点。</p>
@@ -293,6 +306,12 @@ where COUNT &gt;1</li>
 <p><a href="">https://github.com/linonetwo/neo4j-tutorial-Chinese/blob/master/Chapters/1.md</a></p>
 
 <p><a href="http://www.infoq.com/cn/articles/graph-nosql-neo4j">http://www.infoq.com/cn/articles/graph-nosql-neo4j</a></p>
+
+<h3 id="refrences">refrences:</h3>
+<ol>
+  <li>http://www.blogs8.cn/posts/AtIte8c</li>
+  <li>http://neo4j.com/docs/developer-manual/current/cypher/syntax/patterns/</li>
+</ol>
 
 
   </section>

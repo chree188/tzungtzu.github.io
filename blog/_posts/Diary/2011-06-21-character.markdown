@@ -1,5 +1,5 @@
 ---
-layout: Diary
+layout: post
 title: 性格评价挺准，职业越看越狗血
 
 categories:
