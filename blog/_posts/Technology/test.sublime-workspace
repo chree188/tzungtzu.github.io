@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"book",
+				"bookinfo"
+			],
+			[
 				"Dr",
 				"Dropbox"
 			]
@@ -12,29 +16,81 @@
 	"buffers":
 	[
 		{
-			"contents": "\"864718034925711\",\"865607031538024\",\"862155035541829\",\"352273017386340\",\"865607039280124\",\"004999010640000\",\"869554026695227\",\"864744035789484\",\"111111111111111\"",
+			"file": "08-28-json.md",
 			"settings":
 			{
-				"buffer_size": 161,
+				"buffer_size": 498,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "json 一种数据交换格式"
+			}
+		},
+		{
+			"file": "/Users/tzungtzu/Documents/git/tzungtzu.github.io/gallery.markdown",
+			"settings":
+			{
+				"buffer_size": 3228,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tzungtzu/Library/Mobile Documents/iCloud~run~surge/Documents/tzungtzu.conf",
+			"settings":
+			{
+				"buffer_size": 28063,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"864718034925711\",\"865607031538024\",\"862155035541829\",\"352273017386340\"\n\n\n\n\n\n31-226  的服务器pull",
+			"settings":
+			{
+				"buffer_size": 93,
 				"line_ending": "Unix",
 				"name": "\"864718034925711\",\"865607031538024\",\"8621550355418"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "ever",
+		"last_filter": "pac",
 		"selected_items":
 		[
 			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
 				"ever",
-				"Evernote: List recent notes"
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
 			],
 			[
 				"evernote",
@@ -53,7 +109,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 485.0
+		"width": 557.0
 	},
 	"console":
 	{
@@ -74,32 +130,65 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io"
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Diary",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-01-26-install-matplotlib-on-macos-sierra.resource",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Travel"
 	],
 	"file_history":
 	[
-		"/Users/tzungtzu/Workspace/git/tzungtzu.github.io/blog/_posts/Technology/2016-08-08-statistic.md",
-		"/Users/tzungtzu/Workspace/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-12-think-bayes.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/age.html",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/age.mdown",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-24-vi-shortcut.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Diary/2011-06-21-character.markdown",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/index.html",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2016-08-08-statistic.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/07-05-shell-scripting.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-02-13-neo4j.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/1. 想获取自己like 的照片，好像不行，",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-23-instagram-api.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/07-13-changzi.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Reading/08-26-run-turtorial.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Reading/08-25-shit.md",
+		"/Users/tzungtzu/Downloads/likefordear-0.1/index.wsgi",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-22-spark-function.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-30-ssh-command.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2016-11-27-shortcut.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-24-vi-shortcut.md",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Default (OSX).sublime-keymap",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-12-think-bayes.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-23-instagram-api.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-16-algrithm.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2012-12-15-github-blogging.markdown",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-29-mac-setting.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-15-learning-spark.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-07-mysql.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/_site/2017/05/04/graphx-in-action.html",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/4-10-hive.md",
+		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2016-08-17-python-function.md",
+		"/Users/tzungtzu/Dropbox/App Backups/Mackup/Library/Application Support/Sublime Text 3/Packages/User/python2.sublime-build",
+		"/Users/tzungtzu/Workspace/x.py",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Travel/2017-07-03-tiger-leapping-gorge.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-02-15-dataframe.md",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-29-mac-setting.md",
 		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/User/OmniMarkupPreviewer.sublime-settings",
 		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/Evernote/Evernote.sublime-settings",
-		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
 		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/OmniMarkupPreviewer.sublime-settings",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-02-13-neo4j.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-11-time-machine.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/07-23-iterm.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-11-ssh-socks5.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-07-01-latex.md",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2016-11-27-shortcut.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-03-14-autohotkey.md",
 		"/Users/tzungtzu/Library/Application Support/Sublime Text 3/Packages/User/Evernote.sublime-settings",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/fintech.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/2017-08-07-macos-app-language.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/about.markdown",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-07-mysql.md",
-		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/4-10-hive.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-08-statistic.md",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/08-07-mysql.markdown",
 		"/Users/tzungtzu/Documents/git/tzungtzu.github.io/blog/_posts/Technology/mac-setting.md",
@@ -116,6 +205,10 @@
 		"where_history":
 		[
 			"",
+			"json",
+			"",
+			"2",
+			"",
 			"2017-08-12-think-bayes.md",
 			"2017-08-12-think",
 			""
@@ -123,9 +216,20 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"json",
+			"pic",
+			"super+alt+",
+			"super+alt+v",
+			"super",
+			"markdown",
+			"shell",
+			"she l l",
+			"linux",
+			"scala",
+			"//",
 			"tzungtzu",
 			"trek",
 			"^",
@@ -147,7 +251,7 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
 			"p"
@@ -161,28 +265,87 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "08-28-json.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 161,
+						"buffer_size": 498,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								161
+								323,
+								323
 							]
 						],
 						"settings":
 						{
-							"auto_name": "\"864718034925711\",\"865607031538024\",\"8621550355418",
+							"auto_name": "json 一种数据交换格式",
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/tzungtzu/Documents/git/tzungtzu.github.io/gallery.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/tzungtzu/Library/Mobile Documents/iCloud~run~surge/Documents/tzungtzu.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -190,6 +353,35 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"auto_name": "\"864718034925711\",\"865607031538024\",\"8621550355418",
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor-Dark.tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -226,11 +418,15 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
 	"project": "test.sublime-project",
 	"replace":
 	{
@@ -272,7 +468,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 202.0,
+	"side_bar_width": 274.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
