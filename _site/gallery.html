@@ -128,32 +128,7 @@
 
 
 
-<script type="text/javascript">
-    $.getJSON("https://api.douban.com/v2/book/1220562?alt=xd&callback=?", function(book) {
-        var title = book.title ? book.title : "";
-        var tmp = "<img src="+book.image+" style='margin:10px;float:left'>";
-        tmp += "<div>Tiktle : <a href="+book.alt+" target='_blank'>"+title+"</a></div>";
-        if (book.author) 
-            tmp += "<div>Authors : "+book.author+"</div>";
-        if (book.pubdate) 
-            tmp += "<div>Pubdate : "+book.pubdate+"</div>";
-        if (book.isbn13) 
-            tmp += "<div>ISBN : "+book.isbn13+"</div>";
-        if (book.price) 
-            tmp += "<div>Price : "+book.price+"</div>";
-        if (book.pages) 
-            tmp += "<div>Pages : "+book.pages+"</div>";
-        if (book.publisher) 
-            tmp += "<div>Publisher : "+book.publisher+"</div>";
-        if (book.rating.average) 
-            tmp +="<div>Rating: "+book.rating.average+" / "+book.rating.numRaters+decodeURI("%E4%BA%BA")+ "</div>"
-        tmp += "<p>"+(book.summary ? book.summary : "")+"</p>";
-        document.getElementById('bookinfo')..innerHTML = tmp;
-    });
-</script>
-
 <div id="timeArea" align="center">
-
 </div>
 
 <div id="age" align="center">

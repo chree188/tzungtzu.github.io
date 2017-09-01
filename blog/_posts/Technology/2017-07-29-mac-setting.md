@@ -48,6 +48,7 @@ tags:
 		#下载zsh语法高亮
 		##brew install zsh-syntax-highlighting，需要把 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 添加到 .zshrc 的最后面。
 		##zsh alias
+		##zsh_stats 可以查看常用代码
 
 [http://get.ftqq.com/992.get][1]
 [http://blog.jobbole.com/80620/][2]

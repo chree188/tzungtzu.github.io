@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-08-31T12:13:29+08:00</updated>
+ <updated>2017-09-01T10:20:20+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -604,7 +604,8 @@ scp [参数] [原路径] [目标路径] ##-r 递归复制整个目录。
       #设置theme 
       #下载zsh语法高亮
       ##brew install zsh-syntax-highlighting，需要把 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 添加到 .zshrc 的最后面。
-      ##zsh alias&lt;/li&gt;
+      ##zsh alias
+      ##zsh_stats 可以查看常用代码&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://get.ftqq.com/992.get&quot;&gt;http://get.ftqq.com/992.get&lt;/a&gt;
