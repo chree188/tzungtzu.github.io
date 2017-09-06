@@ -13,6 +13,8 @@ tags:
 
 >>There is no bad weather, only bad clothing.
 
+<!--more-->
+
 ###行程计划：
 
 * 之前 8-10 个月。
