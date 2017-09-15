@@ -85,6 +85,81 @@
   
   <article class="content">
     <section class="title">
+      <h2><a href="/2017/09/14/python-spider.html">python 抓取网页信息</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2017-09-14">2017-09-14</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#spider" title="spider">#spider</a>
+      
+      <a href="/tags.html#python" title="python">#python</a>
+      
+    </span>
+    
+    </section>
+    <section class="post">
+    <p>###登录信息</p>
+<ol>
+  <li>账号密码
+ 查看HTML源码，Google里可以使用CTRL+U查看，然后使用CTRL+F输入input看看有哪些字段值。
+ 通过 chrome 的 network 的 login 的 Form Data 获取需要的字段。
+ zhihu 还有一个隐藏字段 <code class="highlighter-rouge">_xsrf</code>，需要另外获取。简单的网站就是基本的字段。</li>
+</ol>
+
+<!--more-->
+
+<div class="highlighter-rouge"><pre class="highlight"><code>通过request.session的 post 方法 进行登录。 get 方法获取网页信息。
+
+    session = requests.session()
+    login_data = {'email':email,'passwd':passwd}
+    session.post('http://hk2.app.akulaku.com:60100/auth/login',data = login_data)
+    r = session.get('http://hk2.app.akulaku.com:60100/user')
+</code></pre>
+</div>
+
+<ol>
+  <li>cookies</li>
+</ol>
+
+<p>###爬虫爬取</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    import bs4
+
+    soup = bs4.BeautifulSoup(r.text,"lxml")
+    r = session.get('url')
+    name = soup.select('.hidden-xs')[0].get_text()
+
+    注意最后，需要通过.get_text()方法转为中文字符。
+</code></pre>
+</div>
+
+<p>###抓包</p>
+
+<p>###ConfigParser</p>
+
+<p>读取配置文件信息
+        cf = ConfigParser.ConfigParser()
+        cf.read(‘config.ini’)
+        email = cf.get(‘info’,’email’)</p>
+
+<h3 id="references">References:</h3>
+<ol>
+  <li>[python爬取需要登录的网站信息](http://python.jobbole.com/83588/）</li>
+  <li><a href="http://www.jianshu.com/p/9822e3f28f0a">抓包</a></li>
+  <li>http://www.csuldw.com/2016/11/05/2016-11-05-simulate-zhihu-login/</li>
+  <li><a href="https://github.com/lining0806/PythonSpiderNotes/blob/master/ZhihuSpider/ZhihuSpider.py">github</a></li>
+  <li><a href="http://www.lining0806.com/python%E5%85%A5%E9%97%A8%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%B9%8B%E7%B2%BE%E5%8D%8E%E7%89%88/">spider</a></li>
+</ol>
+
+    </section>
+    </article>
+  
+  <article class="content">
+    <section class="title">
       <h2><a href="/2017/08/25/shit.html">《大便通》读书笔记</a></h2>
     </section>
     <section class="meta">
@@ -124,6 +199,8 @@
   <li>什么是好的大便，比牙膏硬比香蕉软，注意颜色和气味。</li>
   <li>双歧杆菌多的大便时黄褐色，会有发酵后的酸味。</li>
 </ul>
+
+<p>重要的三点：益生菌，膳食纤维，多运动。</p>
 
 
     </section>
@@ -219,128 +296,60 @@
   </tbody>
 </table>
 
+<p>一、进入输入模式
+1、i：在当前光标所在处前插入文本；
+2、I：将光标移动到当前行的行首，并在行首前插入文本；
+3、a：在当前光标所在处之后插入文本；
+4、A：将光标移动到当前行的行末，并在行末之后插入文本；
+5、o：在光标所在行的下面新插入一行，并将光标移动到新行的行首插入文本；
+6、O：在光标所在行的上面新插入一行，并将光标移动到新行的行首插入文本；</p>
 
-    </section>
-    </article>
-  
-  <article class="content">
-    <section class="title">
-      <h2><a href="/2017/08/23/instagram-api.html">Playing with Instagram's API</a></h2>
-    </section>
-    <section class="meta">
-    <span class="time">
-      <time datetime="2017-08-23">2017-08-23</time>
-    </span>
-    
-    <span class="tags">
-      
-      <a href="/tags.html#instagram" title="instagram">#instagram</a>
-      
-      <a href="/tags.html#api" title="api">#api</a>
-      
-      <a href="/tags.html#cron" title="cron">#cron</a>
-      
-    </span>
-    
-    </section>
-    <section class="post">
-    <p>以下是一个关于使用 Instagram API 的 turtorial。 同时给出利用 API 用脚本给女朋友点赞的例子。（enlightened by cyan）</p>
+<p>二、光标移动
+1、h或者左方向键:将光标向左移动一格；
+2、j或者下方向键：将光标向下移动一格；
+3、k或者上方向键：将光标向上移动一格；
+4、l或者右方向键：将光标向右移动一格；
+5、$：移动光标到当前行的行末；
+   数字0：移动光标到当前行的行首；
+6、w:移动光标到下个字的开头；
+7、e：移动光标到下个字的字尾；
+8、b：移动光标回上个字的开头；
+9、nl：在当前行中往右移动n个字符，如：2l、34l；
+10、crtl+b:屏幕往上翻一页；
+11、crtl+f:屏幕往下翻一页；
+12、crtl+u:屏幕往上翻半页；
+13、crtl+d:屏幕往下翻半页；
+14、lG：移动光标到文件的第一行；
+15、G：移动光标到文件的最后一行。
+16、gg：移动光标到第一行</p>
 
-<!--more-->
+<p>三、文本编辑
+1、r：替换光标所在处的字符；
+2、R：替换光标所到之处的字符，直到按ESC键为止；
+3、J：把光标所在行的下一行内容接到当前行的行末；
+4、x：删除光标所在位置的字符；
+5、nx：删除光标所在位置开始的n个字符，如3x删除3个字符；
+6、X：删除光标所在位置的前一个字符；
+7、nX：删除光标所在位置的前n个字符；
+8、dw：删除光标所处位置的单词；
+9、ndw：删除由光标所处位置之前的n个单词；
+10、db：删除光标所处位置之前的一个单词；
+11、ndb：删除光标所处位置之前的n个单词；
+12、dd：删除光标所在的行；
+13、ndd：删除光标所在行开始的n行；
+14、d0：删除由光标所在行的第一个字符到光标所在位置的前一个字符之间的内容；
+15、d$：删除由光标所在位置到光标所在行的最后一个字符之间的内容；
+16、dlG：删除由文件第一行到光标所在行之间的内容；
+17、dG：删除由光标所在行到文件最后一行之间的内容；
+18、u：撤销更改的内容；
+19、ctrl+u：撤销在输入模式下输入的内容。</p>
 
-<ol>
-  <li>
-    <p>安装 instagram python api.</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> #prerequisites
- pip install httplib2
- pip install simplejson
- #
- pip install python-instagram
-</code></pre>
-    </div>
-  </li>
-</ol>
-
-<p>！！特别注意：</p>
-
-<p>由于这个包已经不再维护，导致有一些代码需要修改，否则后续报错。下面会提示。</p>
-
-<ol>
-  <li>
-    <p>获取 access token</p>
-
-    <ul>
-      <li>在 Instagram 的开发者中心创建一个 app，获取后续需要的 <em>client_id</em> 和 <em>client_secret</em> 。</li>
-      <li>
-        <p>下载<a href="http://movii.github.io/blog/2017/03/14/node-instagram-get-access-token/">get_access_token.py</a>并运行，按要求输入 <em>client_id,client_secret,redirect_url</em> 以及 <em>code</em>，输出 <em>access_token</em></p>
-
-        <p>fix for OAuth2AuthExchangeError: You must provide a client_id 
-  在 <em>~/Library/Python/2.7/site-package *中 *instagram/oauth2.py</em> 102行</p>
-
-        <div class="highlighter-rouge"><pre class="highlight"><code>  -        response, content = http_object.request(url, method="POST", body=data)
-  +        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-  +        response, content = http_object.request(url, method="POST", body=data, headers=headers)
-</code></pre>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>通过 access token 点赞。</p>
-
-    <p>main.py</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>from time import sleep  
-from instagram.client import InstagramAPI
-import logging
-
-access_token = ""ENTER YOUR ACCESS TOKEN HERE""
-api = InstagramAPI(access_token=access_token,  
-            client_ips="YOUR IP",
-            client_secret="YOUR SECRET")
-
-recent_media, next_ = api.user_recent_media(user_id="5106250160", count=20)
-
-for media in recent_media:  
-    # Where the media is
-    id_ = media.id
-
-    users = [user.username for user in media.likes]
-    print users
-
-        if "YOUR USERNAME" in users:
-        print("IN PHOTO")
-
-    else:
-        print("LIKING PICTURE")
-        api.like_media(media_id=id_)
-</code></pre>
-    </div>
-
-    <p>其中 user_id=”5106250160” 改成要点赞的好友的id。
-解决 KeyError: ‘data’ with Python Instagram API client[5] 即可。</p>
-
-    <p>需要注意，由于沙盒机制，必须先邀请好友进入沙盒。</p>
-  </li>
-  <li>
-    <p>设置定时任务。</p>
-
-    <p>*/2 * * * *  表示每两分钟执行一次。crontab</p>
-  </li>
-</ol>
-
-<p>Tips:
-https://www.instagram.com/tzungtzu/media/ 可以获取 media without auth.</p>
+<p>1、/str：从光标位置开始往文件末尾查找str，按n查找下一个，按N返回上一个；
+2、?str：从光标位置开始往文件开头查找str，按n查找下一个，按N返回上一个；</p>
 
 <h3 id="references">References:</h3>
 <ol>
-  <li><a href="http://movii.github.io/blog/2017/03/14/node-instagram-get-access-token/">笔记：获取 Instagram API 的 access token</a></li>
-  <li><a href="http://leesonhsu.blogspot.hk/2016/04/instagram-api.html">http://leesonhsu.blogspot.hk/2016/04/instagram-api.html</a></li>
-  <li><a href="https://smashballoon.com/instagram-feed/find-instagram-user-id/?username=gromitintardis&amp;5611zzl19832tjrl=4">https://smashballoon.com/instagram-feed/find-instagram-user-id/?username=gromitintardis&amp;5611zzl19832tjrl=4</a></li>
-  <li><a href="https://github.com/vgavro/python-instagram/commit/9dfc264571ad7c343af3899445d13afedf23e3aa">instagram-python</a></li>
-  <li><a href="https://stackoverflow.com/questions/33924581/keyerror-data-with-python-instagram-api-client">https://stackoverflow.com/questions/33924581/keyerror-data-with-python-instagram-api-client</a></li>
-  <li><a href="https://github.com/facebookarchive/python-instagram/blob/master/README.md">https://github.com/facebookarchive/python-instagram/blob/master/README.md</a></li>
+  <li><a href="http://blog.csdn.net/leexide/article/details/17269013">VI编辑器常用快捷键</a></li>
 </ol>
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python 抓取网页信息。
+title: python 抓取网页信息
 categories: 
 - Technology
 tags:
