@@ -52,3 +52,4 @@ tags:
 2. [抓包](http://www.jianshu.com/p/9822e3f28f0a)
 3. http://www.csuldw.com/2016/11/05/2016-11-05-simulate-zhihu-login/
 4. [github](https://github.com/lining0806/PythonSpiderNotes/blob/master/ZhihuSpider/ZhihuSpider.py)
+5. [spider](http://www.lining0806.com/python%E5%85%A5%E9%97%A8%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%B9%8B%E7%B2%BE%E5%8D%8E%E7%89%88/)
