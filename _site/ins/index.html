@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>python 抓取网页信息</title>
+    <title>Gallery</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -82,89 +82,45 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>python 抓取网页信息 </h2>
+    <h2>Gallery </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-09-14">2017-09-14</time>
+    <time datetime=""></time>
   </span>
   
 
-<span class="categories">
-	Published in categories
-  
-  <a href="/category.html#blog" title="blog">blog</a>&nbsp;
-  
-  <a href="/category.html#Technology" title="Technology">Technology</a>&nbsp;
-  
-</span>
 
-
-  
-  <span class="tags">
-   tagged with 
-    
-    <a href="/tags.html#spider" title="spider">#spider</a>&nbsp;
-    
-    <a href="/tags.html#python" title="python">#python</a>&nbsp;
-    
-  </span>
   
   </section>
   <section class="post">
-  <p>###登录信息</p>
-<ol>
-  <li>账号密码
- 查看HTML源码，Google里可以使用CTRL+U查看，然后使用CTRL+F输入input看看有哪些字段值。
- 通过 chrome 的 network 的 login 的 Form Data 获取需要的字段。
- zhihu 还有一个隐藏字段 <code class="highlighter-rouge">_xsrf</code>，需要另外获取。简单的网站就是基本的字段。</li>
-</ol>
+  <html>
+    <head>
+   		<style>
+    			img {
+      			height: 200px;
+      			flex-grow: 1;
+    			}
+      <script type="text/javascript" src="info.json"></script>
+      <script type="text/javascript" src="read.js"></script>
+  		</style>	
 
-<!--more-->
+    </head>
+    
+    <body onload="load()">
 
-<div class="highlighter-rouge"><pre class="highlight"><code>通过request.session的 post 方法 进行登录。 get 方法获取网页信息。
-
-    session = requests.session()
-    login_data = {'email':email,'passwd':passwd}
-    session.post('http://hk2.app.akulaku.com:60100/auth/login',data = login_data)
-    r = session.get('http://hk2.app.akulaku.com:60100/user')
-</code></pre>
+    	<div>
+   			<img src="" />
+        <img src="" />
+        <img src="" />
+        <img src="" />
+        <img src="" />
 </div>
+    
 
-<ol>
-  <li>cookies</li>
-</ol>
+    </body>
+</html>
 
-<p>###爬虫爬取</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>    import bs4
-
-    soup = bs4.BeautifulSoup(r.text,"lxml")
-    r = session.get('url')
-    name = soup.select('.hidden-xs')[0].get_text()
-
-    注意最后，需要通过.get_text()方法转为中文字符。
-</code></pre>
-</div>
-
-<p>###抓包</p>
-
-<p>###ConfigParser</p>
-
-<p>读取配置文件信息
-        cf = ConfigParser.ConfigParser()
-        cf.read(‘config.ini’)
-        email = cf.get(‘info’,’email’)</p>
-
-<h3 id="references">References:</h3>
-<ol>
-  <li>[python爬取需要登录的网站信息](http://python.jobbole.com/83588/）</li>
-  <li><a href="http://www.jianshu.com/p/9822e3f28f0a">抓包</a></li>
-  <li>http://www.csuldw.com/2016/11/05/2016-11-05-simulate-zhihu-login/</li>
-  <li><a href="https://github.com/lining0806/PythonSpiderNotes/blob/master/ZhihuSpider/ZhihuSpider.py">github</a></li>
-  <li><a href="http://www.lining0806.com/python%E5%85%A5%E9%97%A8%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%B9%8B%E7%B2%BE%E5%8D%8E%E7%89%88/">spider</a></li>
-  <li><a href="http://wuchong.me/blog/2014/04/24/easy-web-scraping-with-python/">python 抓取网页</a></li>
-</ol>
 
   </section>
   <section class="comment">

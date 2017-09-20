@@ -4,7 +4,7 @@
  <title>tzungtzu</title>
  <link href="http://tzungtzu.com/atom.xml" rel="self"/>
  <link href="http://tzungtzu.com"/>
- <updated>2017-09-15T17:01:29+08:00</updated>
+ <updated>2017-09-20T17:48:12+08:00</updated>
  <id>http://tzungtzu.com/</id>
  <author>
    <name>tzungtzu</name>
@@ -67,6 +67,7 @@
   &lt;li&gt;http://www.csuldw.com/2016/11/05/2016-11-05-simulate-zhihu-login/&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/lining0806/PythonSpiderNotes/blob/master/ZhihuSpider/ZhihuSpider.py&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.lining0806.com/python%E5%85%A5%E9%97%A8%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%B9%8B%E7%B2%BE%E5%8D%8E%E7%89%88/&quot;&gt;spider&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wuchong.me/blog/2014/04/24/easy-web-scraping-with-python/&quot;&gt;python 抓取网页&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
  </entry>
