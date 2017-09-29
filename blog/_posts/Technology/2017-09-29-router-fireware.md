@@ -67,8 +67,11 @@ VPN
 最好有给力的QOS，，但这个太少了‘
 
 
+一些问题：
 
-7.4 有温度不能显示的问题
+1. 7.4 有温度不能显示的问题
+2. Asus Router 的 iOS app 有 bug, 无法添加修改名字的 Router，安卓版本没有这个问题。
+3. 安卓手机可以用 Wi-Fi Analyzer 来测试 Wi-Fi 强度。
 
 ### References:
 1. [](http://koolshare.cn/thread-110214-1-1.html)
