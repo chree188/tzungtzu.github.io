@@ -30,6 +30,8 @@ tags:
 
 以上基本解决自动下载的问题。
 
+[see the code here](https://github.com/tzungtzu/spider/blob/master/tiu-downloader/spider.py)
+
 
 
 ### References:
