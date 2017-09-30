@@ -12,14 +12,14 @@ tags:
 ---
 
 
-###宽带知识：
+### 宽带知识：
 简单说，现在2.4G的协议一般是802.11n,5G协议是802.11ac,按协议标准（老的不说了）2.4g每根天线150M，5G每根天线433M。（协议天线数，不是实际这货长几根天线）
 
 那么我们现在最差的2.4G都有150M的速度了，俺们家宽带才20M呢，随便买个破路由就足够了吧。。。这里我回答你：是的，但请你住在火星上去，地球干扰太多鸟
 
 <!--more-->
 
-###路由
+### 路由
 
 1. 现阶段20M及以上宽带，至少要买CPU在500MHZ以上的。（请注意，乃们以前用的80块的TP应对的是2M，4M宽带）
 2. 最好带5G
@@ -33,26 +33,26 @@ tags:
 
 关于频率，2.4GHz的绕墙效果比5GHz更加出色。频率越高的电磁波穿过障碍物损失更多的能量，因此5GHz在穿透墙时，消耗了更大的能量，而2.4GHz走的路径会更长一些，留下来的能量会更多一些。5GHz相比于2.4GHz拥有更广的信道，目前国内规定的可用的5G信道只有149、153、157、161、165（民用）
 
-###固件
+### 固件
 
 梅林固件 - koolshare 改版梅林固件 
 
 插件：
 
-####Adbyby
+#### Adbyby
 
 梅林改版固件暂时不支持
 
-####配置 SS
+#### 配置 SS
 
 设置 LAN SSH，全部打勾，
 
-        ssh username@192.168.1.1
-        cd /tmp
-        wget -N -O shadowsocks.tar.gz http://www.xiazai.ml/Router/merlin/离线包/shadowsocks_3.6.0.tar.gz
-        tar -zxvf /tmp/shadowsocks.tar.gz
-        chmod +x /tmp/shadowsocks/install.sh
-        sh /tmp/shadowsocks/install.sh
+	    ssh username@192.168.1.1
+	    cd /tmp
+	    wget -N -O shadowsocks.tar.gz http://www.xiazai.ml/Router/merlin/离线包/shadowsocks_3.6.0.tar.gz
+	    tar -zxvf /tmp/shadowsocks.tar.gz
+	    chmod +x /tmp/shadowsocks/install.sh
+	    sh /tmp/shadowsocks/install.sh
 
 
 
@@ -68,6 +68,21 @@ VPN
 最好有给力的QOS，，但这个太少了‘
 
 
+gfw list:
+google.com
+facebook.com
+spotify.com
+twitter.com
+instagram.com
+youtube.com
+gmail.com
+dropbox.com
+
+
+### 内网穿透 ddnsto
+
+[http://koolshare.cn/thread-116500-1-1.html][1]
+
 一些问题：
 
 1. 7.4 有温度不能显示的问题
@@ -75,6 +90,7 @@ VPN
 3. 安卓手机可以用 Wi-Fi Analyzer 来测试 Wi-Fi 强度。
 
 ### References:
+<<<<<<< HEAD
 1. [](http://koolshare.cn/thread-110214-1-1.html)
 2. [常用插件](https://post.smzdm.com/p/430693/)
 3. [家庭wifi测试](https://post.smzdm.com/p/427541/)
@@ -86,3 +102,27 @@ VPN
 9. [家庭网盘](http://www.sohu.com/a/118119233_160148)
 10. [aria 远程操作](http://koolshare.cn/thread-30944-1-1.html)
 11. [DDOS](https://post.smzdm.com/p/549942/)
+=======
+1. [][2]
+2. [常用插件][3]
+3. [家庭wifi测试][4]
+4. [路由器][5]
+5. [安装ss][6]
+6. [ss git 地址][7]
+7. [小宝梅林固件][8]
+8. [aria 配置][9]
+9. [家庭网盘][10]
+10. [aria 远程操作][11]
+
+[1]:	http://koolshare.cn/thread-116500-1-1.html
+[2]:	http://koolshare.cn/thread-110214-1-1.html
+[3]:	https://post.smzdm.com/p/430693/
+[4]:	https://post.smzdm.com/p/427541/
+[5]:	https://post.smzdm.com/p/555403/?nozhiyou
+[6]:	http://www.ti6.net/internet/3225.html
+[7]:	https://github.com/koolshare/koolshare.github.io/blob/acelan_softcenter_ui/shadowsocks/shadowsocks.tar.gz
+[8]:	http://koolshare.cn/thread-110214-1-1.html
+[9]:	https://post.smzdm.com/p/369442/
+[10]:	http://www.sohu.com/a/118119233_160148
+[11]:	http://koolshare.cn/thread-30944-1-1.html
+>>>>>>> 144b9b934a89e3f610524d8badabf244f4904aec
