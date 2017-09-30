@@ -89,6 +89,16 @@ dropbox.com
 2. Asus Router 的 iOS app 有 bug, 无法添加修改名字的 Router，安卓版本没有这个问题。
 3. 安卓手机可以用 Wi-Fi Analyzer 来测试 Wi-Fi 强度。
 
+
+
+1. 配置访客网络
+2. 打开ssh, JFFS
+3. ss
+4. USB
+5. Aicloud
+
+
+
 ### References:
 <<<<<<< HEAD
 1. [](http://koolshare.cn/thread-110214-1-1.html)
