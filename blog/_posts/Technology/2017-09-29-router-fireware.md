@@ -37,11 +37,23 @@ tags:
 
 梅林固件 - koolshare 改版梅林固件 
 
-插件：
+###插件：
 
 #### Adbyby
 
-梅林改版固件暂时不支持
+梅林改版固件暂时不支持，用 ADM。暂时不知道有什么作用
+
+####u盘
+
+U盘是exFAT格式，梅林不支持，格式化成NTFS就好了。 EXT2/3貌似也可以
+
+####Aria2
+
+百度资源：BaiduExporter
+
+磁力链接： webui
+
+迅雷离线： 从网页版下载，转到 Aria
 
 #### 配置 SS
 
@@ -56,32 +68,34 @@ tags:
 
 
 
-适合国情的固件功能有：
+        适合国情的固件功能有：
 
-SS，玩游戏（PS4）的朋友则需要支持NAT2的SS
-VPN
-下载工具
-双拨
-硬盘共享工具（samba/ftp等） download master
-去广告工具（adm/adbyby)
-有双线的朋友：策略路由
-最好有给力的QOS，，但这个太少了‘
+        SS，玩游戏（PS4）的朋友则需要支持NAT2的SS
+        VPN
+        下载工具
+        双拨
+        硬盘共享工具（samba/ftp等） download master
+        去广告工具（adm/adbyby)
+        有双线的朋友：策略路由
+        最好有给力的QOS，，但这个太少了‘
 
 
-gfw list:
-google.com
-facebook.com
-spotify.com
-twitter.com
-instagram.com
-youtube.com
-gmail.com
-dropbox.com
+gfw list:    
+
+        google.com
+        facebook.com
+        spotify.com
+        twitter.com
+        instagram.com
+        youtube.com
+        gmail.com
+        dropbox.com
 
 
 ### 内网穿透 ddnsto
 
-[http://koolshare.cn/thread-116500-1-1.html][1]
+详见[链接][http://koolshare.cn/thread-116500-1-1.html]
+实现外网登录没有固定公网的路由器。
 
 一些问题：
 
@@ -89,9 +103,15 @@ dropbox.com
 2. Asus Router 的 iOS app 有 bug, 无法添加修改名字的 Router，安卓版本没有这个问题。
 3. 安卓手机可以用 Wi-Fi Analyzer 来测试 Wi-Fi 强度。
 
+
+###重置路由器后需要重新配置的。
+1. 无线配置：ssh + fxxx
+2. usb配置 smb(y/y/n),ftp
+3. 插件：ss(socks5), adm, ddnsto, aria2
+
 ### References:
 <<<<<<< HEAD
-1. [](http://koolshare.cn/thread-110214-1-1.html)
+1. [fireware](http://koolshare.cn/thread-110214-1-1.html)
 2. [常用插件](https://post.smzdm.com/p/430693/)
 3. [家庭wifi测试](https://post.smzdm.com/p/427541/)
 4. [路由器](https://post.smzdm.com/p/555403/?nozhiyou)
@@ -101,28 +121,6 @@ dropbox.com
 8. [aria 配置](https://post.smzdm.com/p/369442/)
 9. [家庭网盘](http://www.sohu.com/a/118119233_160148)
 10. [aria 远程操作](http://koolshare.cn/thread-30944-1-1.html)
-11. [DDOS](https://post.smzdm.com/p/549942/)
-=======
-1. [][2]
-2. [常用插件][3]
-3. [家庭wifi测试][4]
-4. [路由器][5]
-5. [安装ss][6]
-6. [ss git 地址][7]
-7. [小宝梅林固件][8]
-8. [aria 配置][9]
-9. [家庭网盘][10]
-10. [aria 远程操作][11]
+11. [ddns](https://post.smzdm.com/p/549942/)
+12. [路由常规功能](https://post.smzdm.com/p/439258/)
 
-[1]:	http://koolshare.cn/thread-116500-1-1.html
-[2]:	http://koolshare.cn/thread-110214-1-1.html
-[3]:	https://post.smzdm.com/p/430693/
-[4]:	https://post.smzdm.com/p/427541/
-[5]:	https://post.smzdm.com/p/555403/?nozhiyou
-[6]:	http://www.ti6.net/internet/3225.html
-[7]:	https://github.com/koolshare/koolshare.github.io/blob/acelan_softcenter_ui/shadowsocks/shadowsocks.tar.gz
-[8]:	http://koolshare.cn/thread-110214-1-1.html
-[9]:	https://post.smzdm.com/p/369442/
-[10]:	http://www.sohu.com/a/118119233_160148
-[11]:	http://koolshare.cn/thread-30944-1-1.html
->>>>>>> 144b9b934a89e3f610524d8badabf244f4904aec
