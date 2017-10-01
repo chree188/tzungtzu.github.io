@@ -104,10 +104,19 @@ gfw list:
 3. 安卓手机可以用 Wi-Fi Analyzer 来测试 Wi-Fi 强度。
 
 
+
 ###重置路由器后需要重新配置的。
 1. 无线配置：ssh + fxxx
 2. usb配置 smb(y/y/n),ftp
 3. 插件：ss(socks5), adm, ddnsto, aria2
+=======
+
+1. 配置访客网络
+2. 打开ssh, JFFS
+3. ss
+4. USB
+5. Aicloud
+
 
 ### References:
 <<<<<<< HEAD
