@@ -114,6 +114,11 @@ gfw list:
 5. Aicloud
 
 
+
+因为插件都安装在 /tmp， 所以重启之后都没有了
+JFFS   取消重启后清空JFFS
+
+
 ### References:
 <<<<<<< HEAD
 1. [fireware](http://koolshare.cn/thread-110214-1-1.html)
