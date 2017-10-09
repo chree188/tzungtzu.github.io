@@ -1,3 +1,5 @@
+
+
 ## Asus AC5300 安装 homebridge 踩坑记录（2） - 安装 Debian
 
 一个 Node.js 项目，首先想到的安装方法，就是通过 Entware-ng 安装 Node.js 和 npm, 再通过 npm 安装 node.js. 但发现 Homebridge 需要依赖 mdns 等组件，而 mdns 包含 C/C++ 代码，编译过程中需要 avahi 的 lib 和头文件，而这些文件 Entware-ng 没有提供。自己编译 avahi 觉得太麻烦，所以开始尝试其他方法。

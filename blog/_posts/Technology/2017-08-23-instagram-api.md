@@ -83,7 +83,11 @@ tags:
 Tips:
 https://www.instagram.com/tzungtzu/media/ 可以获取 media without auth.
 
+TODO： 想获取自己like 的照片，好像不行，
 
+有机会试试Telegtam BOT 完成一些自动化。
+
+[BotFather](https://t.me/BotFather)
 
 
 ### References:
