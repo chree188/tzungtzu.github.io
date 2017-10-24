@@ -17,4 +17,10 @@
 
 
 
+##解压
 
+tar zxvf 解压
+
+
+### References:
+1. [tar zcvf FileName.tar.gz DirName](http://www.cnblogs.com/eoiioe/archive/2008/09/20/1294681.html)
