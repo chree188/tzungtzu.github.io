@@ -10,7 +10,15 @@ tags:
 ---
 
 
-###硬壳
+###保护层
+
+轻薄冲锋衣，夏季，低海拔使用。
+MARMOT PRECIP (性价比高)，MHW EPIC （conduit涂层）
+GORE-TEX PACLITE: MHW TYPHOON, ARCTERYX BETA SL, ALPHA SL.
+厚冲锋衣，冬季，高海拔
+GORE-TEX PRO SHELL: ARCTERYX BETA AR, THETA AR, ALPHA SV. MAMMUT 极限系列（骚，甚至超过鸟）
+软壳:MHW SYNCHRO(防水)，ARCTERYX GAMMA MX (透气，多用途)， ARCTERYX VENTA SV (防风) MARMOT SUPER HERO(多用途)
+
 
 软壳与硬壳的版型要求有着很大的不同。软壳最初的用途是做为攀岩、攀冰服饰使用，其后又被其他类型的户外活动所接纳，其特点为柔软且收身，上衣多为短夹克款式。软壳通常做为两层穿着使用，不考虑中层保温服饰的存在。
 
@@ -46,16 +54,24 @@ LS（Long Sleeve）是长袖，SS（Short Sleeve）是短袖，RT (Rolltop) 卷�
 Patagonia Men's Triolet Gortex Jacket
 
 
-###抓绒
+###保暖层
+
+主要是抓绒衣，也可以是羽绒内胆，P棉棉服，风衣，软壳。
+迪卡侬49元套头抓绒（迪卡侬最值得购买的装备，性价比无敌），PATAGONIA 
+R2（经典抓绒，轻）, R4(防风抓绒)，DOWN SWEATER(羽绒内胆), ARCTERYX DELTA SV（毛猴型，重装）,DELTA AR, MHW MONKEY MAN（重装，高端毛猴类最具性价比），HW 玉龙（羽绒内胆，国货精品，类似 PATA DOWN SWEATER）MARMOT DRICLIME (神衣，防风，透气，行进中很有效)
+
 
 Summit L2中间层
 
-这是一件采用了Polartec面料的防风抓绒：Summit L2 Fleece Jacket。带帽款式，主拉链内层配置有挡风贴边，具有两侧以及胸部3个拉链口袋，面料表面经过Hardface硬化耐磨技术处理，这些设计使得L2抓绒不但具备了良好的防风保暖功能，同时也具备了高度耐磨性能。
+    这是一件采用了Polartec面料的防风抓绒：Summit L2 Fleece Jacket。带帽款式，主拉链内层配置有挡风贴边，具有两侧以及胸部3个拉链口袋，面料表面经过Hardface硬化耐磨技术处理，这些设计使得L2抓绒不但具备了良好的防风保暖功能，同时也具备了高度耐磨性能。
 
 
 
 
-###内衣
+###排汗层
+
+patagonia的C系列品质值得信任，另外冬季的话，也可以使用SWARTWOOL 的美利奴羊毛内衣。
+
 
 The North Face Women's Summit L1 Top
 http://www.8264.com/wenda/2604.html
@@ -83,14 +99,19 @@ https://m.bianhua8.com/article/2652
 
 https://www.outdoorbrands.nl/epages/Outdoorbrands.sf/en_GB/?ObjectPath=/Shops/Outdoorbrands/Products/80620-001/SubProducts/80620-001-0004
 
-
+羽绒：MHW SUB ZERO, MARMOT GUIDE DOWN JACKET
+袜子：国外Bridgedale,SmartWool，国产的ZEALwood。
+雪套：国外OR, BLACK DIAMOND,国产的尖峰
+内裤：exofficio Give-N-Go (最佳户外鸟帐之一），PATAGONIA C1（花内裤啊）
+快干衣裤：exofficio insect shield，MHW, ARCTERYX
 
 
 ### Tips:
 
 1. 老鼠家的优势是硬壳和保暖。
 2. use outdoorgearlab
-
+3. 　护膝推荐：LP 733,788, 733CA 788CA.有效保护膝盖，尤其是下坡。
+4. 　LACK DIAMOND TRAIL，入门款，不过BD的品质还是可以保证的
 
 
 list：
@@ -115,3 +136,4 @@ list：
 
 ### References:
 1. [Arcteryx始祖鸟各型号之间的区别？ - 知乎](https://www.zhihu.com/question/22099815)
+2. [常见户外装备推荐（中高配）（转自8264论坛）【拓学俱乐部吧】百度贴吧](http://tieba.baidu.com/p/2312547602)
