@@ -1,11 +1,13 @@
 ---
 layout: post
-title: 装备坑
+title:  装备坑
 categories: 
 - Travel
 tags:
 - hiking
 - climbing
+- cloth
+- buy
 
 ---
 
