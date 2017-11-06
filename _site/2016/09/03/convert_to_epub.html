@@ -139,21 +139,18 @@
 <p>安装好Calibre后，还不能直接使用CLI，
 需要建立<a href="https://github.com/GitbookIO/gitbook/issues/333">软链接</a></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin
+</code></pre></div></div>
 
 <p>或者设置全局变量</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+</code></pre></div></div>
 
 <p>之后即可转换文件</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ebook-convert input_file output_file
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ebook-convert input_file output_file
+</code></pre></div></div>
 
 <p>具体可选配置可以点<a href="https://manual.calibre-ebook.com/generated/en/cli-index.html#">这里</a>。</p>
 
@@ -166,18 +163,16 @@
   <li>
     <p>Installation</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> wget --no-check-certificate -O '/usr/local/bin/convertio' https://api.convertio.co/convertio
  chmod +x /usr/local/bin/convertio
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Convert</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export CONVERTIO\_API\_KEY=\_YOUR\_API\_KEY\_
  convertio -f jpg input.pdf
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ol>
 

@@ -24,6 +24,16 @@
 
 <p>Matrix (lcr here means left, center or right for each column)</p>
 
+<p>Cases</p>
+
+<p>\begin{equation}f(x)=
+\begin{cases}
+\lambda exp(-\lambda), &amp;x\geq 0\cr 0, &amp;x\end{cases}
+\end{equation}</p>
+
+<p>直接在正文区的公式环境中输入下面的命令
+大于号敲\geq ，小于号敲\leq</p>
+
 <h3 id="latex-在-markdown-中的显示">Latex 在 Markdown 中的显示</h3>
 
 <p>如果通过 Sublime 的 OmniMarkupPreviewer 在网页中查看 Markdown 中的 Latex 公式， 只需要将在 OmniMarkupPreviewer 设置中的 “mathjax_enabled” 设置为 “true”。MathJax 就会在后端自动下载，并在网页中显示。</p>
@@ -37,18 +47,17 @@
   <li>在 _config.yml 中指定 Markdown 解析器</li>
 </ol>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="c"># Conversion</span>
 <span class="n">markdown</span><span class="p">:</span> <span class="n">kramdown</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>将下面代码加入 /layout/default.html 文件的 &lt;head&gt; 标签里</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 &lt;!-- mathjax config similar to math.stackexchange --&gt;
 
 &lt;script type="text/x-mathjax-config"&gt;
@@ -84,8 +93,7 @@
 
 3. 最后在 Markdown 文件里写公式代码
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>References：</p>
 <ol>

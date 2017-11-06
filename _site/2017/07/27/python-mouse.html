@@ -134,30 +134,27 @@ Windows - pywin32, pyHook</p>
 
 <p>由附录2可知，pyobjc 包含了 Mac 下需要的两个依赖，所以只需安装 pyobjc 包。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pip install pyobjc
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install pyobjc
 pip install PyUserInput
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="2调用方法">2.调用方法</h3>
 
 <p>在安装完PyUserInput后，pymouse和pykeyboard模块就被安装到你的Python路径下。
 建立一个鼠标和键盘对象：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>from pymouse import PyMouse
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from pymouse import PyMouse
 from pykeyboard import PyKeyboard
 m = PyMouse()
 k = PyKeyboard()
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>接下来是一个示例，完成点击屏幕中央并键入“Hello, World!”的功能：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>x_dim, y_dim = m.screen_size()
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x_dim, y_dim = m.screen_size()
 m.click(x_dim/2, y_dim/2, 1)
 k.type_string('Hello, World!')
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>写到这里，发现自己不会写 Alfred Workflow 的 python 文件，于是我用 BetterTouchTool 的多步鼠标动作完成了这个需求🤦🏻‍♂️。</p>
 

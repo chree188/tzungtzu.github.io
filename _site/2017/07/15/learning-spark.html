@@ -133,16 +133,14 @@
 
 <p>最简单的创建 RDD 的方式就是将你程序中已存在的集合传递给 SparkContext 的 parallelize()方法，</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; val rdd = sc.parallelize(Array(1, 2, 3, 4))
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; val rdd = sc.parallelize(Array(1, 2, 3, 4))
+</code></pre></div></div>
 
 <p>针对外部读取数据： path = “file:///home/ubuntu/data/spark-2.0.1-bin-hadoop2.6/LICENSE”</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>spark默认是从hdfs读取文件，也可以指定sc.textFile("路径").在路径前面加上hdfs://表示从hdfs文件系统上读
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark默认是从hdfs读取文件，也可以指定sc.textFile("路径").在路径前面加上hdfs://表示从hdfs文件系统上读
 本地文件读取 sc.textFile("路径").在路径前面加上file:// 表示从本地文件系统读，如file:///home/user/spark/README.md
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>总是重新计算一个 RDD 的能力事实上就是为什么 RDD 被称为“弹性”的原因。</p>
 
@@ -191,13 +189,12 @@
 
 <p>###常用函数</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>spark-shell --packages neo4j-contrib:neo4j-spark-connector:2.0.0-M2,graphframes:graphframes:0.5.0-spark2.0-s_2.11
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spark-shell --packages neo4j-contrib:neo4j-spark-connector:2.0.0-M2,graphframes:graphframes:0.5.0-spark2.0-s_2.11
 
 a.groupBy(x =&gt; { if (x % 2 == 0) "even" else "odd" }).collect
 rdd.map(x=&gt; {if (x==3) (1,x) else (2,x)}).collect()
 rdd.countByKey()
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>###references</p>
 <ol>

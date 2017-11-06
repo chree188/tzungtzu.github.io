@@ -260,13 +260,12 @@ where COUNT &gt;1</li>
   <li>
     <p>从 CSV 文件导入到 Neo4j</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> LOAD CSV WITH HEADER FROM "url" AS row
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> LOAD CSV WITH HEADER FROM "url" AS row
  MERGE (src:Character {name: row.Source})
  MERGE (tgt:Character {name: row.Target})
  MERGE (src)-[r:INTERACTS]-&gt;(tgt)
  SET r.weight = toInt(row.Weight)
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>一次显示多个点

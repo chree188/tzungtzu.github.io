@@ -122,14 +122,13 @@
 
 <!--more-->
 
-<div class="highlighter-rouge"><pre class="highlight"><code>通过request.session的 post 方法 进行登录。 get 方法获取网页信息。
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>通过request.session的 post 方法 进行登录。 get 方法获取网页信息。
 
     session = requests.session()
     login_data = {'email':email,'passwd':passwd}
     session.post('http://hk2.app.akulaku.com:60100/auth/login',data = login_data)
     r = session.get('http://hk2.app.akulaku.com:60100/user')
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>cookies</li>
@@ -137,15 +136,14 @@
 
 <p>###爬虫爬取</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    import bs4
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    import bs4
 
     soup = bs4.BeautifulSoup(r.text,"lxml")
     r = session.get('url')
     name = soup.select('.hidden-xs')[0].get_text()
 
     注意最后，需要通过.get_text()方法转为中文字符。
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>###抓包</p>
 

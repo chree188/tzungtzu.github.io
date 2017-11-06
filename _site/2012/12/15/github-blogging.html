@@ -118,11 +118,10 @@
 
 <p>在写添加博文的时候出现了一个问题，修改前的文章在blog中依然存在，这是因为虽然在目录下删除了文件，但是没有进行git删除，所以只是本地删除了，github上没有删除，只需要git删除后再提交就能解决。代码如下：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    $git rm -rf XXX.md
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $git rm -rf XXX.md
     $git commit -m "del post"
     $git push origin master
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>另外，针对本地预览出现的一些问题，一些解决方法。</p>
 
@@ -131,13 +130,12 @@
   <li>
     <p>jekyll –server时出现的编码问题：</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> "Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-0.11.2/lib/jekyll/convertible.rb:29:in ‘read_yaml’: invalid byte sequence in GBK (ArgumentError)"   找到ruby目录下gems/jekyll-0.11.0/lib/jekyll/convertible.rb29行修改为下面的内容
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> "Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-0.11.2/lib/jekyll/convertible.rb:29:in ‘read_yaml’: invalid byte sequence in GBK (ArgumentError)"   找到ruby目录下gems/jekyll-0.11.0/lib/jekyll/convertible.rb29行修改为下面的内容
 
  self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8") 最后
 
  jekyll --server --auto 即可通过
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ol>
 

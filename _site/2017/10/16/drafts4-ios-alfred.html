@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>通过代理连接 ssh</title>
+    <title>Some Url Schemes for Drafts4</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -82,11 +82,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>通过代理连接 ssh </h2>
+    <h2>Some Url Schemes for Drafts4 </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-08-11">2017-08-11</time>
+    <time datetime="2017-10-16">2017-10-16</time>
   </span>
   
 
@@ -106,65 +106,69 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#ssh" title="ssh">#ssh</a>&nbsp;
-    
-    <a href="/tags.html#terminal" title="terminal">#terminal</a>&nbsp;
-    
-    <a href="/tags.html#socks5" title="socks5">#socks5</a>&nbsp;
-    
   </span>
   
   </section>
   <section class="post">
-  <p>安装 Surge 以后，通过</p>
+  <!--more-->
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    echo export ALL_PROXY=socks5://127.0.0.1:6153
-    curl ip.gs
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>["gg", "https://www.google.com.hk/search?q="],
+["maps", "http://maps.apple.com/?q="],
+["app", "itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?edia=software&amp;term="],
+["url", "http://"],
+["tel", "tel://"],
+["sms", "sms://"],
+["gm", "comgooglemaps://?q="],
+["1p", "onepassword://search/"],
+["dayone", "dayone://post?entry="],
+
+["am", "http://www.amazon.com/s/?field-keywords="],
+["tao", "taobao://s.taobao.com/?q="],
+["xy", "https://s.2.taobao.com/list/list.htm?search_type=item&amp;q="],
+["jd", "https://so.m.jd.com/ware/search.action?keyword="],
+
+["spotify", "spotify:search:"],
+["youtube", "https://m.youtube.com/results?q="],
+["ins", "instagram://user?username="],
+["mokepost", "moke:///post?text="],   
+["moke", "moke:///search/statuses?query="],
+["twpost", "tweetbot:///post?text="],
+["twitter", "twitter://post?message="],
+["tw", "tweetbot:///search?query="],
+
+["wx", "http://weixin.sogou.com/weixinwap?query="],
+["bing", "http://cn.bing.com/search?q="],
+["zhihu", "http://www.zhihu.com/search?q="],
+["wiki", "https://zh.m.wikipedia.org/wiki/"],
+["ssp", "https://www.google.co.jp/search?q=site:sspai.com+"],
+
+["ip", "http://ip.cn/?ip="],
+["us", "http://itunes.apple.com/us/app/region-chager/id0123456789"],
+["cn", "http://itunes.apple.com/cn/app/region-chager/id0123456789"],
+["hk", "http://itunes.apple.com/hk/app/region-chager/id0123456789"],
+["ft", "facetime://"],
+
+////🔍 Google Advanced Search
+["min", "https://www.google.co.jp/search?q=-"],
+["add", "https://www.google.co.jp/search?q=+"],
+["site", "https://www.google.com/search?q=site:"],
+["safe", "https://www.google.co.jp/search?q=-baidu%20"],
+["doc", "https://www.google.com/search?q=filetype:doc+"],
+["png", "https://www.google.com/search?q=filetype:png+"],
+["tex", "https://www.google.com/search?q=filetype:tex+"],
+["ppt", "https://www.google.com/search?q=filetype:ppt+"],
+["pdf", "https://www.google.com/search?q=filetype:pdf+"],
+["xls", "https://www.google.com/search?q=filetype:xls+"],
+
+["note","drafts4://create?action=OmniFocus%20Note&amp;text="],
+["inote","x-drafts4://x-callback-url/import_action?v=2&amp;tintColor=%5B%0A%20%200.45100000500679016%2C%0A%20%200.28999999165534973%2C%0A%20%200.55299997329711914%0A%5D&amp;shouldConfirm=0&amp;logLevel=1&amp;uuid=997DC434-B387-4664-99F5-E3CEDCCECE57&amp;disposition=3&amp;actionSteps=%5B%0A%20%20%7B%0A%20%20%20%20%22actionStepType%22%20%3A%20%22URL%22%2C%0A%20%20%20%20%22urlTemplate%22%20%3A%20%22omnifocus%3A%5C%2F%5C%2Fx-callback-url%5C%2Fadd%3F%26autosave%3Dtrue%26name%3D%5B%5Btitle%5D%5D%26note%3D%5B%5Bbody%5D%5D%26x-success%3Ddrafts4%3A%5C%2F%5C%2F%22%2C%0A%20%20%20%20%22useSafariViewController%22%20%3A%20false%2C%0A%20%20%20%20%22encodeTags%22%20%3A%20true%0A%20%20%7D%0A%5D&amp;description=&amp;modifiedAt=2017-10-14%2016%3A23%3A50%20%2B0000&amp;name=OmniFocus%20Note&amp;iconImageName=430-checkmark3"],
 </code></pre></div></div>
-
-<p>可以将终端翻墙，但是依然无法连接 ssh，一直通过 Proxifier 来连接 ssh 服务器。</p>
-
-<!--more-->
-
-<p>下面介绍通过ssh代理(跳板)在终端连线ssh服务器</p>
-
-<p>使用nc命令(netcat)实现，假设本地SSH代理的监听端口是6153，则ProxyCommand为</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ProxyCommand nc -x 127.0.0.1:3000 %h %p
-</code></pre></div></div>
-
-<p>在命令行里：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ssh -i ~/Workspace/keys\&amp;/baolei.pem -oProxyCommand="nc -x 127.0.0.1:6153 %h %p" ubuntu@52.77.156.128
-</code></pre></div></div>
-
-<p>也可以添加到<code class="highlighter-rouge">~/.ssh/conf</code>里：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    # ---ssh
-    Host work
-            Hostname 52.77.156.128
-            User ubuntu
-            PreferredAuthentications publickey
-            IdentityFile ~/Workspace/keys&amp;/baolei.pem
-            ProxyCommand nc -x 127.0.0.1:6153 %h %p
-    #---
-</code></pre></div></div>
-
-<p>nc也可以用于HTTPS代理，这需要指定所使用的协议，即添加 -X connect 参数。比如ssh_config中的例子</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ProxyCommand /usr/bin/nc -X connect -x 192.0.2.0:8080 %h %p
-</code></pre></div></div>
-
-<p>netcat也有很多其他用途，有兴趣可以看看</p>
 
 <h3 id="references">References:</h3>
 <ol>
-  <li><a href="https://www.slahser.com/2016/10/03/Migrate-fish88-to-Surge/">https://www.slahser.com/2016/10/03/Migrate-fish88-to-Surge/</a></li>
-  <li>https://medium.com/@scomper/surge-%E7%9A%84%E5%A2%9E%E5%BC%BA%E6%A8%A1%E5%BC%8F-tun-cc0aaad86ff5</li>
-  <li>https://www.lainme.com/doku.php/blog/2011/01/%E9%80%8F%E8%BF%87%E4%BB%A3%E7%90%86%E8%BF%9E%E6%8E%A5ssh</li>
-  <li>https://blog.gtwang.org/linux/linux-utility-netcat-examples/</li>
+  <li><a href="http://iospark.me/2017/09/30/Power-Action/">Power+ Drafts Action</a></li>
+  <li><a href="https://gist.github.com/soffchen/5989f7ef4c0cef9f7a4e29254f3fa0e2">Yet Another Alfred for iOS Drafts</a></li>
 </ol>
-
 
   </section>
   <section class="comment">

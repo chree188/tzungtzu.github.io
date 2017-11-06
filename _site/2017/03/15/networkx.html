@@ -112,14 +112,12 @@
   
   </section>
   <section class="post">
-  <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="n">nx</span>
 <span class="k">print</span> <span class="n">nx</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;module 'networkx' from '/usr/local/lib/python2.7/dist-packages/networkx/__init__.pyc'&gt;
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;module 'networkx' from '/usr/local/lib/python2.7/dist-packages/networkx/__init__.pyc'&gt;
+</code></pre></div></div>
 
 <p>创建图</p>
 
@@ -142,21 +140,19 @@ print g1.get_edge_data(1,2)</p>
 
 <p>图算法</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#algathm</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#algathm</span>
 
 <span class="n">path</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">all_pairs_shortest_path</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 
 <span class="k">print</span> <span class="n">path</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[1, 2, 3]
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1, 2, 3]
+</code></pre></div></div>
 
 <p>绘制图</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="n">nx</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 
 <span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
@@ -165,8 +161,7 @@ print g1.get_edge_data(1,2)</p>
 
 <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s">'y'</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>  
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><img src="networkx_files/networkx_7_0.png" alt="png" /></p>
 
@@ -176,25 +171,22 @@ print g1.get_edge_data(1,2)</p>
 
 <p>k_core(G,k=n)得到的是由所有k-shell值不小于n的节点组成的G的子图</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">ks</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">k_shell</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ks</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">k_shell</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">ks</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span>
 
 <span class="n">kc</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">k_core</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">kc</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s">'y'</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[6]
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[6]
+</code></pre></div></div>
 
 <p><img src="networkx_files/networkx_9_1.png" alt="png" /></p>
 
 <p>从 neo4j 导入数据</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
   </section>
   <section class="comment">

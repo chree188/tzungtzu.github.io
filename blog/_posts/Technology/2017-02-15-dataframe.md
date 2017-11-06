@@ -94,3 +94,6 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 	df1.index = range(len(df1))  
 ###按某列去重
 	DataFrame.drop_duplicates('column')
+
+###去除某列 str 的左右
+	Series.str.rstrip("ss")去除右边空白

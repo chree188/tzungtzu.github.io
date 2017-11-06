@@ -130,13 +130,12 @@
 
 <p>我采用的语言是基于 macOS 系统层面的 AppleScript，主要原因是简单。（当然我也在看脚本运行的方法，它们更加强大）</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> tell application "Google Chrome"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tell application "Google Chrome"
         tell window 1
             set newTab to make new tab with properties {URL:myurl}
         end tell
 end tell
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>其中 myurl 就是我们要搜索的 URL。</p>
 
@@ -145,15 +144,14 @@ end tell
 <p>如果当前在 Chrome， 则从 Chrome 背景页面打开；如果当前在其他 App，只需要在 Chrome 打开新页面即可，方便跳转 App 的时候查看。
 只需要做一个条件判断当前 Focus 的 App 是否为 Chrome。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tell application "System Events"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tell application "System Events"
     set activeApp to name of first application process 
 end tell
 
 if 
 else
 endif
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>在这里我们把它设为 activeApp.</p>
 

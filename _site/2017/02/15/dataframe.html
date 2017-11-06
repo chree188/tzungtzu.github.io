@@ -122,41 +122,36 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 <p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>frame ['year'] = frame.year  
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frame ['year'] = frame.year  
 frame.ix['three']  #获取行数据
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="删除一列">删除一列</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>frame.drop(['a','b']) #删除a，b行
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frame.drop(['a','b']) #删除a，b行
 frame.drop([two],axis=1) #删除two 列。
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="添加一列">添加一列</h3>
 
 <p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Frame['newcolumn'] = series  #在Frame 创建新列
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Frame['newcolumn'] = series  #在Frame 创建新列
+</code></pre></div></div>
 
 <h3 id="改变一列的-type">改变一列的 type</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
+</code></pre></div></div>
 
 <p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
 	pd.to_numeric(s, errors =”coerce”)</p>
 
 <h3 id="修改索引">修改索引</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>obj = obj.reindex(['a','b','c','d','e'])
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>obj = obj.reindex(['a','b','c','d','e'])
 frame = frame.reindex(index=[], cloumns=[])
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="将列变成索引">将列变成索引</h3>
 
@@ -166,33 +161,28 @@ frame = frame.reindex(index=[], cloumns=[])
 <h2 id="聚类">聚类</h2>
 
 <h3 id="统计a列中元素的重复次数">统计a列中元素的重复次数</h3>
-<div class="highlighter-rouge"><pre class="highlight"><code>df.groupby('a').size()
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.groupby('a').size()
+</code></pre></div></div>
 
 <h3 id="统计a列中不同元素在b列的求和">统计a列中不同元素在b列的求和</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>df.groupby('a').sum()
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.groupby('a').sum()
+</code></pre></div></div>
 
 <h3 id="合并两个dataframe">合并两个dataframe</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pd.merge(b)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pd.merge(b)
+</code></pre></div></div>
 
 <h3 id="将-index-转为-value">将 index 转为 value</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>df.reset_index()
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.reset_index()
+</code></pre></div></div>
 
 <h3 id="将dataframe-转为-list-of-listslist-of-dicts">将dataframe 转为 list of lists／list of dicts</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>df.values.tolist()
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.values.tolist()
+</code></pre></div></div>
 
 <p>###切片</p>
 
@@ -201,20 +191,21 @@ frame = frame.reindex(index=[], cloumns=[])
 
 <p>###df 设定某列为index (http://opus.konghy.cn/ipynb/two-diff-df-operation.html)</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>df.set_index('column_name')
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.set_index('column_name')
+</code></pre></div></div>
 
 <p>###df 相加（自动补0）</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>df.add(f2, fill_value=0)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.add(f2, fill_value=0)
 
 ### 去除NaN
 df2.dropna() ###重新index
 df1.index = range(len(df1))   ###按某列去重
 DataFrame.drop_duplicates('column')
-</code></pre>
-</div>
+</code></pre></div></div>
+
+<p>###去除某列 str 的左右
+	Series.str.rstrip(“ss”)去除右边空白</p>
 
   </section>
   <section class="comment">

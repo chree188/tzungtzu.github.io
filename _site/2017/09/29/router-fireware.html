@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>通过代理连接 ssh</title>
+    <title>可编程路由器初体验</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -82,11 +82,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>通过代理连接 ssh </h2>
+    <h2>可编程路由器初体验 </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-08-11">2017-08-11</time>
+    <time datetime="2017-09-29">2017-09-29</time>
   </span>
   
 
@@ -95,9 +95,7 @@
   
   <a href="/category.html#blog" title="blog">blog</a>&nbsp;
   
-  <a href="/category.html#" title=""></a>&nbsp;
-  
-  <a href="/category.html#" title=""></a>&nbsp;
+  <a href="/category.html#Technology" title="Technology">Technology</a>&nbsp;
   
 </span>
 
@@ -106,63 +104,140 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#ssh" title="ssh">#ssh</a>&nbsp;
+    <a href="/tags.html#router" title="router">#router</a>&nbsp;
     
-    <a href="/tags.html#terminal" title="terminal">#terminal</a>&nbsp;
+    <a href="/tags.html#asus" title="asus">#asus</a>&nbsp;
     
-    <a href="/tags.html#socks5" title="socks5">#socks5</a>&nbsp;
+    <a href="/tags.html#ss" title="ss">#ss</a>&nbsp;
+    
+    <a href="/tags.html#aria" title="aria">#aria</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p>安装 Surge 以后，通过</p>
+  <h3 id="宽带知识">宽带知识：</h3>
+<p>简单说，现在2.4G的协议一般是802.11n,5G协议是802.11ac,按协议标准（老的不说了）2.4g每根天线150M，5G每根天线433M。（协议天线数，不是实际这货长几根天线）</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    echo export ALL_PROXY=socks5://127.0.0.1:6153
-    curl ip.gs
-</code></pre></div></div>
-
-<p>可以将终端翻墙，但是依然无法连接 ssh，一直通过 Proxifier 来连接 ssh 服务器。</p>
+<p>那么我们现在最差的2.4G都有150M的速度了，俺们家宽带才20M呢，随便买个破路由就足够了吧。。。这里我回答你：是的，但请你住在火星上去，地球干扰太多鸟</p>
 
 <!--more-->
 
-<p>下面介绍通过ssh代理(跳板)在终端连线ssh服务器</p>
+<h3 id="路由">路由</h3>
 
-<p>使用nc命令(netcat)实现，假设本地SSH代理的监听端口是6153，则ProxyCommand为</p>
+<ol>
+  <li>现阶段20M及以上宽带，至少要买CPU在500MHZ以上的。（请注意，乃们以前用的80块的TP应对的是2M，4M宽带）</li>
+  <li>最好带5G</li>
+  <li>固件稳定（就是路由的操作系统）</li>
+  <li>最大功率最好可调</li>
+</ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ProxyCommand nc -x 127.0.0.1:3000 %h %p
+<p>最大功率是指一个路由的最大无线发射功率，咱们伟大的祖国为了保护我们这些花朵，规定无线最大功率应该是100mv,实际上市面上的路由大多在10-50mv ,例如华硕，思科等，默认都是在30-50mv之间。美国规定是200mv,还有些小国家规定320mv…….</p>
+
+<p>所以有切换的确改变最大功率的说法。（无线网络-专业设置- region）</p>
+
+<p>关于频率，2.4GHz的绕墙效果比5GHz更加出色。频率越高的电磁波穿过障碍物损失更多的能量，因此5GHz在穿透墙时，消耗了更大的能量，而2.4GHz走的路径会更长一些，留下来的能量会更多一些。5GHz相比于2.4GHz拥有更广的信道，目前国内规定的可用的5G信道只有149、153、157、161、165（民用）</p>
+
+<h3 id="固件">固件</h3>
+
+<p>梅林固件 - koolshare 改版梅林固件</p>
+
+<p>###插件：</p>
+
+<h4 id="adbyby">Adbyby</h4>
+
+<p>梅林改版固件暂时不支持，用 ADM。暂时不知道有什么作用</p>
+
+<p>####u盘</p>
+
+<p>U盘是exFAT格式，梅林不支持，格式化成NTFS就好了。 EXT2/3貌似也可以</p>
+
+<p>####Aria2</p>
+
+<p>百度资源：BaiduExporter</p>
+
+<p>磁力链接： webui</p>
+
+<p>迅雷离线： 从网页版下载，转到 Aria</p>
+
+<h4 id="配置-ss">配置 SS</h4>
+
+<p>设置 LAN SSH，全部打勾，</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ssh username@192.168.1.1
+    cd /tmp
+    wget -N -O shadowsocks.tar.gz http://www.xiazai.ml/Router/merlin/离线包/shadowsocks_3.6.0.tar.gz
+    tar -zxvf /tmp/shadowsocks.tar.gz
+    chmod +x /tmp/shadowsocks/install.sh
+    sh /tmp/shadowsocks/install.sh
+
+
+
+    适合国情的固件功能有：
+
+    SS，玩游戏（PS4）的朋友则需要支持NAT2的SS
+    VPN
+    下载工具
+    双拨
+    硬盘共享工具（samba/ftp等） download master
+    去广告工具（adm/adbyby)
+    有双线的朋友：策略路由
+    最好有给力的QOS，，但这个太少了‘
 </code></pre></div></div>
 
-<p>在命令行里：</p>
+<p>gfw list:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ssh -i ~/Workspace/keys\&amp;/baolei.pem -oProxyCommand="nc -x 127.0.0.1:6153 %h %p" ubuntu@52.77.156.128
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    google.com
+    facebook.com
+    spotify.com
+    twitter.com
+    instagram.com
+    youtube.com
+    gmail.com
+    dropbox.com
 </code></pre></div></div>
 
-<p>也可以添加到<code class="highlighter-rouge">~/.ssh/conf</code>里：</p>
+<h3 id="内网穿透-ddnsto">内网穿透 ddnsto</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    # ---ssh
-    Host work
-            Hostname 52.77.156.128
-            User ubuntu
-            PreferredAuthentications publickey
-            IdentityFile ~/Workspace/keys&amp;/baolei.pem
-            ProxyCommand nc -x 127.0.0.1:6153 %h %p
-    #---
-</code></pre></div></div>
+<p>详见[链接][http://koolshare.cn/thread-116500-1-1.html]
+实现外网登录没有固定公网的路由器。</p>
 
-<p>nc也可以用于HTTPS代理，这需要指定所使用的协议，即添加 -X connect 参数。比如ssh_config中的例子</p>
+<p>一些问题：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ProxyCommand /usr/bin/nc -X connect -x 192.0.2.0:8080 %h %p
-</code></pre></div></div>
+<ol>
+  <li>7.4 有温度不能显示的问题</li>
+  <li>Asus Router 的 iOS app 有 bug, 无法添加修改名字的 Router，安卓版本没有这个问题。</li>
+  <li>安卓手机可以用 Wi-Fi Analyzer 来测试 Wi-Fi 强度。</li>
+</ol>
 
-<p>netcat也有很多其他用途，有兴趣可以看看</p>
+<p>###重置路由器后需要重新配置的。</p>
+
+<ol>
+  <li>配置访客网络</li>
+  <li>系统设置：打开ssh, JFFS</li>
+  <li>插件：ss</li>
+  <li>USB配置：smb(y/y/n),ftp</li>
+  <li>Aicloud</li>
+</ol>
+
+<p>因为插件都安装在 /tmp， 所以重启之后都没有了
+JFFS   取消重启后清空JFFS</p>
 
 <h3 id="references">References:</h3>
+<p>«««&lt; HEAD</p>
 <ol>
-  <li><a href="https://www.slahser.com/2016/10/03/Migrate-fish88-to-Surge/">https://www.slahser.com/2016/10/03/Migrate-fish88-to-Surge/</a></li>
-  <li>https://medium.com/@scomper/surge-%E7%9A%84%E5%A2%9E%E5%BC%BA%E6%A8%A1%E5%BC%8F-tun-cc0aaad86ff5</li>
-  <li>https://www.lainme.com/doku.php/blog/2011/01/%E9%80%8F%E8%BF%87%E4%BB%A3%E7%90%86%E8%BF%9E%E6%8E%A5ssh</li>
-  <li>https://blog.gtwang.org/linux/linux-utility-netcat-examples/</li>
+  <li><a href="http://koolshare.cn/thread-110214-1-1.html">fireware</a></li>
+  <li><a href="https://post.smzdm.com/p/430693/">常用插件</a></li>
+  <li><a href="https://post.smzdm.com/p/427541/">家庭wifi测试</a></li>
+  <li><a href="https://post.smzdm.com/p/555403/?nozhiyou">路由器</a></li>
+  <li><a href="http://www.ti6.net/internet/3225.html">安装ss</a></li>
+  <li><a href="https://github.com/koolshare/koolshare.github.io/blob/acelan_softcenter_ui/shadowsocks/shadowsocks.tar.gz">ss git 地址</a></li>
+  <li><a href="http://koolshare.cn/thread-110214-1-1.html">小宝梅林固件</a></li>
+  <li><a href="https://post.smzdm.com/p/369442/">aria 配置</a></li>
+  <li><a href="http://www.sohu.com/a/118119233_160148">家庭网盘</a></li>
+  <li><a href="http://koolshare.cn/thread-30944-1-1.html">aria 远程操作</a></li>
+  <li><a href="https://post.smzdm.com/p/549942/">ddns</a></li>
+  <li><a href="https://post.smzdm.com/p/439258/">路由常规功能</a></li>
 </ol>
 
 
