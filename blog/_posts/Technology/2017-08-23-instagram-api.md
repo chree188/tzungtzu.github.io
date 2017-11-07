@@ -78,7 +78,11 @@ tags:
 
 4. 设置定时任务。
     
-     */2 * * * *  表示每两分钟执行一次。crontab
+     */2 * * * *  表示每两分钟执行一次。crontab 
+
+     crontab -l
+     crontab -e
+
 
 Tips:
 https://www.instagram.com/tzungtzu/media/ 可以获取 media without auth.
@@ -97,5 +101,6 @@ TODO： 想获取自己like 的照片，好像不行，
 4. [instagram-python](https://github.com/vgavro/python-instagram/commit/9dfc264571ad7c343af3899445d13afedf23e3aa)
 5. [https://stackoverflow.com/questions/33924581/keyerror-data-with-python-instagram-api-client](https://stackoverflow.com/questions/33924581/keyerror-data-with-python-instagram-api-client)
 6. [https://github.com/facebookarchive/python-instagram/blob/master/README.md](https://github.com/facebookarchive/python-instagram/blob/master/README.md)
+7. [linux笔记：crontab计划任务 - CSDN博客](http://blog.csdn.net/xrt95050/article/details/3980567)
 
 
