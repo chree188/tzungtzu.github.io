@@ -75,6 +75,12 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 	df.values.tolist()
 
+### dataframe to json
+
+df.to_json(orient='split')    
+
+allowed values are: {‘split’,’records’,’index’,’columns’,’values’}
+
 ###切片
 
 ###数据筛选
@@ -97,3 +103,6 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 ###去除某列 str 的左右
 	Series.str.rstrip("ss")去除右边空白
+
+
+
