@@ -25,7 +25,7 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 	frame.ix['three']  #获取行数据
 
 ### 删除一列
-
+ 
 	frame.drop(['a','b']) #删除a，b行
 	frame.drop([two],axis=1) #删除two 列。
 
