@@ -20,7 +20,7 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 ### 取出一列
 
 通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。
- 
+  
 	frame ['year'] = frame.year  
 	frame.ix['three']  #获取行数据
 
