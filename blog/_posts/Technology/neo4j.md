@@ -40,6 +40,12 @@ MERGE 创建节点，关系：
 	p = shortestpath((p1)-[:friend_of*..10]-(p2))
 
 
+##复制关系
+
+    MATCH (a:uid {name : '905792'})-[r:call_history]-(o), (d:uid {name :'900002'})  create (d)-[:call_history]->(o)
+
+前提是 node d 已经创建。否则无变化。
+
 使用函数
 
 性能分析： 在设计的查询语句和算法中，都可以在前面加上一个关键字PROFILE 来进行性能分析。
