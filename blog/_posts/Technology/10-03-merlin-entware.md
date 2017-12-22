@@ -19,7 +19,7 @@
 
 ###2. 自动挂载 U 盘
 
-梅林用 Entware 需要一个可随意读写的空间，这个空间需要挂载到 /opt 目录。插上 U 盘，执行df 命令，可以通过输出知道，我的 U 盘是 /tmp/mnt/sda, 记住这个名字，执行一下命令。
+梅林用 Entware 需要一个可随意读写的空间，这个空间需要挂载到 /opt 目录。插上 U 盘，执行df 命令，可以通过输出知道，我的 U 盘是 /tmp/mnt/sdb, 记住这个名字，执行一下命令。
 
         cat << EOF > /tmp/script_usbmount.tmp
         if [ \$1 = "/tmp/mnt/sda" ]
