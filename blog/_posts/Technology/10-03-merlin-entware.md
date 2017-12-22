@@ -48,6 +48,8 @@
 
         diskutil list
         ##确定 U 盘位置
+
+        diskutil unmountDisk /dev/disk2
         sudo $(brew --prefix e2fsprogs)/sbin/mkfs.ext3 /dev/disk2
 
 
