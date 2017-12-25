@@ -7,3 +7,12 @@ AriaNg的前端面板可以放在你本地电脑上面，下载解压后后直�
 
 
 在自己的主页建立AriaNg 前端面板
+
+下载 release 到网页，
+
+修改默认 path 
+
+js/aria-ng-12608bfb5c.min.js
+
+
+rpc-listen-port":{type:"integer",readonly:!0,tzungtzu.github.io:"443"},
