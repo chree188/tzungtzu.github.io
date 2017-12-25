@@ -16,3 +16,10 @@ js/aria-ng-12608bfb5c.min.js
 
 
 rpc-listen-port":{type:"integer",readonly:!0,tzungtzu.github.io:"443"},
+
+
+
+提供了API
+
+### References:
+1. [AriaNg](http://ariang.mayswind.net/zh_Hans/command-api.html)
