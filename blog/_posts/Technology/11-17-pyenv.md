@@ -35,6 +35,7 @@ brew install pyenv
 
     pyenv versions 
 
+     pyenv global 3.4.3 
 
 ### References:
 1. [Mac OS下多版本python共存 - ILKY - ITeye博客](http://lovekaiyuan.iteye.com/blog/2214417)
