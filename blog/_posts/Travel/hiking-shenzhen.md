@@ -3,6 +3,7 @@ hiking-shenzhen
 ###交通：
 
 ##东西冲
+
 1. 住南山/福田：坐地铁到竹子林，在交通枢纽站坐H92（全程约1.5h）
 
 ![公交线路](http://7xo4c2.com1.z0.glb.clouddn.com/20171031210121_Q6Y012_Screenshot.jpeg)
@@ -14,6 +15,8 @@ hiking-shenzhen
 3. 回程：可以公交或者包车。
 徒步到西冲4号沙滩后，继续前往鹤薮村，建议到公交终点站坐车返程（车小人多，你懂得），距离鹤薮村大概有2公里，走路30分钟，可以导航到站台，穿过鹤薮村民宿可到达。当然，公交站旁边很多包车，只是你记得要砍价。
 西冲坐M232 到南澳坐E11或者大鹏中心坐H92、深圳4线、818路
+
+
     
 
 ##小笔架山
@@ -46,6 +49,7 @@ hiking-shenzhen
 药品：藿香正气水（防暑）、风油精、止血贴、跌打药等。
 
 ### References:
+0. [ 深圳最美海岸线 — —东西冲徒步穿越最强攻略,东西冲旅游攻略 - 蚂蜂窝](https://www.mafengwo.cn/i/6289469.html)
 1. [东西涌穿越](https://mp.weixin.qq.com/s/3JZ7aTvzQaDlDj6wytxpAA)
 2. [交通](https://mp.weixin.qq.com/s/RlKSAo690hErqOHAl7zdKA)
 3. [塘朗山-梅林水库徒步攻略 - 8264.com](http://www.8264.com/xianlu-2192325)
