@@ -108,7 +108,7 @@ gfw list:
 ###重置路由器后需要重新配置的。
 
 1. 配置访客网络
-2. 系统设置：打开ssh, JFFS
+2. 系统管理-系统设置：打开ssh, JFFS
 3. 插件：ss
 4. USB配置：smb(y/y/n),ftp
 5. Aicloud
