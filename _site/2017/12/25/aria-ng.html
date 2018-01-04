@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>pandas 中 DataFrame 的分割和合并</title>
+    <title>Aria-Ng 配置</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -82,11 +82,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>pandas 中 DataFrame 的分割和合并 </h2>
+    <h2>Aria-Ng 配置 </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-02-15">2017-02-15</time>
+    <time datetime="2017-12-25">2017-12-25</time>
   </span>
   
 
@@ -104,115 +104,44 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#python" title="python">#python</a>&nbsp;
+    <a href="/tags.html#aria" title="aria">#aria</a>&nbsp;
     
-    <a href="/tags.html#pandas" title="pandas">#pandas</a>&nbsp;
+    <a href="/tags.html#blog" title="blog">#blog</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p>pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
-DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。</p>
+  <p>AriaNg是一个前端(HTML+JS静态)控制面板，不需要和 Aria2(后端/服务端)放在一个服务器或者设备中，你甚至可以只在服务器上面搭建Aria2后端，然后访问别人建好的 AriaNg前端面板，也可以远程操作Aria2后端！</p>
 
-<p>在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
- <!--more--></p>
+<!--more-->
 
-<h3 id="取出一列">取出一列</h3>
+<p>AriaNg是一个 HTML+JS 纯静态一个Aria2的Web面板，所以不需要编译任何环境。
+AriaNg的前端面板可以放在你本地电脑上面，下载解压后后直接用浏览器打开 index.html 文件就能使用了。</p>
 
-<p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
+<p>AriaNg UI 更加好看，支持多 RPC，也支持手机页面。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frame ['year'] = frame.year  
-frame.ix['three']  #获取行数据
+<p>在自己的主页建立AriaNg 前端面板。只需要下载 release 添加到到网页就可以了。</p>
+
+<p>我的下载<a href="http://tzungtzu.github.io/AriaNg/#!/settings/rpc/set/https/tzungtzu-aria.ddns.to/443/jsonrpc/MGYxNGNiNjUxYzM1MDNmMGNkMDgwNzYyZjU1NzkyOTI=">链接</a>。通过这个链接可以直接下载电影到家里和路由器相连的移动硬盘。</p>
+
+<p>提供了API</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    /#!/settings/rpc/set/${protocol}/${rpcHost}/${rpcPort}/${rpcInterface}/${secret}
+    或
+    /#!/settings/rpc/set?protocol=${protocol}&amp;host=${rpcHost}&amp;port=${rpcPort}&amp;interface=${rpcInterface}&amp;secret=${secret}
 </code></pre></div></div>
 
-<h3 id="删除一列">删除一列</h3>
+<p>${protocol} 为连接协议. 您可以使用 http, https, ws 或 wss.
+${rpcHost} 为 aria2 rpc 的主机. 您可以使用 IP 或域名.
+${rpcPort} 为 aria2 rpc 的端口.
+${rpcInterface} 为 aria2 rpc 的路径. 默认为 “jsonrpc”.
+${secret} 为使用 URL 安全的 base64 编码后的 rpc 密钥, 可选.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frame.drop(['a','b']) #删除a，b行
-frame.drop([two],axis=1) #删除two 列。
-</code></pre></div></div>
-
-<h3 id="添加一列">添加一列</h3>
-
-<p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Frame['newcolumn'] = series  #在Frame 创建新列
-</code></pre></div></div>
-
-<h3 id="改变一列的-type">改变一列的 type</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
-</code></pre></div></div>
-
-<p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
-	pd.to_numeric(s, errors =”coerce”)</p>
-
-<h3 id="修改索引">修改索引</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>obj = obj.reindex(['a','b','c','d','e'])
-frame = frame.reindex(index=[], cloumns=[])
-</code></pre></div></div>
-
-<h3 id="将列变成索引">将列变成索引</h3>
-
-<p>将某列作为列的索引，会生成一个新的 DataFrame
-	frame2 = frame.set_index([‘c’])</p>
-
-<h2 id="聚类">聚类</h2>
-
-<h3 id="统计a列中元素的重复次数">统计a列中元素的重复次数</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.groupby('a').size()
-</code></pre></div></div>
-
-<h3 id="统计a列中不同元素在b列的求和">统计a列中不同元素在b列的求和</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.groupby('a').sum()
-</code></pre></div></div>
-
-<h3 id="合并两个dataframe">合并两个dataframe</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pd.merge(b)
-</code></pre></div></div>
-
-<h3 id="将-index-转为-value">将 index 转为 value</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.reset_index()
-</code></pre></div></div>
-
-<h3 id="将dataframe-转为-list-of-listslist-of-dicts">将dataframe 转为 list of lists／list of dicts</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.values.tolist()
-</code></pre></div></div>
-
-<h3 id="dataframe-to-json">dataframe to json</h3>
-
-<p>df.to_json(orient=’split’)</p>
-
-<p>allowed values are: {‘split’,’records’,’index’,’columns’,’values’}</p>
-
-<p>###切片</p>
-
-<p>###数据筛选
-	a[a.proportion&gt;0.5]</p>
-
-<p>###df 设定某列为index (http://opus.konghy.cn/ipynb/two-diff-df-operation.html)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.set_index('column_name')
-</code></pre></div></div>
-
-<p>###df 相加（自动补0）</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.add(f2, fill_value=0)
-
-### 去除NaN
-df2.dropna() ###重新index
-df1.index = range(len(df1))   ###按某列去重
-DataFrame.drop_duplicates('column')
-</code></pre></div></div>
-
-<p>###去除某列 str 的左右
-	Series.str.rstrip(“ss”)去除右边空白</p>
-
+<h3 id="references">References:</h3>
+<ol>
+  <li><a href="http://ariang.mayswind.net/zh_Hans/command-api.html">AriaNg</a></li>
+</ol>
 
   </section>
   <section class="comment">

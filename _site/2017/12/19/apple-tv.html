@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="author" content="tzungtzu" />
     
-    <title>pandas 中 DataFrame 的分割和合并</title>
+    <title>入手 Apple TV</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="/atom.xml" rel="alternate" title="setImpl" type="application/atom+xml" />
@@ -82,11 +82,11 @@
         <div id="content">
         <article>
   <section class="title">
-    <h2>pandas 中 DataFrame 的分割和合并 </h2>
+    <h2>入手 Apple TV </h2>
   </section>
   <section class="meta">
 	<span class="time">
-    <time datetime="2017-02-15">2017-02-15</time>
+    <time datetime="2017-12-19">2017-12-19</time>
   </span>
   
 
@@ -104,114 +104,47 @@
   <span class="tags">
    tagged with 
     
-    <a href="/tags.html#python" title="python">#python</a>&nbsp;
+    <a href="/tags.html#apple" title="apple">#apple</a>&nbsp;
     
-    <a href="/tags.html#pandas" title="pandas">#pandas</a>&nbsp;
+    <a href="/tags.html#netflix" title="netflix">#netflix</a>&nbsp;
+    
+    <a href="/tags.html#router" title="router">#router</a>&nbsp;
     
   </span>
   
   </section>
   <section class="post">
-  <p>pandas是基于Numpy构建的库。最主要的数据结构就是 Series 和 DataFrame。
-DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔）。DataFrame 既有行索引也有列索引，可以看成由 Series 组成的字典（共用同一个索引）。</p>
+  <p>周末新入手了 Apple TV，配合同事闲置的投影仪，iOS 11 自动同步网络配置，登陆后（不能登陆国区账号，没有 App Store，为此美区无法主动购买 App 还需要想办法解决），成功在家里能舒服地看大屏。</p>
 
-<p>在数据分析时经常用到 DataFrame 的分割和合并。总结一下自己遇到的情况。
- <!--more--></p>
+<p>首先就下载了 Youtube 和 Just Dance, youtube 连接个人账号就同步了自己的 Subscriptions 和 History，非常方便。</p>
 
-<h3 id="取出一列">取出一列</h3>
+<!--more-->
 
-<p>通过类似字典标记的方式或属性的方式，可以将 DataFrame 的列获取为一个 Series。返回的 Series 拥有原 DataFrame 相同的索引，name 属性也相应设置好了。行索引字段是ix。</p>
+<p>游戏方面，饭后跳了一下 Just Dance，比手持 iPhone 要精度高（可能是心理作用。）也还没找到推荐的网络游戏，还挺有兴趣，期待 tvOS 下的聚会游戏，自己比较喜欢欢乐的小游戏。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frame ['year'] = frame.year  
-frame.ix['three']  #获取行数据
-</code></pre></div></div>
+<hr />
 
-<h3 id="删除一列">删除一列</h3>
+<p>Beat Sports 玩了一下，觉得并不好玩。还不如 macOS 投屏 BombSquad。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frame.drop(['a','b']) #删除a，b行
-frame.drop([two],axis=1) #删除two 列。
-</code></pre></div></div>
+<p>接下来下载了 Netflix，打开了新世界大门。以前看剧基本靠下载或者网上找在线资源，经常因为麻烦而看一半停下，有了 Netflix，节约很多时间，里面很多优质剧，以及记录 List 和自动续播，体验很好。以及圣诞后就能在 Apple TV 看最新的黑镜了，期待。另外还有喜欢的 This is Us 和 American Gods 分别在 Hulu 和 HBO 版权下，<del>可能还要继续购买这两个会员。</del>这两个网站会检测 IP 地址，所以暂时没办法愉快观影。</p>
 
-<h3 id="添加一列">添加一列</h3>
+<p><img src="http://7xo4c2.com1.z0.glb.clouddn.com/20171219144412_tC3yJG_UNADJUSTEDNONRAW_thumb_5c1.jpeg" alter="" width="75%" /></p>
 
-<p>将列表和数组赋值给某个新列的时候，其长度必须和 DataFrame 的长度相匹配。如果赋值的是个 Series，就会精确匹配 DataFrame 的索引，所有的空位都会被填上缺失值。可以通过这个特性，修改 DataFrame 的格式。</p>
+<p>国外视频使用 Youtube 和 Netflix，国内视频可以通过国内开发者开发的懒喵，现在需要通过 TestFlight 安装。每个测试用户有一个邀请码（找开发者咨询），登陆后可以看国内各大视频网站的网剧，没有登陆口，可以记录收藏，非常给力。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Frame['newcolumn'] = series  #在Frame 创建新列
-</code></pre></div></div>
+<p>———–1221更新—</p>
 
-<h3 id="改变一列的-type">改变一列的 type</h3>
+<p>对于盘共享，强烈推荐Infuse，无论是本地的NAS，或者是 Dropbox 或 Google Drive，都能直接连接。当然能使用 NAS 肯定是最过瘾的，可以存1080甚至4K的视频，不过我暂时基本在线看流媒体，只有很喜欢的才会收藏，所以只要能在 Dropbox 上看我所有电脑设备上同步的资源就可以了。（并祈祷 Dropbox 安全且不垮）另外有Yun@TV 可以连接百度云，打开一部电影基本没有卡顿。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df[['a']]= df[['a']].apply(pd.to_numeric) #指定某列修改为int格式
-</code></pre></div></div>
+<p>综合上面几项，基本看剧无压力了。</p>
 
-<p>如果直接进行全部改变，为了避免报错，可以将其他值变为 NaN
-	pd.to_numeric(s, errors =”coerce”)</p>
+<p>——–end—</p>
 
-<h3 id="修改索引">修改索引</h3>
+<p>电视直播 app，看到普遍推荐 iplayTV 配合直播源使用。直播源地址为[http://y0.cn/iptv7].</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>obj = obj.reindex(['a','b','c','d','e'])
-frame = frame.reindex(index=[], cloumns=[])
-</code></pre></div></div>
+<p>AirPlay 也很流畅，每次匹配新设备需要输入一次匹配码，之后就不用了。对于 Podcast 和 Spotify 音乐可以不打开电视/投影仪直接播放。另外值得说的是，屏保的航拍很好看，以及能够自动每周更新。可以设置自动关机时间。</p>
 
-<h3 id="将列变成索引">将列变成索引</h3>
-
-<p>将某列作为列的索引，会生成一个新的 DataFrame
-	frame2 = frame.set_index([‘c’])</p>
-
-<h2 id="聚类">聚类</h2>
-
-<h3 id="统计a列中元素的重复次数">统计a列中元素的重复次数</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.groupby('a').size()
-</code></pre></div></div>
-
-<h3 id="统计a列中不同元素在b列的求和">统计a列中不同元素在b列的求和</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.groupby('a').sum()
-</code></pre></div></div>
-
-<h3 id="合并两个dataframe">合并两个dataframe</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pd.merge(b)
-</code></pre></div></div>
-
-<h3 id="将-index-转为-value">将 index 转为 value</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.reset_index()
-</code></pre></div></div>
-
-<h3 id="将dataframe-转为-list-of-listslist-of-dicts">将dataframe 转为 list of lists／list of dicts</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.values.tolist()
-</code></pre></div></div>
-
-<h3 id="dataframe-to-json">dataframe to json</h3>
-
-<p>df.to_json(orient=’split’)</p>
-
-<p>allowed values are: {‘split’,’records’,’index’,’columns’,’values’}</p>
-
-<p>###切片</p>
-
-<p>###数据筛选
-	a[a.proportion&gt;0.5]</p>
-
-<p>###df 设定某列为index (http://opus.konghy.cn/ipynb/two-diff-df-operation.html)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.set_index('column_name')
-</code></pre></div></div>
-
-<p>###df 相加（自动补0）</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df.add(f2, fill_value=0)
-
-### 去除NaN
-df2.dropna() ###重新index
-df1.index = range(len(df1))   ###按某列去重
-DataFrame.drop_duplicates('column')
-</code></pre></div></div>
-
-<p>###去除某列 str 的左右
-	Series.str.rstrip(“ss”)去除右边空白</p>
+<p>总的来说，在路由器科学上网的情况下，Apple TV 体验非常好，以及配合更多 Apple 设备，体验很统一，对于需要购买电视盒子的用户来说，是非常值得的。感觉自己最近几个礼拜下班回家会种在沙发上，Couch Potato。</p>
 
 
   </section>
