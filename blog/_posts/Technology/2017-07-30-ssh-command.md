@@ -25,6 +25,8 @@ tags:
 	scp local_file remote_username@remote_ip:remote_folder
 	$scp -r local_folder remote_username@remote_ip:remote_folder
 
+	scp root@10.6.159.147:/opt/soft/demo.tar /opt/soft/
+
 ### - 关闭远程登录
 		exit  #主动断开和对方的连接
 		
