@@ -43,3 +43,4 @@ brew install pyenv
 3. [Mac OS下多版本python共存 - ILKY - ITeye博客](http://lovekaiyuan.iteye.com/blog/2214417)
 4. [利用pyenv，pyenv-virtualenv管理你的python(Mac) - 简书](http://www.jianshu.com/p/70a603058f7b)
 5. [在 Mac OS X 10.10 安装 pyenv 的一个小坑 - CSDN博客](http://blog.csdn.net/gzlaiyonghao/article/details/46343913)
+6. [Python多版本管理工具pyenv及环境隔离工具virtualenv | blueyi's notes](http://notes.maxwi.com/2017/03/06/python-pyenv-virtualenv/)
