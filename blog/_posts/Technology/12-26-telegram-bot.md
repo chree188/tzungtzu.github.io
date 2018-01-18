@@ -27,8 +27,14 @@ pip freeze > requirements.txt
 别人用的时候，pip install -r requirements.txt就可以安装对应的依赖啦。
 
 
+
+
+
+
 ### webhook
 
 
 ### References:
 1. [[Telegram bot 系列]0：用 Python 写一个 Telegram Bot 简单的回话 bot | 土豆不好吃](https://www.bennythink.com/tgbot0.html)
+2. [Python开发Telegram机器人（3）-- 年轻人的第一个telegram机器人 - 简书](https://www.jianshu.com/p/b065501b3025?utm_campaign=maleskine&utm_content=note&utm_medium=pc_all_hots&utm_source=recommendation)
+3. [如何创建一个Telegram Translate Robot? - deep Learning](https://www.mkernel.com/?p=49)
