@@ -14,6 +14,7 @@ tags:
 
 ### - 登陆
 		ssh 主机名@主机IP   #输入对方密码就ok了。如果需要pem，加入-i。
+		
 ### - 远程复制(secure copy)
 
  <!--more-->
