@@ -12,10 +12,10 @@ tags:
 ---
 
 ### 1. 翻墙工具：
-> Surge/Shadowsocks (保存在evernote)
+> Surge/Shadowsocks (保存在 iCloud)
 
 ### 2. 常用工具：
-> Dropbox, Alfred, Paste，iTerm，Sublimes, Resilio, 1Password, Bartender, SourceTree, 
+> Dropbox, 1Password, SourceTree, Alfred, Paste，iTerm，Sublimes, Bartender, Fantastical...
 
  <!--more-->
 
@@ -23,6 +23,8 @@ tags:
 - Alfred 通过 Advanced-Syncing 同步（必须主设备先同步，从设备的配置会被覆盖） <del>workflow需要另外下载</del>workflow 也可以自动同步。
 
 ### 3. 配置工作环境：
+
+iTerms 配置
 
 * Homebrew：
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
