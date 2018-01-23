@@ -11,16 +11,37 @@ tags:
 
 ---
 
+
 ### 1. 翻墙工具：
 > Surge/Shadowsocks (保存在 iCloud)
 
 ### 2. 常用工具：
-> Dropbox, 1Password, SourceTree, Alfred, Paste，iTerm，Sublimes, Bartender, Fantastical...
+> Chrome, Dropbox, 1Password, SourceTree, Alfred, BTT, Paste，iTerm，Sublimes, Bartender, Fantastical ...  
 
  <!--more-->
 
 - 很多配置在 Dropbox 所以首先要下载 Dropbox, 个人将 licences，settings， backups 都存在 Dropbox。
 - Alfred 通过 Advanced-Syncing 同步（必须主设备先同步，从设备的配置会被覆盖） <del>workflow需要另外下载</del>workflow 也可以自动同步。
+
+- 输入法 Caps Lock 切换
+
+- 允许不明开发者的app:  sudo spctl --master-disable 
+
+- dock 显示加速： defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
+
+- dock resent apps： defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }' && killall Dock
+
+- 隐藏窗口图标变暗： defaults write com.apple.dock showhidden -bool true; Killall Dock
+
+- Launchpad图标大小：
+
+		defaults write com.apple.dock springboard-rows -int 7
+
+		defaults write com.apple.dock springboard-columns -int 8
+
+		defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
+
+- 显示隐藏文件： defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 
 ### 3. 配置工作环境：
 
@@ -45,11 +66,12 @@ iTerms 配置
 • 列出包 `brew list --versions` 
 
 * Zsh:
+		brew install zsh zsh-completions
 		wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 		#设置theme 
 		#下载zsh语法高亮
 		##brew install zsh-syntax-highlighting，需要把 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 添加到 .zshrc 的最后面。
-		##zsh alias
+		##zsh aliasz
 		##zsh_stats 可以查看常用代码
 
 [http://get.ftqq.com/992.get][1]
@@ -69,6 +91,7 @@ iTerms 配置
 		sudo cp /usr/share/vim/vimrc ~/.vimrc 
 		sudo mkdir colors
 		sudo mv solarized.vim ~/.vim/colors
+		syntax on #.vimrc文件的第一行写入
 
 ###5. '~/.ssh/conf, zshrc'配置
 
@@ -106,6 +129,10 @@ permission error 解决方法： 修改owner 为 tzungtzu
 	pip install py2neo==2.0.9
 
 
+### sublime 配置
+
+[Installation - Package Control](https://packagecontrol.io/installation)
+
 ### References:
 1. [小土刀][3]()
 2. [][4]()
@@ -114,3 +141,5 @@ permission error 解决方法： 修改owner 为 tzungtzu
 [2]:	http://blog.jobbole.com/80620/
 [3]:	http://wdxtub.com/2016/08/08/mac-work-env/
 [4]:	https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+https://sspai.com/post/33493
+https://sspai.com/post/33366
