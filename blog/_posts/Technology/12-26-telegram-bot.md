@@ -28,7 +28,10 @@ pip freeze > requirements.txt
 
 
 
-
+### 自动回复
+0. 如果首次使用，使用 `https://api.telegram.org/botAAA:BBB/getUpdates`
+1. 添加@RawDataBot 入群，获得 group 的 chat id.
+2. curl -X POST "https://api.telegram.org/botXXX:YYYY/sendMessage" -d "chat_id=-zzzzzzzzzz&text=my sample text"
 
 
 ### webhook
@@ -38,3 +41,4 @@ pip freeze > requirements.txt
 1. [[Telegram bot 系列]0：用 Python 写一个 Telegram Bot 简单的回话 bot | 土豆不好吃](https://www.bennythink.com/tgbot0.html)
 2. [Python开发Telegram机器人（3）-- 年轻人的第一个telegram机器人 - 简书](https://www.jianshu.com/p/b065501b3025?utm_campaign=maleskine&utm_content=note&utm_medium=pc_all_hots&utm_source=recommendation)
 3. [如何创建一个Telegram Translate Robot? - deep Learning](https://www.mkernel.com/?p=49)
+4. [Write a Telegram bot using IFTTT recipies | Rainbowbreeze - Alfredo Morresi website](http://www.rainbowbreeze.it/telegram-bot-using-ifttt/)
