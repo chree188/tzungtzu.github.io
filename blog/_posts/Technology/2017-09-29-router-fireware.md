@@ -133,4 +133,5 @@ JFFS   取消重启后清空JFFS
 10. [aria 远程操作](http://koolshare.cn/thread-30944-1-1.html)
 11. [ddns](https://post.smzdm.com/p/549942/)
 12. [路由常规功能](https://post.smzdm.com/p/439258/)
+13. [Asus RT-AC68U 华硕1900M双频智能无线路由器使用体验 - 简书](https://www.jianshu.com/p/bbed83daa248)
 
