@@ -1,5 +1,13 @@
+---
+layout: post
+title: 《喜欢澳大利亚的99个理由》读书笔记
+categories: 
+- Reading
+tags:
+- aus
+- book
 
-
+---
 
 在我老公的眼中墨尔本电车的地位不亚于咖，代表着城市的灵魂，于街道的东南西北。
 
