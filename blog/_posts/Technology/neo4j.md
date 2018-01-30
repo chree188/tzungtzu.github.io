@@ -39,6 +39,10 @@ MERGE 创建节点，关系：
 
 	p = shortestpath((p1)-[:friend_of*..10]-(p2))
 
+字符匹配
+
+    MATCH (n) WHERE n.name STARTS WITH 'Pet' RETURN n.name, n.age
+
 
 ##复制关系
 
