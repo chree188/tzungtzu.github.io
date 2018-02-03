@@ -65,7 +65,7 @@ DataFrame 是 pandas 库中一个二维表格形的数据结构，含有一组�
 
 ### 合并两个dataframe
 
-	pd.merge(b)
+	pd.merge(b, how = 'outer')
 
 ### 将 index 转为 value
 
@@ -94,8 +94,11 @@ allowed values are: {‘split’,’records’,’index’,’columns’,’valu
 
 	df.add(f2, fill_value=0)
 
-	### 去除NaN
+### 去除NaN
 	df2.dropna()
+
+### 替代 NaN
+
 ###重新index
 	df1.index = range(len(df1))  
 ###按某列去重
@@ -104,5 +107,8 @@ allowed values are: {‘split’,’records’,’index’,’columns’,’valu
 ###去除某列 str 的左右
 	Series.str.rstrip("ss")去除右边空白
 
+###根据某一列合并 df,series
+	ff
 
 
+[python merge、concat合并数据集 - CSDN博客](http://blog.csdn.net/LY_ysys629/article/details/73849543)
