@@ -110,5 +110,8 @@ allowed values are: {‘split’,’records’,’index’,’columns’,’valu
 ###根据某一列合并 df,series
 	ff
 
+##  groupby sum and count
+df.groupby('n.name')['r.call_time'].agg(['sum','count'])
+
 
 [python merge、concat合并数据集 - CSDN博客](http://blog.csdn.net/LY_ysys629/article/details/73849543)
