@@ -41,6 +41,12 @@ hiking-shenzhen
 桃源村益家百货广场－塘朗山山脚入口－塘朗山－茶花长朗－7号界碑－8号
 
 
+##南山
+
+建议走海关登山口
+
+http://ly.sz.bendibao.com/tour/20071020/ly50712.html
+
 
 ###装备
 
@@ -57,3 +63,4 @@ hiking-shenzhen
 5. [深圳游（塘朗山公园——梅林山公园）,深圳自助游攻略 - 蚂蜂窝](http://www.mafengwo.cn/i/1234975.html)
 6. [徒步六小时，西丽塘朗山穿越到梅林水库_水木丹华 - 家在深圳](http://bbs.szhome.com/30-55340-detail-153915624.html)
 7. [转贴 深圳市区徒步路线：桃源村-塘朗山-梅林水库线路攻略深圳户外—追风户外运动俱乐部 追风，自助旅行的快乐出发地！ - Powered by Discuz!](http://www.sz5983.com/bbs2/thread-566-1-1.html)
+8. [深圳出名的16座山的最详细实用爬山攻略](https://www.douban.com/group/topic/78978073/)
