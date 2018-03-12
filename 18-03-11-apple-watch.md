@@ -16,6 +16,9 @@
  apps： remote，Shazam， workflow watch用法， 
 
 
+ os4  没有 glances 开始用 dock
+
+
 ### References:
 1. [Apple Watch 新的 Siri 智能表盘，是我认为最实用的一款表盘 - 少数派](https://sspai.com/post/40658)
 2. [我可能是真的买了个表，关于 Apple Watch 3 不得不说的秘密 - 少数派](https://sspai.com/post/41287)
