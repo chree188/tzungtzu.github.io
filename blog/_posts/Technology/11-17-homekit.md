@@ -20,6 +20,18 @@
 
 
 
+
+犹豫现在使用的是 macbook 运行 homebridge，所以需要 macbook 合盖不休眠。
+
+所以需要运行：
+        
+         caffeinate -disu &
+
+
+
+###google home
+
+
 ###hass
 
  概念
@@ -35,3 +47,5 @@ HomeAssistant：一个第三方的智能家居平台。
 2. [Homebridge + Mac 智能家居指南一：介绍及安装篇](https://zhuanlan.zhihu.com/p/26484470)
 3. [gyp WARN EACCES user "root" does not have permission to access the dev dir "/root/.node-gyp/4.2.2" · Issue #405 · nfarina/homebridge](https://github.com/nfarina/homebridge/issues/405)
 4. [xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance · Issue #569 · nodejs/node-gyp](https://github.com/nodejs/node-gyp/issues/569)
+5. [一分钟教你搞懂，Yeelight联动Google Home这件事！ Yeelight](https://www.yeelight.com/zh_CN/blog/62)
+6. [智能家居场景之一：配合 Google Home 来控制 Yeelight 灯泡 - Wei Xia's Blog](http://weixia.info/2018/01/02/yeelight-with-google-home/)

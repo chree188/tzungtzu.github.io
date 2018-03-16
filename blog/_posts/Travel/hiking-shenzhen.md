@@ -47,6 +47,18 @@ hiking-shenzhen
 
 http://ly.sz.bendibao.com/tour/20071020/ly50712.html
 
+##盐田海滨栈道
+
+在深圳的盐田区，有一条号称“世界最长的”海滨栈道，由黄金海岸线上的海边栈道和半山及港区的绿道组成，包括沙头角、盐田港区、大梅沙、小梅沙、揹仔角几部分。
+
+
+大梅沙，登山道，步道，观景平台，大栈桥，石拱桥
+
+自然生态岸线段， 大梅沙西栈道，大梅沙海滨公园，大梅沙东站到，小梅沙海滨公园，背仔角栈道
+
+http://ly.sz.bendibao.com/tour/201815/ly800280.html
+
+http://www.bm.ust.hk/Alumni-Development/alumination/sz-walk-chi.pdf
 
 ###装备
 
