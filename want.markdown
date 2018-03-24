@@ -39,7 +39,7 @@ layout: page
 
 GoPro Hero5 Session, The North Face Summit Series, Bose Soundlink Mini 2, Apple Watch, Lego Technic，拼图 [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini(最近迷 Taylor Baby)， ARC’TERYX Mistral 8L，登山安全守，young person card卡包, [Time Capsule][6], [Subway Coat Hooks][7]，Don’t Starve 冬帽, 40L+ 烤箱，带烘干功能洗衣机，Encre Noire Lalique for men，
 
-
+bose soundsport wireless,群晖 DS218+ , NS, 湿厕纸
 
 [https://www.douban.com/doulist/45368167/][8]
 
