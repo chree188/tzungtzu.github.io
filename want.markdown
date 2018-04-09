@@ -39,6 +39,19 @@ GoPro Hero 6
 Dyson V6 mattress
 
 
+Osprey Kestrel 38
+Osprey Aether 70
+La Sportiva Halite GTX 
+La Sportiva Boulder X GTX
+Black Diamond Men's Dawn Patrol LT Jacket
+Outdoor Research Men's Ferrosi Crag Pant
+Patagonia Capilene Midweight Crew
+
+
+
+
+
+
 
 ### 欲购清单 (谁知道什么时候会买呢)
 
