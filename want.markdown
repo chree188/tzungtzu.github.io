@@ -42,7 +42,8 @@ Dyson V6 mattress
 Osprey Kestrel 38
 Osprey Aether 70
 La Sportiva Halite GTX 
-La Sportiva Boulder X GTX
+<del>La Sportiva Boulder X GTX</del>
+La Sportiva Akasha 
 Black Diamond Men's Dawn Patrol LT Jacket
 Outdoor Research Men's Ferrosi Crag Pant
 Patagonia Capilene Midweight Crew
