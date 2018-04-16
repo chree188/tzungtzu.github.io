@@ -30,7 +30,11 @@ Network embedding
 f:vi→zi∈ℝd
 
 
+
+[An introduction to machine learning on graph databases](https://medium.com/octavian-ai/an-introduction-to-machine-learning-on-graph-databases-24ee502fd12e)ls
+
 ### References:
 1. [Representation Learning on Network 网络表示学习笔记 - CSDN博客](https://blog.csdn.net/u012052268/article/details/78985331)
 2. [机器学习降维算法四：Laplacian Eigenmaps 拉普拉斯特征映射 - CSDN博客](https://blog.csdn.net/xbinworld/article/details/8855796)
 3. [网络表示学习概述](https://zhuanlan.zhihu.com/p/32504175)
+4. 
