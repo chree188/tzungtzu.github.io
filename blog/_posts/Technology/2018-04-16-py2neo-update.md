@@ -35,3 +35,7 @@ py2neo 最新版本已经到 4.0.0b9，可以通过github 更新到最新版本�
 
 特别的，当输出结果是一个值的时候，可以使用 evaluate 函数。一般情况下，默认返回 recordlist 的第一个值。
 
+
+### References:
+1. [py2neo.database — The Py2neo v4 Handbook](http://py2neo.org/v4/_modules/py2neo/database.html#Graph.data)
+2. [py2neo/database.py at v4 · technige/py2neo](https://github.com/technige/py2neo/blob/v4/py2neo/database.py)
