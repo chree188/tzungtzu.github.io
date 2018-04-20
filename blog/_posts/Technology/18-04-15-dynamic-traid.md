@@ -29,6 +29,7 @@ Network embedding
 
 f:vi→zi∈ℝd
 
+准确率(Accuracy), 精确率(Precision), 召回率(Recall)和F1-Measure
 
 
 [An introduction to machine learning on graph databases](https://medium.com/octavian-ai/an-introduction-to-machine-learning-on-graph-databases-24ee502fd12e)ls
