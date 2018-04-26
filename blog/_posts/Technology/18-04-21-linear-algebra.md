@@ -6,3 +6,6 @@ $\mathbf{R}^n$  是 全体有序n元实数组。
 \lbrace{(x_1,...,x_n):x_1,...,x_n \in \mathbf{R}}\rbrace
 \end{equation}
 
+
+
+

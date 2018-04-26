@@ -114,4 +114,12 @@ allowed values are: {‘split’,’records’,’index’,’columns’,’valu
 df.groupby('n.name')['r.call_time'].agg(['sum','count'])
 
 
+## 去掉 u'string' 的 u
+
+my_list = [u'String'] # sample element
+my_list = [str(my_list[0])]
+
+[unicode - Python string prints as [u'String'] - Stack Overflow](https://stackoverflow.com/questions/599625/python-string-prints-as-ustring)
+
+
 [python merge、concat合并数据集 - CSDN博客](http://blog.csdn.net/LY_ysys629/article/details/73849543)
