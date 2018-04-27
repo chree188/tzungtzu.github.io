@@ -2,9 +2,10 @@
 layout: post
 title: 深圳梧桐山
 categories: 
-- 
+- Travel
 tags:
-- 
+- shenzhen
+- mountaining
 
 ---
 
@@ -22,6 +23,8 @@ tags:
 
 
 ###路线
+
+地铁到黄贝岭  1小时公交到梧桐山村。 上山大约3小时（包括半小时休息），下山大概2.5小时
 
 公共交通
 
