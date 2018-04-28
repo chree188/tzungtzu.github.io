@@ -46,7 +46,7 @@ Spark 中没有自带 sbt，需要自行[安装][2]
 
  dataframe 看作是结构化的RDD
 
- dataframe 遵守RDD具有的规则，如转换和行动。另外还有额外的SQL接口
+ dataframe 遵守RDD具有的规则，r如转换和行动。另外还有额外的SQL接口
  df.select('year').count()   其中select 为转换， count 为行动操作。
 
 
