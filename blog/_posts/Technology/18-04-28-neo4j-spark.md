@@ -37,7 +37,29 @@ spark-defaults.conf 的 内网IP
 
 
 
+###build.sbt
 
+      1 name := "AL Graph"
+      2
+      3 version := "1.0"
+      4
+      5 scalaVersion := "2.11.8"
+      6
+      7 assemblyJarName in assembly := "Alg.jar"
+      8
+      9 resolvers += "Spark Packages Repo" at "http://dl.bintray.com/spark-packages/maven"
+     10
+     11 libraryDependencies ++= Seq(
+     12   "org.apache.spark" %% "spark-sql" % "2.0.1" % "provided",
+     13   "neo4j-contrib" % "neo4j-spark-connector" % "2.0.0-M2"
+     14 )
+
+sbt clean assembly
+
+添加 project/plugin.sbt
+
+
+$SPARK_HOME/bin/spark-submit --class "testApp" target/scala-2.11/AL\ Graph-assembly-1.0.jar
 
 ### References:
 1. [https://github.com/neo4j-contrib/neo4j-spark-connector]()
