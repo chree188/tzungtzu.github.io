@@ -57,6 +57,10 @@ Spark 中没有自带 sbt，需要自行[安装][2]
 
     把相关的依赖包安装到指定位置即可
 
+
+##[error] (*:update) java.lang.IllegalArgumentException: commons-codec#commons-codec;1.4!commons-codec.jar origin location must be absolute: file:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+
+
 [1]:	https://spark.apache.org/docs/latest/quick-start.html
 [2]:	http://www.scala-sbt.org/0.13/docs/zh-cn/Installing-sbt-on-Linux.html
 [3]:    

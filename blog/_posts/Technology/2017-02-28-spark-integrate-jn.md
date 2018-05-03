@@ -85,3 +85,6 @@ Detail test
 [1]:	https://toree.incubator.apache.org/documentation/user/installation.html "Apache Toree Installation"
 [2]:	http://stackoverflow.com/questions/39149541/integrate-pyspark-with-jupyter-notebook " solution is to install Apache Toree."
 [3]:    https://github.com/asimjalis/apache-toree-quickstart
+[4]: 4. [Jupyter运行scala程序 - CSDN博客](https://blog.csdn.net/qq_24452475/article/details/79766781)
+5. [jupyter配置scala和Spark学习环境 - CSDN博客](https://blog.csdn.net/qq_30901367/article/details/73296887)
+6. [可以"跑"的博客](https://qszhuan.github.io/python/2016/03/05/runnable_blog)
