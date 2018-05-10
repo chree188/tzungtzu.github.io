@@ -4,6 +4,8 @@ run pagerank in graphx
 GraphLoader.edgeListFile:Graph[Int,Int]) 提供了一个方式从磁盘上的边列表中加载一个图。
 
 
+graphx vertex with L
+
 必须有一个main 函数
 有 sc,conf
 
