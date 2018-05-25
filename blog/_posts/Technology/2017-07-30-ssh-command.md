@@ -22,9 +22,13 @@ tags:
 	scp -r  要传输的文件  我的主机名@主机的IP：路径
 	scp [参数] [原路径] [目标路径] ##-r 递归复制整个目录。
 
+
+
 从本地服务器复制到远程服务器
 	scp local_file remote_username@remote_ip:remote_folder
 	$scp -r local_folder remote_username@remote_ip:remote_folder
+
+scp -i ~/Workspace/keys\&/dataModelingRuntime.pem ubuntu@13.228.227.208:/home/ubuntu/hubo.sql ~/Downloads
 
 	scp root@10.6.159.147:/opt/soft/demo.tar /opt/soft/
 
