@@ -117,6 +117,8 @@ https://www.outdoorbrands.nl/epages/Outdoorbrands.sf/en_GB/?ObjectPath=/Shops/Ou
 4. 　LACK DIAMOND TRAIL，入门款，不过BD的品质还是可以保证的
 
 
+
+
 list：
 
 睡袋
@@ -135,6 +137,11 @@ list：
 套头帽(有点像忍者帽, 只露出眼睛)
 手套
 
+
+##帐篷
+
+http://www.8264.com/zhuangbei-2086837-1.html
+http://www.8264.com/zhuangbei-2073411-1.html
 
 
 #apps
