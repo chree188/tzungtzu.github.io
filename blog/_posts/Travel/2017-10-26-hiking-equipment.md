@@ -113,8 +113,8 @@ https://www.outdoorbrands.nl/epages/Outdoorbrands.sf/en_GB/?ObjectPath=/Shops/Ou
 
 1. 老鼠家的优势是硬壳和保暖。
 2. use outdoorgearlab
-3. 　护膝推荐：LP 733,788, 733CA 788CA.有效保护膝盖，尤其是下坡。
-4. 　LACK DIAMOND TRAIL，入门款，不过BD的品质还是可以保证的
+3. 护膝推荐：LP 733,788, 733CA 788CA.有效保护膝盖，尤其是下坡。
+4. LACK DIAMOND TRAIL，入门款，不过BD的品质还是可以保证的
 
 
 

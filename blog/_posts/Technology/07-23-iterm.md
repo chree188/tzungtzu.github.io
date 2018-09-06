@@ -41,7 +41,9 @@ iTerm2 也可以使用历史记录，按⌘+Shift+h弹出历史粘贴记录窗�
 /usr/libexec/PlistBuddy  -c "Delete :LSUIElement" /Applications/iTerm.app/Contents/Info.plist
 想要方便开关 Dock 图标，可将下面的内容添加到 /.zshrc 或 /.bash_profile中，然后只需要输入 toggleiTerm，按提示操作即可。[4][2]
 
-## 		使用 option + ‘-\>’ 在单词间跳转
+## 		使用 option + ‘<-,->’ 在单词间跳转
+
+[Mac下iTerm2光标按照单词快速移动设置 - CSDN博客](https://blog.csdn.net/skyyws/article/details/78480132)
 
 
 
