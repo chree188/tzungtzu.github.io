@@ -39,7 +39,7 @@ tags:
 
 google my maps:
 
-https://drive.google.com/open?id=1gPjTSqBj4I3OcH6Y83HWZd11PzBixWzI&usp=sharing
+<iframe src="https://www.google.com/maps/d/embed?mid=1gPjTSqBj4I3OcH6Y83HWZd11PzBixWzI" width="640" height="480"></iframe>
 
 
 ### 装备
