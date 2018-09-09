@@ -4,21 +4,27 @@
 layout: post
 title: Fjällräven Classic Hong Kong 2018 准备
 categories: 
-- 
+- Travel
 tags:
-- 
+- Fjällräven
+- trekking
+- hongkong
 
 ---
 
-### 海拔
-
-http://7xo4c2.com1.z0.glb.clouddn.com//20180908100616_x5AdEU_Screenshot.jpeg
 
 ### 住宿和交通
 
 香港 Fjällräven Classic 起點位於馬鞍山郊野公園。大會將於城中數個地點提供接送服務至起點，參加者也可選乘公共交通工具。
 
 健行始於馬鞍山郊野公園，結束於北潭涌
+
+<!--more-->
+
+### 海拔
+
+http://7xo4c2.com1.z0.glb.clouddn.com//20180908100616_x5AdEU_Screenshot.jpeg
+
 
 
 #### 集合點和登記
@@ -31,6 +37,13 @@ http://7xo4c2.com1.z0.glb.clouddn.com//20180908100616_x5AdEU_Screenshot.jpeg
 
 與瑞典 Classic 不同，參加者不能隨處紥營，必須在香港 Classic 地圖標示的指定營地中紮營（費用已包括於報名費中）。大會建議的理想營地為深涌農莊和鹹田灣。
 
+
+google my maps:
+
+https://drive.google.com/open?id=1gPjTSqBj4I3OcH6Y83HWZd11PzBixWzI&usp=sharing
+
+
+### 装备
 
 
 ### References:
