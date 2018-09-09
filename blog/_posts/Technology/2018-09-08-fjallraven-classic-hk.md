@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Fjällräven Classic Hong Kong 2018 行前准备
@@ -24,8 +23,7 @@ tags:
 
 ### 海拔
 
-http://7xo4c2.com1.z0.glb.clouddn.com//20180908100616_x5AdEU_Screenshot.jpeg
-
+<img src="http://7xo4c2.com1.z0.glb.clouddn.com//20180908100616_x5AdEU_Screenshot.jpeg" alter="" width="75%">
 
 
 #### 集合點和登記
