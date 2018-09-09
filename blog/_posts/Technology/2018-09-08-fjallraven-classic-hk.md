@@ -1,8 +1,7 @@
 
-
 ---
 layout: post
-title: Fjällräven Classic Hong Kong 2018 准备
+title: Fjällräven Classic Hong Kong 2018 行前准备
 categories: 
 - Travel
 tags:
@@ -11,6 +10,8 @@ tags:
 - hongkong
 
 ---
+
+
 
 
 ### 住宿和交通
