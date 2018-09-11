@@ -48,3 +48,4 @@ google my maps:
 ### References:
 1. [Fjällräven Classic - Fjällräven瑞典北極狐官方網站 – Fjällräven](http://www.fjallraven.tw/classic54.125)
 2. [Fjällräven Classic 活動路線 - Fjällräven瑞典北極狐官方網站 – Fjällräven](http://www.fjallraven.tw/classic54.126)
+3. [anyway, live a little.: [ 海外健行 ] Fjällräven Classic Hong Kong 2017 漫遊香港後花園](http://yunyunnnnn.blogspot.com/2017/12/fjallraven-classic-hong-kong-2017.html?m=1)

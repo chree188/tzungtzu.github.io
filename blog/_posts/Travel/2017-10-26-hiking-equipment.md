@@ -118,7 +118,7 @@ https://www.outdoorbrands.nl/epages/Outdoorbrands.sf/en_GB/?ObjectPath=/Shops/Ou
 2. use outdoorgearlab
 3. 护膝推荐：LP 733,788, 733CA 788CA.有效保护膝盖，尤其是下坡。
 4. LACK DIAMOND TRAIL，入门款，不过BD的品质还是可以保证的
-
+4. 入门贴 [普通驴友关于装备的一些看法 适合新人阅读 - 综合 - 8264.com](http://www.8264.com/viewnews-112514-page-1.html)
 
 
 
@@ -145,6 +145,7 @@ list：
 
 http://www.8264.com/zhuangbei-2086837-1.html
 http://www.8264.com/zhuangbei-2073411-1.html
+http://bbs.8264.com/thread-79331-1-1.html
 
 
 #apps
@@ -155,3 +156,4 @@ http://www.8264.com/zhuangbei-2073411-1.html
 ### References:
 1. [Arcteryx始祖鸟各型号之间的区别？ - 知乎](https://www.zhihu.com/question/22099815)
 2. [常见户外装备推荐（中高配）（转自8264论坛）【拓学俱乐部吧】百度贴吧](http://tieba.baidu.com/p/2312547602)
+3. [普通驴友关于装备的一些看法 适合新人阅读 - 综合 - 8264.com](http://www.8264.com/viewnews-112514-page-1.html)
