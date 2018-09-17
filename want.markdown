@@ -1,5 +1,5 @@
 ---
-title: 最近的粽子
+title: 粽子的清单
 layout: page
 
 ---
@@ -14,18 +14,18 @@ layout: page
 滑板|
 肠粉
 
-。。。用时间块来记录做的时间
+用时间块来记录做的时间
 
 
 ### 刷新人生经验
 种薄荷，葱；
 徒步乞力马扎罗
-一个人旅
 自行己MOC 伦勃朗 lego
 
 ### 连滚带爬坚持
 每周两次健身
 虽然现在不有氧了，但是一个月一次跑步吧
+-> 每周跳舞两次，无氧两次，游泳两次（2018.8）
 
 
 [想读的书][1]
@@ -33,14 +33,17 @@ layout: page
 
 ### 我的设备
 
+#### Digital 
+
 500G Documents
 200G Time Machine
-QC30
+Bose QC30
 Apple Watch Series 3
 GoPro Hero 6
 Dyson V6 mattress
 
 
+#### Trekking
 
 Osprey Kestrel 38
 Osprey Aether 70
@@ -61,11 +64,17 @@ Patagonia Capilene Midweight Crew
 ### 欲购清单 (谁知道什么时候会买呢)
 
 
-<del>邮差包，AKG Q350，料理机，运动半指手套, [osprey pixel 22][2] [ ][3]，Bose QC 20i, 机械键盘,，Garmin Forerunner 235, GoPro Hero5 Session,  Apple Watch, Time Capsule[6] </del> , The North Face Summit Series, Bose Soundlink Mini 2, Lego Technic，拼图 [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini(最近迷 Taylor Baby)， ARC’TERYX Mistral 8L，登山安全守，young person card卡包, [Subway Coat Hooks][7]，Don’t Starve 冬帽, 40L+ 烤箱，带烘干功能洗衣机，Encre Noire Lalique for men，
+<del>邮差包，AKG Q350，料理机，运动半指手套, [osprey pixel 22][2][3]，Bose QC 20i, 机械键盘,，Garmin Forerunner 235, GoPro Hero5 Session,  Apple Watch, Time Capsule[6] </del> , The North Face Summit Series, Bose Soundlink Mini 2, Lego Technic，拼图 [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini(最近迷 Taylor Baby)， ARC’TERYX Mistral 8L，登山安全守，young person card卡包, [Subway Coat Hooks][7]，Don’t Starve 冬帽, 40L+ 烤箱，带烘干功能洗衣机，Encre Noire Lalique for men，
 
-bose soundsport wireless,群晖 DS218+ , NS, 湿厕纸
+要给爹妈买的东西：<del>电动牙刷，手持吸尘器Black & Decker（买了dyson）</del>，夹蒜器（action）
 
-Osprey Packs Transporter 40 Expedition Duffel, Osprey Daylite
+2017：bose soundsport wireless,群晖 DS218+ , <del>NS</del>, 湿厕纸
+
+2017.11: Osprey Packs Transporter 40 Expedition Duffel, Osprey Daylite
+
+2018.9: lego 10255，lego delft[9]
+
+
 
 [https://www.douban.com/doulist/45368167/][8]
 
@@ -73,7 +82,7 @@ Osprey Packs Transporter 40 Expedition Duffel, Osprey Daylite
 <!-- 20060112 -->
 
 
-要给爹妈买的东西：<del>电动牙刷</del>，手持吸尘器Black & Decker，夹蒜器（action）
+
 
 
 
@@ -86,5 +95,6 @@ Osprey Packs Transporter 40 Expedition Duffel, Osprey Daylite
 [6]:	https://www.zhihu.com/question/20748261
 [7]:	http://www.umbra.com/cad/subway-multi-hook
 [8]:	https://www.douban.com/doulist/45368167/
+[9]:    https://giantjoy.net/2018/09/14/the-good-place-3-%E5%A4%A7%E4%B8%B0%E6%90%9C%EF%BC%81/
 
 [image-1]:	http://7xo4c2.com1.z0.glb.clouddn.com/dontstarve.JPG

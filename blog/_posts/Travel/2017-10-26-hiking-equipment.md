@@ -146,6 +146,7 @@ list：
 http://www.8264.com/zhuangbei-2086837-1.html
 http://www.8264.com/zhuangbei-2073411-1.html
 http://bbs.8264.com/thread-79331-1-1.html
+http://bbs.8264.com/thread-2382656-2-1.html
 
 
 #apps
