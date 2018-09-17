@@ -119,6 +119,12 @@ gfw list:
 JFFS   取消重启后清空JFFS
 
 
+### Todo
+
+NAS 下载问题
+Time Machine 报错问题
+
+
 ### References:
 <<<<<<< HEAD
 1. [fireware](http://koolshare.cn/thread-110214-1-1.html)
