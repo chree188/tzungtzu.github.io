@@ -15,23 +15,26 @@ layout: page
 肠粉
 
 用时间块来记录做的时间
+记录自己开车的公里数（已经有记录油耗的app
 
 
 ### 刷新人生经验
 种薄荷，葱；
-徒步乞力马扎罗
+徒步乞力马扎罗（太多人做了
+
 自行己MOC 伦勃朗 lego
 
 ### 连滚带爬坚持
+
 每周两次健身
 虽然现在不有氧了，但是一个月一次跑步吧
--> 每周跳舞两次，无氧两次，游泳两次（2018.8）
+-> 每周跳舞1次，无氧1次，游泳1次（2018.8）
 
 
 [想读的书][1]
 
 
-### 我的设备
+### Equipments of Mine
 
 #### Digital 
 
@@ -43,7 +46,7 @@ GoPro Hero 6
 Dyson V6 mattress
 
 
-#### Trekking
+#### Trekking 
 
 Osprey Kestrel 38
 Osprey Aether 70
@@ -55,13 +58,7 @@ Outdoor Research Men's Ferrosi Crag Pant
 Patagonia Capilene Midweight Crew
 
 
-
-
-
-
-
-
-### 欲购清单 (谁知道什么时候会买呢)
+### shopping list 欲购清单 (谁知道什么时候会买呢)
 
 
 <del>邮差包，AKG Q350，料理机，运动半指手套, [osprey pixel 22][2][3]，Bose QC 20i, 机械键盘,，Garmin Forerunner 235, GoPro Hero5 Session,  Apple Watch, Time Capsule[6] </del> , The North Face Summit Series, Bose Soundlink Mini 2, Lego Technic，拼图 [空气炸锅][4]，手帕，蔡赟款Kason C7，[Withings Thermo][5]， Taylor GS Mini(最近迷 Taylor Baby)， ARC’TERYX Mistral 8L，登山安全守，young person card卡包, [Subway Coat Hooks][7]，Don’t Starve 冬帽, 40L+ 烤箱，带烘干功能洗衣机，Encre Noire Lalique for men，
@@ -73,6 +70,8 @@ Patagonia Capilene Midweight Crew
 2017.11: Osprey Packs Transporter 40 Expedition Duffel, Osprey Daylite
 
 2018.9: lego 10255，lego delft[9]
+
+2018.10: bose soundlink mini2, NAS
 
 
 
