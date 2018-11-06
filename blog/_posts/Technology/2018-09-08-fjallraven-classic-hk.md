@@ -25,8 +25,8 @@ tags:
 
 ### 海拔
 
-<img src="http://7xo4c2.com1.z0.glb.clouddn.com//20180908100616_x5AdEU_Screenshot.jpeg" alter="" width="75%">
 
+<img src="https://2.bp.blogspot.com/-96pGqwh1m9A/Wf8uWzCIxMI/AAAAAAAAKxQ/8xa1abRMGu0Bvm9dDMMY71jHNx07ZHd7QCKgBGAs/s1600/CDFAAFA2-F2BE-445F-AB31-C3D24DBDD9ED.jpeg" alter="" width="75%">
 
 #### 集合點和登記
 香港 Fjällräven Classic 的集合和登記處位於銅鑼灣 Fashion Walk 的 Fjällräven Brand Centre。參加者須前往登記以成為香港 Classic 的健行者。登記時會收到食物、地圖、健行證和垃圾袋。如果有加購住宿方案者，則可在住宿處完成報到和領取物資。
