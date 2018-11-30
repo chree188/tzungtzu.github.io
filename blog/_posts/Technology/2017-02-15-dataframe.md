@@ -119,6 +119,9 @@ df.groupby('n.name')['r.call_time'].agg(['sum','count'])
 my_list = [u'String'] # sample element
 my_list = [str(my_list[0])]
 
+## list 2 dataframe
+
+
 [unicode - Python string prints as [u'String'] - Stack Overflow](https://stackoverflow.com/questions/599625/python-string-prints-as-ustring)
 
 

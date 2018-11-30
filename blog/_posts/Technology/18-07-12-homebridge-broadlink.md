@@ -10,6 +10,10 @@ tags:
 
 ---
 
+
+
+
+
 hroadlink rm pro 也可以通过 homebridge 连接 homekit，但是比小米设备复杂，不止安装插件，配置文件需要修改。
 
         sudo npm install -g homebridge-broadlink-rm
@@ -24,7 +28,6 @@ data: on, off 都有对应的学习代码，用来控制开关。。
 
 
 
-
 添加好HB后，发现Learn按键, 点击按下Learn 键，此时RM PRO灯处于橙色状态，把要学习的红外/或者射频的遥控器按键按下让RM PRO学习   (通过哪种方式打开 learn code 按钮)
 
 5、查看HEX码（HomeKit 16进制码）
@@ -35,6 +38,9 @@ data: on, off 都有对应的学习代码，用来控制开关。。
 HEX码转换去 Base64码
 
 
+
+RM-Pro 内置了温度感应器
+控制 apple tv
 
 
 ### References:
