@@ -41,7 +41,7 @@ tags:
 
 google my maps:
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1gPjTSqBj4I3OcH6Y83HWZd11PzBixWzI" width="640" height="480"></iframe>
+<iframe src="http://classic.fjallraven.com/hongkong/wp-content/uploads/2018/01/Hk_map.jpg" width="640" height="480"></iframe>
 
 
 ### 装备
