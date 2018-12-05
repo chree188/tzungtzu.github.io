@@ -133,6 +133,14 @@ permission error 解决方法： 修改owner 为 tzungtzu
 
 [Installation - Package Control](https://packagecontrol.io/installation)
 
+
+### 移动dropbox 目录需要修改的 （2018-12-5 添加
+
+1. mackup config
+2. softlink for macSync Folders
+3. Alfred Sync folder
+
+
 ### References:
 1. [小土刀][3]()
 2. [][4]()
