@@ -11,6 +11,23 @@ tags:
 
 ---
 
+
+#### Trekking 户外装备
+
+Osprey Kestrel 38 轻装背包
+Osprey Aether 70 重装备包
+ASTA Yunque 2 side silnylon 3 seasons ultra light tent 静星云雀帐篷
+The North Face Aleutian Sleeping Bag: 40 Degree Synthetic - Monarch Orange /Zinc 睡袋
+La Sportiva Halite GTX 高帮徒步鞋
+<del>La Sportiva Boulder X GTX 接近鞋</del>
+La Sportiva Akasha 越野跑鞋
+Adidas Terrex Swift R2 GTX 低帮徒步鞋
+Black Diamond Men's Dawn Patrol LT Jacket 软壳
+Outdoor Research Men's Ferrosi Crag Pant 攀岩裤
+Patagonia Capilene Midweight Crew 保暖内衣
+Smartwool 徒步+跑步袜
+
+
 ### 背包
 
 背包的最上端不要超过第五节颈椎，下端不要好过骨盆
