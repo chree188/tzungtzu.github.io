@@ -1,9 +1,13 @@
 add 图算法插件
 
 
+
+
 plugins
 
 apoc-3.2.3.5-all.jar  graph-algorithms-algo-3.3.5.0.jar
+
+
 
 
 CALL algo.unionFind.stream()
@@ -11,6 +15,9 @@ YIELD nodeId,setId
 RETURN setId,count(*) as size_of_component
 ORDER BY size_of_component DESC LIMIT 20
 
+
+CALL algo.louvain.stream('uid', 'self_device_id', {})
+YIELD nodeId, community RETURN count(distinct nodeId) as count_of_components
 
 
 CALL apoc.meta.graph
