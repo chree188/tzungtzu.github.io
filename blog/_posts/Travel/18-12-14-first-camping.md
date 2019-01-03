@@ -1,6 +1,18 @@
+---
+layout: post
+title: First Camping
+categories: 
+- Travel
+tags:
+- Outdoor
+- Camping
+- HongKong
+
+---
+
 因为10月底的 Fjallraven Classic 了解到香港露营设施的齐全，一直想去露营。12月终于有计划，看到圣诞节这一周天气还不错 19-24度。由于是第一次专门露营，不了解什么意外情况。所以准备去最适合入门者的贝澳营地。
 
-
+<!--more-->
 
 ##预定
 
