@@ -1,7 +1,7 @@
 add 图算法插件
 
 
-
+## stable
 
 plugins
 
@@ -26,7 +26,7 @@ CALL apoc.meta.graph
 conf/neo4j.conf
 dbms.security.procedures.unrestricted=algo.*,apoc.*
 
-
+test 3.4.8
 
 ### References:
 1. [Neo4j Install APOC and Graph Algorithms Neo.ClientError.Procedure.ProcedureRegistrationFailed - Stack Overflow](https://stackoverflow.com/questions/48773505/neo4j-install-apoc-and-graph-algorithms-neo-clienterror-procedure-procedureregis)
